@@ -1,4 +1,4 @@
-CCID      Name
+CCID Github UserName
 rahulsin rakiuniv
 xuantong Xuantong Ma
-ning2     Ning Sun
+ning2 Ning Sun
