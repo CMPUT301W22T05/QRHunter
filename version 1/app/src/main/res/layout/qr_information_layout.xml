@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/highest_scoring_textView4"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:hint="Highest scoring QR code"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <TextView
+        android:id="@+id/highest_scoring_textView3"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:hint="Highest scoring QR code"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <TextView
+        android:id="@+id/highest_scoring_textView2"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:hint="Highest scoring QR code"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/highest_scoring_textView"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:hint="Highest scoring QR code"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="151dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
