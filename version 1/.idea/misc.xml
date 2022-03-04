@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
+        <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />
+        <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
+        <entry key="app/src/main/res/layout/ranking_content.xml" value="0.29270833333333335" />
+        <entry key="app/src/main/res/layout/ranking_layout.xml" value="0.496875" />
+        <entry key="app/src/main/res/layout/signup.xml" value="0.3240223463687151" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
