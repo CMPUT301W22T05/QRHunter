@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/add_qr_code_layout.xml" value="0.459375" />
         <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />
