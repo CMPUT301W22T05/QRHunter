@@ -9,20 +9,25 @@
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:minHeight="48dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="278dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="278dp" />
+        android:minHeight="48dp"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
