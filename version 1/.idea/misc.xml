@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_layout.xml" value="0.496875" />
+        <entry key="app/src/main/res/layout/scan_qr_code_layout.xml" value="0.496875" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.3240223463687151" />
       </map>
     </option>
