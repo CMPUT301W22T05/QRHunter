@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.47110493977864576" />
+        <entry key="app/src/main/res/layout/add_qr_code_layout.xml" value="0.41134490966796866" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.42228851318359373" />
         <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />

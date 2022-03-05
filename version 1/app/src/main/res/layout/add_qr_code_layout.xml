@@ -32,23 +32,27 @@
 
     <Button
         android:id="@+id/upload_picture_button"
-        android:layout_width="125dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="67dp"
         android:text="Upload Picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/add_qr_button"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.678" />
 
     <Button
         android:id="@+id/add_qr_button"
-        android:layout_width="125dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="43dp"
         android:text="Add QR"
-        app:layout_constraintBaseline_toBaselineOf="@+id/upload_picture_button"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/upload_picture_button"
+        app:layout_constraintTop_toBottomOf="@+id/score_textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
