@@ -1,0 +1,10 @@
+com/example/qrhunter/BuildConfig.java
+ com.example.qrhunter.BuildConfig
+com/example/qrhunter/SignUpActivity.java
+ com.example.qrhunter.SignUpActivity
+ com.example.qrhunter.SignUpActivity$1
+ com.example.qrhunter.SignUpActivity$1$1
+ com.example.qrhunter.SignUpActivity$1$2
+com/example/qrhunter/MainActivity.java
+ com.example.qrhunter.MainActivity
+ com.example.qrhunter.MainActivity$1
