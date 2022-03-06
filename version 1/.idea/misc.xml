@@ -7,7 +7,9 @@
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/activity_sign_up.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/signup.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.47110493977864576" />
-        <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.5306503295898437" />
+        <entry key="app/src/main/res/layout/add_qr_code_layout.xml" value="0.5791915893554687" />
+        <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.4021453857421875" />
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />
         <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
