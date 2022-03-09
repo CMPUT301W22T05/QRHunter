@@ -6,32 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".Search">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="409dp"
-        android:layout_height="53dp"
-        android:text="Search-Menu"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints" />
-
     <fragment
         android:id="@+id/small_map"
         class="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="410dp"
-        android:layout_height="506dp"
+        android:layout_width="367dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="54dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:hint="Username"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="645dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/small_map"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="92dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Username"
+        app:layout_constraintTop_toBottomOf="@+id/small_map"
+        app:layout_constraintVertical_bias="0.048"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="94dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Username"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/small_map"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_others" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

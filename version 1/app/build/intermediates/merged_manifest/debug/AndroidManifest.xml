@@ -33,7 +33,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.QRHunter" >
-
+        <activity
+            android:name="com.example.qrhunter.SearchInfo"
+            android:exported="false" />
+        <activity
+            android:name="com.example.qrhunter.Search"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -47,7 +52,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyBqbnuXnzj-mwRRJy6N2nuk5o1sqCUYlmI" />
 
         <activity
             android:name="com.example.qrhunter.SignUpActivity"

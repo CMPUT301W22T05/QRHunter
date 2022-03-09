@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseFirestore db;
     Button signUpButton;
+    Button maptest;
     //final String TAG = "Sample";
 
     @Override
@@ -36,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent goToSignUpPage = new Intent(MainActivity.this,SignUpActivity.class );
                 //intent.putExtra("databaseValue", (Parcelable) db);
                 startActivity(goToSignUpPage);
+            }
+        });
+        maptest = findViewById(R.id.button3);
+        maptest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goTosearchUpPage = new Intent(MainActivity.this,Search.class );
+                //intent.putExtra("databaseValue", (Parcelable) db);
+                startActivity(goTosearchUpPage);
+
             }
         });
 

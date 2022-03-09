@@ -2506,6 +2506,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable customer
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2524,6 +2525,9 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_others
+drawable ic_search
+drawable loupe
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2585,6 +2589,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id Username
 id Username_input
 id accelerate
 id accessibility_action_clickable_span
@@ -2673,6 +2678,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2796,6 +2802,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton2
+id imageButton3
 id immediateStop
 id included
 id info
@@ -2978,6 +2986,7 @@ id sin
 id skipCollapsed
 id skipped
 id slide
+id small_map
 id snackbar_action
 id snackbar_text
 id snap
@@ -3175,6 +3184,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_search
+layout activity_search_info
 layout activity_sign_up
 layout add_qr_code_layout
 layout custom_dialog
