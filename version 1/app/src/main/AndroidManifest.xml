@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QRHunter">
         <activity
-            android:name=".DisplayRanking"
-            android:exported="false" />
-        <activity
             android:name=".SearchInfo"
             android:exported="false" />
         <activity
