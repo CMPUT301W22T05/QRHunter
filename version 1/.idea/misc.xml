@@ -15,6 +15,8 @@
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/owermenu.xml" value="0.3880208333333333" />
         <entry key="app/src/main/res/layout/ownermenu.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/personal_qr_rank_content_layout.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/personal_qr_rank_layout.xml" value="0.3880208333333333" />
         <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />
         <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_content.xml" value="0.29270833333333335" />
