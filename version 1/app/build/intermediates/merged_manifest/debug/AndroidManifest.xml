@@ -57,6 +57,8 @@
         <activity
             android:name="com.example.qrhunter.SignUpActivity"
             android:exported="false" />
+        <activity android:name="com.example.qrhunter.PlayerMenuActivity" />
+        <activity android:name="com.example.qrhunter.MyProfileActivity" />
         <activity
             android:name="com.example.qrhunter.MainActivity"
             android:exported="true" >

@@ -3,69 +3,97 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/app_name"
         android:layout_width="110dp"
-        android:layout_height="0dp"
+        android:layout_height="65dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="140dp"
         android:layout_marginBottom="84dp"
+        android:background="@drawable/round_border"
+        android:ellipsize="middle"
+        android:gravity="center"
         android:text="QR Hunter"
-        app:layout_constraintBottom_toTopOf="@+id/Username_input"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/username_input"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/Username_input"
+        android:id="@+id/username_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="71dp"
+        android:background="@drawable/rect_border_grey"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
         android:hint="Username"
-        app:layout_constraintBottom_toTopOf="@+id/Password_input"
+        android:inputType="textLongMessage"
+        android:minHeight="48dp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
+        app:layout_constraintBottom_toTopOf="@+id/password_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
     <EditText
-        android:id="@+id/Password_input"
+        android:id="@+id/password_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="376dp"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="textLongMessage"
         android:minHeight="48dp"
         android:hint="Password"
+        android:background="@drawable/rect_border_grey"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username_input" />
+        app:layout_constraintTop_toBottomOf="@+id/username_input" />
 
     <Button
         android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="116dp"
         android:text="Sign up"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password_input" />
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
 
     <Button
-        android:id="@+id/Login_button"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="28dp"
         android:text="Log in"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password_input" />
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <ImageButton
+        android:id="@+id/scan_button"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

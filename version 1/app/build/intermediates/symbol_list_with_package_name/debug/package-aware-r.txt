@@ -2569,6 +2569,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rect_border_grey
+drawable rect_border_purple
+drawable round_border
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2578,10 +2581,8 @@ id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
-id Login_button
 id META
 id NO_DEBUG
-id Password_input
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2590,7 +2591,6 @@ id SYM
 id TOP_END
 id TOP_START
 id Username
-id Username_input
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2660,6 +2660,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id app_name
 id arc
 id asConfigured
 id async
@@ -2678,7 +2679,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2778,6 +2778,7 @@ id floating
 id forever
 id fragment_container_view_tag
 id frost
+id get_ranking_button
 id ghost_view
 id ghost_view_holder
 id gone
@@ -2829,6 +2830,7 @@ id linear
 id listMode
 id list_item
 id location_button
+id login_button
 id lowest_scoring_textView
 id map
 id masked
@@ -2905,6 +2907,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id number_personal_QR
 id number_scoring_textView
 id off
 id on
@@ -2919,17 +2922,22 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password_editTextText
+id password_input
 id password_toggle
 id path
 id pathRelative
 id peekHeight
 id percent
+id personal_ranking_list
 id picture_imageView
 id pin
 id player_name_text
 id position
 id postLayout
 id profile_button
+id profile_contact_information
+id profile_user_device
+id profile_username
 id progress_circular
 id progress_horizontal
 id qr_information_button
@@ -2939,6 +2947,7 @@ id qr_scores_list
 id radio
 id ranking_button
 id ranking_list
+id ranking_total_score_list
 id ratio
 id rectangles
 id reverseSawtooth
@@ -2953,6 +2962,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scan_button
 id scan_qr_code_button
 id score_text
 id score_textView
@@ -2971,6 +2981,8 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_user_name
+id search_user_name_Button
 id search_voice_btn
 id select_dialog_listview
 id selected
@@ -2981,6 +2993,10 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_up_cancel
+id sign_up_confirm
+id sign_up_password
+id sign_up_username
 id signup_button
 id sin
 id skipCollapsed
@@ -3042,7 +3058,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3075,8 +3091,8 @@ id up
 id upload_comments_button
 id upload_picture_button
 id useLogo
-id user_device_text
 id username_editTextText
+id username_input
 id username_text
 id vertical_only
 id view_my_qr_codes_button
@@ -3259,6 +3275,9 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout owner_menu_layout
+layout personal_qr_rank_content_layout
+layout personal_qr_rank_layout
 layout player_menu_layout
 layout qr_information_layout
 layout qr_scores_content
@@ -3268,6 +3287,7 @@ layout scan_qr_code_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout sign_up_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius

@@ -7,18 +7,20 @@
 
 
     <TextView
-        android:id="@+id/username_text"
+        android:id="@+id/profile_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="Username"
         android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/contact_information_text"
+        android:id="@+id/profile_contact_information"
         android:layout_width="0dp"
         android:layout_height="195dp"
         android:layout_marginStart="32dp"
@@ -26,21 +28,35 @@
         android:layout_marginEnd="32dp"
         android:text="Contact Information"
         android:textSize="40sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username_text" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
 
     <TextView
-        android:id="@+id/user_device_text"
+        android:id="@+id/profile_user_device"
+        android:textColor="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="User Device"
-        android:textSize="40sp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contact_information_text" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_contact_information" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rect_border_purple"
+        android:gravity="center"
+        android:text="My Profile"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
