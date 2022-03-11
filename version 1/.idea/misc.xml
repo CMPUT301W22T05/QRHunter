@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/rect_border_grey.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/rect_border_purple.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/round_border.xml" value="0.2215" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.47110493977864576" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.34861450195312504" />
         <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/owner_menu_layout.xml" value="0.28229166666666666" />
@@ -13,6 +17,7 @@
         <entry key="app/src/main/res/layout/ranking_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_layout.xml" value="0.1" />
         <entry key="app/src/main/res/layout/scan_qr_code_layout.xml" value="0.496875" />
+        <entry key="app/src/main/res/layout/sign_up_layout.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.4510822828921526" />
       </map>
     </option>
