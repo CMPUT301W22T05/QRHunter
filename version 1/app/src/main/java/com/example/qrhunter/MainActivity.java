@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.auth.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,13 +79,29 @@ public class MainActivity extends AppCompatActivity {
                                             String password = documentSnapshot.getString("Password");
                                             // if passwords match, jump to menu page
                                             if (password.equals(Password)) {
-                                                Intent JumpToMenu = new Intent();
-                                                JumpToMenu.setClass(MainActivity.this,PlayerMenuActivity.class);
+                                                Intent JumpToPlayerMenu = new Intent();
+                                                JumpToPlayerMenu.setClass(MainActivity.this,PlayerMenuActivity.class);
+
+                                                Intent JumpToOwnerMenu = new Intent();
+                                                JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
+
                                                 Bundle bundle = new Bundle();
                                                 bundle.putString("UserName", Username);
-                                                JumpToMenu.putExtras(bundle);
-                                                startActivity(JumpToMenu);
+
+                                                JumpToPlayerMenu.putExtras(bundle);
+                                                JumpToOwnerMenu.putExtras(bundle);
+
+                                                if (Username.equals("owner1")){
+                                                    startActivity(JumpToOwnerMenu);
+                                                }
+                                                else {
+                                                    startActivity(JumpToPlayerMenu);
+                                                }
                                             }
+
+
+
+
                                             // else turn the error message visible
                                             else {
                                                 Toast.makeText(MainActivity.this, "Incorrect Password", Toast.LENGTH_SHORT).show();
