@@ -16,6 +16,9 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.auth.User;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     Button LogInButton;
@@ -59,6 +62,16 @@ public class MainActivity extends AppCompatActivity {
                 //get user input from EditText View
                 final String Username = UsernameLoginEditText.getText().toString();
                 final String Password = PasswordLoginEditText.getText().toString();
+                final List OwnerUsernameList;
+                OwnerUsernameList = new ArrayList();
+                OwnerUsernameList.add("wyou1");
+                OwnerUsernameList.add("ning2");
+                OwnerUsernameList.add("xuantong");
+                OwnerUsernameList.add("gemmary");
+                OwnerUsernameList.add("xibei");
+                OwnerUsernameList.add("rahul");
+
+
 
                 if (Username.length() == 0){
                     Toast.makeText(MainActivity.this, "Username can not be empty!", Toast.LENGTH_SHORT).show();
@@ -79,32 +92,30 @@ public class MainActivity extends AppCompatActivity {
                                             String password = documentSnapshot.getString("Password");
                                             // if passwords match, jump to menu page
                                             if (password.equals(Password)) {
-                                                Intent JumpToPlayerMenu = new Intent();
+                                                Intent JumpToPlayerMenu = new Intent();  // for player
                                                 JumpToPlayerMenu.setClass(MainActivity.this,PlayerMenuActivity.class);
-
                                                 Intent JumpToOwnerMenu = new Intent();
                                                 JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
-
                                                 Bundle bundle = new Bundle();
                                                 bundle.putString("UserName", Username);
 
                                                 JumpToPlayerMenu.putExtras(bundle);
                                                 JumpToOwnerMenu.putExtras(bundle);
+                                                // First, to check whether the username you input if owner's
+                                                for (int i=0; i <= OwnerUsernameList.size(); i++) {
+                                                    if (Username.equals(OwnerUsernameList.get(i))){
+                                                        startActivity(JumpToOwnerMenu);
+                                                    }
+                                                }
+                                                // else (i.e. not owner's account)
+                                                // then jump to playerMenu
+                                                startActivity(JumpToPlayerMenu);
 
-                                                if (Username.equals("owner1")){
-                                                    startActivity(JumpToOwnerMenu);
-                                                }
-                                                else {
-                                                    startActivity(JumpToPlayerMenu);
-                                                }
                                             }
-
-
-
-
                                             // else turn the error message visible
                                             else {
-                                                Toast.makeText(MainActivity.this, "Incorrect Password", Toast.LENGTH_SHORT).show();
+                                                // display error whether incorrect password for player/owner
+                                                Toast.makeText(MainActivity.this, "Incorrect Password for player/owner", Toast.LENGTH_SHORT).show();
 
                                             }
                                         }
