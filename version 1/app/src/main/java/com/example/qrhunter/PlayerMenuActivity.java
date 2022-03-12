@@ -49,10 +49,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent JumpToMyProfilePage = new Intent();
-                JumpToMyProfilePage.setClass(PlayerMenuActivity.this,MainActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("UserName", Username);
-                JumpToMyProfilePage.putExtras(bundle);
+                JumpToMyProfilePage.setClass(PlayerMenuActivity.this,MyProfileActivity.class);
                 startActivity(JumpToMyProfilePage);
             }
         });
