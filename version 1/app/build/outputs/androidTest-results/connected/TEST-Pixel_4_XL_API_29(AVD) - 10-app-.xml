@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.qrhunter.MainActivityTest" tests="6" failures="0" errors="0" skipped="0" time="20.394" timestamp="2022-03-12T17:07:47" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_4_XL_API_29(AVD) - 10" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="checkPlayerLogin" classname="com.example.qrhunter.MainActivityTest" time="4.108" />
+  <testcase name="checkSignupButton" classname="com.example.qrhunter.MainActivityTest" time="2.266" />
+  <testcase name="start" classname="com.example.qrhunter.MainActivityTest" time="0.631" />
+  <testcase name="checkPasswordLogin" classname="com.example.qrhunter.MainActivityTest" time="4.213" />
+  <testcase name="checkUsernameLogin" classname="com.example.qrhunter.MainActivityTest" time="2.427" />
+  <testcase name="checkOwnerLogin" classname="com.example.qrhunter.MainActivityTest" time="2.385" />
+</testsuite>
