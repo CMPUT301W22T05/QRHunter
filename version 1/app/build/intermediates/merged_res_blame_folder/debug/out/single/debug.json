@@ -1,190 +1,190 @@
 [
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_add_qr_code_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\add_qr_code_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_sign_up_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\sign_up_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_others.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_others.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_others.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-hdpi\\ic_others.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_border.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\round_border.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_rect_border_purple.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\rect_border_purple.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_ranking_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\ranking_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_scan_qr_code_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\scan_qr_code_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_owner_menu_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\owner_menu_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_my_profile_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_profile_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_rect_border_grey.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\rect_border_grey.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_ic_search.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-anydpi\\ic_search.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_maps.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_personal_qr_rank_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_rect_border_purple.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\rect_border_purple.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_ic_search.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-anydpi\\ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_search.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_my_qr_codes_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_qr_codes_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_my_qr_codes_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_qr_codes_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_search_info.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search_info.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_ranking_content.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\ranking_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_search_info.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search_info.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_loupe.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\loupe.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_maps.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_others.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xhdpi\\ic_others.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_personal_qr_rank_content_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_content_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_others.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xhdpi\\ic_others.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-hdpi\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_search.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_ranking_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\ranking_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_ic_others.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-anydpi\\ic_others.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_my_profile_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_profile_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_add_qr_code_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\add_qr_code_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_others.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-mdpi\\ic_others.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_qr_scores_content.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_scores_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_personal_qr_rank_content_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_content_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_loupe.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\loupe.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_others.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-hdpi\\ic_others.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_rect_border_grey.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\rect_border_grey.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_others.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_others.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_scan_qr_code_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\scan_qr_code_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_qr_scores_content.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_scores_content.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_others.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-mdpi\\ic_others.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_ranking_content.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\ranking_content.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_sign_up_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\sign_up_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_ic_others.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-anydpi\\ic_others.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_owner_menu_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\owner_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_customer.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\customer.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_qr_information_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_information_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_search.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_player_menu_layout.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\player_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_player_menu_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\player_menu_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_round_border.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\round_border.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_search.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable_customer.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable\\customer.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_personal_qr_rank_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_search.png.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\drawable-mdpi\\ic_search.png"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_qr_information_layout.xml.flat",
-        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_information_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     }
 ]
