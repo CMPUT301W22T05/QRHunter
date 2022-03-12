@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.qrhunter">
-
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -43,7 +40,6 @@
         <activity android:name=".RankingActivity" />
         <activity android:name=".OwnerMenuActivity" />
         <activity android:name=".MyProfileActivity" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -53,11 +49,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <meta-data
-            android:name="com.google.android.gms.vision.DEPENDENCIES"
-            android:value="barcode" />
     </application>
 
 </manifest>
