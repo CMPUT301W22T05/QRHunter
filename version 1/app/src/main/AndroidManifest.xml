@@ -36,6 +36,8 @@
         <activity
             android:name=".PlayerMenuActivity" />
         <activity
+            android:name=".RankingActivity" />
+        <activity
             android:name=".OwnerMenuActivity" />
         <activity
             android:name=".MyProfileActivity" />
