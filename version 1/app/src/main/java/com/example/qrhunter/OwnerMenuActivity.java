@@ -31,16 +31,12 @@ public class OwnerMenuActivity extends AppCompatActivity {
             }
         });
 
-        Bundle bundle = getIntent().getExtras();
-        String Username = bundle.getString("UserName");
-
         SearchButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent JumpToPlayerinformationpage = new Intent();
                 JumpToPlayerinformationpage.setClass(OwnerMenuActivity.this,PlayerQRinformation.class);
-                JumpToPlayerinformationpage.putExtras(bundle);
                 startActivity(JumpToPlayerinformationpage);
             }
         });
