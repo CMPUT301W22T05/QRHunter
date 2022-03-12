@@ -1,12 +1,12 @@
-#Fri Mar 11 17:57:37 MST 2022
+#Sat Mar 12 02:08:43 MST 2022
 path.3=classes2.dex
 path.2=15/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.3=/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.2=/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
-base.1=/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.0=/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.3=C\:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.2=C\:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.1=C\:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.0=C\:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

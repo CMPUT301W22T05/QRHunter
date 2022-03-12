@@ -94,19 +94,19 @@ public class MainActivity extends AppCompatActivity {
                                             if (password.equals(Password)) {
                                                 Intent JumpToPlayerMenu = new Intent();  // for player
                                                 JumpToPlayerMenu.setClass(MainActivity.this,PlayerMenuActivity.class);
-                                                Intent JumpToOwnerMenu = new Intent();
-                                                JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
+                                                //Intent JumpToOwnerMenu = new Intent();
+                                                //JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
                                                 Bundle bundle = new Bundle();
                                                 bundle.putString("UserName", Username);
 
                                                 JumpToPlayerMenu.putExtras(bundle);
-                                                JumpToOwnerMenu.putExtras(bundle);
+                                                //JumpToOwnerMenu.putExtras(bundle);
                                                 // First, to check whether the username you input if owner's
-                                                for (int i=0; i <= OwnerUsernameList.size(); i++) {
-                                                    if (Username.equals(OwnerUsernameList.get(i))){
-                                                        startActivity(JumpToOwnerMenu);
-                                                    }
-                                                }
+                                                //for (int i=0; i <= OwnerUsernameList.size(); i++) {
+                                                    //if (Username.equals(OwnerUsernameList.get(i))){
+                                                        //startActivity(JumpToOwnerMenu);
+                                                    //}
+                                                //}
                                                 // else (i.e. not owner's account)
                                                 // then jump to playerMenu
                                                 startActivity(JumpToPlayerMenu);

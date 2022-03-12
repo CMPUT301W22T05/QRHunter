@@ -2802,8 +2802,6 @@ int id ifRoom 0x7f0800df
 int id ignore 0x7f0800e0
 int id ignoreRequest 0x7f0800e1
 int id image 0x7f0800e2
-int id imageButton2 0x7f0800e3
-int id imageButton3 0x7f0800e4
 int id immediateStop 0x7f0800e5
 int id included 0x7f0800e6
 int id info 0x7f0800e7
@@ -2961,6 +2959,7 @@ int id save_non_transition_alpha 0x7f08017e
 int id save_overlay_view 0x7f08017f
 int id sawtooth 0x7f080180
 int id scale 0x7f080181
+int id scan_btn 0x7f08021a
 int id scan_button 0x7f080182
 int id scan_qr_code_button 0x7f080183
 int id score_text 0x7f080184
@@ -2971,6 +2970,7 @@ int id scrollIndicatorDown 0x7f080188
 int id scrollIndicatorUp 0x7f080189
 int id scrollView 0x7f08018a
 int id scrollable 0x7f08018b
+int id search 0x7f08021b
 int id search_badge 0x7f08018c
 int id search_bar 0x7f08018d
 int id search_button 0x7f08018e

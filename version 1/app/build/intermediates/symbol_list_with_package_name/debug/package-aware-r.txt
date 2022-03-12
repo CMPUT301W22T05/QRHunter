@@ -2803,8 +2803,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton2
-id imageButton3
 id immediateStop
 id included
 id info
@@ -2962,6 +2960,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scan_btn
 id scan_button
 id scan_qr_code_button
 id score_text
@@ -2972,6 +2971,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button

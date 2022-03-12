@@ -54,7 +54,15 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
-        // continue to add
+        SearchButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent JumpToMySearchPage = new Intent();
+                JumpToMySearchPage.setClass(PlayerMenuActivity.this,Search.class);
+                startActivity(JumpToMySearchPage);
+            }
+        });
 
 
     }
