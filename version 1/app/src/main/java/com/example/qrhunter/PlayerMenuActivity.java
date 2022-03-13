@@ -40,9 +40,6 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
-        //get username from bundle
-        Bundle bundle = getIntent().getExtras();
-        String Username = bundle.getString("UserName");
 
         Profile.setOnClickListener(new View.OnClickListener() {
 

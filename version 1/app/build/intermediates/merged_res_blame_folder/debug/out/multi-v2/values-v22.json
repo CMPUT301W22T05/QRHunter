@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Mia\\.gradle\\caches\\transforms-3\\eabe50a8430f19ec57b1377071857e01\\transformed\\appcompat-1.4.1\\res\\values-v22\\values-v22.xml",
+                    "source": "/Users/jiamengchang/.gradle/caches/transforms-3/eabe50a8430f19ec57b1377071857e01/transformed/appcompat-1.4.1/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

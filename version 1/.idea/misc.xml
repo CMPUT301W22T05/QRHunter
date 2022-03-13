@@ -3,30 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/activity_search.xml" value="0.35" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/activity_search_info.xml" value="0.35" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/my_profile_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/player_menu_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/qr_information_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/qr_scores_content.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/ranking_content.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/ranking_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/scan_qr_code_layout.xml" value="0.3625" />
-        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/sign_up_layout.xml" value="0.3625" />
         <entry key="app/src/main/res/drawable/rect_border_grey.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/rect_border_purple.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/round_border.xml" value="0.2215" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.35577290852864585" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.47110493977864576" />
+        <entry key="app/src/main/res/layout/activity_scanner_view.xml" value="0.24583333333333332" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.2390502929687499" />
+        <entry key="app/src/main/res/layout/activity_search_info.xml" value="0.41442718505859377" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.4744888305664063" />
+        <entry key="app/src/main/res/layout/add_qr_code_layout.xml" value="0.2955123901367187" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.34861450195312504" />
-        <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/my_profile_layout.xml" value="0.24205128205128204" />
         <entry key="app/src/main/res/layout/my_qr_codes_layout.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/owner_menu_layout.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/ownermenu.xml" value="0.17882352941176471" />
-        <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.45208333333333334" />
+        <entry key="app/src/main/res/layout/personal_qr_rank_content_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.24205128205128204" />
+        <entry key="app/src/main/res/layout/qr_information_layout.xml" value="0.735223897298177" />
         <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/ranking_layout.xml" value="0.3428943937418514" />
-        <entry key="app/src/main/res/layout/scan_qr_code_layout.xml" value="0.496875" />
+        <entry key="app/src/main/res/layout/scan_qr_code_layout.xml" value="0.2660018920898437" />
         <entry key="app/src/main/res/layout/sign_up_layout.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.4510822828921526" />
       </map>

@@ -20,9 +20,7 @@ public class MyProfileActivity extends AppCompatActivity {
         ContactInfo = findViewById(R.id.profile_contact_information);
         UserDevice = findViewById(R.id.profile_user_device);
 
-        //get username from bundle
-        Bundle bundle = getIntent().getExtras();
-        String Username = bundle.getString("UserName");
+
 
 
     }
