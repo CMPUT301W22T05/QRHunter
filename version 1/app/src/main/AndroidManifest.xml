@@ -40,6 +40,8 @@
         <activity android:name=".RankingActivity" />
         <activity android:name=".OwnerMenuActivity" />
         <activity android:name=".MyProfileActivity" />
+        <activity android:name=".SearchInOwnerMenu" />
+        <activity android:name=".PersonalRank" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
