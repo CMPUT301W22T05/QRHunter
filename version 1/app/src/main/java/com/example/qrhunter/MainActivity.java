@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 final String Username = UsernameLoginEditText.getText().toString();
                 final String Password = PasswordLoginEditText.getText().toString();
                 final List OwnerUsernameList;
+
                 OwnerUsernameList = new ArrayList();
                 OwnerUsernameList.add("wyou1");
                 OwnerUsernameList.add("ning2");
@@ -72,16 +73,15 @@ public class MainActivity extends AppCompatActivity {
                 OwnerUsernameList.add("rahul");
 
 
-
-                if (Username.length() == 0){
+                if (Username.length() == 0) {
                     Toast.makeText(MainActivity.this, "Username can not be empty!", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    if (Password.length() == 0){
-                        Toast.makeText(MainActivity.this,"Password cannot be empty!",Toast.LENGTH_SHORT).show();
+                else {
+                    if (Password.length() == 0) {
+                        Toast.makeText(MainActivity.this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
                     }
-                    else {
-                        DocumentReference noteRef = db.collection(Username).document("UserProfile");
+                    else if (OwnerUsernameList.contains(Username)) {
+                        DocumentReference noteRef = db.collection("Owner").document(Username);
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                     @Override
@@ -89,27 +89,15 @@ public class MainActivity extends AppCompatActivity {
                                         //if get Snapshot in the userProfile successfully, compares the password with the user input
 
                                         if (documentSnapshot.exists()) {
-                                            String password = documentSnapshot.getString("Password");
+                                            String password = documentSnapshot.getString("password");
                                             // if passwords match, jump to menu page
                                             if (password.equals(Password)) {
-                                                Intent JumpToPlayerMenu = new Intent();  // for player
-                                                JumpToPlayerMenu.setClass(MainActivity.this, PlayerMenuActivity.class);
                                                 Intent JumpToOwnerMenu = new Intent();
                                                 JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
                                                 Bundle bundle = new Bundle();
                                                 bundle.putString("UserName", Username);
-
-                                                JumpToPlayerMenu.putExtras(bundle);
-                                                //JumpToOwnerMenu.putExtras(bundle);
-                                                // First, to check whether the username you input if owner's
-
-                                                // else (i.e. not owner's account)
-                                                // then jump to playerMenu
-                                                if (OwnerUsernameList.contains(Username)) {
-                                                    startActivity(JumpToOwnerMenu);
-                                                } else {
-                                                    startActivity(JumpToPlayerMenu);
-                                                }
+                                                JumpToOwnerMenu.putExtras(bundle);
+                                                startActivity(JumpToOwnerMenu);
                                             }
                                             // else turn the error message visible
                                             else {
@@ -123,17 +111,48 @@ public class MainActivity extends AppCompatActivity {
                                             Toast.makeText(MainActivity.this, "Username not found, please sign up first", Toast.LENGTH_SHORT).show();
                                         }
                                     }
+
+
+                                });
+
+                    }
+                    else {
+                        DocumentReference noteRef = db.collection("Player").document(Username);
+                        noteRef.get()
+                                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                    @Override
+                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                        //if get Snapshot in the userProfile successfully, compares the password with the user input
+
+                                        if (documentSnapshot.exists()) {
+                                            String password = documentSnapshot.getString("Password");
+                                            // if passwords match, jump to menu page
+                                            if (password.equals(Password)) {
+                                                Intent JumpToPlayerMenu = new Intent();
+                                                JumpToPlayerMenu.setClass(MainActivity.this, PlayerMenuActivity.class);
+                                                Bundle bundle = new Bundle();
+                                                bundle.putString("UserName", Username);
+                                                JumpToPlayerMenu.putExtras(bundle);
+                                                startActivity(JumpToPlayerMenu);
+                                            }
+                                            // else turn the error message visible
+                                            else {
+                                                // display error whether incorrect password for player/owner
+                                                Toast.makeText(MainActivity.this, "Incorrect Password for player/owner", Toast.LENGTH_SHORT).show();
+
+                                            }
+
+                                        }
+                                        // else turn the error message visible
+                                        else {
+                                            Toast.makeText(MainActivity.this, "Username not found, please sign up first", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+
                                 });
                     }
-
                 }
-
             }
         });
-
-
-
-
-
     }
 }
