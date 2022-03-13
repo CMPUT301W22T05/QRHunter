@@ -2942,7 +2942,6 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
-id password_editTextText
 id password_input
 id password_toggle
 id path
@@ -3117,7 +3116,6 @@ id up
 id upload_comments_button
 id upload_picture_button
 id useLogo
-id username_editTextText
 id username_input
 id username_text
 id vertical_only
@@ -3231,7 +3229,6 @@ layout activity_main
 layout activity_scanner_view
 layout activity_search
 layout activity_search_info
-layout activity_sign_up
 layout add_qr_code_layout
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -1304,6 +1304,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Mia\\.gradle\\caches\\transforms-3\\72d83f6c35f590756c53928b83da7f0b\\transformed\\material-1.5.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,170,226,293,358,413,478",
+                        "endColumns": "58,55,55,66,64,54,64,68",
+                        "endOffsets": "109,165,221,288,353,408,473,542"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\values-ms_values-ms.arsc.flat",
             "map": [
                 {
@@ -1391,21 +1406,6 @@
                         "startOffsets": "3368,3474,3647,3777,3883,4055,4187,4307,4560,4745,4854,5029,5164,5335,5510,5577,5641",
                         "endColumns": "105,172,129,105,171,131,119,106,184,108,174,134,170,174,66,63,82",
                         "endOffsets": "3469,3642,3772,3878,4050,4182,4302,4409,4740,4849,5024,5159,5330,5505,5572,5636,5719"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "C:\\Users\\Mia\\.gradle\\caches\\transforms-3\\72d83f6c35f590756c53928b83da7f0b\\transformed\\material-1.5.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,170,226,293,358,413,478",
-                        "endColumns": "58,55,55,66,64,54,64,68",
-                        "endOffsets": "109,165,221,288,353,408,473,542"
                     }
                 }
             ]

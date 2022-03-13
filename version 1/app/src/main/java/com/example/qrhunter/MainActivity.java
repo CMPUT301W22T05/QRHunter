@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 final String Username = UsernameLoginEditText.getText().toString();
                 final String Password = PasswordLoginEditText.getText().toString();
                 final List OwnerUsernameList;
+
                 OwnerUsernameList = new ArrayList();
                 OwnerUsernameList.add("wyou1");
                 OwnerUsernameList.add("ning2");
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 OwnerUsernameList.add("gemmary");
                 OwnerUsernameList.add("xibei");
                 OwnerUsernameList.add("rahul");
-
 
 
                 if (Username.length() == 0){
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"Password cannot be empty!",Toast.LENGTH_SHORT).show();
                     }
                     else {
-                        DocumentReference noteRef = db.collection(Username).document("UserProfile");
+                        DocumentReference noteRef = db.collection("Player").document(Username);
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                     @Override
@@ -101,10 +101,9 @@ public class MainActivity extends AppCompatActivity {
 
                                                 JumpToPlayerMenu.putExtras(bundle);
                                                 //JumpToOwnerMenu.putExtras(bundle);
-                                                // First, to check whether the username you input if owner's
 
-                                                // else (i.e. not owner's account)
-                                                // then jump to playerMenu
+                                                // check if the username is an owner account
+                                                // then jump to menu
                                                 if (OwnerUsernameList.contains(Username)) {
                                                     startActivity(JumpToOwnerMenu);
                                                 } else {
@@ -130,9 +129,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
 
 
     }

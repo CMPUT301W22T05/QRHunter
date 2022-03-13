@@ -71,25 +71,40 @@ public class SignUpActivity extends AppCompatActivity {
 
                     else{
                         // set username as the collection name
-                        final CollectionReference collectionReference = db.collection(username);
+                        final CollectionReference collectionReference = db.collection("Player");
 
                         // copy password to Userprofile document as a snapshot
-                        DocumentReference noteRef = db.collection(username).document("UserProfile");
+                        DocumentReference noteRef = db.collection("Player").document(username);
 
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-
                                     @Override
                                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                                         if (documentSnapshot.exists()) {
                                             Toast.makeText(SignUpActivity.this, "UserName has already exist!", Toast.LENGTH_SHORT).show();
                                         }
                                         else{
+                                            //create password field
+                                            HashMap<String, String> data = new HashMap<>();
+                                            data.put("Password", password);
+                                            data.put("Total score","??");
+                                            collectionReference
+                                                    .document(username)
+                                                    .set(data)
+                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                        @Override
+                                                        public void onSuccess(Void unused) {
+                                                            Toast.makeText(SignUpActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
 
+                                                        }
+                                                    });
+
+/* This part is not necessary for part 3
                                             //create QRCodes document
                                             HashMap<String, String> QRCodes = new HashMap<>();
+                                            QRCodes.put("QRCodes", "QRCodes");
                                             collectionReference
-                                                    .document("QRCodes")
+                                                    .document(username)
                                                     .set(QRCodes);
 
                                             //create MyQRCodes document
@@ -109,23 +124,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             collectionReference
                                                     .document("UserDevice")
                                                     .set(UserDevice);
-
-
-                                            //create Profile document
-                                            HashMap<String, String> Profile = new HashMap<>();
-                                            Profile.put("Password", password);
-                                            collectionReference
-                                                    .document("UserProfile")
-                                                    .set(Profile)
-                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-
-                                                        @Override
-                                                        public void onSuccess(Void unused) {
-                                                            Log.d("Username", "Username and Password have been successfully added.");
-                                                            Toast.makeText(SignUpActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
-
-                                                        }
-                                                    });
+*/
 
                                             //after successfully create an account, reset the user input, and return to login page
                                             return_To_Login();

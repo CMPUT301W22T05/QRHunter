@@ -28,10 +28,6 @@
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
     },
     {
-        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
-        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
-    },
-    {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_search_info.xml.flat",
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search_info.xml"
     },
