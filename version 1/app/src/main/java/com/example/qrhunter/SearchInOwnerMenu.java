@@ -41,9 +41,9 @@ public class SearchInOwnerMenu extends AppCompatActivity {
                 else {
                     Intent JumpToPersonalRank = new Intent();
                     JumpToPersonalRank.setClass(SearchInOwnerMenu.this, PersonalRank.class);
-                    Bundle bundle = new Bundle();
-                    bundle.putString("UserName", Username);
-                    JumpToPersonalRank.putExtras(bundle);
+//                    Bundle bundle = new Bundle();
+//                    bundle.putString("UserName", Username);
+//                    JumpToPersonalRank.putExtras(bundle);
                     startActivity(JumpToPersonalRank);
 
                 }
