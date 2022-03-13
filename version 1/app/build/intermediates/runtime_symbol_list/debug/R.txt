@@ -2947,6 +2947,7 @@ int id path 0x7f08015e
 int id pathRelative 0x7f08015f
 int id peekHeight 0x7f080160
 int id percent 0x7f080161
+int id personal_rank_TextView 0x7f08021f
 int id personal_ranking_list 0x7f080162
 int id picture_imageView 0x7f080163
 int id pin 0x7f080164
