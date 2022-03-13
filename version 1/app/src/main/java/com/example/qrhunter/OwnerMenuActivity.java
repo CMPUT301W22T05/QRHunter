@@ -19,6 +19,8 @@ public class OwnerMenuActivity extends AppCompatActivity {
     ImageButton SearchButton;
     Button RankingButton;
     TextView SearchUserName;
+    TextView PersonalName;
+    public static final String EXTRA_MESSAGE = "123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class OwnerMenuActivity extends AppCompatActivity {
         SearchUserName = findViewById(R.id.search_user_name);
         // open the firebase and connect
         FirebaseFirestore db = FirebaseFirestore.getInstance();
+        // update information in personal_qr_rank_layout.xml
+        PersonalName = findViewById(R.id.personal_rank_TextView);
 
 
         RankingButton.setOnClickListener(new View.OnClickListener() {
@@ -57,11 +61,16 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     if (documentSnapshot.exists()) {  // can find player name in database
+                                        Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, Username);
+                                        startActivity(SendToNextTitle);
+
+
                                         Intent JumpToPersonalRank = new Intent();
                                         JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
-                                        Bundle bundle = new Bundle();
-                                        bundle.putString("UserName", Username);
-                                        JumpToPersonalRank.putExtras(bundle);
+//                                        Bundle bundle = new Bundle();
+//                                        bundle.putString("UserName", Username);
+//                                        JumpToPersonalRank.putExtras(bundle);
                                         startActivity(JumpToPersonalRank);
                                     }
                                     else {  // can't find player name in database
@@ -70,6 +79,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                 }
 
                             });
+
 
                 }
             }
