@@ -56,7 +56,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                    if (documentSnapshot.exists()) {
+                                    if (documentSnapshot.exists()) {  // can find player name in database
                                         Intent JumpToPersonalRank = new Intent();
                                         JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
                                         Bundle bundle = new Bundle();
@@ -64,7 +64,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                         JumpToPersonalRank.putExtras(bundle);
                                         startActivity(JumpToPersonalRank);
                                     }
-                                    else {
+                                    else {  // can't find player name in database
                                         Toast.makeText(OwnerMenuActivity.this, "Username not found", Toast.LENGTH_SHORT).show();
                                     }
                                 }
