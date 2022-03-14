@@ -2957,7 +2957,8 @@ id position
 id postLayout
 id profile_button
 id profile_contact_information
-id profile_user_device
+id profile_user_device_brand
+id profile_user_device_model
 id profile_username
 id progress_circular
 id progress_horizontal
