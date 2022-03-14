@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                                         //if get Snapshot in the userProfile successfully, compares the password with the user input
 
                                         if (documentSnapshot.exists()) {
-                                            String password = documentSnapshot.getString("Password");
+                                            String password = documentSnapshot.getString("password");
                                             // if passwords match, jump to menu page
                                             if (password.equals(Password)) {
                                                 // set information to myprofile page
