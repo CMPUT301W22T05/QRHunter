@@ -2952,7 +2952,8 @@ id personal_rank_TextView
 id personal_ranking_list
 id picture_imageView
 id pin
-id player_name_text
+id player_ranking_name
+id player_ranking_score
 id position
 id postLayout
 id profile_button
@@ -2968,10 +2969,10 @@ id qr_score_text
 id qr_scores_list
 id radio
 id ranking_button
-id ranking_list
 id ranking_total_score_list
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3318,10 +3319,10 @@ layout owner_menu_layout
 layout personal_qr_rank_content_layout
 layout personal_qr_rank_layout
 layout player_menu_layout
+layout player_ranking_content
+layout player_ranking_layout
 layout qr_information_layout
 layout qr_scores_content
-layout ranking_content
-layout ranking_layout
 layout scan_qr_code_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
