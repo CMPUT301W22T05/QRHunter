@@ -44,19 +44,18 @@ public class SearchTest {
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
 
         solo.clickOnButton("ic_menu_camera");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        //solo.assertCurrentActivity("Wrong Activity", Profile.class);
     }
 
     /**
-     * Test the view my QR code button
+     * Test the username
      */
     @Test
     public void checkUsername(){
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
         solo.enterText((EditText) solo.getView(R.id.username_input), "player1");
-        solo.enterText((EditText) solo.getView(R.id.password_input), "321");
-        solo.clickOnButton("Log in");
-        solo.assertCurrentActivity("Test failed",PlayerMenuActivity.class);
+        solo.clickOnButton("Username");
+        solo.assertCurrentActivity("Test failed",Search.class);
 
     }
 
@@ -65,19 +64,11 @@ public class SearchTest {
      */
     @Test
     public void checkSearchButton(){
-        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.assertCurrentActivity("Wrong Activity", Search.class);
         solo.clickOnButton("Search");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        //solo.assertCurrentActivity("Wrong Activity", Profile.class);
     }
 
-    /**
-     * Test the ranking button
-     */
-    @Test
-    public void checkRankingButton(){
-        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
-        solo.clickOnButton("RANKING");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
-    }
+
 
 }
