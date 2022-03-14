@@ -3019,6 +3019,7 @@ id showHome
 id showTitle
 id sign_up_cancel
 id sign_up_confirm
+id sign_up_name
 id sign_up_password
 id sign_up_username
 id signup_button
