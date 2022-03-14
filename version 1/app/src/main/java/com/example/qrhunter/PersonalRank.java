@@ -19,8 +19,6 @@ import java.util.ArrayList;
 public class PersonalRank extends AppCompatActivity {
 
 
-    private String Null;
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +29,7 @@ public class PersonalRank extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(OwnerMenuActivity.EXTRA_MESSAGE);
         TextView PersonalName = findViewById(R.id.personal_rank_TextView);
-        if (message == Null) {
-            PersonalName.setText("UnknowID player's QR Codes");
+        PersonalName.setText(message + "'s QR Codes");
 
-        } else {
-            PersonalName.setText(message + "'s QR Codes");
-
-
-        }
     }
 }
