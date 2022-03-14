@@ -31,10 +31,13 @@ public class ScanQRcodeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scan_qr_code_layout);
 
+        // initialize the setting of textview, button and database
         scantext=(TextView)findViewById(R.id.scantext);
         scanbtn=(Button) findViewById(R.id.camera_button);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         codeworth = calculateWorth(scantext.getText().toString());
+
+        // set the functionality of switching activity of scan button
         scanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +48,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                         .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
-
+                                // store data in the players' account
                                 HashMap<String, String> QRcode = new HashMap<>();
                                 QRcode.put("scan",scantext.getText().toString());
                                 QRcode.put("Worth", String.valueOf(codeworth));

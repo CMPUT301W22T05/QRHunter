@@ -28,6 +28,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.owner_menu_layout);
 
+        // initialize all the buttons and textview
         SearchButton = findViewById(R.id.search_user_name_Button);
         RankingButton = findViewById(R.id.get_ranking_button);
         SearchUserName = findViewById(R.id.search_user_name);
@@ -36,7 +37,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         // update information in personal_qr_rank_layout.xml
         PersonalName = findViewById(R.id.personal_rank_TextView);
 
-
+        // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -47,6 +48,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
             }
         });
 
+        // set the functionality of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -43,19 +43,24 @@ public class RankingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_ranking_layout);
 
+        // initialize the recyclerView
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager((new LinearLayoutManager(this)));
+
+        // initialize player list and player adapter
         playerList = new ArrayList<>();
         adapter = new PlayerRankingAdapter(this, playerList);
         recyclerView.setAdapter(adapter);
 
+        // retrieve total score and username from the database
         dbPlayer = FirebaseDatabase.getInstance().getReference("Player");
         dbPlayer.addListenerForSingleValueEvent(valueEventListener);
 
         //Query query = FirebaseDatabase.getInstance().getReference("Player").orderByChild("Total score");
         //query.addListenerForSingleValueEvent(valueEventListener);
 
+        // testing the listing format
         Player player1 = new Player("player1", "80");
         playerList.add(player1);
 
@@ -70,10 +75,10 @@ public class RankingActivity extends AppCompatActivity {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
             playerList.clear();
-            if (dataSnapshot.exists()) {
+            if (dataSnapshot.exists()) {    // check if the data exists in the database or not
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Player player = snapshot.getValue(Player.class);
-                    playerList.add(player);
+                    playerList.add(player); // if exists, the data is added to the player list
                 }
                 adapter.notifyDataSetChanged();
             }

@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         LogInButton = findViewById(R.id.login_button);
         ScanButton = findViewById(R.id.scan_button);
 
+        // set the functionality of switching activity of scan button
         ScanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // set the functionality of switching activity of signup button
         SignUpButton.setOnClickListener(new View.OnClickListener() {
             //For user to sign up an account
             @Override
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         //open the firebase and connect
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+        // set the functionality of switching activity of login button
         LogInButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -75,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 final String Password = PasswordLoginEditText.getText().toString();
                 final List OwnerUsernameList;
 
+                // owner accounts are stored into the database
                 OwnerUsernameList = new ArrayList();
                 OwnerUsernameList.add("wyou1");
                 OwnerUsernameList.add("ning2");
@@ -85,14 +89,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                if (Username.length() == 0) {
+                if (Username.length() == 0) {// username cannot be empty
                     Toast.makeText(MainActivity.this, "Username can not be empty!", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    if (Password.length() == 0) {
+                    if (Password.length() == 0) {// password cannot be empty
                         Toast.makeText(MainActivity.this, "Password cannot be empty!", Toast.LENGTH_SHORT).show();
                     }
-                    else if (OwnerUsernameList.contains(Username)) {
+                    else if (OwnerUsernameList.contains(Username)) {// owner account login
                         DocumentReference noteRef = db.collection("Owner").document(Username);
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -128,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                                 });
 
                     }
-                    else {
+                    else {// player account login
                         DocumentReference noteRef = db.collection("Player").document(Username);
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

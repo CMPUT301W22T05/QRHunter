@@ -30,6 +30,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_menu_layout);
 
+        // initialize all the buttons
         ScanQRButton = findViewById(R.id.scan_qr_code_button);
         ViewQRButton = findViewById(R.id.view_my_qr_codes_button);
         SearchButton = findViewById(R.id.search_button);
@@ -44,7 +45,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         // connect the database
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-
+        // set the functionality of switching activity of scan button
         ScanQRButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -55,7 +56,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
-
+        // set the functionality of switching activity of profile button
         Profile.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -67,6 +68,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
+        // set the functionality of switching activity of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -76,6 +78,8 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToMySearchPage);
             }
         });
+
+        // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
