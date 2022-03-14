@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
     Button RankingButton;
     TextView SearchUserName;
     TextView PersonalName;
-    public static final String EXTRA_MESSAGE = "123";
+    public static final String EXTRA_MESSAGE = "com.example.qrhunter.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,17 +62,15 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     if (documentSnapshot.exists()) {  // can find player name in database
-                                        Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
-                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, Username);
-                                        startActivity(SendToNextTitle);
-
-
                                         Intent JumpToPersonalRank = new Intent();
                                         JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
-//                                        Bundle bundle = new Bundle();
-//                                        bundle.putString("UserName", Username);
-//                                        JumpToPersonalRank.putExtras(bundle);
                                         startActivity(JumpToPersonalRank);
+                                        // put user's name to next page
+                                        String name = documentSnapshot.getString("Name");
+                                        Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, name);
+                                        startActivity(SendToNextTitle);
+
                                     }
                                     else {  // can't find player name in database
                                         Toast.makeText(OwnerMenuActivity.this, "Username not found", Toast.LENGTH_SHORT).show();
@@ -82,6 +81,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
 
                 }
+
             }
         });
 
