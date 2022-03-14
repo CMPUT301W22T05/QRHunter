@@ -60,7 +60,14 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToMySearchPage);
             }
         });
-
+        RankingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToRankingActivity = new Intent();
+                JumpToRankingActivity.setClass(PlayerMenuActivity.this,RankingActivity.class);
+                startActivity(JumpToRankingActivity);
+            }
+        });
 
     }
 }
