@@ -30,7 +30,9 @@ public class MyProfileActivity extends AppCompatActivity {
         // set the text about TextViews
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String username = MyProfileData.getString("username", null);
+        String email = MyProfileData.getString("email", null);
         UserName.setText("Username: " + username);
+        ContactInfo.setText("Contact Information: "+ email);
         UserDeviceBrand.setText("Phone Brand: " +Build.BRAND);
         UserDeviceModel.setText("Phone Model: " +Build.MODEL);
 

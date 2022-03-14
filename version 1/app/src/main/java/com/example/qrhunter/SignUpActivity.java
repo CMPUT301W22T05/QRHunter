@@ -1,6 +1,7 @@
 package com.example.qrhunter;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +25,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button CancelButton;
     EditText UsernameSignUpEditText;
     EditText PasswordSignUpEditText;
+    EditText EmailSignUpEditText;
     EditText NameEditText;
 
     @Override
@@ -34,6 +36,7 @@ public class SignUpActivity extends AppCompatActivity {
         //Find corresponding view in the layout files.
         UsernameSignUpEditText = findViewById(R.id.sign_up_username);
         PasswordSignUpEditText = findViewById(R.id.sign_up_password);
+        EmailSignUpEditText = findViewById(R.id.sign_up_email_address);
         NameEditText = findViewById(R.id.sign_up_name);
 
         ConfirmButton = findViewById(R.id.sign_up_confirm);
@@ -61,6 +64,7 @@ public class SignUpActivity extends AppCompatActivity {
                 final String username = UsernameSignUpEditText.getText().toString();
                 final String password = PasswordSignUpEditText.getText().toString();
                 final String name = NameEditText.getText().toString();
+                final String email = EmailSignUpEditText.getText().toString();
 
 
                 // check if the username is empty or not.
@@ -87,11 +91,16 @@ public class SignUpActivity extends AppCompatActivity {
                                             Toast.makeText(SignUpActivity.this, "UserName has already exist!", Toast.LENGTH_SHORT).show();
                                         }
                                         else{
+                                            // set the information to MyProfile Page
+                                            SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
+                                            MyProfileData.putString("email", email);
+                                            MyProfileData.commit();
                                             //create password field
                                             HashMap<String, String> data = new HashMap<>();
                                             data.put("Password", password);
                                             data.put("Total score","??");
                                             data.put("Name", name);
+                                            data.put("Email", email);
                                             collectionReference
                                                     .document(username)
                                                     .set(data)
