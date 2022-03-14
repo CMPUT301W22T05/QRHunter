@@ -1,6 +1,7 @@
 package com.example.qrhunter;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 OwnerUsernameList.add("rahul");
 
 
+
                 if (Username.length() == 0) {
                     Toast.makeText(MainActivity.this, "Username can not be empty!", Toast.LENGTH_SHORT).show();
                 }
@@ -138,6 +140,11 @@ public class MainActivity extends AppCompatActivity {
                                             String password = documentSnapshot.getString("Password");
                                             // if passwords match, jump to menu page
                                             if (password.equals(Password)) {
+                                                // set information to myprofile page
+                                                SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
+                                                MyProfileData.putString("username", Username);
+                                                MyProfileData.commit();
+                                                // jump to the Player Menu
                                                 Intent JumpToPlayerMenu = new Intent();
                                                 JumpToPlayerMenu.setClass(MainActivity.this, PlayerMenuActivity.class);
                                                 Bundle bundle = new Bundle();

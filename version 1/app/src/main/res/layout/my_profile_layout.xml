@@ -7,44 +7,64 @@
 
 
     <TextView
+        android:id="@+id/profile_user_device_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="User Device"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_device_brand"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <TextView
         android:id="@+id/profile_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Username"
-        android:textSize="40sp"
-        android:textColor="#FFFFFF"
         android:gravity="center"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/profile_contact_information"
-        android:layout_width="0dp"
-        android:layout_height="195dp"
+        android:layout_width="317dp"
+        android:layout_height="100dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="32dp"
+        android:gravity="center"
         android:text="Contact Information"
-        android:textSize="40sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_username" />
 
     <TextView
-        android:id="@+id/profile_user_device"
-        android:textColor="#FFFFFF"
+        android:id="@+id/profile_user_device_brand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:gravity="center"
         android:text="User Device"
+        android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_contact_information" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_contact_information"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -53,6 +73,7 @@
         android:background="@drawable/rect_border_purple"
         android:gravity="center"
         android:text="My Profile"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

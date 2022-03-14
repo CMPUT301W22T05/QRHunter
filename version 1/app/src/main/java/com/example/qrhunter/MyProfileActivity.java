@@ -1,5 +1,9 @@
 package com.example.qrhunter;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -9,8 +13,10 @@ public class MyProfileActivity extends AppCompatActivity {
 
     TextView UserName;
     TextView ContactInfo;
-    TextView UserDevice;
+    TextView UserDeviceBrand;
+    TextView UserDeviceModel;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +24,16 @@ public class MyProfileActivity extends AppCompatActivity {
 
         UserName = findViewById(R.id.profile_username);
         ContactInfo = findViewById(R.id.profile_contact_information);
-        UserDevice = findViewById(R.id.profile_user_device);
+        UserDeviceBrand = findViewById(R.id.profile_user_device_brand);
+        UserDeviceModel= findViewById(R.id.profile_user_device_model);
+
+        // set the text about TextViews
+        SharedPreferences MyProfileData = getSharedPreferences("data", 0);
+        String username = MyProfileData.getString("username", null);
+        UserName.setText("Username: " + username);
+        UserDeviceBrand.setText("Phone Brand: " +Build.BRAND);
+        UserDeviceModel.setText("Phone Model: " +Build.MODEL);
+
 
 
 
