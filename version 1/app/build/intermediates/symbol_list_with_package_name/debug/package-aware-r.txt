@@ -2948,6 +2948,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id personal_rank_TextView
 id personal_ranking_list
 id picture_imageView
 id pin
@@ -3018,6 +3019,7 @@ id showHome
 id showTitle
 id sign_up_cancel
 id sign_up_confirm
+id sign_up_name
 id sign_up_password
 id sign_up_username
 id signup_button

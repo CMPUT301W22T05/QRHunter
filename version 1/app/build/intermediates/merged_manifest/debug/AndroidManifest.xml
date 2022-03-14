@@ -64,7 +64,6 @@
         <activity android:name="com.example.qrhunter.RankingActivity" />
         <activity android:name="com.example.qrhunter.OwnerMenuActivity" />
         <activity android:name="com.example.qrhunter.MyProfileActivity" />
-        <activity android:name="com.example.qrhunter.SearchInOwnerMenu" />
         <activity android:name="com.example.qrhunter.PersonalRank" />
         <activity
             android:name="com.example.qrhunter.MainActivity"

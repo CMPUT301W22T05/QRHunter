@@ -24,6 +24,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button CancelButton;
     EditText UsernameSignUpEditText;
     EditText PasswordSignUpEditText;
+    EditText NameEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
         //Find corresponding view in the layout files.
         UsernameSignUpEditText = findViewById(R.id.sign_up_username);
         PasswordSignUpEditText = findViewById(R.id.sign_up_password);
+        NameEditText = findViewById(R.id.sign_up_name);
 
         ConfirmButton = findViewById(R.id.sign_up_confirm);
         CancelButton = findViewById(R.id.sign_up_cancel);
@@ -58,6 +60,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final String username = UsernameSignUpEditText.getText().toString();
                 final String password = PasswordSignUpEditText.getText().toString();
+                final String name = NameEditText.getText().toString();
 
 
                 // check if the username is empty or not.
@@ -88,6 +91,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             HashMap<String, String> data = new HashMap<>();
                                             data.put("Password", password);
                                             data.put("Total score","??");
+                                            data.put("Name", name);
                                             collectionReference
                                                     .document(username)
                                                     .set(data)

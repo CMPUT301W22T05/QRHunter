@@ -2947,6 +2947,7 @@ int id path 0x7f08015e
 int id pathRelative 0x7f08015f
 int id peekHeight 0x7f080160
 int id percent 0x7f080161
+int id personal_rank_TextView 0x7f08021f
 int id personal_ranking_list 0x7f080162
 int id picture_imageView 0x7f080163
 int id pin 0x7f080164
@@ -3017,6 +3018,7 @@ int id showHome 0x7f0801a4
 int id showTitle 0x7f0801a5
 int id sign_up_cancel 0x7f0801a6
 int id sign_up_confirm 0x7f0801a7
+int id sign_up_name 0x7f080220
 int id sign_up_password 0x7f0801a8
 int id sign_up_username 0x7f0801a9
 int id signup_button 0x7f0801aa
