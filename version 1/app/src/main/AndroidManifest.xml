@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qrhunter">
-
+    <uses-permission android:name="android.permission.CAMERA"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QRHunter">
         <activity
-            android:name=".scannerViewActivity"
+            android:name=".scannerView"
             android:exported="false" />
         <activity
             android:name=".SearchInfo"
@@ -41,6 +41,7 @@
         <activity android:name=".OwnerMenuActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".PersonalRank" />
+        <activity android:name=".ScanQRcodeActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

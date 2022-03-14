@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/jiamengchang/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/jiamengchang/.gradle/caches/transforms-3/72d83f6c35f590756c53928b83da7f0b/transformed/material-1.5.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\jayant\\.gradle\\caches\\transforms-3\\72d83f6c35f590756c53928b83da7f0b\\transformed\\material-1.5.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

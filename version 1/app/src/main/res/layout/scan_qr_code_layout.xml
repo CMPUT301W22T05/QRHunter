@@ -9,24 +9,23 @@
         android:id="@+id/camera_button"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginBottom="70dp"
         android:text="Camera"
-        app:layout_constraintBottom_toTopOf="@+id/location_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
 
     <Button
         android:id="@+id/location_button"
-        android:layout_width="130dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
         android:text="Location"
-        app:layout_constraintBottom_toTopOf="@+id/editText_comments"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
 
     <EditText
         android:id="@+id/editText_comments"
@@ -52,4 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
+
+    <TextView
+        android:id="@+id/scantext"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
 </androidx.constraintlayout.widget.ConstraintLayout>

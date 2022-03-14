@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton ScanButton;
     EditText UsernameLoginEditText;
     EditText PasswordLoginEditText;
+    public static String user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity {
         LogInButton = findViewById(R.id.login_button);
         ScanButton = findViewById(R.id.scan_button);
 
+        ScanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToScanPage = new Intent();
+                JumpToScanPage.setClass(MainActivity.this, scannerView.class);
+                startActivity(JumpToScanPage);
+            }
+        });
 
         SignUpButton.setOnClickListener(new View.OnClickListener() {
             //For user to sign up an account
@@ -61,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //get user input from EditText View
                 final String Username = UsernameLoginEditText.getText().toString();
+                user = UsernameLoginEditText.getText().toString();
                 final String Password = PasswordLoginEditText.getText().toString();
                 final List OwnerUsernameList;
 
