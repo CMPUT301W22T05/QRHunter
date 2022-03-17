@@ -174,10 +174,10 @@ activity#com.example.qrhunter.PlayerMenuActivity
 ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:9-56
 	android:name
 		ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:19-53
-activity#com.example.qrhunter.RankingActivity
-ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:9-53
+activity#com.example.qrhunter.PlayerRankingActivity
+ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:9-59
 	android:name
-		ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:19-50
+		ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:19-56
 activity#com.example.qrhunter.OwnerMenuActivity
 ADDED from C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:41:9-55
 	android:name

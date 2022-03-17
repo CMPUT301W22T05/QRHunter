@@ -46,17 +46,17 @@ public class SignUpActivity extends AppCompatActivity {
             //Go back to the login page
             @Override
             public void onClick(View view) {
-                //reset the pre-enter user name and password to empty
-                return_To_Login();
+                Intent JumpToLogInPage = new Intent();
+                JumpToLogInPage.setClass(SignUpActivity.this, MainActivity.class);
+                startActivity(JumpToLogInPage);
             }
 
         });
 
 
 
-//        open the firebase and connect
+        // open the firebase and connect
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
 
         ConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,29 +66,27 @@ public class SignUpActivity extends AppCompatActivity {
                 final String name = NameEditText.getText().toString();
                 final String email = EmailSignUpEditText.getText().toString();
 
-
-                // check if the username is empty or not.
-                if (username.length() == 0){
-                    Toast.makeText(SignUpActivity.this,"Username cannot be empty",Toast.LENGTH_SHORT).show();
+                // check if the username/password/email address/full name are empty or not.
+                if (username.length() == 0 || password.length() == 0 || name.length() == 0 || email.length() == 0){
+                    Toast.makeText(SignUpActivity.this,"Please fill in all the personal information.",Toast.LENGTH_SHORT).show();
+                    UsernameSignUpEditText.setText("");
+                    PasswordSignUpEditText.setText("");
+                    EmailSignUpEditText.setText("");
+                    NameEditText.setText("");
                 }
                 else{
-                    if (password.length() == 0){
-                        Toast.makeText(SignUpActivity.this,"Password cannot be empty",Toast.LENGTH_SHORT).show();
-                    }
-
-                    else{
-                        // set username as the collection name
+                        // connect to collection
                         final CollectionReference collectionReference = db.collection("Player");
 
-                        // copy password to Userprofile document as a snapshot
+                        // get the document reference
                         DocumentReference noteRef = db.collection("Player").document(username);
 
                         noteRef.get()
                                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                     @Override
                                     public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                        if (documentSnapshot.exists()) {
-                                            Toast.makeText(SignUpActivity.this, "UserName has already exist!", Toast.LENGTH_SHORT).show();
+                                        if (documentSnapshot.exists()) {    // check if the input username exists or not
+                                            Toast.makeText(SignUpActivity.this, "UserName already exist!", Toast.LENGTH_SHORT).show();
                                         }
                                         else{
                                             // set the information to MyProfile Page
@@ -98,7 +96,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             //create password field
                                             HashMap<String, String> data = new HashMap<>();
                                             data.put("Password", password);
-                                            data.put("Total score","??");
+                                            data.put("Total score","0");
                                             data.put("Name", name);
                                             data.put("Email", email);
                                             collectionReference
@@ -139,26 +137,15 @@ public class SignUpActivity extends AppCompatActivity {
                                                     .set(UserDevice);
 */
 
-                                            //after successfully create an account, reset the user input, and return to login page
-                                            return_To_Login();
+                                            //after successfully create an account return to login page
+                                            Intent JumpToLogInPage = new Intent();
+                                            JumpToLogInPage.setClass(SignUpActivity.this, MainActivity.class);
+                                            startActivity(JumpToLogInPage);
                                         }
                                     }
                                 });
                     }
-
-                }
             }
         });
     }
-
-    public void return_To_Login() {
-        UsernameSignUpEditText.setText("");
-        PasswordSignUpEditText.setText("");
-        Intent JumpToLogInPage = new Intent();
-        JumpToLogInPage.setClass(SignUpActivity.this, MainActivity.class);
-        startActivity(JumpToLogInPage);
-
-    }
-
-
 }

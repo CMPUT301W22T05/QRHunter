@@ -102,9 +102,9 @@
 65        <activity android:name="com.example.qrhunter.PlayerMenuActivity" />
 65-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:9-56
 65-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:19-53
-66        <activity android:name="com.example.qrhunter.RankingActivity" />
-66-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:9-53
-66-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:19-50
+66        <activity android:name="com.example.qrhunter.PlayerRankingActivity" />
+66-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:9-59
+66-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:19-56
 67        <activity android:name="com.example.qrhunter.OwnerMenuActivity" />
 67-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:41:9-55
 67-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:41:19-52

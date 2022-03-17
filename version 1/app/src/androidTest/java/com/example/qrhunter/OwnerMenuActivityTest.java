@@ -1,6 +1,7 @@
 package com.example.qrhunter;
 
 import android.app.Activity;
+import android.widget.EditText;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
@@ -41,6 +42,9 @@ public class OwnerMenuActivityTest {
     @Test
     public void checkSearchButton(){
         solo.assertCurrentActivity("Wrong Activity", OwnerMenuActivity.class);
+        solo.enterText((EditText) solo.getView(R.id.search_user_name), "Player1");
+        solo.clickOnImageButton(0);
+        solo.assertCurrentActivity("Wrong Activity", PersonalRank.class);
 
     }
 
@@ -51,7 +55,7 @@ public class OwnerMenuActivityTest {
     public void checkRankingButton(){
         solo.assertCurrentActivity("Wrong Activity", OwnerMenuActivity.class);
         solo.clickOnButton("RANKING");
-        solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        solo.assertCurrentActivity("Wrong Activity", PlayerRankingActivity.class);
     }
 
 }

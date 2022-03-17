@@ -37,7 +37,7 @@
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity android:name=".PlayerMenuActivity" />
-        <activity android:name=".RankingActivity" />
+        <activity android:name=".PlayerRankingActivity" />
         <activity android:name=".OwnerMenuActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".PersonalRank" />
