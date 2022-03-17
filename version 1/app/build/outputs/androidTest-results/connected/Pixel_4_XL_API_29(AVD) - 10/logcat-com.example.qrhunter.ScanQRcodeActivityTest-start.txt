@@ -1,0 +1,46 @@
+03-17 23:02:44.660 10348 10379 I TestRunner: started: start(com.example.qrhunter.ScanQRcodeActivityTest)
+03-17 23:02:44.717 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:44.718 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:44.718 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:44.728 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:44.728 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:44.737  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.737  2014  3661 I chatty  : uid=1000(system) Binder:2014_12 identical 8 lines
+03-17 23:02:44.737  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.737 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+03-17 23:02:44.738  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.740  2014  3661 I chatty  : uid=1000(system) Binder:2014_12 identical 28 lines
+03-17 23:02:44.740  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.741 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@34926d7
+03-17 23:02:44.756  2014  2046 E system_server: Invalid ID 0x00000000.
+03-17 23:02:44.761 10348 10514 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+03-17 23:02:44.761 10348 10514 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:44.764 10348 10522 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:44.769 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@a4e3f5c in: PRE_ON_CREATE
+03-17 23:02:44.778 10348 10541 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:44.792  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:44.832 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@a4e3f5c in: CREATED
+03-17 23:02:44.843 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@a4e3f5c in: STARTED
+03-17 23:02:44.844 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@a4e3f5c in: RESUMED
+03-17 23:02:44.880  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.880  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:44.880  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:44.900  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:44.917  1769  4070 I chatty  : uid=1000(system) HwBinder:1769_3 identical 1 line
+03-17 23:02:44.921  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:44.934 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:44.951  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.ScanQRcodeActivity: +228ms
+03-17 23:02:45.120 10348 10541 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:45.120 10348 10541 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:45.122 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:45.193  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:45.196  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:45.197  2014  2548 I chatty  : uid=1000(system) Binder:2014_8 identical 8 lines
+03-17 23:02:45.197  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:45.198  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:45.219 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@a4e3f5c in: PAUSED
+03-17 23:02:45.222  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:45.222  2014  2364 I chatty  : uid=1000(system) Binder:2014_5 identical 8 lines
+03-17 23:02:45.222  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:45.239  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:45.250 10348 10379 I TestRunner: finished: start(com.example.qrhunter.ScanQRcodeActivityTest)

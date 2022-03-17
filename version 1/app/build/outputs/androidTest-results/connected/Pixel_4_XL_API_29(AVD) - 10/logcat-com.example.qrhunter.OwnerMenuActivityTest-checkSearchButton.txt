@@ -1,181 +1,104 @@
-03-17 22:24:05.891 11153 11184 I TestRunner: started: checkSearchButton(com.example.qrhunter.OwnerMenuActivityTest)
-03-17 22:24:05.895 11153 11184 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
-03-17 22:24:05.916  2024  2047 E system_server: Invalid ID 0x00000000.
-03-17 22:24:05.921  2024  4315 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:05.925  2024  4315 I chatty  : uid=1000(system) Binder:2024_1B identical 38 lines
-03-17 22:24:05.925  2024  4315 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:05.928 11153 11153 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@fcd82ff
-03-17 22:24:05.938  1806  1912 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
-03-17 22:24:05.938  1806  1912 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
-03-17 22:24:05.941  1779  1779 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:05.946 11153 11189 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
-03-17 22:24:05.947 11153 11189 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
-03-17 22:24:05.950 11153 11189 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
-03-17 22:24:05.952 11153 11189 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
-03-17 22:24:05.962 11153 11189 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
-03-17 22:24:05.940 11153 11153 W RenderThread: type=1400 audit(0.0:80): avc: denied { write } for name="property_service" dev="tmpfs" ino=8451 scontext=u:r:untrusted_app:s0:c146,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.example.qrhunter
-03-17 22:24:06.048  2024  2047 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:06.048  2024  2047 I chatty  : uid=1000(system) android.anim identical 8 lines
-03-17 22:24:06.048  2024  2047 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:06.081 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2f49ef6 in: PRE_ON_CREATE
-03-17 22:24:06.262 11153 11153 W xample.qrhunte: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
-03-17 22:24:06.262 11153 11153 W xample.qrhunte: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
-03-17 22:24:06.346  2196  2485 D EGL_emulation: eglMakeCurrent: 0xe5d42220: ver 2 0 (tinfo 0xc341b480)
-03-17 22:24:06.358  2700  3570 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f910)
-03-17 22:24:06.356  3728  4041 D EGL_emulation: eglMakeCurrent: 0xdd01b620: ver 2 0 (tinfo 0xdd00feb0)
-03-17 22:24:06.542 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2f49ef6 in: CREATED
-03-17 22:24:06.546 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2f49ef6 in: STARTED
-03-17 22:24:06.548 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2f49ef6 in: RESUMED
-03-17 22:24:06.648 11153 11187 D HostConnection: HostConnection::get() New Host Connection established 0xdd05d190, tid 11187
-03-17 22:24:06.652 11153 11187 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
-03-17 22:24:06.660 11153 11187 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-03-17 22:24:06.675 11153 11187 D EGL_emulation: eglCreateContext: 0xdd01a120: maj 2 min 0 rcv 2
-03-17 22:24:06.719 11153 11187 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f7f0)
-03-17 22:24:06.729  1779  1779 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:06.732  1649  1649 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
-03-17 22:24:06.732 11153 11187 W Gralloc3: mapper 3.x is not supported
-03-17 22:24:06.793 11153 11187 D HostConnection: createUnique: call
-03-17 22:24:06.793 11153 11187 D HostConnection: HostConnection::get() New Host Connection established 0xdd05d2d0, tid 11187
-03-17 22:24:06.794 11153 11187 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
-03-17 22:24:06.795 11153 11187 D eglCodecCommon: allocate: Ask for block of size 0x1000
-03-17 22:24:06.795 11153 11187 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff4000 size 0x2000
-03-17 22:24:06.797  1779  1779 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:06.799  1779  9220 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:06.820 11153 11187 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f7f0)
-03-17 22:24:06.926  2024  2051 I ActivityTaskManager: Displayed com.example.qrhunter/.OwnerMenuActivity: +1s25ms
-03-17 22:24:06.995  3728 10961 I PBSessionCacheImpl: Deleted sessionId[85195035060] from persistence.
-03-17 22:24:07.006  3728  3978 W SearchServiceCore: Abort, client detached.
-03-17 22:24:07.044 11153 11184 W xample.qrhunte: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
-03-17 22:24:07.044 11153 11184 W xample.qrhunte: Accessing hidden field Landroid/view/WindowManagerGlobal;->sDefaultWindowManager:Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
-03-17 22:24:07.826  2024  4311 D WificondControl: Scan result ready event
-03-17 22:24:07.863  1768  7719 W audio_hw_generic: Not supplying enough data to HAL, expected position 10271960 , only wrote 10271940
-03-17 22:24:07.985 11153 11192 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
-03-17 22:24:07.994  2190  3054 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
-03-17 22:24:08.006 11153 11192 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
-03-17 22:24:08.007 11153 11192 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
-03-17 22:24:08.033  2024  2141 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.033  2024  2141 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.034  2525  2525 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=44, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.048 11153 11192 I xample.qrhunte: The ClassLoaderContext is a special shared library.
-03-17 22:24:08.061 11153 11192 I chatty  : uid=10146(com.example.qrhunter) AsyncTask #2 identical 1 line
-03-17 22:24:08.076 11153 11192 I xample.qrhunte: The ClassLoaderContext is a special shared library.
-03-17 22:24:08.083 11153 11192 W ProviderInstaller: Failed to report request stats: com.google.android.gms.common.security.ProviderInstallerImpl.reportRequestStats [class android.content.Context, long, long]
-03-17 22:24:08.089 11153 11192 W xample.qrhunte: Accessing hidden field Ldalvik/system/BaseDexClassLoader;->pathList:Ldalvik/system/DexPathList; (greylist, reflection, allowed)
-03-17 22:24:08.089 11153 11192 W xample.qrhunte: Accessing hidden field Ldalvik/system/DexPathList;->nativeLibraryDirectories:Ljava/util/List; (greylist, reflection, allowed)
-03-17 22:24:08.090 11153 11192 W xample.qrhunte: Accessing hidden field Ldalvik/system/DexPathList;->systemNativeLibraryDirectories:Ljava/util/List; (greylist, reflection, allowed)
-03-17 22:24:08.090 11153 11192 W xample.qrhunte: Accessing hidden field Ldalvik/system/DexPathList;->nativeLibraryPathElements:[Ldalvik/system/DexPathList$NativeLibraryElement; (greylist, reflection, allowed)
-03-17 22:24:08.090 11153 11192 W xample.qrhunte: Accessing hidden method Ldalvik/system/DexPathList;->makePathElements(Ljava/util/List;)[Ldalvik/system/DexPathList$NativeLibraryElement; (greylist, reflection, allowed)
-03-17 22:24:08.097 11153 11192 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
-03-17 22:24:08.132 11153 11192 W xample.qrhunte: Accessing hidden method Ljava/security/spec/ECParameterSpec;->getCurveName()Ljava/lang/String; (greylist, reflection, allowed)
-03-17 22:24:08.151 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:08.152 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.152 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:08.152 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.157 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.160 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.161 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
-03-17 22:24:08.170 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
-03-17 22:24:08.174 11153 11196 W xample.qrhunte: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
-03-17 22:24:08.178 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.178 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
-03-17 22:24:08.178 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:08.178 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.178 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.180 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
-03-17 22:24:08.181 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
-03-17 22:24:08.182 11153 11196 W xample.qrhunte: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
-03-17 22:24:08.191 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:08.193 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
-03-17 22:24:08.193 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.194 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.204 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.205 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:08.205 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.216 11153 11192 D NetworkSecurityConfig: No Network Security Config specified, using platform default
-03-17 22:24:08.218 11153 11192 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
-03-17 22:24:08.239 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.239 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 I chatty  : uid=10146(com.example.qrhunter) FirestoreWorker identical 1 line
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.240 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:08.254 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.352  2024  2141 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.352  2024  2141 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.352  2525  2525 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10146] ] with score 60 and serial -1
-03-17 22:24:08.399 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.405 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:08.405 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:08.462  1872  1872 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
-03-17 22:24:08.648  1877  1877 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
-03-17 22:24:08.664 11153 11204 W xample.qrhunte: Accessing hidden field Ljava/net/Socket;->impl:Ljava/net/SocketImpl; (greylist, reflection, allowed)
-03-17 22:24:08.665 11153 11204 W xample.qrhunte: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.674 11153 11204 W xample.qrhunte: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.674 11153 11204 W xample.qrhunte: Accessing hidden field Ljava/io/FileDescriptor;->descriptor:I (greylist, JNI, allowed)
-03-17 22:24:08.855 11153 11204 W xample.qrhunte: Accessing hidden method Ljava/security/spec/ECParameterSpec;->setCurveName(Ljava/lang/String;)V (greylist, reflection, allowed)
-03-17 22:24:08.880 11153 11204 W xample.qrhunte: Accessing hidden method Ldalvik/system/BlockGuard;->getThreadPolicy()Ldalvik/system/BlockGuard$Policy; (greylist,core-platform-api, linking, allowed)
-03-17 22:24:08.880 11153 11204 W xample.qrhunte: Accessing hidden method Ldalvik/system/BlockGuard$Policy;->onNetwork()V (greylist, linking, allowed)
-03-17 22:24:09.013 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:09.019 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.024 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:09.302 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.306 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:09.306 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.308 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.308 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.308 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
-03-17 22:24:09.308 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.347 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.347 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.347 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.348 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.348 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.348 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.351 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
-03-17 22:24:09.354 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:09.366 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:09.366 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.366 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
-03-17 22:24:09.369 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:09.378 11153 11153 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
-03-17 22:24:09.378 11153 11153 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.378 11153 11153 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.384 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2f49ef6 in: PAUSED
-03-17 22:24:09.385  2024  4311 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:09.388  2024  4311 I chatty  : uid=1000(system) Binder:2024_1A identical 48 lines
-03-17 22:24:09.388  2024  4311 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:09.391 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
-03-17 22:24:09.391 11153 11153 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@8b12233
-03-17 22:24:09.391 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
-03-17 22:24:09.391 11153 11196 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
-03-17 22:24:09.401 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@491151c in: PRE_ON_CREATE
-03-17 22:24:09.435 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@491151c in: CREATED
-03-17 22:24:09.438 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@491151c in: STARTED
-03-17 22:24:09.439 11153 11153 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@491151c in: RESUMED
-03-17 22:24:09.467  1779  9220 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:09.478  1779  9220 I chatty  : uid=1000(system) HwBinder:1779_3 identical 1 line
-03-17 22:24:09.482  1779  9220 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-17 22:24:09.482 11153 11187 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f7f0)
-03-17 22:24:09.500 11153 11187 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f7f0)
-03-17 22:24:09.505  2024  2047 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:09.507  2024  2047 I chatty  : uid=1000(system) android.anim identical 18 lines
-03-17 22:24:09.507  2024  2047 W InputReader: Device has associated, but no associated display id.
-03-17 22:24:09.513 11153 11153 W xample.qrhunte: Accessing hidden field Landroid/app/Activity;->mResultCode:I (greylist, reflection, allowed)
-03-17 22:24:09.514 11153 11153 W xample.qrhunte: Accessing hidden field Landroid/app/Activity;->mResultData:Landroid/content/Intent; (greylist, reflection, allowed)
-03-17 22:24:09.527 11153 11187 D EGL_emulation: eglMakeCurrent: 0xdd01a120: ver 2 0 (tinfo 0xdd00f7f0)
-03-17 22:24:09.539 11153 11184 I TestRunner: finished: checkSearchButton(com.example.qrhunter.OwnerMenuActivityTest)
+03-17 23:02:30.853 10348 10379 I TestRunner: started: checkSearchButton(com.example.qrhunter.OwnerMenuActivityTest)
+03-17 23:02:30.855  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.859 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:30.876  1757  5978 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 661 frames
+03-17 23:02:30.877  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.884  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:30.884  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.888  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.906  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:30.909  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.917  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:30.941  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:30.959  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:30.972  2014  2364 I chatty  : uid=1000(system) Binder:2014_5 identical 28 lines
+03-17 23:02:30.972  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:30.975  2814  2836 W System  : A resource failed to call release.
+03-17 23:02:30.975  2814  2836 I chatty  : uid=10108(com.google.android.apps.nexuslauncher) FinalizerDaemon identical 4 lines
+03-17 23:02:30.975  2814  2836 W System  : A resource failed to call release.
+03-17 23:02:30.976  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:30.977  2014  2364 I chatty  : uid=1000(system) Binder:2014_5 identical 8 lines
+03-17 23:02:30.977  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:30.983 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@3cd00a6
+03-17 23:02:30.986  3956  4122 W SessionLifecycleManager: Handover failed. Creating new session controller.
+03-17 23:02:30.996  1757  5978 W audio_hw_generic: Hardware backing HAL too slow, could only write 0 of 661 frames
+03-17 23:02:30.996 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2388132 in: PRE_ON_CREATE
+03-17 23:02:31.021  2714  2731 I ndroid.systemu: NativeAlloc concurrent copying GC freed 22294(609KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5695KB/11MB, paused 363us total 131.265ms
+03-17 23:02:31.066  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:31.067  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:31.067  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:31.073 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2388132 in: CREATED
+03-17 23:02:31.075  1783  1783 E Layer   : [Surface(name=AppWindowToken{691e872 token=Token{acb017d ActivityRecord{241fbd4 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t5}}})/@0xe57392e - animation-leash#0] No local sync point found
+03-17 23:02:31.075  1783  1783 E Layer   : [Surface(name=AppWindowToken{691e872 token=Token{acb017d ActivityRecord{241fbd4 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t5}}})/@0xe57392e - animation-leash#0] No local sync point found
+03-17 23:02:31.077 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2388132 in: STARTED
+03-17 23:02:31.079 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2388132 in: RESUMED
+03-17 23:02:31.082  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:31.091  1783  1783 E Layer   : [Surface(name=AppWindowToken{691e872 token=Token{acb017d ActivityRecord{241fbd4 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t5}}})/@0xe57392e - animation-leash#0] No local sync point found
+03-17 23:02:31.124  1783  1783 E Layer   : [Surface(name=AppWindowToken{691e872 token=Token{acb017d ActivityRecord{241fbd4 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t5}}})/@0xe57392e - animation-leash#0] No local sync point found
+03-17 23:02:31.230  3956  4122 E MicroDetectionWorker: Stale runnable..ignoring
+03-17 23:02:31.237  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:31.265  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:31.274  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:31.295  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:31.296  2014  2548 I chatty  : uid=1000(system) Binder:2014_8 identical 8 lines
+03-17 23:02:31.296  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:31.307 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:31.329  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.OwnerMenuActivity: +450ms
+03-17 23:02:31.365  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:31.381  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:31.439  3956  9392 I PBSessionCacheImpl: Deleted sessionId[85195055660] from persistence.
+03-17 23:02:31.443  3956  4122 W SearchServiceCore: Abort, client detached.
+03-17 23:02:31.520  2014  8894 D HostConnection: HostConnection::get() New Host Connection established 0x6cdc1600, tid 8894
+03-17 23:02:31.520  2014  8894 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+03-17 23:02:31.521  2014  8894 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-17 23:02:31.534  2014  8894 D EGL_emulation: eglCreateContext: 0x6ce4c4c0: maj 2 min 0 rcv 2
+03-17 23:02:31.579  2014  8894 D EGL_emulation: eglMakeCurrent: 0x6ce4c4c0: ver 2 0 (tinfo 0x6bf2c9d0)
+03-17 23:02:32.201 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:32.201 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:32.201 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:32.202 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.202 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.202 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.212 10348 10392 I chatty  : uid=10146(com.example.qrhunter) FirestoreWorker identical 4 lines
+03-17 23:02:32.212 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.212 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:32.212 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.213 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.216 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.217 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:32.248  1757  1949 W audio_hw_generic: Not supplying enough data to HAL, expected position 9055567 , only wrote 8792622
+03-17 23:02:32.253  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8792704 , only wrote 8792622
+03-17 23:02:32.469 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.470 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.510 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.510 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.510 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.511 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.511 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.511 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.528 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.529 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:32.530 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+03-17 23:02:32.532 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:32.537 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.OwnerMenuActivity@2388132 in: PAUSED
+03-17 23:02:32.539  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:32.552  2014  2548 I chatty  : uid=1000(system) Binder:2014_8 identical 48 lines
+03-17 23:02:32.552  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:32.558 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:32.558 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:32.558 10348 10392 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:32.560 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@e4ad96d
+03-17 23:02:32.571 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@f340dee in: PRE_ON_CREATE
+03-17 23:02:32.607 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@f340dee in: CREATED
+03-17 23:02:32.610 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@f340dee in: STARTED
+03-17 23:02:32.611 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PersonalRank@f340dee in: RESUMED
+03-17 23:02:32.634  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:32.639  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:32.641  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:32.648 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:32.667 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:32.671  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:32.673  2014  2046 I chatty  : uid=1000(system) android.anim identical 18 lines
+03-17 23:02:32.673  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:32.694 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:32.715 10348 10379 I TestRunner: finished: checkSearchButton(com.example.qrhunter.OwnerMenuActivityTest)

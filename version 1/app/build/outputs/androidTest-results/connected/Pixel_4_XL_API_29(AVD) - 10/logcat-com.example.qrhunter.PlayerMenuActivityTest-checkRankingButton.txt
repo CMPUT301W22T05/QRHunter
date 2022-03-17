@@ -1,0 +1,48 @@
+03-17 23:02:33.403 10348 10379 I TestRunner: started: checkRankingButton(com.example.qrhunter.PlayerMenuActivityTest)
+03-17 23:02:33.405 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:33.418  2014  2046 E system_server: Invalid ID 0x00000000.
+03-17 23:02:33.421  2014  3669 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.424  2014  3669 I chatty  : uid=1000(system) Binder:2014_14 identical 28 lines
+03-17 23:02:33.424  2014  3669 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.424 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@4b8fe03
+03-17 23:02:33.426  2014  3669 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.426  2014  3669 I chatty  : uid=1000(system) Binder:2014_14 identical 8 lines
+03-17 23:02:33.426  2014  3669 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.452 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@ac3775f in: PRE_ON_CREATE
+03-17 23:02:33.458  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:33.519  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.519  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:33.519  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:33.531 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@ac3775f in: CREATED
+03-17 23:02:33.535 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@ac3775f in: STARTED
+03-17 23:02:33.536 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@ac3775f in: RESUMED
+03-17 23:02:33.565  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:33.575  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:33.577  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:33.595 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:33.639  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.PlayerMenuActivity: +204ms
+03-17 23:02:33.829  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:33.830  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:33.856  3956  9392 I PBSessionCacheImpl: Deleted sessionId[85195055661] from persistence.
+03-17 23:02:33.862  3956  4122 W SearchServiceCore: Abort, client detached.
+03-17 23:02:35.088 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@ac3775f in: PAUSED
+03-17 23:02:35.091  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:35.099  2014  2548 I chatty  : uid=1000(system) Binder:2014_8 identical 48 lines
+03-17 23:02:35.100  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:35.106 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@b11bc32
+03-17 23:02:35.111 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerRankingActivity@41b697e in: PRE_ON_CREATE
+03-17 23:02:35.136 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerRankingActivity@41b697e in: CREATED
+03-17 23:02:35.139 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerRankingActivity@41b697e in: STARTED
+03-17 23:02:35.141 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerRankingActivity@41b697e in: RESUMED
+03-17 23:02:35.189  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:35.210  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:35.213  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:35.262 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:35.278 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:35.309  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:35.313  2014  2046 I chatty  : uid=1000(system) android.anim identical 18 lines
+03-17 23:02:35.313  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:35.347 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:35.358 10348 10382 I chatty  : uid=10146(com.example.qrhunter) RenderThread identical 1 line
+03-17 23:02:35.378 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:35.380 10348 10379 I TestRunner: finished: checkRankingButton(com.example.qrhunter.PlayerMenuActivityTest)

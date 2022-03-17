@@ -10,7 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-
+// This class is used in the functionality of ranking part, but the ranking functionality
+// is incomplete, and this class does not work yet.
 public class PlayerRankingAdapter extends RecyclerView.Adapter<PlayerRankingAdapter.PlayerViewHolder> {
 
     private Context context;

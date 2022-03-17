@@ -37,38 +37,15 @@ public class SearchTest {
     }
 
     /**
-     * Test the scan button
-     */
-    @Test
-    public void checkScanButton(){
-        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
-
-        solo.clickOnButton("ic_menu_camera");
-        //solo.assertCurrentActivity("Wrong Activity", Profile.class);
-    }
-
-    /**
-     * Test the username
-     */
-    @Test
-    public void checkUsername(){
-        solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.username_input), "player1");
-        solo.clickOnButton("Username");
-        solo.assertCurrentActivity("Test failed",Search.class);
-
-    }
-
-    /**
      * Test the search button
      */
     @Test
-    public void checkSearchButton(){
+    public void checkScanButton(){
         solo.assertCurrentActivity("Wrong Activity", Search.class);
-        solo.clickOnButton("Search");
-        //solo.assertCurrentActivity("Wrong Activity", Profile.class);
+        solo.enterText((EditText) solo.getView(R.id.Username),"Player1");
+        solo.clickOnImageButton(0);
+        solo.assertCurrentActivity("Wrong Activity", SearchInfo.class);
     }
-
 
 
 }
