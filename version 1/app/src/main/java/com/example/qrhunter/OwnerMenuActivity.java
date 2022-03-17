@@ -63,9 +63,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     if (documentSnapshot.exists()) {  // can find player name in database
-                                        Intent JumpToPersonalRank = new Intent();
-                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
-                                        startActivity(JumpToPersonalRank);
+//                                        Intent JumpToPersonalRank = new Intent();
+////                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
+//                                        startActivity(JumpToPersonalRank);
                                         // put user's name to next page
                                         String name = documentSnapshot.getString("Name");
                                         Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
