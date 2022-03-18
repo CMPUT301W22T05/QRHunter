@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 final List OwnerUsernameList;
 
                 // owner accounts are stored into the database
+                // we have four owners (our team members)
                 OwnerUsernameList = new ArrayList();
                 OwnerUsernameList.add("wyou1");
                 OwnerUsernameList.add("ning2");

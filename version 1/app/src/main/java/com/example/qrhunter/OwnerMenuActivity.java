@@ -27,7 +27,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.owner_menu_layout);
 
-        // initialize all the buttons and textview
+        // initialize all the buttons and textview in owner_menu_layout
         SearchButton = findViewById(R.id.search_user_name_Button);
         RankingButton = findViewById(R.id.get_ranking_button);
         SearchUserName = findViewById(R.id.search_user_name);
