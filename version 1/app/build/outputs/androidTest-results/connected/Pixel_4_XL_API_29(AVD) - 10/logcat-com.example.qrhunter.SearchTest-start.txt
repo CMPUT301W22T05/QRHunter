@@ -1,0 +1,77 @@
+03-17 23:02:48.161 10348 10379 I TestRunner: started: start(com.example.qrhunter.SearchTest)
+03-17 23:02:48.165 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@62d014f in: DESTROYED
+03-17 23:02:48.190 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:48.268  2014  2419 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.277  2014  2419 I chatty  : uid=1000(system) Binder:2014_6 identical 28 lines
+03-17 23:02:48.278  2014  2419 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.281 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f7e8826
+03-17 23:02:48.281  2014  2419 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.282  2014  2419 I chatty  : uid=1000(system) Binder:2014_6 identical 8 lines
+03-17 23:02:48.282  2014  2419 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.304 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: PRE_ON_CREATE
+03-17 23:02:48.330  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.365 10348 10348 D MapsInitializer: preferredRenderer: null
+03-17 23:02:48.365 10348 10348 D zzca    : preferredRenderer: null
+03-17 23:02:48.369 10348 10348 I Google Maps Android API: Google Play services package version: 202414022
+03-17 23:02:48.404  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.404  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:48.404  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.457 10348 10566 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:48.457 10348 10566 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:48.467 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:48.467 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:48.469 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:48.469 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:48.481 10348 10569 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:48.502 10348 10570 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:48.506 10348 10570 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+03-17 23:02:48.509 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: CREATED
+03-17 23:02:48.514 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: STARTED
+03-17 23:02:48.515 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: RESUMED
+03-17 23:02:48.555  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.567  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.571 10348 10567 D HostConnection: HostConnection::get() New Host Connection established 0x8ed51db0, tid 10567
+03-17 23:02:48.572 10348 10567 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+03-17 23:02:48.585  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.591 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:48.605 10348 10567 D EGL_emulation: eglCreateContext: 0x6aea8840: maj 1 min 0 rcv 1
+03-17 23:02:48.606  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8404992
+03-17 23:02:48.639  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.Search: +399ms
+03-17 23:02:48.677 10348 10567 D EGL_emulation: eglMakeCurrent: 0x6aea8840: ver 1 0 (tinfo 0x6dd45fd0)
+03-17 23:02:48.709  2014  4370 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.710  2014  4370 I chatty  : uid=1000(system) Binder:2014_19 identical 8 lines
+03-17 23:02:48.710  2014  4370 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.714  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:48.718 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: PAUSED
+03-17 23:02:48.719  2014  4370 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.726  2014  4370 I chatty  : uid=1000(system) Binder:2014_19 identical 28 lines
+03-17 23:02:48.726  2014  4370 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:48.728  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 11210752
+03-17 23:02:48.745  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:48.754 10348 10348 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+03-17 23:02:48.756 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:48.771  3956  9391 I PBSessionCacheImpl: Deleted sessionId[85195055666] from persistence.
+03-17 23:02:48.781  3956  4122 W SearchServiceCore: Abort, client detached.
+03-17 23:02:48.785  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.832  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.834  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:48.834  2814  2836 W System  : A resource failed to call release.
+03-17 23:02:48.835  2814  2836 I chatty  : uid=10108(com.google.android.apps.nexuslauncher) FinalizerDaemon identical 1 line
+03-17 23:02:48.835  2814  2836 W System  : A resource failed to call release.
+03-17 23:02:48.844  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.852  2814  2836 W System  : A resource failed to call release.
+03-17 23:02:48.874  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.887  3956  4122 W SessionLifecycleManager: Handover failed. Creating new session controller.
+03-17 23:02:48.905  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.906  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:48.913  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:48.932  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8404992
+03-17 23:02:48.937 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: STOPPED
+03-17 23:02:48.939 10348 10514 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+03-17 23:02:48.939 10348 10514 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+03-17 23:02:48.940 10348 10514 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+03-17 23:02:48.951 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@83b00b2 in: DESTROYED
+03-17 23:02:48.968 10348 10570 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+03-17 23:02:48.972 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+03-17 23:02:48.972 10348 10348 W xample.qrhunte: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+03-17 23:02:48.969 10348 10379 I TestRunner: finished: start(com.example.qrhunter.SearchTest)

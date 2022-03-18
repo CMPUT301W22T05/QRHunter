@@ -19,9 +19,12 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        // initialize all the settings
         SearchPlayerButton = findViewById(R.id.search);
         camera = findViewById(R.id.scan_btn);
         UsernameSearchEdit = findViewById(R.id.Username);
+
+        // set the functionality of switching activity of searchPlayer button
         SearchPlayerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

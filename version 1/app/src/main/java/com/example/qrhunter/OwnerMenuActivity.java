@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +27,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.owner_menu_layout);
 
+        // initialize all the buttons and textview
         SearchButton = findViewById(R.id.search_user_name_Button);
         RankingButton = findViewById(R.id.get_ranking_button);
         SearchUserName = findViewById(R.id.search_user_name);
@@ -36,17 +36,18 @@ public class OwnerMenuActivity extends AppCompatActivity {
         // update information in personal_qr_rank_layout.xml
         PersonalName = findViewById(R.id.personal_rank_TextView);
 
-
+        // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent JumpToRankingPage = new Intent();
-                JumpToRankingPage.setClass(OwnerMenuActivity.this, RankingActivity.class);
+                JumpToRankingPage.setClass(OwnerMenuActivity.this, PlayerRankingActivity.class);
                 startActivity(JumpToRankingPage);
             }
         });
 
+        // set the functionality of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -62,9 +63,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     if (documentSnapshot.exists()) {  // can find player name in database
-                                        Intent JumpToPersonalRank = new Intent();
-                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
-                                        startActivity(JumpToPersonalRank);
+//                                        Intent JumpToPersonalRank = new Intent();
+////                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
+//                                        startActivity(JumpToPersonalRank);
                                         // put user's name to next page
                                         String name = documentSnapshot.getString("Name");
                                         Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);

@@ -1,14 +1,32 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.qrhunter.MainActivityTest" tests="6" failures="0" errors="0" skipped="0" time="20.394" timestamp="2022-03-12T17:07:47" hostname="localhost">
+<testsuite name="com.example.qrhunter.ExampleInstrumentedTest" tests="24" failures="0" errors="0" skipped="0" time="54.249" timestamp="2022-03-17T23:03:04" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_4_XL_API_29(AVD) - 10" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="checkPlayerLogin" classname="com.example.qrhunter.MainActivityTest" time="4.108" />
-  <testcase name="checkSignupButton" classname="com.example.qrhunter.MainActivityTest" time="2.266" />
-  <testcase name="start" classname="com.example.qrhunter.MainActivityTest" time="0.631" />
-  <testcase name="checkPasswordLogin" classname="com.example.qrhunter.MainActivityTest" time="4.213" />
-  <testcase name="checkUsernameLogin" classname="com.example.qrhunter.MainActivityTest" time="2.427" />
-  <testcase name="checkOwnerLogin" classname="com.example.qrhunter.MainActivityTest" time="2.385" />
+  <testcase name="useAppContext" classname="com.example.qrhunter.ExampleInstrumentedTest" time="0.012" />
+  <testcase name="checkPlayerLogin" classname="com.example.qrhunter.MainActivityTest" time="4.21" />
+  <testcase name="checkSignupButton" classname="com.example.qrhunter.MainActivityTest" time="2.087" />
+  <testcase name="start" classname="com.example.qrhunter.MainActivityTest" time="0.532" />
+  <testcase name="checkPasswordLogin" classname="com.example.qrhunter.MainActivityTest" time="2.223" />
+  <testcase name="checkUsernameLogin" classname="com.example.qrhunter.MainActivityTest" time="2.599" />
+  <testcase name="checkOwnerLogin" classname="com.example.qrhunter.MainActivityTest" time="2.935" />
+  <testcase name="checkRankingButton" classname="com.example.qrhunter.OwnerMenuActivityTest" time="2.337" />
+  <testcase name="start" classname="com.example.qrhunter.OwnerMenuActivityTest" time="0.473" />
+  <testcase name="checkSearchButton" classname="com.example.qrhunter.OwnerMenuActivityTest" time="1.864" />
+  <testcase name="checkRankingButton" classname="com.example.qrhunter.PlayerMenuActivityTest" time="1.975" />
+  <testcase name="checkMyProfileButton" classname="com.example.qrhunter.PlayerMenuActivityTest" time="1.501" />
+  <testcase name="checkScanButton" classname="com.example.qrhunter.PlayerMenuActivityTest" time="2.101" />
+  <testcase name="start" classname="com.example.qrhunter.PlayerMenuActivityTest" time="0.48" />
+  <testcase name="checkSearchButton" classname="com.example.qrhunter.PlayerMenuActivityTest" time="2.466" />
+  <testcase name="start" classname="com.example.qrhunter.ScanQRcodeActivityTest" time="0.589" />
+  <testcase name="checkScanButton" classname="com.example.qrhunter.SearchTest" time="1.654" />
+  <testcase name="start" classname="com.example.qrhunter.SearchTest" time="0.814" />
+  <testcase name="checkUsername" classname="com.example.qrhunter.SignUpActivityTest" time="1.897" />
+  <testcase name="checkCancelButton" classname="com.example.qrhunter.SignUpActivityTest" time="1.911" />
+  <testcase name="checkPassword" classname="com.example.qrhunter.SignUpActivityTest" time="1.8" />
+  <testcase name="start" classname="com.example.qrhunter.SignUpActivityTest" time="0.492" />
+  <testcase name="checkConfirmButton" classname="com.example.qrhunter.SignUpActivityTest" time="2.433" />
+  <testcase name="checkExistence" classname="com.example.qrhunter.SignUpActivityTest" time="2.365" />
 </testsuite>

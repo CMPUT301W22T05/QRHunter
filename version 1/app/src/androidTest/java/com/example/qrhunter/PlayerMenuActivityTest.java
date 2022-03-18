@@ -42,18 +42,9 @@ public class PlayerMenuActivityTest {
     public void checkScanButton(){
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnButton("Scan QR Code");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
     }
 
-    /**
-     * Test the view my QR code button
-     */
-    @Test
-    public void checkViewQRCodeButton(){
-        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
-        solo.clickOnButton("View My QR Codes");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
-    }
 
     /**
      * Test the search button
@@ -62,7 +53,7 @@ public class PlayerMenuActivityTest {
     public void checkSearchButton(){
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnButton("Search");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        solo.assertCurrentActivity("Wrong Activity", Search.class);
     }
 
     /**
@@ -72,7 +63,17 @@ public class PlayerMenuActivityTest {
     public void checkRankingButton(){
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnButton("RANKING");
-        //solo.assertCurrentActivity("Wrong Activity", RankingActivity.class);
+        solo.assertCurrentActivity("Wrong Activity", PlayerRankingActivity.class);
+    }
+
+    /**
+     * Test the MyProfile button
+     */
+    @Test
+    public void checkMyProfileButton(){
+        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.clickOnImageButton(0);
+        solo.assertCurrentActivity("Wrong Activity", MyProfileActivity.class);
     }
 
 }

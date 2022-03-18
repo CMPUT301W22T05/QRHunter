@@ -1,41 +1,35 @@
-03-12 17:07:34.924  9180  9212 I TestRunner: started: start(com.example.qrhunter.MainActivityTest)
-03-12 17:07:34.939  9180  9212 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
-03-12 17:07:34.954  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:34.957  2013  2871 I chatty  : uid=1000(system) Binder:2013_9 identical 28 lines
-03-12 17:07:34.957  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:34.957  9180  9180 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@2654d15
-03-12 17:07:34.959  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:34.960  2013  2871 I chatty  : uid=1000(system) Binder:2013_9 identical 8 lines
-03-12 17:07:34.960  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:34.986  1765  1765 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:34.992  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: PRE_ON_CREATE
-03-12 17:07:35.117  9180  9180 W xample.qrhunte: JNI critical lock held for 22.193ms on Thread[1,tid=9180,Runnable,Thread*=0xed437800,peer=0x71b841f0,"main"]
-03-12 17:07:35.141  1754  5699 W audio_hw_generic: Not supplying enough data to HAL, expected position 2769172 , only wrote 2768929
-03-12 17:07:35.145  2013  2048 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.145  2013  2048 I chatty  : uid=1000(system) android.anim identical 8 lines
-03-12 17:07:35.145  2013  2048 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.195  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: CREATED
-03-12 17:07:35.216  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: STARTED
-03-12 17:07:35.218  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: RESUMED
-03-12 17:07:35.281  1765  1765 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:35.300  1765  1765 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
-03-12 17:07:35.304  1765  1765 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:35.319  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:35.339  2013  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.MainActivity: +392ms
-03-12 17:07:35.467  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.469  2013  2110 I chatty  : uid=1000(system) Binder:2013_4 identical 8 lines
-03-12 17:07:35.469  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.470  2802  3494 D EGL_emulation: eglMakeCurrent: 0xed47f8e0: ver 2 0 (tinfo 0xe29af3d0)
-03-12 17:07:35.476  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: PAUSED
-03-12 17:07:35.483  2013  2598 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.483  2013  2598 I chatty  : uid=1000(system) Binder:2013_8 identical 8 lines
-03-12 17:07:35.483  2013  2598 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.483  3727  3877 D EGL_emulation: eglMakeCurrent: 0xe295ce20: ver 2 0 (tinfo 0xbda0e3d0)
-03-12 17:07:35.485  2013  2598 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.491  2013  2598 I chatty  : uid=1000(system) Binder:2013_8 identical 18 lines
-03-12 17:07:35.491  2013  2598 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:35.494  1765  1765 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 11210752
-03-12 17:07:35.525  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:35.527  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: STOPPED
-03-12 17:07:35.530  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@4daa591 in: DESTROYED
-03-12 17:07:35.543  9180  9212 I TestRunner: finished: start(com.example.qrhunter.MainActivityTest)
+03-17 23:02:17.367 10348 10379 I TestRunner: started: start(com.example.qrhunter.MainActivityTest)
+03-17 23:02:17.370 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:17.396  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.410  2014  3661 I chatty  : uid=1000(system) Binder:2014_12 identical 38 lines
+03-17 23:02:17.410  2014  3661 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.412 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@31e84ce
+03-17 23:02:17.431  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:17.492 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: PRE_ON_CREATE
+03-17 23:02:17.511  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.512  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:17.512  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.570 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: CREATED
+03-17 23:02:17.576 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: STARTED
+03-17 23:02:17.577 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: RESUMED
+03-17 23:02:17.626  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:17.638  1769  3456 I chatty  : uid=1000(system) HwBinder:1769_2 identical 1 line
+03-17 23:02:17.640  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:17.656 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:17.689  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.MainActivity: +311ms
+03-17 23:02:17.804  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.805  2014  2364 I chatty  : uid=1000(system) Binder:2014_5 identical 8 lines
+03-17 23:02:17.805  2014  2364 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.812  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:17.813 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: PAUSED
+03-17 23:02:17.814  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.820  2014  2548 I chatty  : uid=1000(system) Binder:2014_8 identical 28 lines
+03-17 23:02:17.820  2014  2548 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:17.823  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 11210752
+03-17 23:02:17.844  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:17.863 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:17.865 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: STOPPED
+03-17 23:02:17.868 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@221fda in: DESTROYED
+03-17 23:02:17.879  3956  9392 I PBSessionCacheImpl: Deleted sessionId[85195055654] from persistence.
+03-17 23:02:17.894  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:17.902 10348 10379 I TestRunner: finished: start(com.example.qrhunter.MainActivityTest)

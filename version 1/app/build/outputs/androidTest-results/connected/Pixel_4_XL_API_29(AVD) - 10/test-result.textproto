@@ -1,20 +1,72 @@
-# 2022-03-12T17:07:47.927Z:
+# 2022-03-17T23:03:04.412Z:
 test_suite_meta_data {
-  scheduled_test_case_count: 6
+  scheduled_test_case_count: 24
 }
 test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.example.qrhunter"
+    test_method: "useAppContext"
+    start_time {
+      seconds: 1647558129
+      nanos: 954000000
+    }
+    end_time {
+      seconds: 1647558130
+      nanos: 30000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.ExampleInstrumentedTest-useAppContext.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
 test_result {
   test_case {
     test_class: "MainActivityTest"
     test_package: "com.example.qrhunter"
     test_method: "checkPlayerLogin"
     start_time {
-      seconds: 1647104847
-      nanos: 366000000
+      seconds: 1647558130
+      nanos: 57000000
     }
     end_time {
-      seconds: 1647104851
-      nanos: 507000000
+      seconds: 1647558134
+      nanos: 271000000
     }
   }
   test_status: PASSED
@@ -61,12 +113,12 @@ test_result {
     test_package: "com.example.qrhunter"
     test_method: "checkSignupButton"
     start_time {
-      seconds: 1647104852
-      nanos: 192000000
+      seconds: 1647558134
+      nanos: 894000000
     }
     end_time {
-      seconds: 1647104854
-      nanos: 467000000
+      seconds: 1647558136
+      nanos: 990000000
     }
   }
   test_status: PASSED
@@ -113,12 +165,12 @@ test_result {
     test_package: "com.example.qrhunter"
     test_method: "start"
     start_time {
-      seconds: 1647104855
-      nanos: 139000000
+      seconds: 1647558137
+      nanos: 726000000
     }
     end_time {
-      seconds: 1647104855
-      nanos: 781000000
+      seconds: 1647558138
+      nanos: 261000000
     }
   }
   test_status: PASSED
@@ -165,12 +217,12 @@ test_result {
     test_package: "com.example.qrhunter"
     test_method: "checkPasswordLogin"
     start_time {
-      seconds: 1647104855
-      nanos: 793000000
+      seconds: 1647558138
+      nanos: 291000000
     }
     end_time {
-      seconds: 1647104860
-      nanos: 2000000
+      seconds: 1647558140
+      nanos: 513000000
     }
   }
   test_status: PASSED
@@ -217,12 +269,12 @@ test_result {
     test_package: "com.example.qrhunter"
     test_method: "checkUsernameLogin"
     start_time {
-      seconds: 1647104860
-      nanos: 843000000
+      seconds: 1647558140
+      nanos: 776000000
     }
     end_time {
-      seconds: 1647104863
-      nanos: 277000000
+      seconds: 1647558143
+      nanos: 356000000
     }
   }
   test_status: PASSED
@@ -269,12 +321,12 @@ test_result {
     test_package: "com.example.qrhunter"
     test_method: "checkOwnerLogin"
     start_time {
-      seconds: 1647104864
-      nanos: 235000000
+      seconds: 1647558144
+      nanos: 149000000
     }
     end_time {
-      seconds: 1647104866
-      nanos: 709000000
+      seconds: 1647558147
+      nanos: 106000000
     }
   }
   test_status: PASSED
@@ -285,6 +337,890 @@ test_result {
     }
     source_path {
       path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.MainActivityTest-checkOwnerLogin.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OwnerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkRankingButton"
+    start_time {
+      seconds: 1647558147
+      nanos: 736000000
+    }
+    end_time {
+      seconds: 1647558150
+      nanos: 75000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.OwnerMenuActivityTest-checkRankingButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OwnerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "start"
+    start_time {
+      seconds: 1647558150
+      nanos: 734000000
+    }
+    end_time {
+      seconds: 1647558151
+      nanos: 214000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.OwnerMenuActivityTest-start.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "OwnerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkSearchButton"
+    start_time {
+      seconds: 1647558151
+      nanos: 219000000
+    }
+    end_time {
+      seconds: 1647558153
+      nanos: 88000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.OwnerMenuActivityTest-checkSearchButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkRankingButton"
+    start_time {
+      seconds: 1647558153
+      nanos: 769000000
+    }
+    end_time {
+      seconds: 1647558155
+      nanos: 749000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.PlayerMenuActivityTest-checkRankingButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkMyProfileButton"
+    start_time {
+      seconds: 1647558156
+      nanos: 425000000
+    }
+    end_time {
+      seconds: 1647558157
+      nanos: 924000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.PlayerMenuActivityTest-checkMyProfileButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkScanButton"
+    start_time {
+      seconds: 1647558158
+      nanos: 615000000
+    }
+    end_time {
+      seconds: 1647558160
+      nanos: 717000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.PlayerMenuActivityTest-checkScanButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "start"
+    start_time {
+      seconds: 1647558161
+      nanos: 408000000
+    }
+    end_time {
+      seconds: 1647558161
+      nanos: 884000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.PlayerMenuActivityTest-start.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "PlayerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkSearchButton"
+    start_time {
+      seconds: 1647558161
+      nanos: 897000000
+    }
+    end_time {
+      seconds: 1647558164
+      nanos: 370000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.PlayerMenuActivityTest-checkSearchButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "ScanQRcodeActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "start"
+    start_time {
+      seconds: 1647558165
+      nanos: 25000000
+    }
+    end_time {
+      seconds: 1647558165
+      nanos: 618000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.ScanQRcodeActivityTest-start.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SearchTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkScanButton"
+    start_time {
+      seconds: 1647558166
+      nanos: 170000000
+    }
+    end_time {
+      seconds: 1647558167
+      nanos: 830000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SearchTest-checkScanButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SearchTest"
+    test_package: "com.example.qrhunter"
+    test_method: "start"
+    start_time {
+      seconds: 1647558168
+      nanos: 535000000
+    }
+    end_time {
+      seconds: 1647558169
+      nanos: 350000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SearchTest-start.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkUsername"
+    start_time {
+      seconds: 1647558169
+      nanos: 353000000
+    }
+    end_time {
+      seconds: 1647558171
+      nanos: 261000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-checkUsername.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkCancelButton"
+    start_time {
+      seconds: 1647558171
+      nanos: 939000000
+    }
+    end_time {
+      seconds: 1647558173
+      nanos: 850000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-checkCancelButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkPassword"
+    start_time {
+      seconds: 1647558174
+      nanos: 475000000
+    }
+    end_time {
+      seconds: 1647558176
+      nanos: 268000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-checkPassword.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "start"
+    start_time {
+      seconds: 1647558176
+      nanos: 887000000
+    }
+    end_time {
+      seconds: 1647558177
+      nanos: 391000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-start.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkConfirmButton"
+    start_time {
+      seconds: 1647558177
+      nanos: 397000000
+    }
+    end_time {
+      seconds: 1647558179
+      nanos: 839000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-checkConfirmButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "SignUpActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkExistence"
+    start_time {
+      seconds: 1647558180
+      nanos: 467000000
+    }
+    end_time {
+      seconds: 1647558182
+      nanos: 834000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_29(AVD) - 10\\logcat-com.example.qrhunter.SignUpActivityTest-checkExistence.txt"
     }
   }
   output_artifact {

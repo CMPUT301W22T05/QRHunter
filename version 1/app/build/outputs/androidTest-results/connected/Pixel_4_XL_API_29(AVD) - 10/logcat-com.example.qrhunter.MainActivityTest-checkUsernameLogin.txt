@@ -1,55 +1,55 @@
-03-12 17:07:40.602  9180  9212 I TestRunner: started: checkUsernameLogin(com.example.qrhunter.MainActivityTest)
-03-12 17:07:40.606  1754  5699 W audio_hw_generic: Not supplying enough data to HAL, expected position 2907316 , only wrote 2907078
-03-12 17:07:40.656  2013  7902 D HostConnection: HostConnection::get() New Host Connection established 0xba59d710, tid 7902
-03-12 17:07:40.660  2013  7902 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
-03-12 17:07:40.661  3727  3743 I earchbox:searc: Background concurrent copying GC freed 41925(1548KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 8421KB/14MB, paused 2.900ms total 875.833ms
-03-12 17:07:40.706  2013  7902 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-03-12 17:07:40.711  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:40.728  2013  7902 D EGL_emulation: eglCreateContext: 0xb6900700: maj 2 min 0 rcv 2
-03-12 17:07:40.737  9180  9212 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
-03-12 17:07:40.782  2013  7902 D EGL_emulation: eglMakeCurrent: 0xb6900700: ver 2 0 (tinfo 0xbcd1a7e0)
-03-12 17:07:40.796  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:40.799  2013  2871 I chatty  : uid=1000(system) Binder:2013_9 identical 28 lines
-03-12 17:07:40.799  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:40.800  9180  9180 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@af9956c
-03-12 17:07:40.802  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:40.802  2013  2871 I chatty  : uid=1000(system) Binder:2013_9 identical 8 lines
-03-12 17:07:40.802  2013  2871 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:40.815  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:40.829  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@aa09c58 in: PRE_ON_CREATE
-03-12 17:07:40.940  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@aa09c58 in: CREATED
-03-12 17:07:40.944  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@aa09c58 in: STARTED
-03-12 17:07:40.952  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@aa09c58 in: RESUMED
-03-12 17:07:40.995  2013  2048 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:40.995  2013  2048 I chatty  : uid=1000(system) android.anim identical 8 lines
-03-12 17:07:40.995  2013  2048 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:41.048  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:41.077  2013  2026 I system_server: NativeAlloc concurrent copying GC freed 12756(761KB) AllocSpace objects, 2(104KB) LOS objects, 33% free, 11MB/17MB, paused 1.448ms total 282.913ms
-03-12 17:07:41.117  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:41.144  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:41.190  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:41.222  2013  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.MainActivity: +472ms
-03-12 17:07:41.316  2802  3494 D EGL_emulation: eglMakeCurrent: 0xed47f8e0: ver 2 0 (tinfo 0xe29af3d0)
-03-12 17:07:41.318  3727  3877 D EGL_emulation: eglMakeCurrent: 0xe295ce20: ver 2 0 (tinfo 0xbda0e3d0)
-03-12 17:07:41.357  9180  9193 I xample.qrhunte: NativeAlloc concurrent copying GC freed 24951(1331KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 4313KB/8626KB, paused 1.688ms total 139.303ms
-03-12 17:07:41.387  3727  5656 I PBSessionCacheImpl: Deleted sessionId[153910001792] from persistence.
-03-12 17:07:41.404  3727  3810 W SearchServiceCore: Abort, client detached.
-03-12 17:07:41.446  1754  1974 W audio_hw_generic: Not supplying enough data to HAL, expected position 2980513 , only wrote 2944094
-03-12 17:07:41.956  3727  5112 W GmsLocationProvider: Error removing location updates: 16
-03-12 17:07:42.768  1754  5699 W audio_hw_generic: Not supplying enough data to HAL, expected position 2944123 , only wrote 2944094
-03-12 17:07:42.807  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:42.807  2013  2110 I chatty  : uid=1000(system) Binder:2013_4 identical 8 lines
-03-12 17:07:42.807  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:42.930  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 548864
-03-12 17:07:42.942  1765  1854 I chatty  : uid=1000(system) HwBinder:1765_2 identical 1 line
-03-12 17:07:42.944  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 548864
-03-12 17:07:42.951  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:42.962  9180  9215 D EGL_emulation: eglMakeCurrent: 0xd9c1a120: ver 2 0 (tinfo 0xd9c0f820)
-03-12 17:07:42.979  9180  9180 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@aa09c58 in: PAUSED
-03-12 17:07:42.990  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:42.993  2013  2110 I chatty  : uid=1000(system) Binder:2013_4 identical 8 lines
-03-12 17:07:42.993  2013  2110 W InputReader: Device has associated, but no associated display id.
-03-12 17:07:43.016  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:43.038  1765  1854 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:43.043  1765  1765 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
-03-12 17:07:43.044  9180  9212 I TestRunner: finished: checkUsernameLogin(com.example.qrhunter.MainActivityTest)
+03-17 23:02:20.409 10348 10379 I TestRunner: started: checkUsernameLogin(com.example.qrhunter.MainActivityTest)
+03-17 23:02:20.413 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:20.423  2014  5389 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:20.430  2014  5389 I chatty  : uid=1000(system) Binder:2014_1D identical 38 lines
+03-17 23:02:20.430  2014  5389 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:20.433 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@6610e70
+03-17 23:02:20.434  2014  2046 E system_server: Invalid ID 0x00000000.
+03-17 23:02:20.440 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@fa0a19c in: PRE_ON_CREATE
+03-17 23:02:20.464  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:20.501 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@fa0a19c in: CREATED
+03-17 23:02:20.504 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@fa0a19c in: STARTED
+03-17 23:02:20.505 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@fa0a19c in: RESUMED
+03-17 23:02:20.553  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:20.553  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:20.553  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:20.565  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:20.572  1769  4070 I chatty  : uid=1000(system) HwBinder:1769_3 identical 1 line
+03-17 23:02:20.573  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:20.580 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:20.598  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.MainActivity: +180ms
+03-17 23:02:20.835  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:20.841  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:20.865  3956  9394 I PBSessionCacheImpl: Deleted sessionId[85195055656] from persistence.
+03-17 23:02:20.875  3956  4122 W SearchServiceCore: Abort, client detached.
+03-17 23:02:20.967  2014  8894 D HostConnection: HostConnection::get() New Host Connection established 0x6cdc1600, tid 8894
+03-17 23:02:20.967  2014  8894 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+03-17 23:02:20.968  2014  8894 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-17 23:02:20.983  2014  8894 D EGL_emulation: eglCreateContext: 0x6ce4c100: maj 2 min 0 rcv 2
+03-17 23:02:21.019  2014  8894 D EGL_emulation: eglMakeCurrent: 0x6ce4c100: ver 2 0 (tinfo 0x6bf2c9d0)
+03-17 23:02:21.207  2014  2027 I system_server: NativeAlloc concurrent copying GC freed 13265(807KB) AllocSpace objects, 2(104KB) LOS objects, 33% free, 11MB/17MB, paused 724us total 143.456ms
+03-17 23:02:22.350  2014  5389 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:22.351  2014  5389 I chatty  : uid=1000(system) Binder:2014_1D identical 8 lines
+03-17 23:02:22.352  2014  5389 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:22.365  1779  1974 D AF::Track: interceptBuffer: took 206us to intercept 0 tracks
+03-17 23:02:22.489  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 692224
+03-17 23:02:22.568  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8409917 , only wrote 8409903
+03-17 23:02:22.613  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8411878 , only wrote 8411225
+03-17 23:02:22.633  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 692224
+03-17 23:02:22.642  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 692224
+03-17 23:02:22.678 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:22.726  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8416040 , only wrote 8415852
+03-17 23:02:22.757 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:22.814  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8419833 , only wrote 8419818
+03-17 23:02:22.832  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8420592 , only wrote 8420479
+03-17 23:02:22.867  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8422110 , only wrote 8421140
+03-17 23:02:22.883  2014  2045 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:22.883  2014  2045 I chatty  : uid=1000(system) android.display identical 8 lines
+03-17 23:02:22.883  2014  2045 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:22.885  1757  5978 W audio_hw_generic: Not supplying enough data to HAL, expected position 8421896 , only wrote 8421801
+03-17 23:02:22.891 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.MainActivity@fa0a19c in: PAUSED
+03-17 23:02:22.936  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:22.955  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:22.960  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:22.964  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:22.970 10348 10379 I TestRunner: finished: checkUsernameLogin(com.example.qrhunter.MainActivityTest)

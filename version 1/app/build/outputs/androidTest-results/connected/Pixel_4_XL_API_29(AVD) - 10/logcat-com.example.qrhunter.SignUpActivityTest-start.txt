@@ -1,0 +1,39 @@
+03-17 23:02:56.522 10348 10379 I TestRunner: started: start(com.example.qrhunter.SignUpActivityTest)
+03-17 23:02:56.552 10348 10379 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+03-17 23:02:56.558  2014  8894 D EGL_emulation: eglMakeCurrent: 0x6ce4c4c0: ver 2 0 (tinfo 0x6bf2c9d0)
+03-17 23:02:56.572  2014  3668 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.576  2014  3668 I chatty  : uid=1000(system) Binder:2014_13 identical 28 lines
+03-17 23:02:56.576  2014  3668 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.576 10348 10348 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@e54764
+03-17 23:02:56.578  2014  3668 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.578  2014  3668 I chatty  : uid=1000(system) Binder:2014_13 identical 8 lines
+03-17 23:02:56.578  2014  3668 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.588 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: PRE_ON_CREATE
+03-17 23:02:56.611  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:56.629 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: CREATED
+03-17 23:02:56.632 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: STARTED
+03-17 23:02:56.633 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: RESUMED
+03-17 23:02:56.681  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:56.683  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.683  2014  2046 I chatty  : uid=1000(system) android.anim identical 8 lines
+03-17 23:02:56.683  2014  2046 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.690  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:56.694  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:56.705  1769  3456 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 17514496
+03-17 23:02:56.726 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:56.749  2014  2027 I system_server: NativeAlloc concurrent copying GC freed 15618(1005KB) AllocSpace objects, 5(228KB) LOS objects, 33% free, 11MB/17MB, paused 451us total 177.588ms
+03-17 23:02:56.761  2014  2052 I ActivityTaskManager: Displayed com.example.qrhunter/.SignUpActivity: +195ms
+03-17 23:02:56.971  2014  3421 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.971  2014  3421 I chatty  : uid=1000(system) Binder:2014_10 identical 8 lines
+03-17 23:02:56.971  2014  3421 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.974  3956  4157 D EGL_emulation: eglMakeCurrent: 0x97a430e0: ver 2 0 (tinfo 0xea54faf0)
+03-17 23:02:56.978 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: PAUSED
+03-17 23:02:56.979  2814  3828 D EGL_emulation: eglMakeCurrent: 0x8ed1aae0: ver 2 0 (tinfo 0x8ed0fcc0)
+03-17 23:02:56.980  2014  3421 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.987  2014  3421 I chatty  : uid=1000(system) Binder:2014_10 identical 28 lines
+03-17 23:02:56.987  2014  3421 W InputReader: Device has associated, but no associated display id.
+03-17 23:02:56.989  1769  4070 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 11210752
+03-17 23:02:57.003 10348 10382 D EGL_emulation: eglMakeCurrent: 0x8ed1a120: ver 2 0 (tinfo 0x8ed0f820)
+03-17 23:02:57.004 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: STOPPED
+03-17 23:02:57.005 10348 10348 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.SignUpActivity@86175d0 in: DESTROYED
+03-17 23:02:57.022 10348 10379 I TestRunner: finished: start(com.example.qrhunter.SignUpActivityTest)

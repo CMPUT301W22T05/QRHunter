@@ -2,19 +2,13 @@ package com.example.qrhunter;
 
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class PlayerMenuActivity extends AppCompatActivity {
@@ -30,6 +24,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_menu_layout);
 
+        // initialize all the buttons
         ScanQRButton = findViewById(R.id.scan_qr_code_button);
         ViewQRButton = findViewById(R.id.view_my_qr_codes_button);
         SearchButton = findViewById(R.id.search_button);
@@ -44,7 +39,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         // connect the database
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-
+        // set the functionality of switching activity of scan button
         ScanQRButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -55,7 +50,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
-
+        // set the functionality of switching activity of profile button
         Profile.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -67,6 +62,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
             }
         });
 
+        // set the functionality of switching activity of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -76,11 +72,13 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToMySearchPage);
             }
         });
+
+        // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent JumpToRankingActivity = new Intent();
-                JumpToRankingActivity.setClass(PlayerMenuActivity.this,RankingActivity.class);
+                JumpToRankingActivity.setClass(PlayerMenuActivity.this, PlayerRankingActivity.class);
                 startActivity(JumpToRankingActivity);
             }
         });

@@ -1,34 +1,34 @@
 MemTotal:        2040208 kB
-MemFree:          499432 kB
-MemAvailable:    1009688 kB
-Buffers:           17616 kB
-Cached:           724872 kB
-SwapCached:         3968 kB
-Active:           786312 kB
-Inactive:         528784 kB
-Active(anon):     310144 kB
-Inactive(anon):   282344 kB
-Active(file):     476168 kB
-Inactive(file):   246440 kB
-Unevictable:        9520 kB
-Mlocked:            9520 kB
+MemFree:          356464 kB
+MemAvailable:     972036 kB
+Buffers:           19020 kB
+Cached:           828832 kB
+SwapCached:         5268 kB
+Active:           874580 kB
+Inactive:         587744 kB
+Active(anon):     363920 kB
+Inactive(anon):   271244 kB
+Active(file):     510660 kB
+Inactive(file):   316500 kB
+Unevictable:        9452 kB
+Mlocked:            9452 kB
 SwapTotal:       1530152 kB
-SwapFree:        1369640 kB
-Dirty:              7996 kB
-Writeback:             0 kB
-AnonPages:        490356 kB
-Mapped:           430288 kB
-Shmem:             11752 kB
-Slab:              95016 kB
-SReclaimable:      38892 kB
-SUnreclaim:        56124 kB
-KernelStack:       20032 kB
-PageTables:        31220 kB
+SwapFree:        1398312 kB
+Dirty:              8612 kB
+Writeback:             4 kB
+AnonPages:        525024 kB
+Mapped:           435064 kB
+Shmem:             12628 kB
+Slab:              97588 kB
+SReclaimable:      40408 kB
+SUnreclaim:        57180 kB
+KernelStack:       20000 kB
+PageTables:        30596 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:     2550256 kB
-Committed_AS:   51491652 kB
+Committed_AS:   51233516 kB
 VmallocTotal:   34359738367 kB
 VmallocUsed:           0 kB
 VmallocChunk:          0 kB
@@ -36,12 +36,12 @@ AnonHugePages:     38912 kB
 ShmemHugePages:        0 kB
 ShmemPmdMapped:        0 kB
 CmaTotal:         331776 kB
-CmaFree:          214028 kB
+CmaFree:          162036 kB
 HugePages_Total:       0
 HugePages_Free:        0
 HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
-DirectMap4k:      132944 kB
-DirectMap2M:     1964032 kB
+DirectMap4k:      137040 kB
+DirectMap2M:     1959936 kB
 

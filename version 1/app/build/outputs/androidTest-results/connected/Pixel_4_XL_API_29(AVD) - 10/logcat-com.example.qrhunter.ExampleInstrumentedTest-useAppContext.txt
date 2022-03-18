@@ -1,0 +1,2 @@
+03-17 23:02:09.598 10348 10379 I TestRunner: started: useAppContext(com.example.qrhunter.ExampleInstrumentedTest)
+03-17 23:02:09.602 10348 10379 I TestRunner: finished: useAppContext(com.example.qrhunter.ExampleInstrumentedTest)

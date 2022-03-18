@@ -55,8 +55,8 @@ public class MainActivityTest {
     @Test
     public void checkPlayerLogin(){
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.username_input), "player1");
-        solo.enterText((EditText) solo.getView(R.id.password_input), "321");
+        solo.enterText((EditText) solo.getView(R.id.username_input), "Player1");
+        solo.enterText((EditText) solo.getView(R.id.password_input), "123");
         solo.clickOnButton("Log in");
         solo.assertCurrentActivity("Test failed",PlayerMenuActivity.class);
 
@@ -69,7 +69,7 @@ public class MainActivityTest {
     public void checkOwnerLogin(){
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
         solo.enterText((EditText) solo.getView(R.id.username_input), "xuantong");
-        solo.enterText((EditText) solo.getView(R.id.password_input), "123");
+        solo.enterText((EditText) solo.getView(R.id.password_input), "789");
         solo.clickOnButton("Log in");
         solo.assertCurrentActivity("Test failed",OwnerMenuActivity.class);
 
