@@ -40,7 +40,7 @@ public class PlayerRankingAdapter extends RecyclerView.Adapter<PlayerRankingAdap
     public int getItemCount() {
         return playerList.size();
     }
-
+    //get a overview of the list of players ranking
     class PlayerViewHolder extends RecyclerView.ViewHolder{
         TextView    textViewUsername, textViewTotalScore;
         public PlayerViewHolder(View itemView){

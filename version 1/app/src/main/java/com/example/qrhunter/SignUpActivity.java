@@ -57,7 +57,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         // open the firebase and connect
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+        // set reations of the confirm button
         ConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

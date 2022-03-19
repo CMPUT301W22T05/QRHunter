@@ -24,7 +24,7 @@ public class scannerView extends AppCompatActivity implements ZXingScannerView.R
         super.onCreate(savedInstanceState);
         scannerView=new ZXingScannerView(this);
         setContentView(scannerView);
-
+        // authorize the permission of the camera
         Dexter.withContext(getApplicationContext())
                 .withPermission(Manifest.permission.CAMERA)
                 .withListener(new PermissionListener() {
@@ -50,13 +50,13 @@ public class scannerView extends AppCompatActivity implements ZXingScannerView.R
        ScanQRcodeActivity.scantext.setText(rawResult.getText());
        onBackPressed();
     }
-
+    // pause the camera if needed
     @Override
     protected void onPause() {
         super.onPause();
         scannerView.stopCamera();
     }
-
+    // resume the camera if needed
     @Override
     protected void onResume() {
         super.onResume();
