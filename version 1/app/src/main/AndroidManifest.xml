@@ -13,6 +13,9 @@
             android:name=".scannerView"
             android:exported="false" />
         <activity
+            android:name=".LoginScanner"
+            android:exported="false" />
+        <activity
             android:name=".SearchInfo"
             android:exported="false" />
         <activity

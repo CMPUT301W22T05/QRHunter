@@ -3,9 +3,11 @@ package com.example.qrhunter;
 import static com.example.qrhunter.MainActivity.user;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +18,10 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -24,51 +30,73 @@ import java.util.HashMap;
 public class ScanQRcodeActivity extends AppCompatActivity {
 
     Button scanbtn;
+    Button upload;
+    EditText comments;
     public static TextView scantext;
-    public static int codeworth;
+    public int codeworth;
+    String data = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scan_qr_code_layout);
 
         // initialize the setting of textview, button and database
-        scantext=(TextView)findViewById(R.id.scantext);
-        scanbtn=(Button) findViewById(R.id.camera_button);
+        scantext = (TextView) findViewById(R.id.scantext);
+        scanbtn = (Button) findViewById(R.id.camera_button);
+        upload = (Button) findViewById(R.id.upload_comments_button);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        codeworth = calculateWorth(scantext.getText().toString());
-
+        comments = (EditText) findViewById(R.id.editText_comments);
         // set the functionality of switching activity of scan button
         scanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),scannerView.class));
-                final CollectionReference collectionReference = db.collection("Player");
-                DocumentReference noteRef = db.collection("Player").document(user);
-                noteRef.get()
-                        .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                            @Override
-                            public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                // store data in the players' account
-                                HashMap<String, String> QRcode = new HashMap<>();
-                                QRcode.put("scan",scantext.getText().toString());
-                                QRcode.put("Worth", String.valueOf(codeworth));
-                                    collectionReference
-                                            .document(user)
-                                            .collection("QRCode")
-                                            .document(user)
-                                            .set(QRcode)
-                                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                @Override
-                                                public void onSuccess(Void unused) {
-                                                    Toast.makeText(ScanQRcodeActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), scannerView.class));
 
-                                                }
-                                            });
-                                }
 
-                        });
             }
         });
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = scantext.getText().toString();
+                String description = comments.getText().toString();
+                codeworth = calculateWorth(scantext.getText().toString());
+                SharedPreferences MyProfileData = getSharedPreferences("data", 0);
+                String username = MyProfileData.getString("username", null);
+                Note note = new Note(title, description,codeworth);
+                final CollectionReference collectionReference = db.collection("Player");
+                DocumentReference noteRef = db.collection("Player").document(username);
+                collectionReference.document(username)
+                        .collection("QRCOde").get()
+                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                            @Override
+                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                                String data = "";
+                                collectionReference
+                                        .document(username)
+                                        .collection("QRCode");
+
+                                for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+                                    Note note = documentSnapshot.toObject(Note.class);
+                                    note.setDocumentId(documentSnapshot.getId());
+                                    String documentId = note.getDocumentId();
+                                    String title = note.getTitle();
+                                    String description = note.getDescription();
+
+                                    data += "ID: " + documentId
+                                            + "\nTitle: " + title + "\nDescription: " + description + "\n\n";
+                                }
+                                Toast.makeText(ScanQRcodeActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
+
+
+                            }
+                        });
+                collectionReference.document(username)
+                        .collection("QRCOde").add(note);
+
+            }
+        });
+
     }
 
     public int calculateWorth(String qrCodeContent) {

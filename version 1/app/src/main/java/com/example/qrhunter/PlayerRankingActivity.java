@@ -61,11 +61,11 @@ public class PlayerRankingActivity extends AppCompatActivity {
         //query.addListenerForSingleValueEvent(valueEventListener);
 
         // testing the listing format
-        Player player1 = new Player("player1", "80");
-        playerList.add(player1);
+        //Player player1 = new Player("player1", "80");
+        //playerList.add(player1);
 
-        Player player2 = new Player("player2", "88");
-        playerList.add(player2);
+        //Player player2 = new Player("player2", "88");
+        //playerList.add(player2);
 
         //String what = "what" + playerList.size();
         //Toast.makeText(RankingActivity.this,what,Toast.LENGTH_SHORT).show();

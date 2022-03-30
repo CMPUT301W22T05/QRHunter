@@ -11,12 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import io.paperdb.Paper;
+
 public class PlayerMenuActivity extends AppCompatActivity {
 
     Button ScanQRButton;
     Button ViewQRButton;
     Button SearchButton;
     Button RankingButton;
+    Button LogoutButton;
     ImageButton Profile;
 
     @Override
@@ -30,6 +33,16 @@ public class PlayerMenuActivity extends AppCompatActivity {
         SearchButton = findViewById(R.id.search_button);
         RankingButton = findViewById(R.id.ranking_button);
         Profile = findViewById(R.id.profile_button);
+        LogoutButton = findViewById(R.id.logout);
+        LogoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Paper.book().destroy();
+                Intent JumpToLogInPage = new Intent();
+                JumpToLogInPage.setClass(PlayerMenuActivity.this, MainActivity.class);
+                startActivity(JumpToLogInPage);
+            }
+        });
 
 
         // get the username
