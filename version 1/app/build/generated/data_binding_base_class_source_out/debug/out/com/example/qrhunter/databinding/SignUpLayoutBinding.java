@@ -39,6 +39,12 @@ public final class SignUpLayoutBinding implements ViewBinding {
   public final Button signUpConfirm;
 
   @NonNull
+  public final EditText signUpEmailAddress;
+
+  @NonNull
+  public final EditText signUpName;
+
+  @NonNull
   public final EditText signUpUsername;
 
   @NonNull
@@ -46,14 +52,16 @@ public final class SignUpLayoutBinding implements ViewBinding {
 
   private SignUpLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button generate,
       @NonNull ImageView imageView, @NonNull CheckBox rm, @NonNull Button signUpCancel,
-      @NonNull Button signUpConfirm, @NonNull EditText signUpUsername,
-      @NonNull TextView textView2) {
+      @NonNull Button signUpConfirm, @NonNull EditText signUpEmailAddress,
+      @NonNull EditText signUpName, @NonNull EditText signUpUsername, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.generate = generate;
     this.imageView = imageView;
     this.rm = rm;
     this.signUpCancel = signUpCancel;
     this.signUpConfirm = signUpConfirm;
+    this.signUpEmailAddress = signUpEmailAddress;
+    this.signUpName = signUpName;
     this.signUpUsername = signUpUsername;
     this.textView2 = textView2;
   }
@@ -115,6 +123,18 @@ public final class SignUpLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.sign_up_email_address;
+      EditText signUpEmailAddress = ViewBindings.findChildViewById(rootView, id);
+      if (signUpEmailAddress == null) {
+        break missingId;
+      }
+
+      id = R.id.sign_up_name;
+      EditText signUpName = ViewBindings.findChildViewById(rootView, id);
+      if (signUpName == null) {
+        break missingId;
+      }
+
       id = R.id.sign_up_username;
       EditText signUpUsername = ViewBindings.findChildViewById(rootView, id);
       if (signUpUsername == null) {
@@ -128,7 +148,7 @@ public final class SignUpLayoutBinding implements ViewBinding {
       }
 
       return new SignUpLayoutBinding((ConstraintLayout) rootView, generate, imageView, rm,
-          signUpCancel, signUpConfirm, signUpUsername, textView2);
+          signUpCancel, signUpConfirm, signUpEmailAddress, signUpName, signUpUsername, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

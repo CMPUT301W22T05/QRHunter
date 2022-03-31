@@ -16,6 +16,12 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class OwnerMenuActivity extends AppCompatActivity {
+
+
+
+
+
+
     ImageButton SearchButton;
     Button RankingButton;
     TextView SearchUserName;
