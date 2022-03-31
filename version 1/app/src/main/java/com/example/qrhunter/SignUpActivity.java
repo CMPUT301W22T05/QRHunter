@@ -34,7 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button CancelButton;
     Button Generate;
     EditText UsernameSignUpEditText;
-    EditText EmailEditText;
+
     ImageView imageView;
     private CheckBox chkBoxRememberMe;
 
@@ -44,7 +44,6 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.sign_up_layout);
 
         //Find corresponding view in the layout files.
-        EmailEditText = findViewById(R.id.sign_up_email_address);
         UsernameSignUpEditText = findViewById(R.id.sign_up_username);
         Generate = findViewById(R.id.generate);
         ConfirmButton = findViewById(R.id.sign_up_confirm);
@@ -87,7 +86,6 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String username = UsernameSignUpEditText.getText().toString();
-                final String email = EmailEditText.getText().toString();
                 if(chkBoxRememberMe.isChecked())
                 {
                     Paper.book().write(Player.UserPhoneKey, username);
@@ -101,42 +99,41 @@ public class SignUpActivity extends AppCompatActivity {
 
                 }
                 else{
-                        // connect to collection
-                        final CollectionReference collectionReference = db.collection("Player");
+                    // connect to collection
+                    final CollectionReference collectionReference = db.collection("Player");
 
-                        // get the document reference
-                        DocumentReference noteRef = db.collection("Player").document(username);
+                    // get the document reference
+                    DocumentReference noteRef = db.collection("Player").document(username);
 
-                        noteRef.get()
-                                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                                    @Override
-                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                        if (documentSnapshot.exists()) {    // check if the input username exists or not
-                                            Toast.makeText(SignUpActivity.this, "UserName already exist!", Toast.LENGTH_SHORT).show();
-                                        }
-                                        else{
-                                            // set the information to MyProfile Page
-                                            SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
-                                            MyProfileData.putString("username", username);
-                                            MyProfileData.putString("email", email);
-                                            MyProfileData.commit();
-                                            //create password field
-                                            HashMap<String, String> data = new HashMap<>();
-                                            collectionReference
-                                                    .document(username)
-                                                    .set(data)
-                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                        @Override
-                                                        public void onSuccess(Void unused) {
-                                                            Toast.makeText(SignUpActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
-
-                                                        }
-                                                    });
-
-                                        }
+                    noteRef.get()
+                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                @Override
+                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                    if (documentSnapshot.exists()) {    // check if the input username exists or not
+                                        Toast.makeText(SignUpActivity.this, "UserName already exist!", Toast.LENGTH_SHORT).show();
                                     }
-                                });
-                    }
+                                    else{
+                                        // set the information to MyProfile Page
+                                        SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
+                                        MyProfileData.putString("username", username);
+                                        MyProfileData.commit();
+                                        //create password field
+                                        HashMap<String, String> data = new HashMap<>();
+                                        collectionReference
+                                                .document(username)
+                                                .set(data)
+                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                    @Override
+                                                    public void onSuccess(Void unused) {
+                                                        Toast.makeText(SignUpActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
+
+                                                    }
+                                                });
+
+                                    }
+                                }
+                            });
+                }
                 // jump to the Player Menu
                 Intent JumpToPlayerMenu = new Intent();
                 JumpToPlayerMenu.setClass(SignUpActivity.this, PlayerMenuActivity.class);
