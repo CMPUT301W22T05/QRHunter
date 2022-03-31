@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="40dp"
+    android:layout_width="303dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/username_owner_page_textview"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:hint="XXX (Username)"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Total score: "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/total_score_owner_page_textview"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:hint="XXX (TotalScore)"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
