@@ -56,7 +56,8 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     EditText comments;
     public static TextView scantext;
     public int codeworth;
-    private int QRHash;
+    double lat;
+    double lag;
     String data = "";
     SupportMapFragment smf;
     FusedLocationProviderClient client;
@@ -90,9 +91,10 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                 String title = scantext.getText().toString();
                 String description = comments.getText().toString();
                 codeworth = calculateWorth(title);
+
                 SharedPreferences MyProfileData = getSharedPreferences("data", 0);
                 String username = MyProfileData.getString("username", null);
-                Note note = new Note(title, description, codeworth);
+                Note note = new Note(title, description, codeworth,lat,lag);
                 final CollectionReference collectionReference = db.collection("Player");
                 DocumentReference noteRef = db.collection("Player").document(username);
                 collectionReference.document(username)
@@ -113,7 +115,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                                     String description = note.getDescription();
 
                                     data += "ID: " + documentId
-                                            + "\nTitle: " + title + "\nDescription: " + description + "\n\n";
+                                            + "\nScanned: " + title + "\nComments: " + description + "\n\n";
                                 }
                                 Toast.makeText(ScanQRcodeActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
 
@@ -175,8 +177,9 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                     @Override
                     public void onMapReady(GoogleMap googleMap) {
                         LatLng latLng=new LatLng(location.getLatitude(),location.getLongitude());
+                        lat = location.getLatitude();
+                        lag = location.getLongitude();
                         MarkerOptions markerOptions=new MarkerOptions().position(latLng).title("You are here...!!");
-
                         googleMap.addMarker(markerOptions);
                         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,17));
                     }

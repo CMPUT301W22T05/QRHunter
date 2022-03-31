@@ -34,8 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button CancelButton;
     Button Generate;
     EditText UsernameSignUpEditText;
-    EditText EmailSignUpEditText;
-    EditText NameEditText;
+
     ImageView imageView;
     private CheckBox chkBoxRememberMe;
 
@@ -46,8 +45,6 @@ public class SignUpActivity extends AppCompatActivity {
 
         //Find corresponding view in the layout files.
         UsernameSignUpEditText = findViewById(R.id.sign_up_username);
-        EmailSignUpEditText = findViewById(R.id.sign_up_email_address);
-        NameEditText = findViewById(R.id.sign_up_name);
         Generate = findViewById(R.id.generate);
         ConfirmButton = findViewById(R.id.sign_up_confirm);
         CancelButton = findViewById(R.id.sign_up_cancel);
@@ -89,8 +86,6 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String username = UsernameSignUpEditText.getText().toString();
-                final String name = NameEditText.getText().toString();
-                final String email = EmailSignUpEditText.getText().toString();
                 if(chkBoxRememberMe.isChecked())
                 {
                     Paper.book().write(Player.UserPhoneKey, username);
@@ -98,11 +93,10 @@ public class SignUpActivity extends AppCompatActivity {
 
 
                 // check if the username/password/email address/full name are empty or not.
-                if (username.length() == 0 || name.length() == 0 || email.length() == 0){
-                    Toast.makeText(SignUpActivity.this,"Please fill in all the personal information.",Toast.LENGTH_SHORT).show();
+                if (username.length() == 0 ){
+                    Toast.makeText(SignUpActivity.this,"Please fill in a username",Toast.LENGTH_SHORT).show();
                     UsernameSignUpEditText.setText("");
-                    EmailSignUpEditText.setText("");
-                    NameEditText.setText("");
+
                 }
                 else{
                         // connect to collection
@@ -122,12 +116,9 @@ public class SignUpActivity extends AppCompatActivity {
                                             // set the information to MyProfile Page
                                             SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
                                             MyProfileData.putString("username", username);
-                                            MyProfileData.putString("email", email);
                                             MyProfileData.commit();
                                             //create password field
                                             HashMap<String, String> data = new HashMap<>();
-                                            data.put("Name", name);
-                                            data.put("Email", email);
                                             collectionReference
                                                     .document(username)
                                                     .set(data)

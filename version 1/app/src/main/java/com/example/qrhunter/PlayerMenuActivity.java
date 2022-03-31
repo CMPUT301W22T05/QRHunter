@@ -95,6 +95,14 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToRankingActivity);
             }
         });
+        ViewQRButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToViewQRcode = new Intent();
+                JumpToViewQRcode.setClass(PlayerMenuActivity.this, ViewQRCode.class);
+                startActivity(JumpToViewQRcode);
+            }
+        });
 
     }
 }
