@@ -11,12 +11,21 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -25,9 +34,8 @@ public class OwnerMenuActivity extends AppCompatActivity {
     ListView scoreList;
     ArrayAdapter<TotalScoreOnOwnerPage> scoreAdapter;
     ArrayList<TotalScoreOnOwnerPage> scoreDataList;
-
-
-
+    String DisplayUserName;
+    String DisplayTotalScore;
 
     ImageButton SearchButton;
     Button RankingButton;
@@ -49,22 +57,44 @@ public class OwnerMenuActivity extends AppCompatActivity {
         // update information in personal_qr_rank_layout.xml
         PersonalName = findViewById(R.id.personal_rank_TextView);
 
-        /////
+        scoreDataList = new ArrayList<>();
+
+        db.collection("Player")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                if (document.getString("Total score") == null){
+                                    DisplayUserName = document.getId();;
+                                    DisplayTotalScore = "NULL";
+                                }
+                                else {
+                                    DisplayUserName = document.getId();;
+                                    DisplayTotalScore = document.getString("Total score");
+                                }
+                                scoreDataList.add(new TotalScoreOnOwnerPage(DisplayUserName, DisplayTotalScore));
+                            }
+                        }
+                    }
+                });
+
 
 
 
         /////////////////////////////////
         scoreList = findViewById(R.id.ranking_total_score_list);
-        String []usernames ={"jiang", "wang", "huang", "tan"};
-        String []scores = {"11", "13", "30", "36"};
+//        String []usernames ={"jiang", "wang", "huang", "tan"};
+//        String []scores = {"11", "13", "30", "36"};
+//
+//        scoreDataList = new ArrayList<>();
 
-        scoreDataList = new ArrayList<>();
 
 
-
-        for (int i = 0; i < usernames.length; i++) {
-            scoreDataList.add(new TotalScoreOnOwnerPage(usernames[i], scores[i]));
-        }
+//        for (int i = 0; i < usernames.length; i++) {
+//            scoreDataList.add(new TotalScoreOnOwnerPage(usernames[i], scores[i]));
+//        }
         scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
 
         scoreList.setAdapter(scoreAdapter);
@@ -74,58 +104,58 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
 
 
-//
-//        // set the functionality of switching activity of ranking button
-//        RankingButton.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//                Intent JumpToRankingPage = new Intent();
-//                JumpToRankingPage.setClass(OwnerMenuActivity.this, PlayerRankingActivity.class);
-//                startActivity(JumpToRankingPage);
-//            }
-//        });
-//
-//        // set the functionality of search button
-//        SearchButton.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View view) {
-//                final String Username = SearchUserName.getText().toString();
-//                if (Username.length() == 0){  // user did not enter any information in
-//                    Toast.makeText(OwnerMenuActivity.this,"Username cannot be empty",Toast.LENGTH_SHORT).show();
-//                }
-//                else {
-//                    DocumentReference noteRef = db.collection("Player").document(Username);
-//                    noteRef.get()
-//                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-//                                @Override
-//                                public void onSuccess(DocumentSnapshot documentSnapshot) {
-//                                    if (documentSnapshot.exists()) {  // can find player name in database
-////                                        Intent JumpToPersonalRank = new Intent();
-//////                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
-////                                        startActivity(JumpToPersonalRank);
-//                                        // put user's name to next page
-//                                        String name = documentSnapshot.getString("Name");
-//                                        Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
-//                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, name);
-//                                        startActivity(SendToNextTitle);
-//
-//                                    }
-//                                    else {  // can't find player name in database
-//                                        Toast.makeText(OwnerMenuActivity.this, "Username not found", Toast.LENGTH_SHORT).show();
-//                                    }
-//                                }
-//
-//                            });
-//
-//
-//                }
-//
-//            }
-//        });
-//
-//
+
+        // set the functionality of switching activity of ranking button
+        RankingButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent JumpToRankingPage = new Intent();
+                JumpToRankingPage.setClass(OwnerMenuActivity.this, PlayerRankingActivity.class);
+                startActivity(JumpToRankingPage);
+            }
+        });
+
+        // set the functionality of search button
+        SearchButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                final String Username = SearchUserName.getText().toString();
+                if (Username.length() == 0){  // user did not enter any information in
+                    Toast.makeText(OwnerMenuActivity.this,"Username cannot be empty",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    DocumentReference noteRef = db.collection("Player").document(Username);
+                    noteRef.get()
+                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                @Override
+                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                    if (documentSnapshot.exists()) {  // can find player name in database
+//                                        Intent JumpToPersonalRank = new Intent();
+////                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
+//                                        startActivity(JumpToPersonalRank);
+                                        // put user's name to next page
+                                        String name = documentSnapshot.getString("Name");
+                                        Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, name);
+                                        startActivity(SendToNextTitle);
+
+                                    }
+                                    else {  // can't find player name in database
+                                        Toast.makeText(OwnerMenuActivity.this, "Username not found", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+
+                            });
+
+
+                }
+
+            }
+        });
+
+
 
     }
     // display the information to list
