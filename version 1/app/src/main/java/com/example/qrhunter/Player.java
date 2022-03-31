@@ -3,6 +3,7 @@ package com.example.qrhunter;
 public class Player {
 
     public String username, totalScore;
+    private String userId;
 
     public final static String UserPhoneKey = "";
 
@@ -22,5 +23,8 @@ public class Player {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+    public void setuserId(String userId) {
+        this.userId = userId;
     }
 }
