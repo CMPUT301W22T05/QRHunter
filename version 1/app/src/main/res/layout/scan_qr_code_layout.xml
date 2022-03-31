@@ -7,60 +7,63 @@
 
     <Button
         android:id="@+id/camera_button"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:layout_width="123dp"
+        android:layout_height="66dp"
         android:text="Camera"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.298" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/location_button"
         android:layout_width="163dp"
         android:layout_height="51dp"
+        android:layout_marginTop="72dp"
         android:text="Location"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/google_map"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintTop_toBottomOf="@+id/camera_button"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editText_comments"
-        android:layout_width="219dp"
-        android:layout_height="107dp"
-        android:layout_marginBottom="240dp"
+        android:layout_width="241dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Please enter your own comments"
         android:inputType="textLongMessage"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scantext" />
 
     <Button
         android:id="@+id/upload_comments_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
         android:text="Upload"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.867"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_comments" />
 
     <TextView
         android:id="@+id/scantext"
-        android:layout_width="110dp"
-        android:layout_height="54dp"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.165" />
+        app:layout_constraintTop_toBottomOf="@+id/google_map"
+        tools:layout_editor_absoluteX="117dp" />
+
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="407dp"
+        android:layout_height="236dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="251dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
