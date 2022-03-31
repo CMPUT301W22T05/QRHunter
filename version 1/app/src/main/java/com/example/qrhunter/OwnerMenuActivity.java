@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 
 public class OwnerMenuActivity extends AppCompatActivity {
 
+    long scorePos = 10000;
     ListView scoreList;
     ArrayAdapter<TotalScoreOnOwnerPage> scoreAdapter;
     ArrayList<TotalScoreOnOwnerPage> scoreDataList;
@@ -85,19 +87,21 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         /////////////////////////////////
         scoreList = findViewById(R.id.ranking_total_score_list);
-//        String []usernames ={"jiang", "wang", "huang", "tan"};
-//        String []scores = {"11", "13", "30", "36"};
-//
-//        scoreDataList = new ArrayList<>();
-
-
-
-//        for (int i = 0; i < usernames.length; i++) {
-//            scoreDataList.add(new TotalScoreOnOwnerPage(usernames[i], scores[i]));
-//        }
         scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
-
         scoreList.setAdapter(scoreAdapter);
+
+        // 点击item跳转activity
+
+        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                // long position = scoreList.getItemIdAtPosition(position);
+                scorePos = position;
+                System.out.println(scorePos);
+                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+                startActivity(SendToNextTitle);
+            }
+        });
 
 
 

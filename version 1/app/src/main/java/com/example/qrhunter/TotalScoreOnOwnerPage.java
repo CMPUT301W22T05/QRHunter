@@ -14,6 +14,7 @@ public class TotalScoreOnOwnerPage {
     }
 
     public String getTotalscore() {
+
         return this.totalscore;
     }
 
