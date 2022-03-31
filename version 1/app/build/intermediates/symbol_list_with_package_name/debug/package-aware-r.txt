@@ -3184,6 +3184,7 @@ id textStart
 id textTop
 id textView2
 id textView3
+id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3200,6 +3201,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id total_score_owner_page_textview
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3216,6 +3218,7 @@ id up
 id upload_comments_button
 id upload_picture_button
 id useLogo
+id username_owner_page_textview
 id username_text
 id vertical_only
 id view_my_qr_codes_button
@@ -3433,6 +3436,7 @@ layout player_ranking_content
 layout player_ranking_layout
 layout qr_information_layout
 layout qr_scores_content
+layout rank_in_owner_content
 layout scan_qr_code_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material

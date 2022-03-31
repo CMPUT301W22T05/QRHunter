@@ -35,6 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     Button Generate;
     EditText UsernameSignUpEditText;
     EditText EmailEditText;
+    EditText FullNameEditText;
     ImageView imageView;
     private CheckBox chkBoxRememberMe;
 
@@ -44,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.sign_up_layout);
 
         //Find corresponding view in the layout files.
+        FullNameEditText = findViewById(R.id.sign_up_name);
         EmailEditText = findViewById(R.id.sign_up_email_address);
         UsernameSignUpEditText = findViewById(R.id.sign_up_username);
         Generate = findViewById(R.id.generate);
@@ -88,6 +90,7 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 final String username = UsernameSignUpEditText.getText().toString();
                 final String email = EmailEditText.getText().toString();
+                final String fullname = FullNameEditText.getText().toString();
                 if(chkBoxRememberMe.isChecked())
                 {
                     Paper.book().write(Player.UserPhoneKey, username);
@@ -119,6 +122,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
                                             MyProfileData.putString("username", username);
                                             MyProfileData.putString("email", email);
+                                            MyProfileData.putString("fullname", fullname);
                                             MyProfileData.commit();
                                             //create password field
                                             HashMap<String, String> data = new HashMap<>();
