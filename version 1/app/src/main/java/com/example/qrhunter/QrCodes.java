@@ -1,13 +1,13 @@
 package com.example.qrhunter;
 
-public class Qrdata {
+public class QrCodes {
     String description,title;
     int worth;
     double lag,lat;
-    public Qrdata() {
+    public QrCodes() {
     }
 
-    public Qrdata(String description, double lag, double lat, String title, int worth) {
+    public QrCodes(String description, double lag, double lat, String title, int worth) {
         this.description = description;
         this.lag = lag;
         this.lat = lat;

@@ -4,29 +4,37 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.qrhunter.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class MyQrCodesLayoutBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final FrameLayout wrapper;
+  public final RecyclerView mainList;
 
-  private MyQrCodesLayoutBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout wrapper) {
+  @NonNull
+  public final RelativeLayout wrapper;
+
+  private MyQrCodesLayoutBinding(@NonNull RelativeLayout rootView, @NonNull RecyclerView mainList,
+      @NonNull RelativeLayout wrapper) {
     this.rootView = rootView;
+    this.mainList = mainList;
     this.wrapper = wrapper;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +55,21 @@ public final class MyQrCodesLayoutBinding implements ViewBinding {
 
   @NonNull
   public static MyQrCodesLayoutBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.main_list;
+      RecyclerView mainList = ViewBindings.findChildViewById(rootView, id);
+      if (mainList == null) {
+        break missingId;
+      }
+
+      RelativeLayout wrapper = (RelativeLayout) rootView;
+
+      return new MyQrCodesLayoutBinding((RelativeLayout) rootView, mainList, wrapper);
     }
-
-    FrameLayout wrapper = (FrameLayout) rootView;
-
-    return new MyQrCodesLayoutBinding((FrameLayout) rootView, wrapper);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

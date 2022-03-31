@@ -2657,6 +2657,7 @@ drawable notify_panel_notification_icon_bg
 drawable rect_border_grey
 drawable rect_border_purple
 drawable round_border
+drawable selection_band_overlay
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2940,6 +2941,7 @@ id login_button
 id logout
 id lowest_scoring_textView
 id ltr
+id main_list
 id map
 id masked
 id match_constraint
@@ -3039,6 +3041,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id personal_name_and_score
 id personal_rank_TextView
 id personal_ranking_list
 id picture_imageView
@@ -3115,8 +3118,6 @@ id showHome
 id showTitle
 id sign_up_cancel
 id sign_up_confirm
-id sign_up_email_address
-id sign_up_name
 id sign_up_username
 id signup_button
 id sin
