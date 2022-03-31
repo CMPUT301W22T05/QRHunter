@@ -3,20 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E6000000">
 
 
     <EditText
         android:id="@+id/sign_up_email_address"
-        android:layout_width="168dp"
-        android:layout_height="44dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
 
         android:layout_marginTop="20dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="E-mail address"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,29 +39,29 @@
 
     <EditText
         android:id="@+id/sign_up_name"
-        android:layout_width="164dp"
-        android:layout_height="57dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Full Name"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/sign_up_username"
-        android:layout_width="171dp"
-        android:layout_height="42dp"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
 
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Username"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,13 +71,13 @@
         android:id="@+id/sign_up_confirm"
         android:layout_width="115dp"
         android:layout_height="65dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Confirm"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -84,7 +85,7 @@
         android:id="@+id/sign_up_cancel"
         android:layout_width="106dp"
         android:layout_height="67dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Cancel"
@@ -96,8 +97,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="153dp"
-        android:layout_height="115dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -125,6 +126,7 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="16dp"
         android:text="Remember Me "
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

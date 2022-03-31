@@ -2563,6 +2563,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_others
+drawable ic_profile
 drawable ic_search
 drawable loupe
 drawable m3_appbar_background

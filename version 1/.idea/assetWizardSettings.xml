@@ -24,8 +24,9 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\jayant\AppData\Local\Temp\baseline_contacts_24.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/baseline_person_outline_24.xml" />
                                                 <entry key="opacityPercent" value="80" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -36,7 +37,20 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/contacts/baseline_contacts_24.xml" />
+                                                <entry key="url" value="file:$USER_HOME$/Library/Android/sdk/icons/material/materialicons/person_outline/baseline_person_outline_24.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="opacityPercent" value="80" />
+                                                <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -68,9 +82,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_others" />
+                                      <entry key="outputName" value="ic_profile" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="971bbf" />
+                                      <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -86,7 +100,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\jayant\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -141,7 +155,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\jayant\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -185,7 +199,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\jayant\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -249,7 +263,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="C:\Users\jayant\AppData\Local\Temp\ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>

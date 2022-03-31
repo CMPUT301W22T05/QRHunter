@@ -104,6 +104,10 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/ranking_list_in_owner_layout.xml"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_profile.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-xhdpi/ic_profile.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable_customer.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable/customer.png"
     },
@@ -130,6 +134,10 @@
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-anydpi_ic_profile.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-anydpi/ic_profile.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -164,8 +172,16 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_profile.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-hdpi/ic_profile.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_player_ranking_layout.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/player_ranking_layout.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_profile.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-mdpi/ic_profile.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable_rect_border_purple.xml.flat",
@@ -174,6 +190,10 @@
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-anydpi_ic_search.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-anydpi/ic_search.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_profile.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-xxhdpi/ic_profile.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
