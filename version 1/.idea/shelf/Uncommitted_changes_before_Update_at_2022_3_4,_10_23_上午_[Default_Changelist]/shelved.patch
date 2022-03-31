@@ -1,0 +1,23 @@
+Index: app/src/main/res/layout/add_qr_code_layout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\">\n\n\n    <ImageView\n        android:id=\"@+id/picture_imageView\"\n        android:layout_width=\"162dp\"\n        android:layout_height=\"159dp\"\n        android:gravity=\"center\"\n        app:layout_constraintBottom_toTopOf=\"@+id/score_textView\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.502\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\"\n        app:layout_constraintVertical_bias=\"0.668\"\n        app:srcCompat=\"@mipmap/ic_launcher\" />\n\n    <TextView\n        android:id=\"@+id/score_textView\"\n        android:layout_width=\"158dp\"\n        android:layout_height=\"61dp\"\n        android:layout_marginBottom=\"360dp\"\n        android:gravity=\"center\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toEndOf=\"parent\"\n        app:layout_constraintHorizontal_bias=\"0.509\"\n        app:layout_constraintStart_toStartOf=\"parent\" />\n\n    <Button\n        android:id=\"@+id/upload_picture_button\"\n        android:layout_width=\"125dp\"\n        android:layout_height=\"65dp\"\n        android:text=\"Upload Picture\"\n        app:layout_constraintBottom_toBottomOf=\"parent\"\n        app:layout_constraintEnd_toStartOf=\"@+id/add_qr_button\"\n        app:layout_constraintHorizontal_bias=\"0.451\"\n        app:layout_constraintStart_toStartOf=\"parent\"\n        app:layout_constraintTop_toTopOf=\"parent\"\n        app:layout_constraintVertical_bias=\"0.675\" />\n\n    <Button\n        android:id=\"@+id/add_qr_button\"\n        android:layout_width=\"125dp\"\n        android:layout_height=\"65dp\"\n        android:layout_marginEnd=\"48dp\"\n        android:text=\"Add QR\"\n        app:layout_constraintBaseline_toBaselineOf=\"@+id/upload_picture_button\"\n        app:layout_constraintEnd_toEndOf=\"parent\" />\n\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/add_qr_code_layout.xml b/app/src/main/res/layout/add_qr_code_layout.xml
+--- a/app/src/main/res/layout/add_qr_code_layout.xml	(revision 215e6f6e92e84d09f3fe55ae2eeda8b6a6a12af6)
++++ b/app/src/main/res/layout/add_qr_code_layout.xml	(date 1646414589770)
+@@ -37,10 +37,10 @@
+         android:text="Upload Picture"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toStartOf="@+id/add_qr_button"
+-        app:layout_constraintHorizontal_bias="0.451"
++        app:layout_constraintHorizontal_bias="0.433"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.675" />
++        app:layout_constraintVertical_bias="0.663" />
+ 
+     <Button
+         android:id="@+id/add_qr_button"
