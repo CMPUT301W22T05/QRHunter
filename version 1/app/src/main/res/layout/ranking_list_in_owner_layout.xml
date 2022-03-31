@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/player_name_textview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:gravity="center"
+        android:hint="XXX"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="96dp"
+        android:layout_toStartOf="@+id/total_score_textview"
+        android:layout_toEndOf="@+id/player_name_textview"
+        android:gravity="center"
+        android:hint="Total score: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/total_score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:hint="XXX"
+        android:textSize="15dp" />
+
+</RelativeLayout>
