@@ -3,37 +3,27 @@ package com.example.qrhunter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.auth.User;
-
-import org.w3c.dom.Text;
+import com.google.firebase..database.FirebaseRecyclerAdapter;
 
 public class OwnerMenuActivity extends AppCompatActivity {
-    ImageButton SearchButton;
-    Button RankingButton;
-    TextView SearchUserName;
-    TextView PersonalName;
-    ListView ListResult;
+    private ImageButton SearchButton;
+    private Button RankingButton;
+    private TextView SearchUserName;
+    private TextView PersonalName;
+    private ListView ListResult;
 
     private DatabaseReference mUserDatabase;
 
@@ -45,7 +35,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         setContentView(R.layout.owner_menu_layout);
 
         //
-        mUserDatabase = FirebaseDatabase.getInstance().getReference("Users");
+        mUserDatabase = FirebaseDatabase.getInstance().getReference("Players");
 
         // initialize all the buttons and textview in owner_menu_layout
         SearchButton = (ImageButton) findViewById(R.id.search_user_name_Button);
