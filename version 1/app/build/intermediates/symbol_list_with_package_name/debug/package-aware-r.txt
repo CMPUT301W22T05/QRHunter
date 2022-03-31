@@ -2656,6 +2656,7 @@ drawable notify_panel_notification_icon_bg
 drawable rect_border_grey
 drawable rect_border_purple
 drawable round_border
+drawable selection_band_overlay
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2939,6 +2940,7 @@ id login_button
 id logout
 id lowest_scoring_textView
 id ltr
+id main_list
 id map
 id masked
 id match_constraint
