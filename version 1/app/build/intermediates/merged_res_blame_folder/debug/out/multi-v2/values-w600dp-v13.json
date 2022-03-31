@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sunning/Downloads/QRHunter2/version 1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/sunning/Downloads/QRHunter2/version 1/app/src/main/res/values-w600dp/dimens.xml",
+                    "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "8",
-                        "startOffsets": "20",
+                        "startOffsets": "21",
                         "endColumns": "45",
-                        "endOffsets": "57"
+                        "endOffsets": "58"
                     },
                     "to": {
                         "startLines": "2",

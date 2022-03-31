@@ -4,10 +4,10 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
+import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.qrhunter.R;
@@ -17,20 +17,20 @@ import java.lang.String;
 
 public final class PlayerRankingLayoutBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerView;
+  public final ListView rankingList;
 
-  private PlayerRankingLayoutBinding(@NonNull RelativeLayout rootView,
-      @NonNull RecyclerView recyclerView) {
+  private PlayerRankingLayoutBinding(@NonNull LinearLayout rootView,
+      @NonNull ListView rankingList) {
     this.rootView = rootView;
-    this.recyclerView = recyclerView;
+    this.rankingList = rankingList;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +55,13 @@ public final class PlayerRankingLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recyclerView;
-      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerView == null) {
+      id = R.id.ranking_list;
+      ListView rankingList = ViewBindings.findChildViewById(rootView, id);
+      if (rankingList == null) {
         break missingId;
       }
 
-      return new PlayerRankingLayoutBinding((RelativeLayout) rootView, recyclerView);
+      return new PlayerRankingLayoutBinding((LinearLayout) rootView, rankingList);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

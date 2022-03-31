@@ -3062,11 +3062,11 @@ id qr_score_text
 id qr_scores_list
 id radio
 id ranking_button
+id ranking_list
 id ranking_total_score_list
 id ratio
 id rectangles
 id recview
-id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft

@@ -3061,11 +3061,11 @@ int id qr_score_text 0x7f08018c
 int id qr_scores_list 0x7f08018d
 int id radio 0x7f08018e
 int id ranking_button 0x7f08018f
-int id ranking_total_score_list 0x7f080190
-int id ratio 0x7f080191
-int id rectangles 0x7f080192
-int id recview 0x7f080193
-int id recyclerView 0x7f080194
+int id ranking_list 0x7f080190
+int id ranking_total_score_list 0x7f080191
+int id ratio 0x7f080192
+int id rectangles 0x7f080193
+int id recview 0x7f080194
 int id reverseSawtooth 0x7f080195
 int id right 0x7f080196
 int id rightToLeft 0x7f080197

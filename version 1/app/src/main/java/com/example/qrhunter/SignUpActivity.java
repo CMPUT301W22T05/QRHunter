@@ -118,6 +118,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             MyProfileData.commit();
                                             //create password field
                                             HashMap<String, String> data = new HashMap<>();
+                                            data.put("Total score","0");
                                             collectionReference
                                                     .document(username)
                                                     .set(data)
