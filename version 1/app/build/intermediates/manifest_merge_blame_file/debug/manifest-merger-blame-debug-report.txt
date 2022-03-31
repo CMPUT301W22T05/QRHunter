@@ -6,118 +6,118 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
+8-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
+9-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:4:5-64
-11-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:4:22-62
+11-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:4:5-64
+11-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:4:22-62
 12
 13    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 14    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:5-79
-15-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:22-76
+15-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:13:5-79
+15-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:13:22-76
 16    <uses-permission android:name="android.permission.INTERNET" />
-16-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:14:5-67
-16-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:14:22-64
+16-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:14:5-67
+16-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:14:22-64
 17
 18    <uses-feature
-18-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+18-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
 19        android:glEsVersion="0x00020000"
-19-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+19-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
 20        android:required="true" />
-20-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
 21
 22    <queries>
-22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+22-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
 23
 24        <!-- Needs to be explicitly declared on Android R+ -->
 25        <package android:name="com.google.android.apps.maps" />
-25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
 26    </queries> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 27    <uses-feature
-27-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
+27-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:24:5-26:36
 28        android:name="android.hardware.camera"
-28-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
+28-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:25:9-47
 29        android:required="false" />
-29-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
+29-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:26:9-33
 30    <uses-feature
-30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:27:5-29:36
 31        android:name="android.hardware.camera.front"
-31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:28:9-53
 32        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-32-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
+32-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:29:9-33
 33    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 34    <uses-feature
-34-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
+34-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:32:5-34:36
 35        android:name="android.hardware.camera.autofocus"
-35-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
+35-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:33:9-57
 36        android:required="false" />
-36-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
+36-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:34:9-33
 37    <uses-feature
-37-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
+37-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:35:5-37:36
 38        android:name="android.hardware.camera.flash"
-38-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
+38-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:36:9-53
 39        android:required="false" />
-39-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
+39-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:37:9-33
 40    <uses-feature
-40-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
+40-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:38:5-40:36
 41        android:name="android.hardware.screen.landscape"
-41-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
+41-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:39:9-57
 42        android:required="false" />
-42-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
+42-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:40:9-33
 43    <uses-feature
-43-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
+43-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:41:5-43:36
 44        android:name="android.hardware.wifi"
-44-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
+44-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:42:9-45
 45        android:required="false" />
-45-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
+45-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:43:9-33
 46
 47    <application
-47-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:5-57:19
+47-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:5:5-57:19
 48        android:allowBackup="true"
-48-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:9-35
+48-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:6:9-35
 49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-49-->[androidx.core:core:1.7.0] C:\Users\jayant\.gradle\caches\transforms-3\cc2282fbaa464234616b881367bb4ed3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+49-->[androidx.core:core:1.7.0] /Users/youwenhao/.gradle/caches/transforms-3/cc2282fbaa464234616b881367bb4ed3/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 50        android:debuggable="true"
 51        android:icon="@mipmap/ic_launcher"
-51-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:9-43
+51-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:7:9-43
 52        android:label="@string/app_name"
-52-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:9-41
+52-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:8:9-41
 53        android:roundIcon="@mipmap/ic_launcher_round"
-53-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:9-54
+53-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:9:9-54
 54        android:supportsRtl="true"
-54-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:10:9-35
+54-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:10:9-35
 55        android:testOnly="true"
 56        android:theme="@style/Theme.QRHunter" >
-56-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:11:9-46
+56-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:11:9-46
 57        <activity
-57-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:12:9-14:40
+57-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:12:9-14:40
 58            android:name="com.example.qrhunter.scannerView"
-58-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:13:13-40
+58-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:13:13-40
 59            android:exported="false" />
-59-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:14:13-37
+59-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:14:13-37
 60        <activity
-60-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:15:9-17:40
+60-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:15:9-17:40
 61            android:name="com.example.qrhunter.LoginScanner"
-61-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:16:13-41
+61-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:16:13-41
 62            android:exported="false" />
-62-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:17:13-37
+62-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:17:13-37
 63        <activity
-63-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:18:9-20:40
+63-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:18:9-20:40
 64            android:name="com.example.qrhunter.SearchInfo"
-64-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:19:13-39
+64-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:19:13-39
 65            android:exported="false" />
-65-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:20:13-37
+65-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:20:13-37
 66        <activity
-66-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:21:9-23:40
+66-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:21:9-23:40
 67            android:name="com.example.qrhunter.Search"
-67-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:22:13-35
+67-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:22:13-35
 68            android:exported="false" />
-68-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:23:13-37
+68-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:23:13-37
 69        <!--
 70             TODO: Before you run your application, you need a Google Maps API key.
 71
@@ -130,151 +130,151 @@
 78             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
 79        -->
 80        <meta-data
-80-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:35:9-37:71
+80-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:35:9-37:71
 81            android:name="com.google.android.geo.API_KEY"
-81-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:36:13-58
+81-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:36:13-58
 82            android:value="AIzaSyBqbnuXnzj-mwRRJy6N2nuk5o1sqCUYlmI" />
-82-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:37:13-68
+82-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:37:13-68
 83
 84        <activity
-84-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:9-41:40
+84-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:39:9-41:40
 85            android:name="com.example.qrhunter.SignUpActivity"
-85-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:13-43
+85-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:40:13-43
 86            android:exported="false" />
-86-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:41:13-37
+86-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:41:13-37
 87        <activity android:name="com.example.qrhunter.PlayerMenuActivity" />
-87-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:42:9-56
-87-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:42:19-53
+87-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:42:9-56
+87-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:42:19-53
 88        <activity android:name="com.example.qrhunter.PlayerRankingActivity" />
-88-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:43:9-59
-88-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:43:19-56
+88-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:43:9-59
+88-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:43:19-56
 89        <activity android:name="com.example.qrhunter.OwnerMenuActivity" />
-89-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:44:9-55
-89-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:44:19-52
+89-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:44:9-55
+89-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:44:19-52
 90        <activity android:name="com.example.qrhunter.MyProfileActivity" />
-90-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:45:9-55
-90-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:45:19-52
+90-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:45:9-55
+90-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:45:19-52
 91        <activity android:name="com.example.qrhunter.PersonalRank" />
-91-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:46:9-50
-91-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:46:19-47
+91-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:46:9-50
+91-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:46:19-47
 92        <activity android:name="com.example.qrhunter.ScanQRcodeActivity" />
-92-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:47:9-56
-92-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:47:19-53
+92-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:47:9-56
+92-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:47:19-53
 93        <activity
-93-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:48:9-56:20
+93-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:48:9-56:20
 94            android:name="com.example.qrhunter.MainActivity"
-94-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:49:13-41
+94-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:49:13-41
 95            android:exported="true" >
-95-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:50:13-36
+95-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:50:13-36
 96            <intent-filter>
-96-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:51:13-55:29
+96-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:51:13-55:29
 97                <action android:name="android.intent.action.MAIN" />
-97-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:52:17-69
-97-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:52:25-66
+97-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:52:17-69
+97-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:52:25-66
 98
 99                <category android:name="android.intent.category.LAUNCHER" />
-99-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:54:17-77
-99-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:54:27-74
+99-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:54:17-77
+99-->/Users/youwenhao/test/QRHunter/version 1/app/src/main/AndroidManifest.xml:54:27-74
 100            </intent-filter>
 101        </activity>
 102        <activity
-102-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:27:9-29:72
+102-->[com.karumi:dexter:6.2.2] /Users/youwenhao/.gradle/caches/transforms-3/26a084eec7254a63368dcd959fca1499/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:27:9-29:72
 103            android:name="com.karumi.dexter.DexterActivity"
-103-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:28:13-60
+103-->[com.karumi:dexter:6.2.2] /Users/youwenhao/.gradle/caches/transforms-3/26a084eec7254a63368dcd959fca1499/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:28:13-60
 104            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-104-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:29:13-69
+104-->[com.karumi:dexter:6.2.2] /Users/youwenhao/.gradle/caches/transforms-3/26a084eec7254a63368dcd959fca1499/transformed/jetified-dexter-6.2.2/AndroidManifest.xml:29:13-69
 105
 106        <service
-106-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:17:9-23:19
+106-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:17:9-23:19
 107            android:name="com.google.firebase.components.ComponentDiscoveryService"
-107-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:18:13-84
+107-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:18:13-84
 108            android:directBootAware="true"
-108-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+108-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
 109            android:exported="false" >
-109-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:19:13-37
+109-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:19:13-37
 110            <meta-data
-110-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:20:13-22:85
+110-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:20:13-22:85
 111                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-111-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:21:17-111
+111-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:21:17-111
 112                android:value="com.google.firebase.components.ComponentRegistrar" />
-112-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:22:17-82
+112-->[com.google.firebase:firebase-firestore:24.0.1] /Users/youwenhao/.gradle/caches/transforms-3/9ed7766666f36ca22eeff01dc71e916d/transformed/jetified-firebase-firestore-24.0.1/AndroidManifest.xml:22:17-82
 113            <meta-data
-113-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+113-->[com.google.firebase:firebase-database:20.0.4] /Users/youwenhao/.gradle/caches/transforms-3/f11f34914c197f44ffa7653f6ac2fd2a/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:32:13-34:85
 114                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-114-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+114-->[com.google.firebase:firebase-database:20.0.4] /Users/youwenhao/.gradle/caches/transforms-3/f11f34914c197f44ffa7653f6ac2fd2a/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:33:17-109
 115                android:value="com.google.firebase.components.ComponentRegistrar" />
-115-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+115-->[com.google.firebase:firebase-database:20.0.4] /Users/youwenhao/.gradle/caches/transforms-3/f11f34914c197f44ffa7653f6ac2fd2a/transformed/jetified-firebase-database-20.0.4/AndroidManifest.xml:34:17-82
 116        </service> <!-- Needs to be explicitly declared on P+ -->
 117        <uses-library
-117-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+117-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
 118            android:name="org.apache.http.legacy"
-118-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+118-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
 119            android:required="false" />
-119-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+119-->[com.google.android.gms:play-services-maps:18.0.2] /Users/youwenhao/.gradle/caches/transforms-3/a7ea5014525046037ceb90e763d36152/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
 120
 121        <activity
-121-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+121-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:46:9-52:63
 122            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-122-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+122-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:47:13-74
 123            android:clearTaskOnLaunch="true"
-123-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+123-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:48:13-45
 124            android:screenOrientation="sensorLandscape"
-124-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+124-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:49:13-56
 125            android:stateNotNeeded="true"
-125-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+125-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:50:13-42
 126            android:theme="@style/zxing_CaptureTheme"
-126-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+126-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:51:13-54
 127            android:windowSoftInputMode="stateAlwaysHidden" />
-127-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+127-->[com.journeyapps:zxing-android-embedded:3.2.0] /Users/youwenhao/.gradle/caches/transforms-3/776b840b242281195582b3264756772a/transformed/jetified-zxing-android-embedded-3.2.0/AndroidManifest.xml:52:13-60
 128        <activity
-128-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+128-->[com.google.android.gms:play-services-base:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/8c7278840ecd5e1b3ddc0854b6b35430/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 129            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-129-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+129-->[com.google.android.gms:play-services-base:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/8c7278840ecd5e1b3ddc0854b6b35430/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 130            android:exported="false"
-130-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+130-->[com.google.android.gms:play-services-base:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/8c7278840ecd5e1b3ddc0854b6b35430/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
 131            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-131-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+131-->[com.google.android.gms:play-services-base:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/8c7278840ecd5e1b3ddc0854b6b35430/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
 132
 133        <provider
-133-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+133-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
 134            android:name="com.google.firebase.provider.FirebaseInitProvider"
-134-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+134-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
 135            android:authorities="com.example.qrhunter.firebaseinitprovider"
-135-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+135-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
 136            android:directBootAware="true"
-136-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+136-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
 137            android:exported="false"
-137-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+137-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
 138            android:initOrder="100" />
-138-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+138-->[com.google.firebase:firebase-common:20.1.0] /Users/youwenhao/.gradle/caches/transforms-3/104b364b1a926c13081362a6276aea8d/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
 139
 140        <meta-data
-140-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+140-->[com.google.android.gms:play-services-basement:18.0.0] /Users/youwenhao/.gradle/caches/transforms-3/4b5da3e6ab5251318a6978323f56f689/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
 141            android:name="com.google.android.gms.version"
-141-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+141-->[com.google.android.gms:play-services-basement:18.0.0] /Users/youwenhao/.gradle/caches/transforms-3/4b5da3e6ab5251318a6978323f56f689/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
 142            android:value="@integer/google_play_services_version" />
-142-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+142-->[com.google.android.gms:play-services-basement:18.0.0] /Users/youwenhao/.gradle/caches/transforms-3/4b5da3e6ab5251318a6978323f56f689/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
 143
 144        <provider
-144-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+144-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
 145            android:name="androidx.startup.InitializationProvider"
-145-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+145-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
 146            android:authorities="com.example.qrhunter.androidx-startup"
-146-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+146-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
 147            android:exported="false" >
-147-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+147-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
 148            <meta-data
-148-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+148-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
 149                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-149-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+149-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
 150                android:value="androidx.startup" />
-150-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+150-->[androidx.emoji2:emoji2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/6072b481be5f6d0935f5842e977aa23c/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
 151            <meta-data
-151-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+151-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/youwenhao/.gradle/caches/transforms-3/e0f55ad9bf9c4aa7c2076585144e72a7/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
 152                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-152-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+152-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/youwenhao/.gradle/caches/transforms-3/e0f55ad9bf9c4aa7c2076585144e72a7/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 153                android:value="androidx.startup" />
-153-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+153-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/youwenhao/.gradle/caches/transforms-3/e0f55ad9bf9c4aa7c2076585144e72a7/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 154        </provider>
 155    </application>
 156
