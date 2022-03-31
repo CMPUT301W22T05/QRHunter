@@ -2994,10 +2994,10 @@ int id qr_score_text 0x7f08017a
 int id qr_scores_list 0x7f08017b
 int id radio 0x7f08017c
 int id ranking_button 0x7f08017d
-int id ratio 0x7f08017e
-int id rectangles 0x7f08017f
-int id recyclerView 0x7f080180
-int id recyclerView3 0x7f080181
+int id ranking_total_score_list 0x7f08017e
+int id ratio 0x7f08017f
+int id rectangles 0x7f080180
+int id recyclerView 0x7f080181
 int id reverseSawtooth 0x7f080182
 int id right 0x7f080183
 int id rightToLeft 0x7f080184
