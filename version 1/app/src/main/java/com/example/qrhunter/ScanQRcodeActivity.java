@@ -50,6 +50,8 @@ import com.google.android.gms.tasks.Task;
 
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -57,6 +59,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.google.firestore.v1.WriteResult;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -72,6 +75,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import io.paperdb.Paper;
 
@@ -162,9 +166,9 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                 String title = scantext.getText().toString();
                 String description = comments.getText().toString();
                 codeworth = calculateWorth(title);
-
                 SharedPreferences MyProfileData = getSharedPreferences("data", 0);
                 String username = MyProfileData.getString("username", null);
+                db.collection("Player").document(username).update("Total score", FieldValue.increment(codeworth));
                 Note note = new Note(title, description, codeworth,lat,lag,url);
                 final CollectionReference collectionReference = db.collection("Player");
                 DocumentReference noteRef = db.collection("Player").document(username);
@@ -188,13 +192,16 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                                     data += "ID: " + documentId
                                             + "\nScanned: " + title + "\nComments: " + description + "\n\n";
                                 }
-                                Toast.makeText(ScanQRcodeActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ScanQRcodeActivity.this, "Data Stored", Toast.LENGTH_SHORT).show();
 
 
                             }
                         });
                 collectionReference.document(username)
                         .collection("QRCOde").add(note);
+                final CollectionReference cl = db.collection("QRCODES");
+                DocumentReference cr = db.collection("QRCODES").document();
+                cr.set(note);
 
             }
         });

@@ -60,7 +60,7 @@ public class ViewQRCode extends AppCompatActivity {
                             qr.add(qrcodes);
                             qrCodeAdapter.notifyDataSetChanged();
                         }
-                        Toast.makeText(ViewQRCode.this, "Successfully create account", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ViewQRCode.this, "All QRCODES LIST", Toast.LENGTH_SHORT).show();
 
 
                     }
