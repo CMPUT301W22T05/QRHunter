@@ -1,18 +1,34 @@
 package com.example.qrhunter;
 
 import android.Manifest;
+import android.content.ActivityNotFoundException;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.provider.MediaStore;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -26,15 +42,17 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
-import com.google.common.hash.HashFunction;
-import com.google.common.hash.Hashing;
+
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -43,9 +61,12 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
+import io.paperdb.Paper;
 
 
 public class ScanQRcodeActivity extends AppCompatActivity {
@@ -58,9 +79,15 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     public int codeworth;
     double lat;
     double lag;
+
     String data = "";
     SupportMapFragment smf;
     FusedLocationProviderClient client;
+    ImageView imageView;
+
+
+
+
 
 
     @Override
@@ -74,16 +101,50 @@ public class ScanQRcodeActivity extends AppCompatActivity {
         Location = (Button) findViewById(R.id.location_button);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         comments = (EditText) findViewById(R.id.editText_comments);
-        // set the functionality of switching activity of scan button
+        imageView = findViewById(R.id.image);
+
+
+
+
 
         scanbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), scannerView.class));
 
+                startActivity(new Intent(getApplicationContext(), scannerView.class));
+                AlertDialog.Builder builder = new AlertDialog.Builder(ScanQRcodeActivity.this);
+                AlertDialog alert = builder.create();
+                alert.show();
+                AlertDialog.Builder remember = new AlertDialog.Builder(ScanQRcodeActivity.this);
+
+                remember.setTitle("Do you wish to save a picture of the location");
+
+                remember.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        startActivityForResult(intent, 100);
+                        dialog.dismiss();
+                    }
+                });
+
+                remember.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        // Do nothing
+                        dialog.dismiss();
+                    }
+                });
+
+                AlertDialog next = remember.create();
+                next.show();
 
             }
         });
+
 
         upload.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,6 +218,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
         });
 
     }
+
     public void getmylocation() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -186,6 +248,19 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                 });
             }
         });
+    }
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 100) {
+
+
+            Bitmap captureImage = (Bitmap) data.getExtras().get("data");
+            imageView.setImageBitmap(captureImage);
+
+
+
+
+        }
     }
 
 
