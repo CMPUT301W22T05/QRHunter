@@ -41,6 +41,7 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String username = MyProfileData.getString("username", null);
         String email = MyProfileData.getString("email", null);
+
         UserName.setText("Username: " + username);  // display the username of this account
         ContactInfo.setText("Contact Information: "+ email);  // display the email address
         UserDeviceBrand.setText("Phone Brand: " +Build.BRAND);  // display the brand of the phone now
@@ -57,11 +58,11 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
     @Override
     public void applyText(String name, String contact) {
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
-        String previousUsername = MyProfileData.getString("username", null);
+        String loginUsername = MyProfileData.getString("username", null);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        db.collection("Player").document(previousUsername).update("Email", contact);
-
+        db.collection("Player").document(loginUsername).update("Email", contact);
+        db.collection("Player").document(loginUsername).update("Name", name);
         UserName.setText("Username: " + name);
         ContactInfo.setText("Contact Information: "+ contact);
     }
