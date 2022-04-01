@@ -68,13 +68,13 @@ public class OwnerMenuActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                if (document.getString("Total score") == null){
-                                    DisplayUserName = document.getId();;
+                                if (document.getData().get("Total score") == null){
+                                    DisplayUserName = document.getId();
                                     DisplayTotalScore = "NULL";
                                 }
                                 else {
-                                    DisplayUserName = document.getId();;
-                                    DisplayTotalScore = document.getString("Total score");
+                                    DisplayUserName = document.getId();
+                                    DisplayTotalScore = document.getData().get("Total score").toString();
                                 }
                                 scoreDataList.add(new TotalScoreOnOwnerPage(DisplayUserName, DisplayTotalScore));
                             }
@@ -102,7 +102,6 @@ public class OwnerMenuActivity extends AppCompatActivity {
                 startActivity(SendToNextTitle);
             }
         });
-
 
 
         // set the functionality of switching activity of ranking button
