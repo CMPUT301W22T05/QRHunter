@@ -4,7 +4,7 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class PlayerRankingContentBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final TextView playerRankingName;
@@ -25,7 +25,7 @@ public final class PlayerRankingContentBinding implements ViewBinding {
   @NonNull
   public final TextView playerRankingScore;
 
-  private PlayerRankingContentBinding(@NonNull LinearLayout rootView,
+  private PlayerRankingContentBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView playerRankingName, @NonNull TextView playerRankingScore) {
     this.rootView = rootView;
     this.playerRankingName = playerRankingName;
@@ -34,7 +34,7 @@ public final class PlayerRankingContentBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -71,7 +71,7 @@ public final class PlayerRankingContentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PlayerRankingContentBinding((LinearLayout) rootView, playerRankingName,
+      return new PlayerRankingContentBinding((RelativeLayout) rootView, playerRankingName,
           playerRankingScore);
     }
     String missingId = rootView.getResources().getResourceName(id);

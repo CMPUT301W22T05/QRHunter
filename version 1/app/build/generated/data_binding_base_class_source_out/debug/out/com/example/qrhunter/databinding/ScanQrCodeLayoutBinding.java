@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.qrhunter.R;
@@ -28,6 +30,12 @@ public final class ScanQrCodeLayoutBinding implements ViewBinding {
   public final EditText editTextComments;
 
   @NonNull
+  public final FragmentContainerView googleMap;
+
+  @NonNull
+  public final ImageView image;
+
+  @NonNull
   public final Button locationButton;
 
   @NonNull
@@ -37,11 +45,14 @@ public final class ScanQrCodeLayoutBinding implements ViewBinding {
   public final Button uploadCommentsButton;
 
   private ScanQrCodeLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button cameraButton,
-      @NonNull EditText editTextComments, @NonNull Button locationButton,
-      @NonNull TextView scantext, @NonNull Button uploadCommentsButton) {
+      @NonNull EditText editTextComments, @NonNull FragmentContainerView googleMap,
+      @NonNull ImageView image, @NonNull Button locationButton, @NonNull TextView scantext,
+      @NonNull Button uploadCommentsButton) {
     this.rootView = rootView;
     this.cameraButton = cameraButton;
     this.editTextComments = editTextComments;
+    this.googleMap = googleMap;
+    this.image = image;
     this.locationButton = locationButton;
     this.scantext = scantext;
     this.uploadCommentsButton = uploadCommentsButton;
@@ -86,6 +97,18 @@ public final class ScanQrCodeLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.google_map;
+      FragmentContainerView googleMap = ViewBindings.findChildViewById(rootView, id);
+      if (googleMap == null) {
+        break missingId;
+      }
+
+      id = R.id.image;
+      ImageView image = ViewBindings.findChildViewById(rootView, id);
+      if (image == null) {
+        break missingId;
+      }
+
       id = R.id.location_button;
       Button locationButton = ViewBindings.findChildViewById(rootView, id);
       if (locationButton == null) {
@@ -105,7 +128,7 @@ public final class ScanQrCodeLayoutBinding implements ViewBinding {
       }
 
       return new ScanQrCodeLayoutBinding((ConstraintLayout) rootView, cameraButton,
-          editTextComments, locationButton, scantext, uploadCommentsButton);
+          editTextComments, googleMap, image, locationButton, scantext, uploadCommentsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
