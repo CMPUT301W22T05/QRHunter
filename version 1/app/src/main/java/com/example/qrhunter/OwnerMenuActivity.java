@@ -1,26 +1,43 @@
 package com.example.qrhunter;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
 
 public class OwnerMenuActivity extends AppCompatActivity {
 
-
-
-
-
+    long scorePos = 10000;
+    ListView scoreList;
+    ArrayAdapter<TotalScoreOnOwnerPage> scoreAdapter;
+    ArrayList<TotalScoreOnOwnerPage> scoreDataList;
+    String DisplayUserName;
+    String DisplayTotalScore;
 
     ImageButton SearchButton;
     Button RankingButton;
@@ -41,6 +58,56 @@ public class OwnerMenuActivity extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         // update information in personal_qr_rank_layout.xml
         PersonalName = findViewById(R.id.personal_rank_TextView);
+
+        scoreDataList = new ArrayList<>();
+
+        db.collection("Player")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                if (document.getString("Total score") == null){
+                                    DisplayUserName = document.getId();;
+                                    DisplayTotalScore = "NULL";
+                                }
+                                else {
+                                    DisplayUserName = document.getId();;
+                                    DisplayTotalScore = document.getString("Total score");
+                                }
+                                scoreDataList.add(new TotalScoreOnOwnerPage(DisplayUserName, DisplayTotalScore));
+                            }
+                        }
+                    }
+                });
+
+
+
+
+        /////////////////////////////////
+        scoreList = findViewById(R.id.ranking_total_score_list);
+        scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
+        scoreList.setAdapter(scoreAdapter);
+
+        // 点击item跳转activity
+
+        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                // long position = scoreList.getItemIdAtPosition(position);
+                scorePos = position;
+                System.out.println(scorePos);
+                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+                startActivity(SendToNextTitle);
+            }
+        });
+
+
+
+
+
+
 
         // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
@@ -94,5 +161,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
 
 
+    }
+    // display the information to list
+    public void onOkPressed(TotalScoreOnOwnerPage newTotalScoreOnOwnerPage) {
+        scoreAdapter.add(newTotalScoreOnOwnerPage);
     }
 }

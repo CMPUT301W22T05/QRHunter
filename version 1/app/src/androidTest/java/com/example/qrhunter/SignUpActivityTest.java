@@ -90,9 +90,9 @@ public class SignUpActivityTest {
     public void checkExistence(){
         solo.assertCurrentActivity("Wrong Activity", SignUpActivity.class);
         solo.enterText((EditText) solo.getView(R.id.sign_up_username), "Player1");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_password), "123");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_name), "Player1_full_name");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_email_address), "Player1_email_address");
+//        solo.enterText((EditText) solo.getView(R.id.sign_up_password), "123");
+//        solo.enterText((EditText) solo.getView(R.id.sign_up_name), "Player1_full_name");
+//        solo.enterText((EditText) solo.getView(R.id.sign_up_email_address), "Player1_email_address");
         solo.clickOnButton("Confirm");
         solo.assertCurrentActivity("Test failed",SignUpActivity.class);
 

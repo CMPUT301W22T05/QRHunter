@@ -4,8 +4,8 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ListView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -17,20 +17,28 @@ import java.lang.String;
 
 public final class RankInOwnerContentBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final ListView personalNameAndScore;
+  public final TextView textView4;
 
-  private RankInOwnerContentBinding(@NonNull FrameLayout rootView,
-      @NonNull ListView personalNameAndScore) {
+  @NonNull
+  public final TextView totalScoreOwnerPageTextview;
+
+  @NonNull
+  public final TextView usernameOwnerPageTextview;
+
+  private RankInOwnerContentBinding(@NonNull LinearLayout rootView, @NonNull TextView textView4,
+      @NonNull TextView totalScoreOwnerPageTextview, @NonNull TextView usernameOwnerPageTextview) {
     this.rootView = rootView;
-    this.personalNameAndScore = personalNameAndScore;
+    this.textView4 = textView4;
+    this.totalScoreOwnerPageTextview = totalScoreOwnerPageTextview;
+    this.usernameOwnerPageTextview = usernameOwnerPageTextview;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +63,26 @@ public final class RankInOwnerContentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.personal_name_and_score;
-      ListView personalNameAndScore = ViewBindings.findChildViewById(rootView, id);
-      if (personalNameAndScore == null) {
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
         break missingId;
       }
 
-      return new RankInOwnerContentBinding((FrameLayout) rootView, personalNameAndScore);
+      id = R.id.total_score_owner_page_textview;
+      TextView totalScoreOwnerPageTextview = ViewBindings.findChildViewById(rootView, id);
+      if (totalScoreOwnerPageTextview == null) {
+        break missingId;
+      }
+
+      id = R.id.username_owner_page_textview;
+      TextView usernameOwnerPageTextview = ViewBindings.findChildViewById(rootView, id);
+      if (usernameOwnerPageTextview == null) {
+        break missingId;
+      }
+
+      return new RankInOwnerContentBinding((LinearLayout) rootView, textView4,
+          totalScoreOwnerPageTextview, usernameOwnerPageTextview);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
