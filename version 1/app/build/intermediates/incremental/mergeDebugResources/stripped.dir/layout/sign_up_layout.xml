@@ -40,13 +40,13 @@
         android:id="@+id/sign_up_confirm"
         android:layout_width="115dp"
         android:layout_height="65dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Confirm"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -54,13 +54,13 @@
         android:id="@+id/sign_up_cancel"
         android:layout_width="106dp"
         android:layout_height="67dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Cancel"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rm" />
 
