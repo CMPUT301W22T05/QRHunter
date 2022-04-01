@@ -1,0 +1,259 @@
+<changelist name="Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]" date="1648772052101" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 3/31/2022 6:14 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/checksums/checksums.lock" />
+    <option name="AFTER_PATH" value=".gradle/checksums/checksums.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/checksums.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/androidResources" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/MainActivity.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/MainActivity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/MainActivity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$3$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$3$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$3$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/checksums/md5-checksums.bin" />
+    <option name="AFTER_PATH" value=".gradle/checksums/md5-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/md5-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/classes2.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.2/fileHashes/fileHashes.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.2/fileHashes/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$4$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$4$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$4$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/checksums/sha1-checksums.bin" />
+    <option name="AFTER_PATH" value=".gradle/checksums/sha1-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/sha1-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.2/executionHistory/executionHistory.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.2/executionHistory/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/outputFiles.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$2$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$2$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$2$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/classes.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/javaResources0" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/scannerView$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/scannerView$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/scannerView$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/processed_res/debug/out/resources-debug.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/resources-debug.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.2/fileHashes/resourceHashesCache.bin" />
+    <option name="AFTER_PATH" value=".gradle/7.2/fileHashes/resourceHashesCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/resourceHashesCache.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$3$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$3$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$3$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/classes1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$4.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$4.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$4.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/merge-state" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" value="app/build/intermediates/apk/debug/app-debug.apk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/app-debug.apk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/classes3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/PlayerMenuActivity.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/PlayerMenuActivity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/PlayerMenuActivity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$4$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$4$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$4$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" />
+    <option name="AFTER_PATH" value="app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/previous-compilation-data.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/merged_res/debug/layout_scan_qr_code_layout.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/merged_res/debug/layout_scan_qr_code_layout.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/layout_scan_qr_code_layout.xml.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/scannerView.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/scannerView.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/scannerView.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$2$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$2$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$2$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/scannerView$1.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/scannerView$1.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/scannerView$1.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.2/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value=".gradle/7.2/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity$3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$3.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$4.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$4.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$4.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/classes31.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/scannerView.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/scannerView.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/scannerView.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/MainActivity.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/MainActivity.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/MainActivity.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/dex_archive_input_jar_hashes/debug/out" />
+    <option name="AFTER_PATH" value="app/build/intermediates/dex_archive_input_jar_hashes/debug/out" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/out" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/SignUpActivity.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/SignUpActivity.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/SignUpActivity.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/SignUpActivity.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/SignUpActivity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/SignUpActivity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$1.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" />
+    <option name="AFTER_PATH" value="app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/R.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/7.2/executionHistory/executionHistory.lock" />
+    <option name="AFTER_PATH" value=".gradle/7.2/executionHistory/executionHistory.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/executionHistory.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/PlayerMenuActivity.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/PlayerMenuActivity.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/PlayerMenuActivity.dex" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$3.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$3.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/merged_java_res/debug/base.jar" />
+    <option name="AFTER_PATH" value="app/build/intermediates/merged_java_res/debug/base.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/base.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$2.class" />
+    <option name="AFTER_PATH" value="app/build/intermediates/javac/debug/classes/com/example/qrhunter/ScanQRcodeActivity$2.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity$2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity.dex" />
+    <option name="AFTER_PATH" value="app/build/intermediates/project_dex_archive/debug/out/com/example/qrhunter/ScanQRcodeActivity.dex" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM_[Default_Changelist]/ScanQRcodeActivity.dex" />
+  </binary>
+</changelist>
