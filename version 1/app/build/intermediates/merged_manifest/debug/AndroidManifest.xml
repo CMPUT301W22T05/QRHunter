@@ -12,6 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14" /> -->
@@ -72,15 +73,15 @@
             android:name="com.example.qrhunter.ViewQRCode"
             android:exported="false" />
         <!--
-             TODO: Before you run your application, you need a Google Maps API key.
+                TODO: Before you run your application, you need a Google Maps API key.
 
-             To get one, follow the directions here:
+                To get one, follow the directions here:
 
                 https://developers.google.com/maps/documentation/android-sdk/get-api-key
 
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+                Once you have your API key (it starts with "AIza"), define a new property in your
+                project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+                "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -89,6 +90,17 @@
         <activity
             android:name="com.example.qrhunter.SignUpActivity"
             android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
         <activity android:name="com.example.qrhunter.PlayerMenuActivity" />
         <activity android:name="com.example.qrhunter.PlayerRankingActivity" />
         <activity android:name="com.example.qrhunter.OwnerMenuActivity" />
@@ -117,6 +129,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service> <!-- Needs to be explicitly declared on P+ -->
         <uses-library

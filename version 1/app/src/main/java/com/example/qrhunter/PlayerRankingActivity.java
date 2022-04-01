@@ -52,7 +52,7 @@ public class PlayerRankingActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
         // Get a top level reference to the collection
-        final Query collectionReference = db.collection("Player").orderBy("Total score", Query.Direction.ASCENDING);
+        final Query collectionReference = db.collection("Player").orderBy("Total score", Query.Direction.DESCENDING);
         // Get a reference to the ListView and create an object for the city list
         playerList = findViewById(R.id.ranking_list);
         playerDataList = new ArrayList<>();
@@ -70,7 +70,7 @@ public class PlayerRankingActivity extends AppCompatActivity {
                 for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
                 {
                     String name = doc.getId();
-                    String score = (String) doc.getData().get("Total score");
+                    String score = doc.getData().get("Total score").toString();
                     playerDataList.add(new Player(name, score)); // Adding the cities and provinces from FireStore
                 }
                 playerAdapter.notifyDataSetChanged(); // Notifying the adapter to render any new data fetched from the cloud

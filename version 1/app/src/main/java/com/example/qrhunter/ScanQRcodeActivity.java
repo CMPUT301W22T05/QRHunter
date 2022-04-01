@@ -31,6 +31,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.FileProvider;
 
 import static com.google.common.math.IntMath.pow;
 
@@ -53,6 +54,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
@@ -63,14 +67,18 @@ import com.karumi.dexter.listener.single.PermissionListener;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import io.paperdb.Paper;
 
 
 public class ScanQRcodeActivity extends AppCompatActivity {
 
+    private static final int REQUEST_IMAGE_CAPTURE = 1;
     Button scanbtn;
     Button upload;
     Button Location;
@@ -84,6 +92,9 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     SupportMapFragment smf;
     FusedLocationProviderClient client;
     ImageView imageView;
+    String currentPhotoPath;
+    StorageReference storageReference;
+    String url;
 
 
 
@@ -102,7 +113,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         comments = (EditText) findViewById(R.id.editText_comments);
         imageView = findViewById(R.id.image);
-
+        storageReference = FirebaseStorage.getInstance().getReference();
 
 
 
@@ -123,8 +134,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
                     public void onClick(DialogInterface dialog, int which) {
 
-                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        startActivityForResult(intent, 100);
+                        dispatchTakePictureIntent();
                         dialog.dismiss();
                     }
                 });
@@ -155,7 +165,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
                 SharedPreferences MyProfileData = getSharedPreferences("data", 0);
                 String username = MyProfileData.getString("username", null);
-                Note note = new Note(title, description, codeworth,lat,lag);
+                Note note = new Note(title, description, codeworth,lat,lag,url);
                 final CollectionReference collectionReference = db.collection("Player");
                 DocumentReference noteRef = db.collection("Player").document(username);
                 collectionReference.document(username)
@@ -251,15 +261,76 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     }
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 100) {
+        if (requestCode == REQUEST_IMAGE_CAPTURE) {
+            File f = new File(currentPhotoPath);
+            imageView.setImageURI(Uri.fromFile(f));
+            Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+            Uri contentUri = Uri.fromFile(f);
+            mediaScanIntent.setData(contentUri);
+            this.sendBroadcast(mediaScanIntent);
+            uploadToFirebase(f.getName(),contentUri);
 
 
-            Bitmap captureImage = (Bitmap) data.getExtras().get("data");
-            imageView.setImageBitmap(captureImage);
+
+        }
+    }
+
+    private void uploadToFirebase(String name, Uri contentUri) {
+        StorageReference image = storageReference.child("images/"+name);
+        image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                image.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        url = uri.toString();
+                    }
+                });
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+
+    }
 
 
+    private File createImageFile() throws IOException {
+        // Create an image file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(
+                imageFileName,  /* prefix */
+                ".jpg",         /* suffix */
+                storageDir      /* directory */
+        );
 
-
+        // Save a file: path for use with ACTION_VIEW intents
+        currentPhotoPath = image.getAbsolutePath();
+        return image;
+    }
+    private void dispatchTakePictureIntent() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        // Ensure that there's a camera activity to handle the intent
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            // Create the File where the photo should go
+            File photoFile = null;
+            try {
+                photoFile = createImageFile();
+            } catch (IOException ex) {
+                // Error occurred while creating the File
+            }
+            // Continue only if the File was successfully created
+            if (photoFile != null) {
+                Uri photoURI = FileProvider.getUriForFile(this,
+                        "com.example.android.fileprovider",
+                        photoFile);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+            }
         }
     }
 
@@ -333,5 +404,6 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
     }
 }
+
 
 

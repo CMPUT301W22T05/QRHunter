@@ -2909,6 +2909,7 @@ id ignoreRequest
 id image
 id imageView
 id imagegholder
+id img1
 id immediateStop
 id included
 id info
@@ -4840,6 +4841,7 @@ styleable include constraintSet
 styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_width zxing_preview_scaling_strategy zxing_use_texture_view
 styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_mask
 styleable zxing_view zxing_scanner_layout
+xml file_paths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
