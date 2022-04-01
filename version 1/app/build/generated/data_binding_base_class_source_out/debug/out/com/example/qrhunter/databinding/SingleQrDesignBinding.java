@@ -4,6 +4,7 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,6 +24,9 @@ public final class SingleQrDesignBinding implements ViewBinding {
   public final TextView description;
 
   @NonNull
+  public final ImageView img1;
+
+  @NonNull
   public final TextView lag;
 
   @NonNull
@@ -35,10 +39,11 @@ public final class SingleQrDesignBinding implements ViewBinding {
   public final TextView worth;
 
   private SingleQrDesignBinding(@NonNull CardView rootView, @NonNull TextView description,
-      @NonNull TextView lag, @NonNull TextView lat, @NonNull TextView title,
-      @NonNull TextView worth) {
+      @NonNull ImageView img1, @NonNull TextView lag, @NonNull TextView lat,
+      @NonNull TextView title, @NonNull TextView worth) {
     this.rootView = rootView;
     this.description = description;
+    this.img1 = img1;
     this.lag = lag;
     this.lat = lat;
     this.title = title;
@@ -78,6 +83,12 @@ public final class SingleQrDesignBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.img1;
+      ImageView img1 = ViewBindings.findChildViewById(rootView, id);
+      if (img1 == null) {
+        break missingId;
+      }
+
       id = R.id.lag;
       TextView lag = ViewBindings.findChildViewById(rootView, id);
       if (lag == null) {
@@ -102,7 +113,8 @@ public final class SingleQrDesignBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SingleQrDesignBinding((CardView) rootView, description, lag, lat, title, worth);
+      return new SingleQrDesignBinding((CardView) rootView, description, img1, lag, lat, title,
+          worth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

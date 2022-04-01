@@ -32,40 +32,40 @@ public class ViewQRCode extends AppCompatActivity {
     private List<QrCodes> qr;
     private QrCodeAdapter qrCodeAdapter;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.my_qr_codes_layout);
-            qr = new ArrayList<>();
-            qrCodeAdapter = new QrCodeAdapter(qr);
-            codelist = (RecyclerView) findViewById(R.id.main_list);
-            codelist.setHasFixedSize(true);
-            codelist.setLayoutManager(new LinearLayoutManager(this));
-            codelist.setAdapter(qrCodeAdapter);
-            SharedPreferences MyProfileData = getSharedPreferences("data", 0);
-            String username = MyProfileData.getString("username", null);
-            final CollectionReference collectionReference = db.collection("Player");
-            DocumentReference noteRef = db.collection("Player").document(username);
-            collectionReference.document(username)
-                    .collection("QRCOde").get()
-                    .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                        @Override
-                        public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                            String data = "";
-                            collectionReference
-                                    .document(username)
-                                    .collection("QRCOde");
-                            for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.my_qr_codes_layout);
+        qr = new ArrayList<>();
+        qrCodeAdapter = new QrCodeAdapter(qr);
+        codelist = (RecyclerView) findViewById(R.id.main_list);
+        codelist.setHasFixedSize(true);
+        codelist.setLayoutManager(new LinearLayoutManager(this));
+        codelist.setAdapter(qrCodeAdapter);
+        SharedPreferences MyProfileData = getSharedPreferences("data", 0);
+        String username = MyProfileData.getString("username", null);
+        final CollectionReference collectionReference = db.collection("Player");
+        DocumentReference noteRef = db.collection("Player").document(username);
+        collectionReference.document(username)
+                .collection("QRCOde").get()
+                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    @Override
+                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                        String data = "";
+                        collectionReference
+                                .document(username)
+                                .collection("QRCOde");
+                        for (QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
 
-                                QrCodes qrcodes = documentSnapshot.toObject(QrCodes.class);
-                                qr.add(qrcodes);
-                                qrCodeAdapter.notifyDataSetChanged();
-                            }
-                            Toast.makeText(ViewQRCode.this, "Successfully create account", Toast.LENGTH_SHORT).show();
-
-
+                            QrCodes qrcodes = documentSnapshot.toObject(QrCodes.class);
+                            qr.add(qrcodes);
+                            qrCodeAdapter.notifyDataSetChanged();
                         }
-                    });
+                        Toast.makeText(ViewQRCode.this, "Successfully create account", Toast.LENGTH_SHORT).show();
 
-        }
+
+                    }
+                });
+
     }
+}
 

@@ -4,15 +4,26 @@ public class QrCodes {
     String description,title;
     int worth;
     double lag,lat;
+    String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
     public QrCodes() {
     }
 
-    public QrCodes(String description, double lag, double lat, String title, int worth) {
+    public QrCodes(String description, double lag, double lat, String title, int worth,String url) {
         this.description = description;
         this.lag = lag;
         this.lat = lat;
         this.title = title;
         this.worth = worth;
+        this.url = url;
     }
 
     public String getDescription() {

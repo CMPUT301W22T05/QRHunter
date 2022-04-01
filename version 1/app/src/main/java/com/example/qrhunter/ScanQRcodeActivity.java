@@ -165,7 +165,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
                 SharedPreferences MyProfileData = getSharedPreferences("data", 0);
                 String username = MyProfileData.getString("username", null);
-                Note note = new Note(title, description, codeworth,lat,lag);
+                Note note = new Note(title, description, codeworth,lat,lag,url);
                 final CollectionReference collectionReference = db.collection("Player");
                 DocumentReference noteRef = db.collection("Player").document(username);
                 collectionReference.document(username)
@@ -276,23 +276,23 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     }
 
     private void uploadToFirebase(String name, Uri contentUri) {
-            StorageReference image = storageReference.child("images/"+name);
-            image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                @Override
-                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                    image.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                        @Override
-                        public void onSuccess(Uri uri) {
-                            url = uri.toString();
-                        }
-                    });
-                }
-            }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
+        StorageReference image = storageReference.child("images/"+name);
+        image.putFile(contentUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                image.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        url = uri.toString();
+                    }
+                });
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
 
-                }
-            });
+            }
+        });
 
     }
 

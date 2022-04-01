@@ -9,6 +9,15 @@ public class Note {
     private int worth;
     private double lat;
     private double lag;
+    String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public Note() {
         //public no-arg constructor needed
@@ -23,12 +32,13 @@ public class Note {
         this.documentId = documentId;
     }
 
-    public Note(String title, String description, int worth, double lat, double lag) {
+    public Note(String title, String description, int worth, double lat, double lag,String url) {
         this.title = title;
         this.description = description;
         this.worth = worth;
         this.lat = lat;
         this.lag = lag;
+        this.url = url;
     }
     public  int getWorth(){
         return worth;
