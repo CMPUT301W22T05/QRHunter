@@ -4,6 +4,7 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +21,9 @@ public final class MyProfileLayoutBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button editButton;
+
+  @NonNull
   public final TextView profileContactInformation;
 
   @NonNull
@@ -34,11 +38,12 @@ public final class MyProfileLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView textView2;
 
-  private MyProfileLayoutBinding(@NonNull ConstraintLayout rootView,
+  private MyProfileLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button editButton,
       @NonNull TextView profileContactInformation, @NonNull TextView profileUserDeviceBrand,
       @NonNull TextView profileUserDeviceModel, @NonNull TextView profileUsername,
       @NonNull TextView textView2) {
     this.rootView = rootView;
+    this.editButton = editButton;
     this.profileContactInformation = profileContactInformation;
     this.profileUserDeviceBrand = profileUserDeviceBrand;
     this.profileUserDeviceModel = profileUserDeviceModel;
@@ -73,6 +78,12 @@ public final class MyProfileLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.edit_button;
+      Button editButton = ViewBindings.findChildViewById(rootView, id);
+      if (editButton == null) {
+        break missingId;
+      }
+
       id = R.id.profile_contact_information;
       TextView profileContactInformation = ViewBindings.findChildViewById(rootView, id);
       if (profileContactInformation == null) {
@@ -103,8 +114,9 @@ public final class MyProfileLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MyProfileLayoutBinding((ConstraintLayout) rootView, profileContactInformation,
-          profileUserDeviceBrand, profileUserDeviceModel, profileUsername, textView2);
+      return new MyProfileLayoutBinding((ConstraintLayout) rootView, editButton,
+          profileContactInformation, profileUserDeviceBrand, profileUserDeviceModel,
+          profileUsername, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

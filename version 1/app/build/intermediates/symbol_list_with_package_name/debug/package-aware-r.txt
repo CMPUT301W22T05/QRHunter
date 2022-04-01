@@ -2804,6 +2804,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id contact_information_editText
 id contact_information_text
 id container
 id content
@@ -2854,6 +2855,7 @@ id easeInOut
 id easeOut
 id east
 id editText_comments
+id edit_button
 id edit_query
 id elastic
 id emailholder
@@ -3219,6 +3221,7 @@ id up
 id upload_comments_button
 id upload_picture_button
 id useLogo
+id username_editText
 id username_owner_page_textview
 id username_text
 id vertical_only
@@ -3412,6 +3415,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout my_profile_content
 layout my_profile_layout
 layout my_qr_codes_layout
 layout notification_action
