@@ -3,7 +3,8 @@ package com.example.qrhunter;
 public class Player {
 
 
-    public String username,totalScore;
+    public String username;
+    public String totalScore;
     private String userId;
 
     public final static String UserPhoneKey = "";
