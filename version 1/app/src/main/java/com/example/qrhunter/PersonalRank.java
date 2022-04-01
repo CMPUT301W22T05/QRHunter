@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class PersonalRank extends AppCompatActivity {
 
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n")//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
