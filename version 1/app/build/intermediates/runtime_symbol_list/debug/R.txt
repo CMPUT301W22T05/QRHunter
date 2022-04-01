@@ -3040,7 +3040,6 @@ int id path 0x7f080177
 int id pathRelative 0x7f080178
 int id peekHeight 0x7f080179
 int id percent 0x7f08017a
-int id personal_name_and_score 0x7f08017b
 int id personal_rank_TextView 0x7f08017c
 int id personal_ranking_list 0x7f08017d
 int id picture_imageView 0x7f08017e
@@ -3184,6 +3183,7 @@ int id textStart 0x7f080207
 int id textTop 0x7f080208
 int id textView2 0x7f080209
 int id textView3 0x7f08020a
+int id textView4 0x7f08024c
 int id text_input_end_icon 0x7f08020b
 int id text_input_error_icon 0x7f08020c
 int id text_input_start_icon 0x7f08020d
@@ -3200,6 +3200,7 @@ int id title_template 0x7f080217
 int id toggle 0x7f080218
 int id top 0x7f080219
 int id topPanel 0x7f08021a
+int id total_score_owner_page_textview 0x7f08024d
 int id touch_outside 0x7f08021b
 int id transitionToEnd 0x7f08021c
 int id transitionToStart 0x7f08021d
@@ -3216,6 +3217,7 @@ int id up 0x7f080227
 int id upload_comments_button 0x7f080228
 int id upload_picture_button 0x7f080229
 int id useLogo 0x7f08022a
+int id username_owner_page_textview 0x7f08024e
 int id username_text 0x7f08022b
 int id vertical_only 0x7f08022c
 int id view_my_qr_codes_button 0x7f08022d

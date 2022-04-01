@@ -28,13 +28,13 @@ public class ScoreListOnOwnerPage extends ArrayAdapter<TotalScoreOnOwnerPage> {
         View view = convertView;
 
         if (view == null) {
-            view = LayoutInflater.from(context).inflate(R.layout.personal_qr_rank_content_layout, parent, false);
+            view = LayoutInflater.from(context).inflate(R.layout.rank_in_owner_content, parent, false);
         }
 
         TotalScoreOnOwnerPage score = scores.get(position);
 
-        TextView UserName = view.findViewById(R.id.number_personal_QR);
-        TextView TotalScore = view.findViewById(R.id.score_text);
+        TextView UserName = view.findViewById(R.id.username_owner_page_textview);
+        TextView TotalScore = view.findViewById(R.id.total_score_owner_page_textview);
 
         UserName.setText(score.getUsername());
         TotalScore.setText(score.getTotalscore());
