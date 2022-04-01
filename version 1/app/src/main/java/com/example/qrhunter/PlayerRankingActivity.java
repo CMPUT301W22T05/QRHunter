@@ -4,10 +4,13 @@ import static android.content.ContentValues.TAG;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,90 +26,60 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerRankingActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private PlayerRankingAdapter adapter;
-    private List<Player> playerList;
-    DatabaseReference dbPlayer;
 
-    //FirebaseFirestore db = FirebaseFirestore.getInstance();
+    ListView playerList;
+    ArrayAdapter<Player> playerAdapter;
+    ArrayList<Player> playerDataList;
+
+    final String TAG = "Sample";
+    FirebaseFirestore db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_ranking_layout);
 
-        // initialize the recyclerView
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager((new LinearLayoutManager(this)));
+        db = FirebaseFirestore.getInstance();
+        // Get a top level reference to the collection
+        final Query collectionReference = db.collection("Player").orderBy("Total score", Query.Direction.ASCENDING);
+        // Get a reference to the ListView and create an object for the city list
+        playerList = findViewById(R.id.ranking_list);
+        playerDataList = new ArrayList<>();
 
-        // initialize player list and player adapter
-        playerList = new ArrayList<>();
-        adapter = new PlayerRankingAdapter(this, playerList);
-        recyclerView.setAdapter(adapter);
+        // Set the adapter for the ListView to the CustomAdapter that we created in Lab 3
+        playerAdapter = new PlayerRankingCustomList(this, playerDataList);
+        playerList.setAdapter(playerAdapter);
 
-        // retrieve total score and username from the database
-        dbPlayer = FirebaseDatabase.getInstance().getReference("Player");
-        dbPlayer.addListenerForSingleValueEvent(valueEventListener);
+        collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
+                    FirebaseFirestoreException error) {
+                // Clear the old list
+                playerDataList.clear();
+                for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
+                {
+                    String name = doc.getId();
+                    String score = (String) doc.getData().get("Total score");
+                    playerDataList.add(new Player(name, score)); // Adding the cities and provinces from FireStore
+                }
+                playerAdapter.notifyDataSetChanged(); // Notifying the adapter to render any new data fetched from the cloud
+            }
+        });
 
-        //Query query = FirebaseDatabase.getInstance().getReference("Player").orderByChild("Total score");
-        //query.addListenerForSingleValueEvent(valueEventListener);
-
-        // testing the listing format
-        //Player player1 = new Player("player1", "80");
-        //playerList.add(player1);
-
-        //Player player2 = new Player("player2", "88");
-        //playerList.add(player2);
-
-        //String what = "what" + playerList.size();
-        //Toast.makeText(RankingActivity.this,what,Toast.LENGTH_SHORT).show();
     }
 
-    ValueEventListener valueEventListener = new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            playerList.clear();
-            if (dataSnapshot.exists()) {    // check if the data exists in the database or not
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Player player = snapshot.getValue(Player.class);
-                    playerList.add(player); // if exists, the data is added to the player list
-                }
-                adapter.notifyDataSetChanged();
-            }
-        }
-        @Override
-        public void onCancelled(@NonNull DatabaseError error) {}
-    };
-/*
-    Task<QuerySnapshot> query = FirebaseFirestore.getInstance()
-            .collection("Player")
-            .orderBy("Total score", Query.Direction.DESCENDING)
-            .get()
-            .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                @Override
-                public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                    List<DocumentSnapshot> snapshotList = queryDocumentSnapshots.getDocuments();
-                    for (DocumentSnapshot snapshot : snapshotList) {
-                        Log.d(TAG, "onSucces: " + snapshot.getData());
-                    }
-                }
-            })
-            .addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Log.e(TAG, "onFailure: ", e);
-                }
-            });
 
-*/
 }
+
 
