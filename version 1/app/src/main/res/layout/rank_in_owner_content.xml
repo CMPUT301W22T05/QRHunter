@@ -3,10 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="40dp"
     android:layout_width="303dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="#272727">
 
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/username_owner_page_textview"
         android:layout_width="101dp"
         android:layout_height="40dp"
@@ -14,6 +16,7 @@
         android:textSize="20sp"/>
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/textView4"
         android:layout_width="101dp"
         android:layout_height="40dp"
@@ -22,6 +25,7 @@
         android:textSize="16sp" />
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/total_score_owner_page_textview"
         android:layout_width="101dp"
         android:layout_height="40dp"

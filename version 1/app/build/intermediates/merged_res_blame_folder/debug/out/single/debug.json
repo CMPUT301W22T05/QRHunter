@@ -28,12 +28,12 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_rank_in_owner_content.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/rank_in_owner_content.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_my_qr_codes_layout.xml.flat",
@@ -48,12 +48,12 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-hdpi/ic_search.png"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
