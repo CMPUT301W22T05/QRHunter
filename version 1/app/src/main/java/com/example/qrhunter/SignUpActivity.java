@@ -133,7 +133,6 @@ public class SignUpActivity extends AppCompatActivity {
                                         }
                                     }
                                 });
-                    }
                 // jump to the Player Menu
                 Intent JumpToPlayerMenu = new Intent();
                 JumpToPlayerMenu.setClass(SignUpActivity.this, PlayerMenuActivity.class);
@@ -141,6 +140,8 @@ public class SignUpActivity extends AppCompatActivity {
                 bundle.putString("UserName", username);
                 JumpToPlayerMenu.putExtras(bundle);
                 startActivity(JumpToPlayerMenu);
+               }
+
             }
         });
     }
