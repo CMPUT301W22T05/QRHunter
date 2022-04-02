@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()  // for .gif
 
     }
     dependencies {
@@ -19,6 +20,7 @@ allprojects {
         // Check that you have the following line (if not, add it):
         google()  // Google's Maven repository
         jcenter()
+        mavenCentral()  // for .gif
     }
 }
 

@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E6000000">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="404dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="0dp"
         android:background="@drawable/rect_border_purple"
         android:gravity="center"
         android:text="Sign up Page"
@@ -24,53 +25,52 @@
         android:id="@+id/sign_up_username"
         android:layout_width="236dp"
         android:layout_height="48dp"
-
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
-        android:hint="Username"
+        android:hint="Sign up username"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/sign_up_confirm"
-        android:layout_width="115dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Confirm"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/sign_up_cancel"
-        android:layout_width="106dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/round_border"
         android:clickable="true"
         android:text="Cancel"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rm" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_username"
         app:srcCompat="@drawable/rect_border_grey" />
@@ -80,15 +80,16 @@
         android:layout_width="39dp"
         android:layout_height="143dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="208dp"
         android:text="Generate"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <CheckBox
+        android:textColor="@color/white"
         android:id="@+id/rm"
         android:layout_width="146dp"
         android:layout_height="27dp"

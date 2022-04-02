@@ -553,8 +553,10 @@ int attr fontWeight 0x7f0301df
 int attr forceApplySystemWindowInsetTop 0x7f0301e0
 int attr foregroundInsidePadding 0x7f0301e1
 int attr framePosition 0x7f0301e2
+int attr freezesAnimation 0x7f0304a0
 int attr gapBetweenBars 0x7f0301e3
 int attr gestureInsetBottomIgnored 0x7f0301e4
+int attr gifSource 0x7f0304a1
 int attr goIcon 0x7f0301e5
 int attr graph 0x7f0301e6
 int attr guidelineUseRtl 0x7f0301e7
@@ -609,6 +611,7 @@ int attr insetForeground 0x7f030217
 int attr isLightTheme 0x7f030218
 int attr isMaterial3Theme 0x7f030219
 int attr isMaterialTheme 0x7f03021a
+int attr isOpaque 0x7f0304a2
 int attr itemActiveIndicatorStyle 0x7f03021b
 int attr itemBackground 0x7f03021c
 int attr itemFillColor 0x7f03021d
@@ -750,6 +753,7 @@ int attr listPreferredItemPaddingStart 0x7f0302a4
 int attr liteMode 0x7f0302a5
 int attr logo 0x7f0302a6
 int attr logoDescription 0x7f0302a7
+int attr loopCount 0x7f0304a3
 int attr mapId 0x7f0302a8
 int attr mapType 0x7f0302a9
 int attr marginHorizontal 0x7f0302aa
@@ -2620,6 +2624,7 @@ int drawable m3_tabs_background 0x7f07008e
 int drawable m3_tabs_line_indicator 0x7f07008f
 int drawable m3_tabs_rounded_line_indicator 0x7f070090
 int drawable m3_tabs_transparent_background 0x7f070091
+int drawable main_background 0x7f0700bc
 int drawable material_cursor_drawable 0x7f070092
 int drawable material_ic_calendar_black_24dp 0x7f070093
 int drawable material_ic_clear_black_24dp 0x7f070094
@@ -5731,6 +5736,12 @@ int styleable FragmentContainerView_android_name 0
 int styleable FragmentContainerView_android_tag 1
 int[] styleable FragmentNavigator { 0x01010003 }
 int styleable FragmentNavigator_android_name 0
+int[] styleable GifTextureView { 0x7f0304a1, 0x7f0304a2 }
+int styleable GifTextureView_gifSource 0
+int styleable GifTextureView_isOpaque 1
+int[] styleable GifView { 0x7f0304a0, 0x7f0304a3 }
+int styleable GifView_freezesAnimation 0
+int styleable GifView_loopCount 1
 int[] styleable GradientColor { 0x0101019d, 0x0101019e, 0x010101a1, 0x010101a2, 0x010101a3, 0x010101a4, 0x01010201, 0x0101020b, 0x01010510, 0x01010511, 0x01010512, 0x01010513 }
 int styleable GradientColor_android_startColor 0
 int styleable GradientColor_android_endColor 1
