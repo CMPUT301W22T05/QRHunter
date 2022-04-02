@@ -25,11 +25,16 @@ public final class PlayerRankingContentBinding implements ViewBinding {
   @NonNull
   public final TextView playerRankingScore;
 
+  @NonNull
+  public final TextView textView4;
+
   private PlayerRankingContentBinding(@NonNull LinearLayout rootView,
-      @NonNull TextView playerRankingName, @NonNull TextView playerRankingScore) {
+      @NonNull TextView playerRankingName, @NonNull TextView playerRankingScore,
+      @NonNull TextView textView4) {
     this.rootView = rootView;
     this.playerRankingName = playerRankingName;
     this.playerRankingScore = playerRankingScore;
+    this.textView4 = textView4;
   }
 
   @Override
@@ -71,8 +76,14 @@ public final class PlayerRankingContentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
+        break missingId;
+      }
+
       return new PlayerRankingContentBinding((LinearLayout) rootView, playerRankingName,
-          playerRankingScore);
+          playerRankingScore, textView4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
