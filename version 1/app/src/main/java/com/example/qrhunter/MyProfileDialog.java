@@ -21,10 +21,12 @@ public class MyProfileDialog extends AppCompatDialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        // initialize the builder and view
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.my_profile_content, null);
-
+        
+        // setting the dialog and store the new data
         builder.setView(view)
                 .setTitle("Edit your profile")
                 .setNegativeButton("Cancel", null)
@@ -37,19 +39,21 @@ public class MyProfileDialog extends AppCompatDialogFragment {
                         dialogInterFace.applyText(userName, contact);
                     }
                 });
-
+        
+        // set up the textview of the dialog
         editUsername = view.findViewById(R.id.username_editText);
         editContact = view.findViewById(R.id.contact_information_editText);
 
         return builder.create();
     }
-
+    
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         dialogInterFace = (myProfileDialogInterface) context;
     }
 
+    // interface for storing and displaying text to the screen
     public interface myProfileDialogInterface {
         void applyText(String name, String contact);
     }
