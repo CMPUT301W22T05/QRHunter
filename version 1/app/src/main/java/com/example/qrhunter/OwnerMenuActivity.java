@@ -61,6 +61,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         scoreDataList = new ArrayList<>();
 
+        final CollectionReference collectionReference = db.collection("Player");
+
+
         db.collection("Player")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -85,6 +88,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
 
 
+
+
+
         /////////////////////////////////
         scoreList = findViewById(R.id.ranking_total_score_list);
         scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
@@ -92,16 +98,16 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         // 点击item跳转activity
 
-        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                // long position = scoreList.getItemIdAtPosition(position);
-                scorePos = position;
-                System.out.println(scorePos);
-                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
-                startActivity(SendToNextTitle);
-            }
-        });
+//        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                // long position = scoreList.getItemIdAtPosition(position);
+//                scorePos = position;
+//                System.out.println(scorePos);
+//                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+//                startActivity(SendToNextTitle);
+//            }
+//        });
 
 
         // set the functionality of switching activity of ranking button
@@ -152,6 +158,22 @@ public class OwnerMenuActivity extends AppCompatActivity {
                 }
 
             }
+        });
+
+        scoreList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
+                collectionReference.document(scoreDataList.get(i).getUsername()).delete();
+                scoreDataList.remove(i);
+                scoreList.setAdapter(scoreAdapter);
+                scoreAdapter.notifyDataSetChanged();
+                Toast.makeText(OwnerMenuActivity.this, "Deleted successfully", Toast.LENGTH_SHORT).show();
+
+                return false;
+
+            }
+
+
         });
 
 
