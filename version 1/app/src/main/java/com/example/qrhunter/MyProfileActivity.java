@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
@@ -34,8 +37,6 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_profile_layout);
 
-
-
         // initialize all the buttons and textview in my_profile_layout
         UserName = findViewById(R.id.profile_username);
         ContactInfo = findViewById(R.id.profile_contact_information);
@@ -45,16 +46,28 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         Generate = findViewById(R.id.generate);
         imageView = (ImageView)findViewById(R.id.imageView);
 
-
         // set the text about TextViews
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String username = MyProfileData.getString("username", null);
-        String email = MyProfileData.getString("email", null);
 
-        UserName.setText("Username: " + username);  // display the username of this account
-        ContactInfo.setText("Contact Information: "+ email);  // display the email address
         UserDeviceBrand.setText("Phone Brand: " +Build.BRAND);  // display the brand of the phone now
         UserDeviceModel.setText("Phone Model: " +Build.MODEL);  // display the model of the phone now
+        
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        DocumentReference noteRef = db.collection("Player").document(username);
+        noteRef.get()
+                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if (documentSnapshot.exists()) {
+                            String email = documentSnapshot.getString("Email");
+                            String name = documentSnapshot.getString("Name");
+                            UserName.setText("Full Name: "+ name);  // display the email address
+                            ContactInfo.setText("Contact Information: "+ email);  // display the email address
+                        }
+                    }
+
+                });
 
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +101,7 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Player").document(loginUsername).update("Email", contact);
         db.collection("Player").document(loginUsername).update("Name", name);
+
         UserName.setText("Username: " + name);
         ContactInfo.setText("Contact Information: "+ contact);
     }
