@@ -1378,6 +1378,7 @@ int color foreground_material_dark 0x7f050066
 int color foreground_material_light 0x7f050067
 int color highlighted_text_material_dark 0x7f050068
 int color highlighted_text_material_light 0x7f050069
+int color ic_launcher_background 0x7f05026c
 int color m3_appbar_overlay_color 0x7f05006a
 int color m3_assist_chip_icon_tint_color 0x7f05006b
 int color m3_assist_chip_stroke_color 0x7f05006c
@@ -2599,7 +2600,6 @@ int drawable googleg_disabled_color_18 0x7f070079
 int drawable googleg_standard_color_18 0x7f07007a
 int drawable ic_clock_black_24dp 0x7f07007b
 int drawable ic_keyboard_black_24dp 0x7f07007c
-int drawable ic_launcher_background 0x7f07007d
 int drawable ic_launcher_foreground 0x7f07007e
 int drawable ic_m3_chip_check 0x7f07007f
 int drawable ic_m3_chip_checked_circle 0x7f070080
@@ -3469,6 +3469,7 @@ int layout zxing_capture 0x7f0b0094
 int menu example_menu 0x7f0c0000
 int menu example_menu2 0x7f0c0001
 int mipmap ic_launcher 0x7f0d0000
+int mipmap ic_launcher_foreground 0x7f0d0002
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation nav_graph 0x7f0e0000
 int plurals mtrl_badge_content_description 0x7f0f0000
