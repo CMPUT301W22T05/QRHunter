@@ -3,15 +3,21 @@ package com.example.qrhunter;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.common.BitMatrix;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class MyProfileActivity extends AppCompatActivity implements MyProfileDialog.myProfileDialogInterface{
 
@@ -20,7 +26,8 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
     TextView UserDeviceBrand;
     TextView UserDeviceModel;
     Button editButton;
-
+    Button Generate;
+    ImageView imageView;
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,8 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         UserDeviceBrand = findViewById(R.id.profile_user_device_brand);
         UserDeviceModel= findViewById(R.id.profile_user_device_model);
         editButton = findViewById(R.id.edit_button);
+        Generate = findViewById(R.id.generate);
+        imageView = (ImageView)findViewById(R.id.imageView);
 
 
         // set the text about TextViews
@@ -51,6 +60,22 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
             @Override
             public void onClick(View view) {
                 openDialog();
+            }
+        });
+        Generate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences MyProfileData = getSharedPreferences("data", 0);
+                String loginUsername = MyProfileData.getString("username", null);
+                MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+                try{
+                    BitMatrix bitMatrix = multiFormatWriter.encode(loginUsername, BarcodeFormat.QR_CODE,500,500);
+                    BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
+                    Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+                    imageView.setImageBitmap(bitmap);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }

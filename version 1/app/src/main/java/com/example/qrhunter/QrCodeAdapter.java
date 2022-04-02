@@ -30,14 +30,14 @@ public class QrCodeAdapter extends RecyclerView.Adapter<QrCodeAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.description.setText(qr.get(position).getDescription());
+        holder.description.setText("Comments : \n"+qr.get(position).getDescription());
         String Longtitude = Double.toString(qr.get(position).getLag());
         String latitude = Double.toString(qr.get(position).getLat());
         holder.lag.setText(Longtitude);
         holder.lat.setText(latitude);
-        holder.title.setText(qr.get(position).getTitle());
+        holder.title.setText("Content : \n"+qr.get(position).getTitle());
         String Worth = String.valueOf(qr.get(position).getWorth());
-        holder.worth.setText(Worth);
+        holder.worth.setText("Worth : "+Worth);
         Glide.with(holder.img1.getContext()).load(qr.get(position).getUrl()).into(holder.img1);
 
     }

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,6 +25,12 @@ public final class MyProfileLayoutBinding implements ViewBinding {
   public final Button editButton;
 
   @NonNull
+  public final Button generate;
+
+  @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final TextView profileContactInformation;
 
   @NonNull
@@ -39,11 +46,14 @@ public final class MyProfileLayoutBinding implements ViewBinding {
   public final TextView textView2;
 
   private MyProfileLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button editButton,
+      @NonNull Button generate, @NonNull ImageView imageView,
       @NonNull TextView profileContactInformation, @NonNull TextView profileUserDeviceBrand,
       @NonNull TextView profileUserDeviceModel, @NonNull TextView profileUsername,
       @NonNull TextView textView2) {
     this.rootView = rootView;
     this.editButton = editButton;
+    this.generate = generate;
+    this.imageView = imageView;
     this.profileContactInformation = profileContactInformation;
     this.profileUserDeviceBrand = profileUserDeviceBrand;
     this.profileUserDeviceModel = profileUserDeviceModel;
@@ -84,6 +94,18 @@ public final class MyProfileLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.generate;
+      Button generate = ViewBindings.findChildViewById(rootView, id);
+      if (generate == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.profile_contact_information;
       TextView profileContactInformation = ViewBindings.findChildViewById(rootView, id);
       if (profileContactInformation == null) {
@@ -114,8 +136,8 @@ public final class MyProfileLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MyProfileLayoutBinding((ConstraintLayout) rootView, editButton,
-          profileContactInformation, profileUserDeviceBrand, profileUserDeviceModel,
+      return new MyProfileLayoutBinding((ConstraintLayout) rootView, editButton, generate,
+          imageView, profileContactInformation, profileUserDeviceBrand, profileUserDeviceModel,
           profileUsername, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);

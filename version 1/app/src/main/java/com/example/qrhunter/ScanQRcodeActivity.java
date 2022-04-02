@@ -132,7 +132,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                 alert.show();
                 AlertDialog.Builder remember = new AlertDialog.Builder(ScanQRcodeActivity.this);
 
-                remember.setTitle("Do you wish to save a picture of the location");
+                remember.setTitle("Do you wish to Capture this qr codes Photo");
 
                 remember.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
