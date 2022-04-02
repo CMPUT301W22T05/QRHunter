@@ -1,7 +1,7 @@
 package com.example.qrhunter;
 
 public class Player {
-
+      // this class is to store the data of accounts when retrieving data from database in player ranking activity
 
     public String username;
     public String totalScore;
