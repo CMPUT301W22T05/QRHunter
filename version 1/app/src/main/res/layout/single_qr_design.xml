@@ -10,13 +10,14 @@
     <RelativeLayout
         android:layout_width="395dp"
         android:layout_height="304dp"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:background="#E6000000">
 
 
         <ImageView
             android:id="@+id/img1"
-            android:layout_width="130dp"
-            android:layout_height="255dp"
+            android:layout_width="131dp"
+            android:layout_height="269dp"
             android:src="@mipmap/ic_launcher" />
 
         <TextView
@@ -26,55 +27,55 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
             android:text="Scanned Text"
-            android:textColor="#000"
-            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="227dp"
+            android:layout_width="229dp"
             android:layout_height="76dp"
             android:layout_below="@id/title"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
             android:text="Commments"
-            android:textColor="#000"
-            android:textSize="25sp" />
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
 
         <TextView
             android:id="@+id/worth"
-            android:layout_width="226dp"
-            android:layout_height="61dp"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/description"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
             android:text="Worth"
-            android:textColor="#000"
-            android:textSize="25sp" />
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/lat"
-            android:layout_width="209dp"
+            android:layout_width="229dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/worth"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
             android:text="latitude"
-            android:textColor="#000"
-            android:textSize="25sp" />
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/lag"
-            android:layout_width="210dp"
+            android:layout_width="229dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/lat"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="3dp"
             android:layout_toRightOf="@id/img1"
             android:text="Longitude"
-            android:textColor="#000"
-            android:textSize="25sp" />
+            android:textColor="@color/white"
+            android:textSize="22sp" />
 
 
     </RelativeLayout>
