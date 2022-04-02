@@ -32,6 +32,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
+        android:background="#272727"
         android:id="@+id/editText_comments"
         android:layout_width="302dp"
         android:layout_height="51dp"

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QrDetails">
+    android:background="#E6000000">
+<!--    tools:context=".QrDetails">-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,6 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:background="#272727"
             android:id="@+id/imagegholder"
             android:layout_marginTop="40dp"
             android:layout_width="240dp"
@@ -20,6 +22,7 @@
             />
 
         <TextView
+            android:background="#272727"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -27,25 +30,27 @@
             android:text="Candidate Name"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:textColor="#000"/>
+            android:textColor="@color/white"/>
 
         <TextView
+            android:background="#272727"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:id="@+id/courseholder"
             android:text="Candidate Course"
             android:textSize="25sp"
-            android:textColor="#000"/>
+            android:textColor="@color/white"/>
 
         <TextView
+            android:background="#272727"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:id="@+id/emailholder"
             android:text="Candidate Email"
             android:textSize="25sp"
-            android:textColor="#000"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
