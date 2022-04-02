@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E6000000">
 
     <TextView
         android:id="@+id/personal_rank_TextView"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/rect_border_purple"
         android:gravity="center"
@@ -28,7 +29,6 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/personal_rank_TextView"
-        app:layout_constraintVertical_bias="0.237">
+        app:layout_constraintVertical_bias="0.237"/>
 
-    </ListView>
 </androidx.constraintlayout.widget.ConstraintLayout>

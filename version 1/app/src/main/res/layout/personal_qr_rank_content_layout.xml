@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="20dp"
         android:text="QR"
+        android:textColor="@color/white"
         android:textSize="21sp"/>
 
     <TextView
@@ -18,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:text="SCORE: "
+        android:textColor="@color/white"
         android:textSize="20sp"/>
 
     <TextView
@@ -26,6 +28,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
         android:text="SCORE"/>
 
 
