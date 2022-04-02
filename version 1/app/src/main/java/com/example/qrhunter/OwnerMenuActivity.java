@@ -90,18 +90,18 @@ public class OwnerMenuActivity extends AppCompatActivity {
         scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
         scoreList.setAdapter(scoreAdapter);
 
-        // 点击item跳转activity
-
-        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                // long position = scoreList.getItemIdAtPosition(position);
-                scorePos = position;
-                System.out.println(scorePos);
-                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
-                startActivity(SendToNextTitle);
-            }
-        });
+//        // 点击item跳转activity
+//
+//        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                // long position = scoreList.getItemIdAtPosition(position);
+//                scorePos = position;
+//                System.out.println(scorePos);
+//                Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
+//                startActivity(SendToNextTitle);
+//            }
+//        });
 
 
         // set the functionality of switching activity of ranking button
