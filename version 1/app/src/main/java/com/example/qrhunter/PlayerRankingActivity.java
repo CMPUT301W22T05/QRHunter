@@ -50,28 +50,28 @@ public class PlayerRankingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.player_ranking_layout);
 
+        // initialize the database and set up a new array to store the Player 
         db = FirebaseFirestore.getInstance();
-        // Get a top level reference to the collection
-        final Query collectionReference = db.collection("Player").orderBy("Total score", Query.Direction.DESCENDING);
-        // Get a reference to the ListView and create an object for the city list
+        final Query collectionReference = db.collection("Player").orderBy("Total score", Query.Direction.DESCENDING);   // a query to rank the player based on the total score of QR code in descending order
         playerList = findViewById(R.id.ranking_list);
         playerDataList = new ArrayList<>();
 
-        // Set the adapter for the ListView to the CustomAdapter that we created in Lab 3
+        // Set the adapter for the ListView to the CustomAdapter
         playerAdapter = new PlayerRankingCustomList(this, playerDataList);
         playerList.setAdapter(playerAdapter);
-
+        
+        // search for data stored in database and store in the Player class and add them to the playerAdapter
         collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
                     FirebaseFirestoreException error) {
-                // Clear the old list
+                // Clear the previous list
                 playerDataList.clear();
                 for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
                 {
                     String name = doc.getId();
                     String score = doc.getData().get("Total score").toString();
-                    playerDataList.add(new Player(name, score)); // Adding the cities and provinces from FireStore
+                    playerDataList.add(new Player(name, score)); // Adding the full name and score from FireStore
                 }
                 playerAdapter.notifyDataSetChanged(); // Notifying the adapter to render any new data fetched from the cloud
             }
