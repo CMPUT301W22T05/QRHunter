@@ -2677,6 +2677,7 @@ int id SYM 0x7f08000c
 int id SecondFragment 0x7f08000d
 int id TOP_END 0x7f08000e
 int id TOP_START 0x7f08000f
+int id TextView5 0x7f080252
 int id Username 0x7f080010
 int id accelerate 0x7f080011
 int id accessibility_action_clickable_span 0x7f080012
