@@ -61,6 +61,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         scoreDataList = new ArrayList<>();
 
+        final CollectionReference collectionReference = db.collection("Player");
+
+
         db.collection("Player")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -85,13 +88,16 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
 
 
+
+
+
         /////////////////////////////////
         scoreList = findViewById(R.id.ranking_total_score_list);
         scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
         scoreList.setAdapter(scoreAdapter);
 
-//        // 点击item跳转activity
-//
+        // 点击item跳转activity
+
 //        scoreList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
@@ -152,6 +158,22 @@ public class OwnerMenuActivity extends AppCompatActivity {
                 }
 
             }
+        });
+
+        scoreList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
+                collectionReference.document(scoreDataList.get(i).getUsername()).delete();
+                scoreDataList.remove(i);
+                scoreList.setAdapter(scoreAdapter);
+                scoreAdapter.notifyDataSetChanged();
+                Toast.makeText(OwnerMenuActivity.this, "Deleted successfully", Toast.LENGTH_SHORT).show();
+
+                return false;
+
+            }
+
+
         });
 
 
