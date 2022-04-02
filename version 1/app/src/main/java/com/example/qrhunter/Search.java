@@ -1,6 +1,7 @@
 package com.example.qrhunter;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -29,7 +30,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.karumi.dexter.Dexter;
@@ -81,26 +85,23 @@ public class Search extends AppCompatActivity {
         sm = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.small_map);
         cl= LocationServices.getFusedLocationProviderClient(Search.this);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-//        db.collection("QRCODES")
-//                .document()
-//                .get()
-//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//                    private static final String TAG = "location";
-//                    @Override
-//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                        if (task.isSuccessful()) {
-//                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-//                                MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here...!!");
-//                                small_map.addMarker(markerOptions);
-//                                Log.d(TAG, document.getId() + " => " + document.getData());
-//                            }
-//                        } else {
-//                            Log.d(TAG, "Error getting documents: ", task.getException());
-//                        }
-//                    }
-//                });
+        db.collection("QRCODES").addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                for(QueryDocumentSnapshot doc : value){
+                    sm.getMapAsync(new OnMapReadyCallback() {
+                        @Override
+                        public void onMapReady(@NonNull GoogleMap googleMap) {
+                            LatLng latLng = new LatLng(Double.parseDouble(doc.getData().get("lat").toString()), Double.parseDouble(doc.getData().get("lag").toString()));
 
+                            MarkerOptions markerOptions = new MarkerOptions().position(latLng).title(doc.getId().toString());
+                            googleMap.addMarker(markerOptions);
+                        }
+                    });
+
+                }
+            }
+        });
 
 
         Dexter.withContext(getApplicationContext())
@@ -143,7 +144,6 @@ public class Search extends AppCompatActivity {
                     @Override
                     public void onMapReady(GoogleMap googleMap) {
                         LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-
                         MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("You are here...!!");
                         googleMap.addMarker(markerOptions);
                         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17));
@@ -153,4 +153,3 @@ public class Search extends AppCompatActivity {
         });
     }
 }
-
