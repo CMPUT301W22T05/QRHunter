@@ -13,11 +13,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6578b7e0-87b8-4de8-9e6b-960dccf182f5" name="Default Changelist" comment="wenhao for signup layout">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6578b7e0-87b8-4de8-9e6b-960dccf182f5" name="Default Changelist" comment="wenhao for OwnerMenuActivity.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scan_qr_code_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/scan_qr_code_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/single_qr_design.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/single_qr_design.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/my_profile_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_profile_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/personal_qr_rank_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/personal_qr_rank_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/qr_information_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/qr_information_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/rank_in_owner_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rank_in_owner_content.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,20 +148,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646262716062</updated>
-    </task>
-    <task id="LOCAL-00030" summary="wenhao for update ranking_layout.xml">
-      <created>1647210444349</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1647210444349</updated>
-    </task>
-    <task id="LOCAL-00031" summary="wenhao for PersonalRank.java &amp; OwnerMenuActivity.java (continued">
-      <created>1647214734831</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1647214734831</updated>
     </task>
     <task id="LOCAL-00032" summary="wenhao for PersonalRank.java &amp; OwnerMenuActivity.java">
       <created>1647216368856</created>
@@ -491,7 +478,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648893791233</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="wenhao for layouts: scan_qr_code_layout.xml, single_qr_design.xml">
+      <created>1648932251480</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1648932251480</updated>
+    </task>
+    <task id="LOCAL-00080" summary="wenhao for OwnerMenuActivity.java">
+      <created>1648932373095</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1648932373095</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -507,8 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="xibei's update for database &amp; signup page &amp; part of login page (her pc was broken these days, so I commit it for her" />
-    <MESSAGE value="wenhao for owner menu" />
     <MESSAGE value="wenhao for owner's account (username:CCID;pwd:123)" />
     <MESSAGE value="wenhao for ranking_layout.xml &amp; startActivity(RankingActivity)" />
     <MESSAGE value="wenhao for SearchInOwnerMenu.java and PersonalRank.java (continued" />
@@ -532,6 +531,8 @@
     <MESSAGE value="wenhao for personal rank in owner page" />
     <MESSAGE value="wenhao for mia's ranking layout" />
     <MESSAGE value="wenhao for launcher icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="wenhao for launcher icon" />
+    <MESSAGE value="wenhao for layouts: scan_qr_code_layout.xml, single_qr_design.xml" />
+    <MESSAGE value="wenhao for OwnerMenuActivity.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="wenhao for OwnerMenuActivity.java" />
   </component>
 </project>
