@@ -135,9 +135,9 @@ public class OwnerMenuActivity extends AppCompatActivity {
 ////                                        JumpToPersonalRank.setClass(OwnerMenuActivity.this, PersonalRank.class);
 //                                        startActivity(JumpToPersonalRank);
                                         // put user's name to next page
-                                        String name = documentSnapshot.getString("Name");
+                                        // String name = documentSnapshot.getString("Name");
                                         Intent SendToNextTitle = new Intent(OwnerMenuActivity.this, PersonalRank.class);
-                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, name);
+                                        SendToNextTitle.putExtra(EXTRA_MESSAGE, Username);
                                         startActivity(SendToNextTitle);
 
                                     }
