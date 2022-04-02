@@ -83,6 +83,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.firestore.auth.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,94 +91,52 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class PersonalRank extends AppCompatActivity {
-    FirebaseFirestore db;
-    ListView personalList;
-    ArrayAdapter<PersonalScoreOnrankpage> personalAdapter;
-    ArrayList<PersonalScoreOnrankpage> personalDatalist;
-    final String TAG = "Sample";
-    String DisplayUserName;
-    String DisplayTotalScore;
+    ListView scoreList;
+    ArrayAdapter<ScoreOnOwnerPersonalPage> scoreAdapter;
+    ArrayList<ScoreOnOwnerPersonalPage> scoreDataList;
+    String Username;
+    Integer counter = 1;
 
-    @SuppressLint("SetTextI18n")//
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        final CollectionReference collectionReference = db.collection("Player");
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personal_qr_rank_layout);
-        db = FirebaseFirestore.getInstance();
+        // receive username from search button
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(OwnerMenuActivity.EXTRA_MESSAGE);
+        Username = message;
+        TextView PersonalName = findViewById(R.id.personal_rank_TextView);
+        PersonalName.setText(Username + "'s QR Codes");
+
+        scoreList = findViewById(R.id.personal_ranking_list);
+        scoreDataList = new ArrayList<>();
+        scoreAdapter = new ScoreListOnOwnerPersonalPage(this, scoreDataList);
+        scoreList.setAdapter(scoreAdapter);
 
 
-        final Query collectionReference = db.collection("Player");
-        personalList = findViewById(R.id.personal_ranking_list);
-        personalDatalist = new ArrayList<>();
 
-
-        personalAdapter = new ScoreListOnpersonalrankPage(this,personalDatalist);
-        personalList.setAdapter(personalAdapter);
-////
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        final CollectionReference collectionReference = db.collection("Player").document(Username).collection("QRCOde");
         collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
                     FirebaseFirestoreException error) {
                 // Clear the old list
-                personalDatalist.clear();
-                for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
-                {
-                    String number = doc.getId();
-                    String score = doc.getData().get("Total score").toString();
-                    personalDatalist.add(new PersonalScoreOnrankpage(number, score));
+                scoreDataList.clear();
+                for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
+                    scoreDataList.add(new ScoreOnOwnerPersonalPage("QR "+counter.toString(), document.getData().get("worth").toString()));
+                    counter = counter + 1;
                 }
-                personalAdapter.notifyDataSetChanged();
+                scoreAdapter.notifyDataSetChanged();
             }
         });
 
-//        String [] QRNumbers ={"Edmonton", "Vancouver", "Toronto", "Hamilton"};
-//        String [] PersonalSCore = {"AB", "BC", "ON", "ON"};
-//        for (int i = 0; i < QRNumbers.length; i++) {
-//            personalDatalist.add(new PersonalScoreOnrankpage(QRNumbers[i], PersonalSCore[i]));
-//        }
-//
-//        String [] QRNumber = {};
-//        String [] PersonalSCores = {};
-//        List<String> QRNumber = new ArrayList<String>();
-
-
-
-//
-
-
-
-
-
-
-
-
-
-        // receive name from search button
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(OwnerMenuActivity.EXTRA_MESSAGE);
-        TextView PersonalName = findViewById(R.id.personal_rank_TextView);
-        PersonalName.setText(message + "'s QR Codes");
 
     }
-
-
-//    personallist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
-//        @Override
-//        public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
-//            collectionReference.document(personaldatalist.get(i).getQRnumber()).delete();
-//            personaldatalist.remove(i);
-//            personallist.setAdapter(personalAdapter);
-//            personallist.notifyDataSetChanged();
-//            result false;
-//        }
-//
-//    });
-
-    public void onOkPressed(PersonalScoreOnrankpage newPersonalScoreOnrankpage) {
-        personalAdapter.add(newPersonalScoreOnrankpage);
-
+    // display the information to list
+    public void onOkPressed(ScoreOnOwnerPersonalPage newScoreOnOwnerPersonalPage) {
+        scoreAdapter.add(newScoreOnOwnerPersonalPage);
     }
 
 }
