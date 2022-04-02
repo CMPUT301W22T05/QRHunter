@@ -64,6 +64,9 @@
             android:name="com.example.qrhunter.LoginScanner"
             android:exported="false" />
         <activity
+            android:name="com.example.qrhunter.FriendScanner"
+            android:exported="false" />
+        <activity
             android:name="com.example.qrhunter.SearchInfo"
             android:exported="false" />
         <activity
@@ -72,6 +75,10 @@
         <activity
             android:name="com.example.qrhunter.ViewQRCode"
             android:exported="false" />
+        <activity
+            android:name="com.example.qrhunter.CommentingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
         <!--
                 TODO: Before you run your application, you need a Google Maps API key.
 

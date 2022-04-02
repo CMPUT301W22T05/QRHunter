@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sunning/Downloads/QRHunter7/version 1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/sunning/.gradle/caches/transforms-3/eabe50a8430f19ec57b1377071857e01/transformed/appcompat-1.4.1/res/values-v25/values-v25.xml",
+                    "source": "C:\\Users\\jayant\\.gradle\\caches\\transforms-3\\eabe50a8430f19ec57b1377071857e01\\transformed\\appcompat-1.4.1\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

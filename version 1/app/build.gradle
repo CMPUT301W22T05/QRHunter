@@ -3,6 +3,9 @@ apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 android {
     compileSdk 32
+    task wrapper(type: Wrapper){
+        gradleVersion = '7.2'
+    }
 
     defaultConfig {
         applicationId "com.example.qrhunter"

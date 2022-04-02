@@ -23,6 +23,9 @@
             android:name=".LoginScanner"
             android:exported="false" />
         <activity
+            android:name=".FriendScanner"
+            android:exported="false" />
+        <activity
             android:name=".SearchInfo"
             android:exported="false" />
         <activity
@@ -31,6 +34,10 @@
         <activity
             android:name=".ViewQRCode"
             android:exported="false" />
+        <activity
+            android:name=".CommentingActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <!--
                 TODO: Before you run your application, you need a Google Maps API key.
 

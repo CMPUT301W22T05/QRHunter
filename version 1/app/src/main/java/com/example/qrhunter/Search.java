@@ -58,23 +58,41 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
+        // get the username
+        Bundle bundle = getIntent().getExtras();
+        String player_name = bundle.getString("PlayerName");
+
         // initialize all the settings
         SearchPlayerButton = findViewById(R.id.search);
         camera = findViewById(R.id.scan_btn);
         UsernameSearchEdit = findViewById(R.id.Username);
 
+        // set the functionality of switching activity of scan button
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToFriendScanner = new Intent();  // for player
+                Bundle bundle = new Bundle();
+                bundle.putString("PlayerName", player_name);
+                JumpToFriendScanner.putExtras(bundle);
+                JumpToFriendScanner.setClass(Search.this,FriendScanner.class);
+                startActivity(JumpToFriendScanner);
+            }
+        });
+
         // set the functionality of switching activity of searchPlayer button
         SearchPlayerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String Username = UsernameSearchEdit.getText().toString();
-                if (Username.length() == 0) {
+                final String friend_name = UsernameSearchEdit.getText().toString();
+                if (friend_name.length() == 0) {
                     Toast.makeText(Search.this, "Username can not be empty!", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent JumpToPlayerProfile = new Intent();  // for player
                     JumpToPlayerProfile.setClass(Search.this, SearchInfo.class);
                     Bundle bundle = new Bundle();
-                    bundle.putString("UserName", Username);
+                    bundle.putString("PlayerName", player_name);
+                    bundle.putString("FriendName", friend_name);
                     JumpToPlayerProfile.putExtras(bundle);
                     startActivity(JumpToPlayerProfile);
                 }

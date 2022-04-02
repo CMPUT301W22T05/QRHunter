@@ -101,10 +101,6 @@ public class ScanQRcodeActivity extends AppCompatActivity {
     String url;
 
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -200,7 +196,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
                 collectionReference.document(username)
                         .collection("QRCOde").add(note);
                 final CollectionReference cl = db.collection("QRCODES");
-                DocumentReference cr = db.collection("QRCODES").document();
+                DocumentReference cr = db.collection("QRCODES").document(scantext.getText().toString());
                 cr.set(note);
 
             }

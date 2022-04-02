@@ -48,8 +48,8 @@ public class PlayerMenuActivity extends AppCompatActivity {
 
 
         // get the username
-        Intent intent = getIntent();
-        String Username = intent.getStringExtra(MainActivity.user);
+        Bundle bundle = getIntent().getExtras();
+        String player_name = bundle.getString("UserName");
 
         // connect the database
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -83,6 +83,9 @@ public class PlayerMenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent JumpToMySearchPage = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("PlayerName", player_name);
+                JumpToMySearchPage.putExtras(bundle);
                 JumpToMySearchPage.setClass(PlayerMenuActivity.this,Search.class);
                 startActivity(JumpToMySearchPage);
             }

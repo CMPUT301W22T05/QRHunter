@@ -4,12 +4,11 @@ package com.example.qrhunter.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.qrhunter.R;
@@ -19,33 +18,32 @@ import java.lang.String;
 
 public final class ActivitySearchInfoBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final TextView contactInformationText;
+  public final RecyclerView QRList;
 
   @NonNull
-  public final Button qrInformationButton;
+  public final TextView contactInfo;
 
   @NonNull
-  public final ListView qrScoresList;
+  public final TextView headerTitle;
 
   @NonNull
-  public final TextView usernameText;
+  public final TextView totalScore;
 
-  private ActivitySearchInfoBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView contactInformationText, @NonNull Button qrInformationButton,
-      @NonNull ListView qrScoresList, @NonNull TextView usernameText) {
+  private ActivitySearchInfoBinding(@NonNull RelativeLayout rootView, @NonNull RecyclerView QRList,
+      @NonNull TextView contactInfo, @NonNull TextView headerTitle, @NonNull TextView totalScore) {
     this.rootView = rootView;
-    this.contactInformationText = contactInformationText;
-    this.qrInformationButton = qrInformationButton;
-    this.qrScoresList = qrScoresList;
-    this.usernameText = usernameText;
+    this.QRList = QRList;
+    this.contactInfo = contactInfo;
+    this.headerTitle = headerTitle;
+    this.totalScore = totalScore;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -70,32 +68,32 @@ public final class ActivitySearchInfoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.contact_information_text;
-      TextView contactInformationText = ViewBindings.findChildViewById(rootView, id);
-      if (contactInformationText == null) {
+      id = R.id.QR_list;
+      RecyclerView QRList = ViewBindings.findChildViewById(rootView, id);
+      if (QRList == null) {
         break missingId;
       }
 
-      id = R.id.qr_information_button;
-      Button qrInformationButton = ViewBindings.findChildViewById(rootView, id);
-      if (qrInformationButton == null) {
+      id = R.id.contact_info;
+      TextView contactInfo = ViewBindings.findChildViewById(rootView, id);
+      if (contactInfo == null) {
         break missingId;
       }
 
-      id = R.id.qr_scores_list;
-      ListView qrScoresList = ViewBindings.findChildViewById(rootView, id);
-      if (qrScoresList == null) {
+      id = R.id.header_title;
+      TextView headerTitle = ViewBindings.findChildViewById(rootView, id);
+      if (headerTitle == null) {
         break missingId;
       }
 
-      id = R.id.username_text;
-      TextView usernameText = ViewBindings.findChildViewById(rootView, id);
-      if (usernameText == null) {
+      id = R.id.total_score;
+      TextView totalScore = ViewBindings.findChildViewById(rootView, id);
+      if (totalScore == null) {
         break missingId;
       }
 
-      return new ActivitySearchInfoBinding((ConstraintLayout) rootView, contactInformationText,
-          qrInformationButton, qrScoresList, usernameText);
+      return new ActivitySearchInfoBinding((RelativeLayout) rootView, QRList, contactInfo,
+          headerTitle, totalScore);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

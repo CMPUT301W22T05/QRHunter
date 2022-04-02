@@ -1,8 +1,10 @@
 package com.example.qrhunter;
 
+import android.telecom.Call;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,8 +18,10 @@ import java.util.List;
 
 public class QrCodeAdapter extends RecyclerView.Adapter<QrCodeAdapter.ViewHolder> {
     public List<QrCodes> qr;
-    public QrCodeAdapter(List<QrCodes> qr){
+    private ItemClickListener mItemListner;
+    public QrCodeAdapter(List<QrCodes> qr, ItemClickListener itemClickListener){
         this.qr = qr;
+        this.mItemListner = itemClickListener;
 
     }
     @NonNull
@@ -38,13 +42,22 @@ public class QrCodeAdapter extends RecyclerView.Adapter<QrCodeAdapter.ViewHolder
         holder.title.setText("Content : \n"+qr.get(position).getTitle());
         String Worth = String.valueOf(qr.get(position).getWorth());
         holder.worth.setText("Worth : "+Worth);
+        holder.itemView.setOnClickListener(view -> {
+            mItemListner.onItemClick(qr.get(position));
+        });
         Glide.with(holder.img1.getContext()).load(qr.get(position).getUrl()).into(holder.img1);
 
     }
 
+
     @Override
     public int getItemCount() {
         return qr.size();
+    }
+
+    public interface ItemClickListener {
+
+        void onItemClick(QrCodes qrCodes);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

@@ -131,22 +131,6 @@ public class PersonalRank extends AppCompatActivity {
                 scoreAdapter.notifyDataSetChanged();
             }
         });
-        scoreList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
-                collectionReference.document(scoreDataList.get(i).getSequenceNumber()).delete();
-                scoreDataList.remove(i);
-                scoreList.setAdapter(scoreAdapter);
-                scoreAdapter.notifyDataSetChanged();
-                Toast.makeText(PersonalRank.this, "Deleted successfully", Toast.LENGTH_SHORT).show();
-
-
-                return false;
-
-            }
-
-
-        });
 
 
     }

@@ -3,8 +3,11 @@ package com.example.qrhunter;
 import android.content.SharedPreferences;
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.telecom.Call;
 import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -36,7 +39,12 @@ public class ViewQRCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.my_qr_codes_layout);
         qr = new ArrayList<>();
-        qrCodeAdapter = new QrCodeAdapter(qr);
+        qrCodeAdapter = new QrCodeAdapter(qr, new QrCodeAdapter.ItemClickListener() {
+            @Override
+            public void onItemClick(QrCodes qrCodes) {
+                Toast.makeText(ViewQRCode.this, "LIST clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
         codelist = (RecyclerView) findViewById(R.id.main_list);
         codelist.setHasFixedSize(true);
         codelist.setLayoutManager(new LinearLayoutManager(this));
@@ -67,5 +75,6 @@ public class ViewQRCode extends AppCompatActivity {
                 });
 
     }
+
 }
 
