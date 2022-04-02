@@ -46,13 +46,15 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         Generate = findViewById(R.id.generate);
         imageView = (ImageView)findViewById(R.id.imageView);
 
-        // set the text about TextViews
+        // get the username of the device
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String username = MyProfileData.getString("username", null);
-
-        UserDeviceBrand.setText("Phone Brand: " +Build.BRAND);  // display the brand of the phone now
-        UserDeviceModel.setText("Phone Model: " +Build.MODEL);  // display the model of the phone now
         
+        // display the device brand and model
+        UserDeviceBrand.setText("Phone Brand: " +Build.BRAND); 
+        UserDeviceModel.setText("Phone Model: " +Build.MODEL);
+        
+        // connect to the database
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference noteRef = db.collection("Player").document(username);
         noteRef.get()
@@ -60,21 +62,25 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()) {
+                            // search for the email and full name of the account in database and display on the screen
                             String email = documentSnapshot.getString("Email");
                             String name = documentSnapshot.getString("Name");
-                            UserName.setText("Full Name: "+ name);  // display the email address
-                            ContactInfo.setText("Contact Information: "+ email);  // display the email address
+                            UserName.setText("Full Name: "+ name); 
+                            ContactInfo.setText("Contact Information: "+ email);
                         }
                     }
 
                 });
-
+        
+        // edit my profil button set up
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDialog();
             }
         });
+        
+        // generate QR code button set up
         Generate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -92,20 +98,25 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
             }
         });
     }
-
+    
+    // update the new players' input in database 
     @Override
     public void applyText(String name, String contact) {
+        // get the username of the device
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String loginUsername = MyProfileData.getString("username", null);
-
+        
+        // update data
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Player").document(loginUsername).update("Email", contact);
         db.collection("Player").document(loginUsername).update("Name", name);
-
+        
+        // display the new input
         UserName.setText("Username: " + name);
         ContactInfo.setText("Contact Information: "+ contact);
     }
-
+    
+    // open the dialog
     public void openDialog(){
         MyProfileDialog myProfileDialog = new MyProfileDialog();
         myProfileDialog.show(getSupportFragmentManager(),"edit profile dialog");
