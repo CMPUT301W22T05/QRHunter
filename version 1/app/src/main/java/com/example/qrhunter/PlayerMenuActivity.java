@@ -20,6 +20,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
     Button SearchButton;
     Button RankingButton;
     Button LogoutButton;
+    Button Qrinfo;
     ImageButton Profile;
 
     @Override
@@ -34,6 +35,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         RankingButton = findViewById(R.id.ranking_button);
         Profile = findViewById(R.id.profile_button);
         LogoutButton = findViewById(R.id.logout);
+        Qrinfo = findViewById(R.id.qr_info);
         LogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -101,6 +103,15 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 Intent JumpToViewQRcode = new Intent();
                 JumpToViewQRcode.setClass(PlayerMenuActivity.this, ViewQRCode.class);
                 startActivity(JumpToViewQRcode);
+            }
+        });
+        Qrinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToQRINFO = new Intent();
+                JumpToQRINFO.setClass(PlayerMenuActivity.this, QrInfo.class);
+                startActivity(JumpToQRINFO);
+
             }
         });
 

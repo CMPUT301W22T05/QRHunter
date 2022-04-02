@@ -107,6 +107,7 @@
         <activity android:name="com.example.qrhunter.MyProfileActivity" />
         <activity android:name="com.example.qrhunter.PersonalRank" />
         <activity android:name="com.example.qrhunter.ScanQRcodeActivity" />
+        <activity android:name="com.example.qrhunter.QrInfo" />
         <activity
             android:name="com.example.qrhunter.MainActivity"
             android:exported="true" >

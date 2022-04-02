@@ -3033,7 +3033,6 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id number_personal_QR
-id number_scoring_textView
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3066,6 +3065,7 @@ id profile_user_device_model
 id profile_username
 id progress_circular
 id progress_horizontal
+id qr_info
 id qr_information_button
 id qr_number_text
 id qr_score_text

@@ -28,6 +28,9 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
   public final ImageButton profileButton;
 
   @NonNull
+  public final Button qrInfo;
+
+  @NonNull
   public final Button rankingButton;
 
   @NonNull
@@ -43,12 +46,13 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
   public final Button viewMyQrCodesButton;
 
   private PlayerMenuLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button logout,
-      @NonNull ImageButton profileButton, @NonNull Button rankingButton,
+      @NonNull ImageButton profileButton, @NonNull Button qrInfo, @NonNull Button rankingButton,
       @NonNull Button scanQrCodeButton, @NonNull Button searchButton, @NonNull TextView textView2,
       @NonNull Button viewMyQrCodesButton) {
     this.rootView = rootView;
     this.logout = logout;
     this.profileButton = profileButton;
+    this.qrInfo = qrInfo;
     this.rankingButton = rankingButton;
     this.scanQrCodeButton = scanQrCodeButton;
     this.searchButton = searchButton;
@@ -95,6 +99,12 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.qr_info;
+      Button qrInfo = ViewBindings.findChildViewById(rootView, id);
+      if (qrInfo == null) {
+        break missingId;
+      }
+
       id = R.id.ranking_button;
       Button rankingButton = ViewBindings.findChildViewById(rootView, id);
       if (rankingButton == null) {
@@ -125,7 +135,7 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new PlayerMenuLayoutBinding((ConstraintLayout) rootView, logout, profileButton,
+      return new PlayerMenuLayoutBinding((ConstraintLayout) rootView, logout, profileButton, qrInfo,
           rankingButton, scanQrCodeButton, searchButton, textView2, viewMyQrCodesButton);
     }
     String missingId = rootView.getResources().getResourceName(id);

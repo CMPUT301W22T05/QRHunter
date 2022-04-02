@@ -26,19 +26,19 @@ public final class QrInformationLayoutBinding implements ViewBinding {
   public final TextView lowestScoringTextView;
 
   @NonNull
-  public final TextView numberScoringTextView;
+  public final TextView sumScoringTextView;
 
   @NonNull
-  public final TextView sumScoringTextView;
+  public final TextView textView2;
 
   private QrInformationLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView highestScoringTextView, @NonNull TextView lowestScoringTextView,
-      @NonNull TextView numberScoringTextView, @NonNull TextView sumScoringTextView) {
+      @NonNull TextView sumScoringTextView, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.highestScoringTextView = highestScoringTextView;
     this.lowestScoringTextView = lowestScoringTextView;
-    this.numberScoringTextView = numberScoringTextView;
     this.sumScoringTextView = sumScoringTextView;
+    this.textView2 = textView2;
   }
 
   @Override
@@ -80,20 +80,20 @@ public final class QrInformationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.number_scoring_textView;
-      TextView numberScoringTextView = ViewBindings.findChildViewById(rootView, id);
-      if (numberScoringTextView == null) {
-        break missingId;
-      }
-
       id = R.id.sum_scoring_textView;
       TextView sumScoringTextView = ViewBindings.findChildViewById(rootView, id);
       if (sumScoringTextView == null) {
         break missingId;
       }
 
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
       return new QrInformationLayoutBinding((ConstraintLayout) rootView, highestScoringTextView,
-          lowestScoringTextView, numberScoringTextView, sumScoringTextView);
+          lowestScoringTextView, sumScoringTextView, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -3,27 +3,52 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E6000000">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rect_border_purple"
+        android:gravity="center"
+        android:text="QR INFO"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/highest_scoring_textView"
-        android:layout_width="163dp"
-        android:layout_height="49dp"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="16dp"
         android:hint="Highest scoring QR code"
         app:layout_constraintBottom_toTopOf="@+id/lowest_scoring_textView"
+        android:background="@drawable/round_border"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998" />
-
+        app:layout_constraintVertical_bias="0.854" />
 
     <TextView
         android:id="@+id/lowest_scoring_textView"
         android:layout_width="163dp"
         android:layout_height="49dp"
         android:layout_marginBottom="16dp"
-        android:hint="Highest scoring QR code"
+        android:hint="Lowest scoring QR code"
+        android:background="@drawable/round_border"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
         app:layout_constraintBottom_toTopOf="@+id/sum_scoring_textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,22 +57,17 @@
         android:id="@+id/sum_scoring_textView"
         android:layout_width="163dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="16dp"
-        android:hint="Highest scoring QR code"
-        app:layout_constraintBottom_toTopOf="@+id/number_scoring_textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-    <TextView
-        android:id="@+id/number_scoring_textView"
-        android:layout_width="163dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="356dp"
-        android:hint="Highest scoring QR code"
+        android:layout_marginBottom="236dp"
+        android:hint="Sum scoring QR code"
+        android:background="@drawable/round_border"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#5F596A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

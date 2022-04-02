@@ -64,6 +64,7 @@
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".PersonalRank" />
         <activity android:name=".ScanQRcodeActivity" />
+        <activity android:name=".QrInfo" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >

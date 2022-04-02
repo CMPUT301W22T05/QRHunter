@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/activity_search.xml" value="0.121875" />
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/add_qr_code_layout.xml" value="0.10190217391304347" />
+        <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/my_profile_content.xml" value="0.24375" />
+        <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/my_profile_layout.xml" value="0.13043478260869565" />
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/owner_menu_layout.xml" value="0.1" />
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml" value="0.12409420289855072" />
         <entry key="..\:/Users/Mia/Desktop/QRHunter/version 1/app/src/main/res/layout/player_ranking_content.xml" value="0.12001811594202899" />
@@ -13,14 +15,29 @@
         <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/activity_scanner_view.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/activity_search.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/add_qr_code_layout.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/fragment_qr_code_list.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/fragment_qr_details.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/my_profile_content.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/my_profile_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/my_qr_codes_layout.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/owner_menu_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/player_menu_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/player_ranking_content.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/player_ranking_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/qr_information_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/qr_scores_content.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/rank_in_owner_content.xml" value="0.32447916666666665" />
         <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/ranking_layout.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/scan_qr_code_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/sign_up_layout.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/jayant/Desktop/QRHunter/QRHunter/version 1/app/src/main/res/layout/single_qr_design.xml" value="0.32447916666666665" />
         <entry key="app/src/main/res/drawable-anydpi/ic_profile.xml" value="0.162" />
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.145" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.162" />
         <entry key="app/src/main/res/drawable/rect_border_grey.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/rect_border_purple.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/round_border.xml" value="0.2215" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.31987915039062503" />
         <entry key="app/src/main/res/layout/activity_scanner_view.xml" value="0.3402618408203124" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.5205627441406251" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.34861450195312504" />
@@ -31,7 +48,6 @@
         <entry key="app/src/main/res/layout/personal_qr_rank_content_layout.xml" value="0.19963989257812492" />
         <entry key="app/src/main/res/layout/personal_qr_rank_layout.xml" value="0.3206672845227062" />
         <entry key="app/src/main/res/layout/player_menu_layout.xml" value="0.27618001302083334" />
-        <entry key="app/src/main/res/layout/player_ranking_content.xml" value="0.23879177954889114" />
         <entry key="app/src/main/res/layout/player_ranking_layout.xml" value="0.33753943217665616" />
         <entry key="app/src/main/res/layout/qr_scores_content.xml" value="0.29270833333333335" />
         <entry key="app/src/main/res/layout/rank_in_owner_content.xml" value="0.22377624511718747" />
@@ -41,8 +57,6 @@
         <entry key="app/src/main/res/layout/scan_qr_code_layout.xml" value="0.496875" />
         <entry key="app/src/main/res/layout/sign_up_layout.xml" value="0.28229166666666666" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.4510822828921526" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.145" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.145" />
       </map>
     </option>
   </component>
