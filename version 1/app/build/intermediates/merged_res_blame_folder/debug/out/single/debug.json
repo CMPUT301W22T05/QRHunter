@@ -196,6 +196,10 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-anydpi_will_smith.gif.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-anydpi/will_smith.gif"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_qr_scores_content.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/qr_scores_content.xml"
     },
