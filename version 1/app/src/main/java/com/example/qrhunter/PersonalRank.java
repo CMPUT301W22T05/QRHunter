@@ -51,77 +51,128 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import static android.content.ContentValues.TAG;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+import android.widget.Toolbar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import java.util.ArrayList;
 
 public class PersonalRank extends AppCompatActivity {
-
-    ListView personallist;
+    FirebaseFirestore db;
+    ListView personalList;
     ArrayAdapter<PersonalScoreOnrankpage> personalAdapter;
-    ArrayList<PersonalScoreOnrankpage> personaldatalist;
-    long personalPos = 1000;
+    ArrayList<PersonalScoreOnrankpage> personalDatalist;
+    final String TAG = "Sample";
     String DisplayUserName;
     String DisplayTotalScore;
-    FirebaseFirestore db;
-
-
-
-
 
     @SuppressLint("SetTextI18n")//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        db = FirebaseFirestore.getInstance();
-        final CollectionReference collectionReference = db.collection("Player");
+//        final CollectionReference collectionReference = db.collection("Player");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personal_qr_rank_layout);
+        db = FirebaseFirestore.getInstance();
+
+
+        final Query collectionReference = db.collection("Player");
+        personalList = findViewById(R.id.personal_ranking_list);
+        personalDatalist = new ArrayList<>();
+
+
+        personalAdapter = new ScoreListOnpersonalrankPage(this,personalDatalist);
+        personalList.setAdapter(personalAdapter);
+////
+        collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
+                    FirebaseFirestoreException error) {
+                // Clear the old list
+                personalDatalist.clear();
+                for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
+                {
+                    String number = doc.getId();
+                    String score = doc.getData().get("Total score").toString();
+                    personalDatalist.add(new PersonalScoreOnrankpage(number, score));
+                }
+                personalAdapter.notifyDataSetChanged();
+            }
+        });
+
+//        String [] QRNumbers ={"Edmonton", "Vancouver", "Toronto", "Hamilton"};
+//        String [] PersonalSCore = {"AB", "BC", "ON", "ON"};
+//        for (int i = 0; i < QRNumbers.length; i++) {
+//            personalDatalist.add(new PersonalScoreOnrankpage(QRNumbers[i], PersonalSCore[i]));
+//        }
+//
+//        String [] QRNumber = {};
+//        String [] PersonalSCores = {};
+//        List<String> QRNumber = new ArrayList<String>();
+
+
+
+//
+//        db.collection("Player")
+//                .get()
+//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+//                        if (task.isSuccessful()) {
+//                            for (QueryDocumentSnapshot document : task.getResult()) {
+//                                if (document.getData().get("Total score") == null){
+//                                    DisplayUserName = document.getId();
+//                                    DisplayTotalScore = "NULL";
+//                                }
+//                                else {
+//                                    DisplayUserName = document.getId();
+//                                    DisplayTotalScore = document.getData().get("Total score").toString();
+//                                }
+//                                personalDatalist.add(new PersonalScoreOnrankpage(DisplayUserName, DisplayTotalScore));
+//                            }
+//                        }
+//                    }
+//                });
+//        personalAdapter = new ScoreListOnpersonalrankPage(this,personalDatalist);
+//        personalList.setAdapter(personalAdapter);
 
 
 
 
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
 
-
-        personallist = findViewById(R.id.personal_ranking_list);
-        personaldatalist = new ArrayList<>();
-
-        String [] QRNumbers ={"Edmonton", "Vancouver", "Toronto", "Hamilton"};
-        String [] PersonalSCore = {"AB", "BC", "ON", "ON"};
-        for (int i = 0; i < QRNumbers.length; i++) {
-            personaldatalist.add(new PersonalScoreOnrankpage(QRNumbers[i], PersonalSCore[i]));
-        }
-
-
-
-
-
-
-        db.collection("Player")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                if (document.getData().get("Total score") == null){
-                                    DisplayUserName = document.getId();
-                                    DisplayTotalScore = "NULL";
-                                }
-                                else {
-                                    DisplayUserName = document.getId();
-                                    DisplayTotalScore = document.getData().get("Total score").toString();
-                                }
-                                personaldatalist.add(new PersonalScoreOnrankpage(DisplayUserName, DisplayTotalScore));
-                            }
-                        }
-                    }
-                });
-
-
-        personalAdapter = new ScoreListOnpersonalrankPage(this,personaldatalist);
-        personallist.setAdapter(personalAdapter);
 
 
         // receive name from search button
@@ -132,9 +183,7 @@ public class PersonalRank extends AppCompatActivity {
 
     }
 
-    public void onOkPressd(PersonalScoreOnrankpage newPersonalScoreOnrankpage){
-        personalAdapter.add(newPersonalScoreOnrankpage);
-    }
+
 //    personallist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
 //        @Override
 //        public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
@@ -146,5 +195,10 @@ public class PersonalRank extends AppCompatActivity {
 //        }
 //
 //    });
+
+    public void onOkPressed(PersonalScoreOnrankpage newPersonalScoreOnrankpage) {
+        personalAdapter.add(newPersonalScoreOnrankpage);
+
+    }
 
 }
