@@ -24,10 +24,10 @@ public class PlayerRankingCustomList extends ArrayAdapter<Player> {
         this.context = context;
     }
 
+    // display name and score on the screen
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-//        return super.getView(position, convertView, parent);
         View view = convertView;
 
         if(view == null){
@@ -35,7 +35,7 @@ public class PlayerRankingCustomList extends ArrayAdapter<Player> {
         }
 
         Player player = players.get(position);
-
+        
         TextView playerName = view.findViewById(R.id.player_ranking_name);
         TextView playerScore = view.findViewById(R.id.player_ranking_score);
 
