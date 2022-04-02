@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     android:background="#E6000000">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/main_background"
+        tools:ignore="MissingConstraints"
+        android:scaleType="centerCrop"/>
+
     <TextView
         android:id="@+id/app_name"
         android:layout_width="110dp"

@@ -26,6 +26,7 @@ MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/youwenhao/.gradle/ca
 MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0] /Users/youwenhao/.gradle/caches/transforms-3/f76a194cbb7fea94d7fe2a861898dd92/transformed/recyclerview-selection-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/0fac25ed845d6d09fff57e0c40f9ab74/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/youwenhao/.gradle/caches/transforms-3/7ce046d21c501cd4d36d1c0ce648375a/transformed/recyclerview-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.24] /Users/youwenhao/.gradle/caches/transforms-3/98cb054dcc933a7b6d3bf7443c598d85/transformed/jetified-android-gif-drawable-1.2.24/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/youwenhao/.gradle/caches/transforms-3/5c7602f884d2666b97eb83ceca241f94/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/188324f6da80d25d9ce63417fe603267/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/8c7278840ecd5e1b3ddc0854b6b35430/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
@@ -89,6 +90,7 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/youwenhao/.gradle/
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/youwenhao/.gradle/caches/transforms-3/2e4fa518ca65ac8be3bc70e79ebb4646/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/youwenhao/.gradle/caches/transforms-3/71c0e172dec0362b7714446245abdbeb/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] /Users/youwenhao/.gradle/caches/transforms-3/918d224ea85eaf4500cc3fcbcd545227/transformed/jetified-grpc-android-1.41.0/AndroidManifest.xml:2:1-13:12
+MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] /Users/youwenhao/.gradle/caches/transforms-3/88545077e7a5e09f7072767a48ec7012/transformed/jetified-relinker-1.4.1/AndroidManifest.xml:2:1-7:12
 INJECTED from /Users/youwenhao/test1/QRHunter/version 1/app/src/main/AndroidManifest.xml:2:1-78:12
 INJECTED from /Users/youwenhao/test1/QRHunter/version 1/app/src/main/AndroidManifest.xml:2:1-78:12
 INJECTED from /Users/youwenhao/test1/QRHunter/version 1/app/src/main/AndroidManifest.xml:2:1-78:12
@@ -356,6 +358,8 @@ MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/youwenhao/.gradle/cach
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/youwenhao/.gradle/caches/transforms-3/0fac25ed845d6d09fff57e0c40f9ab74/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/youwenhao/.gradle/caches/transforms-3/7ce046d21c501cd4d36d1c0ce648375a/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] /Users/youwenhao/.gradle/caches/transforms-3/7ce046d21c501cd4d36d1c0ce648375a/transformed/recyclerview-1.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.24] /Users/youwenhao/.gradle/caches/transforms-3/98cb054dcc933a7b6d3bf7443c598d85/transformed/jetified-android-gif-drawable-1.2.24/AndroidManifest.xml:5:5-7:41
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.24] /Users/youwenhao/.gradle/caches/transforms-3/98cb054dcc933a7b6d3bf7443c598d85/transformed/jetified-android-gif-drawable-1.2.24/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/youwenhao/.gradle/caches/transforms-3/5c7602f884d2666b97eb83ceca241f94/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta02] /Users/youwenhao/.gradle/caches/transforms-3/5c7602f884d2666b97eb83ceca241f94/transformed/jetified-firebase-appcheck-interop-16.0.0-beta02/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /Users/youwenhao/.gradle/caches/transforms-3/188324f6da80d25d9ce63417fe603267/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
@@ -482,6 +486,8 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/youwe
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/youwenhao/.gradle/caches/transforms-3/71c0e172dec0362b7714446245abdbeb/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.41.0] /Users/youwenhao/.gradle/caches/transforms-3/918d224ea85eaf4500cc3fcbcd545227/transformed/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.41.0] /Users/youwenhao/.gradle/caches/transforms-3/918d224ea85eaf4500cc3fcbcd545227/transformed/jetified-grpc-android-1.41.0/AndroidManifest.xml:7:5-9:41
+MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] /Users/youwenhao/.gradle/caches/transforms-3/88545077e7a5e09f7072767a48ec7012/transformed/jetified-relinker-1.4.1/AndroidManifest.xml:5:5-43
+MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] /Users/youwenhao/.gradle/caches/transforms-3/88545077e7a5e09f7072767a48ec7012/transformed/jetified-relinker-1.4.1/AndroidManifest.xml:5:5-43
 INJECTED from /Users/youwenhao/test1/QRHunter/version 1/app/src/main/AndroidManifest.xml
 INJECTED from /Users/youwenhao/test1/QRHunter/version 1/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

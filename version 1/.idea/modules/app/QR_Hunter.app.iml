@@ -189,5 +189,6 @@
     <orderEntry type="library" name="Gradle: me.dm7.barcodescanner:core:1.9.13@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.journeyapps:zxing-android-embedded:3.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: io.github.pilgr:paperdb:2.7.2@aar" level="project" />
+    <orderEntry type="library" name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.24@aar" level="project" />
   </component>
 </module>
