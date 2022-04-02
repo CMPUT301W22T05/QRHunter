@@ -145,28 +145,7 @@ public class PersonalRank extends AppCompatActivity {
 
 
 //
-//        db.collection("Player")
-//                .get()
-//                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-//                        if (task.isSuccessful()) {
-//                            for (QueryDocumentSnapshot document : task.getResult()) {
-//                                if (document.getData().get("Total score") == null){
-//                                    DisplayUserName = document.getId();
-//                                    DisplayTotalScore = "NULL";
-//                                }
-//                                else {
-//                                    DisplayUserName = document.getId();
-//                                    DisplayTotalScore = document.getData().get("Total score").toString();
-//                                }
-//                                personalDatalist.add(new PersonalScoreOnrankpage(DisplayUserName, DisplayTotalScore));
-//                            }
-//                        }
-//                    }
-//                });
-//        personalAdapter = new ScoreListOnpersonalrankPage(this,personalDatalist);
-//        personalList.setAdapter(personalAdapter);
+
 
 
 
