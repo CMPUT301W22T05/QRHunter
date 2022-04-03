@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.qrhunter.PlayerMenuActivityTest" tests="1" failures="1" errors="0" skipped="0" time="0.373" timestamp="2022-04-03T01:14:40" hostname="localhost">
+<testsuite name="com.example.qrhunter.SearchTest" tests="1" failures="1" errors="0" skipped="0" time="0.778" timestamp="2022-04-03T06:59:48" hostname="localhost">
   <properties>
     <property name="device" value="Nexus_6P_API_22(AVD) - 5.1.1" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="start" classname="com.example.qrhunter.PlayerMenuActivityTest" time="0.12">
+  <testcase name="checkScanButton" classname="com.example.qrhunter.SearchTest" time="0.331">
     <failure>java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
-at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+at com.example.qrhunter.Search.onCreate(Search.java:63)
 at android.app.Activity.performCreate(Activity.java:5990)
 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
 at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
