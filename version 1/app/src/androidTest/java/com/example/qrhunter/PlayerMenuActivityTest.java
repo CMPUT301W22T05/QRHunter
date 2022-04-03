@@ -12,7 +12,6 @@ import org.junit.Rule;
 import org.junit.Test;
 
 public class PlayerMenuActivityTest {
-    // tests not passed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     private Solo solo;
     @Rule
     public ActivityTestRule<PlayerMenuActivity> rule =
@@ -105,6 +104,16 @@ public class PlayerMenuActivityTest {
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnButton("LogOut");
         solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
+    }
+
+    /**
+     * Test the remove qr code button
+     */
+    @Test
+    public void checkRemoveButton(){
+        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.clickOnButton("Remove QR Code");
+        solo.assertCurrentActivity("Wrong Activity", RemoveQR.class);
     }
 
 }

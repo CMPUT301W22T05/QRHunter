@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:textColor="#272727"
+        android:id="@+id/username_editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Edit full name"
+        android:textColorHint="#696969"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:textColor="#272727"
+        android:id="@+id/contact_information_editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Edit contact information"
+        android:textColorHint="#696969"
+        android:inputType="textWebEmailAddress" />
+
+
+</LinearLayout>

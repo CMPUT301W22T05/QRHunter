@@ -1,0 +1,68 @@
+# 2022-04-03T21:43:41.487Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "OwnerMenuActivityTest"
+    test_package: "com.example.qrhunter"
+    test_method: "checkLogoutButton"
+    start_time {
+      seconds: 1649022218
+      nanos: 594000000
+    }
+    end_time {
+      seconds: 1649022220
+      nanos: 697000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\logcat-com.example.qrhunter.OwnerMenuActivityTest-checkLogoutButton.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

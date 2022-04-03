@@ -45,9 +45,9 @@ public class SearchTest {
     public void checkSearchButton(){
         solo.assertCurrentActivity("Wrong Activity", Search.class);
         solo.enterText((EditText) solo.getView(R.id.Username),"test1");
-        solo.clickOnImageButton(0); // not sure which button is
-        //View searchButton = solo.getView("search");   //try
-        //solo.clickOnView(searchButton);   //try
+        //solo.clickOnImageButton(0); // not sure which button is
+        View searchButton = solo.getView("search");   //try
+        solo.clickOnView(searchButton);   //try
         solo.assertCurrentActivity("Wrong Activity", SearchInfo.class);
     }
 
@@ -57,9 +57,9 @@ public class SearchTest {
     @Test
     public void checkScanButton(){
         solo.assertCurrentActivity("Wrong Activity", Search.class);
-        solo.clickOnImageButton(1); // not sure which button is
-        //View scanButton = solo.getView("scan_btn");   //try
-        //solo.clickOnView(scanButton);   //try
+        //solo.clickOnImageButton(1); // not sure which button is
+        View scanButton = solo.getView("scan_btn");   //try
+        solo.clickOnView(scanButton);   //try
         solo.assertCurrentActivity("Wrong Activity", SearchInfo.class);
     }
 

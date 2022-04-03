@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.qrhunter.OwnerMenuActivityTest" tests="1" failures="0" errors="0" skipped="0" time="2.804" timestamp="2022-04-03T21:43:41" hostname="localhost">
+  <properties>
+    <property name="device" value="Nexus_6P_API_22(AVD) - 5.1.1" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="checkLogoutButton" classname="com.example.qrhunter.OwnerMenuActivityTest" time="2.039" />
+</testsuite>
