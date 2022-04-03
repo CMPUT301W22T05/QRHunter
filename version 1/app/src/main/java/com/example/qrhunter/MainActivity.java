@@ -27,16 +27,14 @@ import java.util.List;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
-
+    // Items we need use
     Button LogInButton;
     Button SignUpButton;
-    public static String user;
 
     // restrict user click back button
     // make "LOG-OUT" meaningful
     @Override
     public void onBackPressed() {
-        // super.onBackPressed();
         Toast.makeText(MainActivity.this,"No back action here! Please LOG-IN/SIGN-UP button",Toast.LENGTH_LONG).show();
     }
 
@@ -47,12 +45,13 @@ public class MainActivity extends AppCompatActivity {
         Paper.init(this);
         //Find corresponding view in the layout files.
 
+        // connect items with button in layout
         SignUpButton = findViewById(R.id.signup_button);
         LogInButton = findViewById(R.id.login_button);
 
         String UserPhoneKey = Paper.book().read(Player.UserPhoneKey);
 
-        if (UserPhoneKey != "" )
+        if (!UserPhoneKey.equals(""))
         {
             if (!TextUtils.isEmpty(UserPhoneKey) )
             {
@@ -76,15 +75,16 @@ public class MainActivity extends AppCompatActivity {
 
         // set the functionality of switching activity of login button
         LogInButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
+                // when you click login button, the program will show a scanner
                 startActivity(new Intent(getApplicationContext(), LoginScanner.class));
             }
 
         });
     }
 
+    // user offers the permission to scan
     public void AllowAccess(final String Username){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
     // check if username/password are empty or not
@@ -99,47 +99,45 @@ public class MainActivity extends AppCompatActivity {
         OwnerUsernameList.add("xibei");
         OwnerUsernameList.add("rahul");
     // check owner/player account login
-                if(OwnerUsernameList.contains(Username))
+                if(OwnerUsernameList.contains(Username)) {
+                    // owner account login
+                    DocumentReference noteRef = db.collection("Owner").document(Username);
+                    noteRef.get()
+                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                @Override
+                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                    //if get Snapshot in owner document successfully, compares the password with the user input
+                                    Intent JumpToOwnerMenu = new Intent();
+                                    JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("UserName", Username);
+                                    JumpToOwnerMenu.putExtras(bundle);
+                                    startActivity(JumpToOwnerMenu);
+                                }
+                            });
+                }
+                else {
+                    // player account login
+                    DocumentReference noteRef = db.collection("Player").document(Username);
+                    noteRef.get()
+                            .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                @Override
+                                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                    //if get Snapshot in the player document successfully, compares the password with the user input
+                                    SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
+                                    MyProfileData.putString("username", Username);
+                                    MyProfileData.commit();
+                                    // jump to the Player Menu
+                                    Intent JumpToPlayerMenu = new Intent();
+                                    JumpToPlayerMenu.setClass(MainActivity.this, PlayerMenuActivity.class);
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("UserName", Username);
+                                    JumpToPlayerMenu.putExtras(bundle);
+                                    startActivity(JumpToPlayerMenu);
 
-    {// owner account login
-        DocumentReference noteRef = db.collection("Owner").document(Username);
-        noteRef.get()
-                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        //if get Snapshot in owner document successfully, compares the password with the user input
-                        Intent JumpToOwnerMenu = new Intent();
-                        JumpToOwnerMenu.setClass(MainActivity.this, OwnerMenuActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putString("UserName", Username);
-                        JumpToOwnerMenu.putExtras(bundle);
-                        startActivity(JumpToOwnerMenu);
-                    }
-                });
+                                }
+
+                            });
+                }
     }
-                else
-
-    {// player account login
-        DocumentReference noteRef = db.collection("Player").document(Username);
-        noteRef.get()
-                .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        //if get Snapshot in the player document successfully, compares the password with the user input
-                        SharedPreferences.Editor MyProfileData = getSharedPreferences("data", 0).edit();
-                        MyProfileData.putString("username", Username);
-                        MyProfileData.commit();
-                        // jump to the Player Menu
-                        Intent JumpToPlayerMenu = new Intent();
-                        JumpToPlayerMenu.setClass(MainActivity.this, PlayerMenuActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putString("UserName", Username);
-                        JumpToPlayerMenu.putExtras(bundle);
-                        startActivity(JumpToPlayerMenu);
-
-                    }
-
-                });
-    }
-}
 }
