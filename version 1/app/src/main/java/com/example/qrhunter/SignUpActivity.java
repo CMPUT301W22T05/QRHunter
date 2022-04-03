@@ -126,20 +126,22 @@ public class SignUpActivity extends AppCompatActivity {
                                                         @Override
                                                         public void onSuccess(Void unused) {
                                                             Toast.makeText(SignUpActivity.this, "Successfully create account", Toast.LENGTH_SHORT).show();
-
+                                                            
+                                                            // jump to the Player Menu
+                                                            Intent JumpToPlayerMenu = new Intent();
+                                                            JumpToPlayerMenu.setClass(SignUpActivity.this, PlayerMenuActivity.class);
+                                                            Bundle bundle = new Bundle();
+                                                            bundle.putString("UserName", username);
+                                                            JumpToPlayerMenu.putExtras(bundle);
+                                                            startActivity(JumpToPlayerMenu);
+                        
                                                         }
                                                     });
 
                                         }
                                     }
                                 });
-                // jump to the Player Menu
-                Intent JumpToPlayerMenu = new Intent();
-                JumpToPlayerMenu.setClass(SignUpActivity.this, PlayerMenuActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("UserName", username);
-                JumpToPlayerMenu.putExtras(bundle);
-                startActivity(JumpToPlayerMenu);
+
                }
 
             }
