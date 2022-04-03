@@ -37,6 +37,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         LogoutButton = findViewById(R.id.logout);
         Qrinfo = findViewById(R.id.qr_info);
 
+        // set the functionality of logging out
         LogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +69,6 @@ public class PlayerMenuActivity extends AppCompatActivity {
 
         // set the functionality of switching activity of profile button
         Profile.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 Intent JumpToMyProfilePage = new Intent();
@@ -80,7 +80,6 @@ public class PlayerMenuActivity extends AppCompatActivity {
 
         // set the functionality of switching activity of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 Intent JumpToMySearchPage = new Intent();
@@ -101,6 +100,8 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToRankingActivity);
             }
         });
+
+        // set the functionality of viewing QR codes
         ViewQRButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,13 +110,14 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 startActivity(JumpToViewQRcode);
             }
         });
+
+        // set the functionality of checking QR information
         Qrinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent JumpToQRINFO = new Intent();
                 JumpToQRINFO.setClass(PlayerMenuActivity.this, QrInfo.class);
                 startActivity(JumpToQRINFO);
-
             }
         });
 

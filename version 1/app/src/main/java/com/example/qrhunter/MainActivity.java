@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
     ImageButton ScanButton;
     public static String user;
 
+    // restrict user click back button
+    // make "LOG-OUT" meaningful
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Toast.makeText(MainActivity.this,"No back action here! Please LOG-IN/SIGN-UP button",Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
