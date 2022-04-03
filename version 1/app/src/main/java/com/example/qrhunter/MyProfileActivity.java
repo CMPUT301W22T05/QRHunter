@@ -112,7 +112,7 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
         db.collection("Player").document(loginUsername).update("Name", name);
         
         // display the new input
-        UserName.setText("Username: " + name);
+        UserName.setText("Full name: " + name);
         ContactInfo.setText("Contact Information: "+ contact);
     }
     
