@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E6000000">
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:id="@+id/highest_scoring_textView"
         android:layout_width="165dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_border"
         android:ellipsize="middle"
         android:gravity="center"
@@ -31,17 +31,15 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textColorLink="#5F596A"
-        app:layout_constraintBottom_toTopOf="@+id/lowest_scoring_textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/lowest_scoring_textView"
         android:layout_width="165dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round_border"
         android:ellipsize="middle"
         android:gravity="center"
@@ -49,16 +47,16 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textColorLink="#5F596A"
-        app:layout_constraintBottom_toTopOf="@+id/sum_scoring_textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highest_scoring_textView" />
 
     <TextView
         android:id="@+id/sum_scoring_textView"
         android:layout_width="165dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="440dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="200dp"
         android:background="@drawable/round_border"
         android:ellipsize="middle"
         android:gravity="center"
@@ -68,8 +66,9 @@
         android:textColorLink="#5F596A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowest_scoring_textView"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

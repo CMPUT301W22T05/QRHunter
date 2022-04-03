@@ -35,7 +35,6 @@ public class MyProfileDialog extends AppCompatDialogFragment {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String userName = editUsername.getText().toString();
                         String contact = editContact.getText().toString();
-
                         dialogInterFace.applyText(userName, contact);
                     }
                 });

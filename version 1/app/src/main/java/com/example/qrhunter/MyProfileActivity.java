@@ -72,7 +72,7 @@ public class MyProfileActivity extends AppCompatActivity implements MyProfileDia
 
                 });
         
-        // edit my profil button set up
+        // edit my profile button set up
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
