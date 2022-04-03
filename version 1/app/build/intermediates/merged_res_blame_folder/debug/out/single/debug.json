@@ -4,8 +4,20 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_logo_round.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_logo_round.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_logo_round.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_logo.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_logo.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -16,8 +28,16 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-mdpi/ic_others.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_logo.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_logo.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_fragment_qr_details.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/fragment_qr_details.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_logo_background.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-hdpi/ic_logo_background.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -32,8 +52,20 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable/loupe.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_logo_background.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_logo_background.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_logo_foreground.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_logo_foreground.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_logo_round.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_logo_round.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_owner_menu_layout.xml.flat",
@@ -68,8 +100,24 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-hdpi/ic_search.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_logo_round.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxhdpi/ic_logo_round.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_logo_foreground.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_logo_foreground.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_others.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-xxhdpi/ic_others.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_logo.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_logo.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_logo_background.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_logo_background.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
@@ -108,6 +156,14 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_layout.xml"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_logo_round.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xhdpi/ic_logo_round.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_logo_background.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_logo_background.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/xml_file_paths.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/xml/file_paths.xml"
     },
@@ -116,8 +172,16 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-hdpi/ic_others.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_logo_foreground.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-hdpi/ic_logo_foreground.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_logo.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xhdpi/ic_logo.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_add_qr_code_layout.xml.flat",
@@ -140,8 +204,16 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-xhdpi/ic_profile.png"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_logo_round.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-hdpi/ic_logo_round.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable_customer.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable/customer.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_logo_foreground.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_logo_foreground.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_activity_scanner_view.xml.flat",
@@ -164,8 +236,16 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/player_menu_layout.xml"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_logo.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-xhdpi_ic_others.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-xhdpi/ic_others.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_logo_foreground.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xhdpi/ic_logo_foreground.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-anydpi_ic_profile.xml.flat",
@@ -204,12 +284,20 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/qr_scores_content.xml"
     },
     {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_logo.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-hdpi/ic_logo.png"
+    },
+    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/navigation_nav_graph.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/navigation/nav_graph.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_qr_information_layout.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/qr_information_layout.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_logo_background.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xhdpi/ic_logo_background.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_profile.png.flat",

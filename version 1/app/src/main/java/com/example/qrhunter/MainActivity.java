@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button LogInButton;
     Button SignUpButton;
-    ImageButton ScanButton;
     public static String user;
 
     // restrict user click back button
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
         SignUpButton = findViewById(R.id.signup_button);
         LogInButton = findViewById(R.id.login_button);
-        ScanButton = findViewById(R.id.scan_button);
 
         String UserPhoneKey = Paper.book().read(Player.UserPhoneKey);
 
@@ -63,17 +61,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-
-
-
-        // set the functionality of switching activity of scan button
-        ScanButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                final List OwnerUsernameList;
-                startActivity(new Intent(getApplicationContext(), LoginScanner.class));
-            }
-        });
 
         // set the functionality of switching activity of signup button
         SignUpButton.setOnClickListener(new View.OnClickListener() {

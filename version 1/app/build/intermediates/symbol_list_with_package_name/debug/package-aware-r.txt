@@ -2759,7 +2759,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id app_name
 id arc
 id asConfigured
 id async
@@ -2894,6 +2893,7 @@ id generate
 id get_ranking_button
 id ghost_view
 id ghost_view_holder
+id gifImageView
 id glide_custom_view_target_tag
 id gone
 id google_map
@@ -3097,7 +3097,6 @@ id save_overlay_view
 id sawtooth
 id scale
 id scan_btn
-id scan_button
 id scan_qr_code_button
 id scantext
 id score_text
@@ -3486,6 +3485,10 @@ menu example_menu2
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+mipmap ic_logo
+mipmap ic_logo_background
+mipmap ic_logo_foreground
+mipmap ic_logo_round
 navigation nav_graph
 plurals mtrl_badge_content_description
 raw zxing_beep

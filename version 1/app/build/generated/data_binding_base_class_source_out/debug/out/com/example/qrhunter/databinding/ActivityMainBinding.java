@@ -5,8 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -16,29 +14,27 @@ import com.example.qrhunter.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+import pl.droidsonroids.gif.GifImageView;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView appName;
+  public final GifImageView gifImageView;
 
   @NonNull
   public final Button loginButton;
 
   @NonNull
-  public final ImageButton scanButton;
-
-  @NonNull
   public final Button signupButton;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
-      @NonNull Button loginButton, @NonNull ImageButton scanButton, @NonNull Button signupButton) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull GifImageView gifImageView, @NonNull Button loginButton,
+      @NonNull Button signupButton) {
     this.rootView = rootView;
-    this.appName = appName;
+    this.gifImageView = gifImageView;
     this.loginButton = loginButton;
-    this.scanButton = scanButton;
     this.signupButton = signupButton;
   }
 
@@ -69,9 +65,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.app_name;
-      TextView appName = ViewBindings.findChildViewById(rootView, id);
-      if (appName == null) {
+      id = R.id.gifImageView;
+      GifImageView gifImageView = ViewBindings.findChildViewById(rootView, id);
+      if (gifImageView == null) {
         break missingId;
       }
 
@@ -81,19 +77,13 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scan_button;
-      ImageButton scanButton = ViewBindings.findChildViewById(rootView, id);
-      if (scanButton == null) {
-        break missingId;
-      }
-
       id = R.id.signup_button;
       Button signupButton = ViewBindings.findChildViewById(rootView, id);
       if (signupButton == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, appName, loginButton, scanButton,
+      return new ActivityMainBinding((ConstraintLayout) rootView, gifImageView, loginButton,
           signupButton);
     }
     String missingId = rootView.getResources().getResourceName(id);

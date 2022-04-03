@@ -99,11 +99,23 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="backgroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/main_background.gif" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundClipArt">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="color" value="000000" />
                                                 <entry key="imagePath" value="/private/var/folders/tv/ynwn8cq524g501zbzxy13svm0000gn/T/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
@@ -116,8 +128,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/WechatIMG904.jpeg" />
-                                                <entry key="scalingPercent" value="79" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/WechatIMG908.jpeg" />
+                                                <entry key="scalingPercent" value="73" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -150,7 +162,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="313131" />
+                                      <entry key="backgroundColor" value="000000" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -260,6 +272,11 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="outputName" value="ic_logo" />
                                     </map>
                                   </option>
                                 </PersistentState>
