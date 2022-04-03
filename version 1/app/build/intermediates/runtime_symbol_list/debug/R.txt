@@ -2952,6 +2952,7 @@ int id location_button 0x7f08011a
 int id log 0x7f08011b
 int id login_button 0x7f08011c
 int id logout 0x7f08011d
+int id logout_for_owner 0x7f08025a
 int id lowest_scoring_textView 0x7f08011e
 int id ltr 0x7f08011f
 int id main_list 0x7f080120

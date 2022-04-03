@@ -8,24 +8,24 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_others.png.flat",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-mdpi/ic_others.png"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_others.png.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/drawable-mdpi/ic_others.png"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_fragment_qr_details.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/fragment_qr_details.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_activity_search_info.xml.flat",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_search_info.xml"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_activity_search_info.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_search_info.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/drawable_loupe.png.flat",
@@ -36,12 +36,12 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_personal_qr_rank_content_layout.xml.flat",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_owner_menu_layout.xml.flat",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/owner_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/layout_personal_qr_rank_content_layout.xml.flat",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

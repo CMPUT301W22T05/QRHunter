@@ -3,6 +3,7 @@ package com.example.qrhunter;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -30,6 +31,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+import io.paperdb.Paper;
+
 public class OwnerMenuActivity extends AppCompatActivity {
 
     long scorePos = 10000;
@@ -41,6 +44,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
     ImageButton SearchButton;
     Button RankingButton;
+    Button LogoutButton;
     TextView SearchUserName;
     TextView PersonalName;
     public static final String EXTRA_MESSAGE = "com.example.qrhunter.MESSAGE";
@@ -54,6 +58,7 @@ public class OwnerMenuActivity extends AppCompatActivity {
         SearchButton = findViewById(R.id.search_user_name_Button);
         RankingButton = findViewById(R.id.get_ranking_button);
         SearchUserName = findViewById(R.id.search_user_name);
+        LogoutButton = findViewById(R.id.logout_for_owner);
         // open the firebase and connect
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         // update information in personal_qr_rank_layout.xml
@@ -63,6 +68,10 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         final CollectionReference collectionReference = db.collection("Player");
 
+        /////////////////////////////////
+        scoreList = findViewById(R.id.ranking_total_score_list);
+        scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
+        scoreList.setAdapter(scoreAdapter);
 
         db.collection("Player")
                 .get()
@@ -79,22 +88,13 @@ public class OwnerMenuActivity extends AppCompatActivity {
                                     DisplayUserName = document.getId();
                                     DisplayTotalScore = document.getData().get("Total score").toString();
                                 }
+                                scoreAdapter.notifyDataSetChanged();
                                 scoreDataList.add(new TotalScoreOnOwnerPage(DisplayUserName, DisplayTotalScore));
                             }
                         }
                     }
                 });
 
-
-
-
-
-
-
-        /////////////////////////////////
-        scoreList = findViewById(R.id.ranking_total_score_list);
-        scoreAdapter = new ScoreListOnOwnerPage(this, scoreDataList);
-        scoreList.setAdapter(scoreAdapter);
 
         // 点击item跳转activity
 
@@ -109,6 +109,17 @@ public class OwnerMenuActivity extends AppCompatActivity {
 //            }
 //        });
 
+        // set the functionality of logging out
+        LogoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Paper.book().destroy();
+                Intent JumpToLogInPage = new Intent();
+                Toast.makeText(OwnerMenuActivity.this,"Log-out successfully!",Toast.LENGTH_LONG).show();
+                JumpToLogInPage.setClass(OwnerMenuActivity.this, MainActivity.class);
+                startActivity(JumpToLogInPage);
+            }
+        });
 
         // set the functionality of switching activity of ranking button
         RankingButton.setOnClickListener(new View.OnClickListener() {
@@ -123,7 +134,6 @@ public class OwnerMenuActivity extends AppCompatActivity {
 
         // set the functionality of search button
         SearchButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
                 final String Username = SearchUserName.getText().toString();

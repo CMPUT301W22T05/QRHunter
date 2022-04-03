@@ -24,12 +24,12 @@
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/add_qr_code_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_scanner_view.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_scanner_view.xml"
-    },
-    {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_profile_content.xml",
         "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/my_profile_content.xml"
+    },
+    {
+        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_scanner_view.xml",
+        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_scanner_view.xml"
     },
     {
         "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_qr_code_list.xml",

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     // make "LOG-OUT" meaningful
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        // super.onBackPressed();
         Toast.makeText(MainActivity.this,"No back action here! Please LOG-IN/SIGN-UP button",Toast.LENGTH_LONG).show();
     }
 

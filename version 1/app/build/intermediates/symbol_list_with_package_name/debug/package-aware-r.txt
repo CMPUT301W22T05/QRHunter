@@ -2953,6 +2953,7 @@ id location_button
 id log
 id login_button
 id logout
+id logout_for_owner
 id lowest_scoring_textView
 id ltr
 id main_list

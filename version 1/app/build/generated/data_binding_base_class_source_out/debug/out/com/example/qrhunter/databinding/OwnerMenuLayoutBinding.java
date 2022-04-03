@@ -27,6 +27,9 @@ public final class OwnerMenuLayoutBinding implements ViewBinding {
   public final Button getRankingButton;
 
   @NonNull
+  public final Button logoutForOwner;
+
+  @NonNull
   public final ListView rankingTotalScoreList;
 
   @NonNull
@@ -39,11 +42,12 @@ public final class OwnerMenuLayoutBinding implements ViewBinding {
   public final TextView textView3;
 
   private OwnerMenuLayoutBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button getRankingButton, @NonNull ListView rankingTotalScoreList,
-      @NonNull EditText searchUserName, @NonNull ImageButton searchUserNameButton,
-      @NonNull TextView textView3) {
+      @NonNull Button getRankingButton, @NonNull Button logoutForOwner,
+      @NonNull ListView rankingTotalScoreList, @NonNull EditText searchUserName,
+      @NonNull ImageButton searchUserNameButton, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.getRankingButton = getRankingButton;
+    this.logoutForOwner = logoutForOwner;
     this.rankingTotalScoreList = rankingTotalScoreList;
     this.searchUserName = searchUserName;
     this.searchUserNameButton = searchUserNameButton;
@@ -83,6 +87,12 @@ public final class OwnerMenuLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.logout_for_owner;
+      Button logoutForOwner = ViewBindings.findChildViewById(rootView, id);
+      if (logoutForOwner == null) {
+        break missingId;
+      }
+
       id = R.id.ranking_total_score_list;
       ListView rankingTotalScoreList = ViewBindings.findChildViewById(rootView, id);
       if (rankingTotalScoreList == null) {
@@ -108,7 +118,7 @@ public final class OwnerMenuLayoutBinding implements ViewBinding {
       }
 
       return new OwnerMenuLayoutBinding((ConstraintLayout) rootView, getRankingButton,
-          rankingTotalScoreList, searchUserName, searchUserNameButton, textView3);
+          logoutForOwner, rankingTotalScoreList, searchUserName, searchUserNameButton, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
