@@ -45,6 +45,16 @@ public class PlayerMenuActivityTest {
         solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
     }
 
+    /**
+     * Test the view my QR code button
+     */
+    @Test
+    public void checkViewButton(){
+        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.clickOnButton("View My QR Codes");
+        solo.assertCurrentActivity("Wrong Activity", ViewQRCode.class);
+    }
+
 
     /**
      * Test the search button
@@ -54,6 +64,16 @@ public class PlayerMenuActivityTest {
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnButton("Search");
         solo.assertCurrentActivity("Wrong Activity", Search.class);
+    }
+
+    /**
+     * Test the QR INFO button
+     */
+    @Test
+    public void checkQRInfoButton(){
+        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.clickOnButton("QR INFO");
+        solo.assertCurrentActivity("Wrong Activity", QrInfo.class);
     }
 
     /**
@@ -74,6 +94,16 @@ public class PlayerMenuActivityTest {
         solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
         solo.clickOnImageButton(0);
         solo.assertCurrentActivity("Wrong Activity", MyProfileActivity.class);
+    }
+
+    /**
+     * Test the logout button
+     */
+    @Test
+    public void checkLogoutButton(){
+        solo.assertCurrentActivity("Wrong Activity", PlayerMenuActivity.class);
+        solo.clickOnButton("LogOut");
+        solo.assertCurrentActivity("Wrong Activity", MainActivity.class);
     }
 
 }

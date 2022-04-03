@@ -3,24 +3,24 @@
 3    package="com.example.qrhunter.test" >
 4
 5    <uses-sdk
-5-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:5:5-74
+5-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:5:15-41
+6-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:5:15-41
 7        android:targetSdkVersion="32" />
-7-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:5:42-71
+7-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:11:5-15:70
+9-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:11:5-15:70
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:11:22-76
+10-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:14:22-52
+11-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:13:22-53
+12-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:13:22-53
 13        android:label="Tests for com.example.qrhunter"
-13-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:15:22-68
+13-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:15:22-68
 14        android:targetPackage="com.example.qrhunter" />
-14-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:12:22-66
+14-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:12:22-66
 15
 16    <queries>
 16-->[androidx.test:runner:1.4.0] C:\Users\Mia\.gradle\caches\transforms-3\d265c6e29e11d505238f5fd1b0f8f104\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
@@ -40,10 +40,10 @@
 22-->[androidx.test:core:1.4.0] C:\Users\Mia\.gradle\caches\transforms-3\65503d5dae7ba5f2a31528cdadc2289b\transformed\jetified-core-1.4.0\AndroidManifest.xml:24:22-69
 23
 24    <application android:debuggable="true" >
-24-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:7:5-9:19
+24-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:7:5-9:19
 25        <uses-library android:name="android.test.runner" />
-25-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:8:9-60
-25-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest9045292444758263975.xml:8:23-57
+25-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:8:9-60
+25-->C:\Users\Mia\Desktop\QRHunter\version 1\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest10933568785223029217.xml:8:23-57
 26
 27        <activity
 27-->[androidx.test:core:1.4.0] C:\Users\Mia\.gradle\caches\transforms-3\65503d5dae7ba5f2a31528cdadc2289b\transformed\jetified-core-1.4.0\AndroidManifest.xml:27:9-34:20

@@ -36,6 +36,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         Profile = findViewById(R.id.profile_button);
         LogoutButton = findViewById(R.id.logout);
         Qrinfo = findViewById(R.id.qr_info);
+
         LogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
