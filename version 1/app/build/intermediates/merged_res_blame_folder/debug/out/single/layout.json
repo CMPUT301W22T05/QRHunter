@@ -1,98 +1,98 @@
 [
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_qr_codes_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/my_qr_codes_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\player_menu_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\player_menu_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/friend_qr_detail_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/friend_qr_detail_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_maps.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/sign_up_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/sign_up_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\my_profile_content.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_profile_content.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/personal_qr_rank_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\personal_qr_rank_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/player_ranking_content.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/player_ranking_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\single_qr_design.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\single_qr_design.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/add_qr_code_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/add_qr_code_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_information_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_information_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_profile_content.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/my_profile_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\personal_qr_rank_content_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_content_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_scanner_view.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_scanner_view.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\owner_menu_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\owner_menu_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_qr_code_list.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/fragment_qr_code_list.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\friend_qr_detail_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\friend_qr_detail_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/single_qr_design.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/single_qr_design.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\my_profile_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_profile_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/qr_scores_content.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/qr_scores_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_scanner_view.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_scanner_view.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/my_profile_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/my_profile_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_scores_content.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\qr_scores_content.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_search.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\player_ranking_content.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\player_ranking_content.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/scan_qr_code_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/scan_qr_code_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\scan_qr_code_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\scan_qr_code_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_maps.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/fragment_maps.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search_info.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search_info.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/owner_menu_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/owner_menu_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\my_qr_codes_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_qr_codes_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/personal_qr_rank_content_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/personal_qr_rank_content_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_qr_code_list.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_qr_code_list.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/player_menu_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/player_menu_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\player_ranking_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\player_ranking_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_qr_details.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/fragment_qr_details.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\rank_in_owner_content.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\rank_in_owner_content.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/qr_information_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/qr_information_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_search.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/player_ranking_layout.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/player_ranking_layout.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_qr_details.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_qr_details.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/rank_in_owner_content.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/rank_in_owner_content.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search_info.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_search_info.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_qr_code_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\add_qr_code_layout.xml"
     },
     {
-        "merged": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/Users/youwenhao/test1/QRHunter/version 1/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sign_up_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\sign_up_layout.xml"
     }
 ]

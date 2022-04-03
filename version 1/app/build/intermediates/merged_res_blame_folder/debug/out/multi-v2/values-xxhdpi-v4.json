@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/youwenhao/test1/QRHunter/version 1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "outputFile": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/youwenhao/.gradle/caches/transforms-3/6cb7a6603095f0ac242b8064ad38ac06/transformed/jetified-core-1.9.13/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+                    "source": "C:\\Users\\Mia\\.gradle\\caches\\transforms-3\\6b9366cd12d809aa9890ece04b351566\\transformed\\jetified-core-1.9.13\\res\\values-xxhdpi-v4\\values-xxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
