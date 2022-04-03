@@ -3084,6 +3084,7 @@ id ratio
 id rectangles
 id recview
 id relativeLayout
+id remove
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3361,6 +3362,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_remove_qr
 layout activity_scanner_view
 layout activity_search
 layout activity_search_info

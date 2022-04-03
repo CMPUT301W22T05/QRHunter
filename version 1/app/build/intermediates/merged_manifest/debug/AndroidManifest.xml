@@ -58,6 +58,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.QRHunter" >
         <activity
+            android:name="com.example.qrhunter.RemoveQR"
+            android:exported="false" />
+        <activity
             android:name="com.example.qrhunter.scannerView"
             android:exported="false" />
         <activity

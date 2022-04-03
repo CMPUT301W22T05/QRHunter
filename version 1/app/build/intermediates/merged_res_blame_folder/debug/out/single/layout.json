@@ -48,6 +48,10 @@
         "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_remove_qr.xml",
+        "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\activity_remove_qr.xml"
+    },
+    {
         "merged": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_qr_code_layout.xml",
         "source": "C:\\Users\\jayant\\Desktop\\QRHunter\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\add_qr_code_layout.xml"
     },

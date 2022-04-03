@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\jayant\.gradle\caches\transforms-3\db25130e41e7be45d66ccb72f30c06cf\transformed\jetified-viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.4.1] C:\Users\jayant\.gradle\caches\transforms-3\97e7d83c7e415661271ee239eada97d4\transformed\navigation-ui-2.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:17:1-32:12
@@ -91,33 +91,33 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\jayant\
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\71c0e172dec0362b7714446245abdbeb\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\jayant\.gradle\caches\transforms-3\918d224ea85eaf4500cc3fcbcd545227\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
 MERGED from [pl.droidsonroids.relinker:relinker:1.4.1] C:\Users\jayant\.gradle\caches\transforms-3\88545077e7a5e09f7072767a48ec7012\transformed\jetified-relinker-1.4.1\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
-INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
 	package
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-86:12
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:1-91:12
 		INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:5-65
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:21:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:22-62
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:22-62
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:14:5-67
 MERGED from [com.firebaseui:firebase-ui-database:6.3.0] C:\Users\jayant\.gradle\caches\transforms-3\4207fb6ead6976d37532399faf4b90bf\transformed\jetified-firebase-ui-database-6.3.0\AndroidManifest.xml:11:5-67
@@ -129,21 +129,21 @@ MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\jayant\.gradl
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:5-79
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:10:22-77
 application
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:12:5-84:19
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:12:5-89:19
 MERGED from [com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\jayant\.gradle\caches\transforms-3\72d83f6c35f590756c53928b83da7f0b\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -212,122 +212,128 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\jayant\.gradle\cac
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:18:9-46
-activity#com.example.qrhunter.scannerView
+activity#com.example.qrhunter.RemoveQR
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:20:13-40
-activity#com.example.qrhunter.LoginScanner
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:20:13-37
+activity#com.example.qrhunter.scannerView
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:23:13-41
-activity#com.example.qrhunter.FriendScanner
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:23:13-40
+activity#com.example.qrhunter.LoginScanner
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:26:13-42
-activity#com.example.qrhunter.SearchInfo
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:26:13-41
+activity#com.example.qrhunter.FriendScanner
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:29:13-39
-activity#com.example.qrhunter.Search
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:29:13-42
+activity#com.example.qrhunter.SearchInfo
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:32:13-35
-activity#com.example.qrhunter.ViewQRCode
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:32:13-39
+activity#com.example.qrhunter.Search
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:35:13-39
-activity#com.example.qrhunter.CommentingActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:37:9-40:54
-	android:windowSoftInputMode
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:13-52
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:35:13-35
+activity#com.example.qrhunter.ViewQRCode
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:37:9-39:40
 	android:exported
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:38:13-47
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:38:13-39
+activity#com.example.qrhunter.CommentingActivity
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:9-43:55
+	android:windowSoftInputMode
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:43:13-52
+	android:exported
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:41:13-47
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:52:9-54:71
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:55:9-57:71
 	android:value
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:54:13-68
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:57:13-68
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:53:13-58
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:56:13-58
 activity#com.example.qrhunter.SignUpActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:56:9-58:40
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:57:13-43
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:60:13-43
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:59:9-67:20
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:63:9-71:20
 	android:grantUriPermissions
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:63:13-47
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:67:13-47
 	android:authorities
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:61:13-67
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:65:13-67
 	android:exported
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:62:13-37
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:60:13-62
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:64:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:64:13-66:64
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:13-70:54
 	android:resource
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:66:17-51
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:17-51
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:65:17-67
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:17-67
 activity#com.example.qrhunter.PlayerMenuActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:9-56
-	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:19-53
-activity#com.example.qrhunter.PlayerRankingActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:9-59
-	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:19-56
-activity#com.example.qrhunter.OwnerMenuActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:9-55
-	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:19-52
-activity#com.example.qrhunter.MyProfileActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:9-55
-	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:19-52
-activity#com.example.qrhunter.PersonalRank
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:9-50
-	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:19-47
-activity#com.example.qrhunter.ScanQRcodeActivity
 ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:9-56
 	android:name
 		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:19-53
+activity#com.example.qrhunter.PlayerRankingActivity
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:9-59
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:19-56
+activity#com.example.qrhunter.OwnerMenuActivity
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:75:9-55
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:75:19-52
+activity#com.example.qrhunter.MyProfileActivity
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:76:9-55
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:76:19-52
+activity#com.example.qrhunter.PersonalRank
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:77:9-50
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:77:19-47
+activity#com.example.qrhunter.ScanQRcodeActivity
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:78:9-56
+	android:name
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:78:19-53
 activity#com.example.qrhunter.QrInfo
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:9-44
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:9-44
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:19-41
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:19-41
 activity#com.example.qrhunter.MainActivity
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:75:9-83:20
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:80:9-88:20
 	android:exported
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:77:13-36
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:82:13-36
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:76:13-41
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:78:13-82:29
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:83:13-87:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:17-69
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:84:17-69
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:25-66
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:84:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:17-77
+ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:86:17-77
 	android:name
-		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:27-74
+		ADDED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:86:27-74
 uses-sdk
 INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml

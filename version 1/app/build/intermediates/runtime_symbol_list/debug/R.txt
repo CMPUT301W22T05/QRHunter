@@ -3083,6 +3083,7 @@ int id ratio 0x7f08019d
 int id rectangles 0x7f08019e
 int id recview 0x7f08019f
 int id relativeLayout 0x7f08025b
+int id remove 0x7f08025c
 int id reverseSawtooth 0x7f0801a0
 int id right 0x7f0801a1
 int id rightToLeft 0x7f0801a2
@@ -3360,6 +3361,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
+int layout activity_remove_qr 0x7f0b0096
 int layout activity_scanner_view 0x7f0b001d
 int layout activity_search 0x7f0b001e
 int layout activity_search_info 0x7f0b001f

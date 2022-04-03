@@ -22,6 +22,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
     Button RankingButton;
     Button LogoutButton;
     Button Qrinfo;
+    Button remove;
     ImageButton Profile;
 
     @Override
@@ -37,6 +38,7 @@ public class PlayerMenuActivity extends AppCompatActivity {
         Profile = findViewById(R.id.profile_button);
         LogoutButton = findViewById(R.id.logout);
         Qrinfo = findViewById(R.id.qr_info);
+        remove = findViewById(R.id.remove);
 
         // set the functionality of logging out
         LogoutButton.setOnClickListener(new View.OnClickListener() {
@@ -120,6 +122,14 @@ public class PlayerMenuActivity extends AppCompatActivity {
                 Intent JumpToQRINFO = new Intent();
                 JumpToQRINFO.setClass(PlayerMenuActivity.this, QrInfo.class);
                 startActivity(JumpToQRINFO);
+            }
+        });
+        remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent JumpToRemove = new Intent();
+                JumpToRemove.setClass(PlayerMenuActivity.this, RemoveQR.class);
+                startActivity(JumpToRemove);
             }
         });
 

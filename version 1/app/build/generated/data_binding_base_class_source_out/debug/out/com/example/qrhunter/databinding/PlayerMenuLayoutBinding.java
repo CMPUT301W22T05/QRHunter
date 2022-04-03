@@ -34,6 +34,9 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
   public final Button rankingButton;
 
   @NonNull
+  public final Button remove;
+
+  @NonNull
   public final Button scanQrCodeButton;
 
   @NonNull
@@ -47,13 +50,14 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
 
   private PlayerMenuLayoutBinding(@NonNull ConstraintLayout rootView, @NonNull Button logout,
       @NonNull ImageButton profileButton, @NonNull Button qrInfo, @NonNull Button rankingButton,
-      @NonNull Button scanQrCodeButton, @NonNull Button searchButton, @NonNull TextView textView2,
-      @NonNull Button viewMyQrCodesButton) {
+      @NonNull Button remove, @NonNull Button scanQrCodeButton, @NonNull Button searchButton,
+      @NonNull TextView textView2, @NonNull Button viewMyQrCodesButton) {
     this.rootView = rootView;
     this.logout = logout;
     this.profileButton = profileButton;
     this.qrInfo = qrInfo;
     this.rankingButton = rankingButton;
+    this.remove = remove;
     this.scanQrCodeButton = scanQrCodeButton;
     this.searchButton = searchButton;
     this.textView2 = textView2;
@@ -111,6 +115,12 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.remove;
+      Button remove = ViewBindings.findChildViewById(rootView, id);
+      if (remove == null) {
+        break missingId;
+      }
+
       id = R.id.scan_qr_code_button;
       Button scanQrCodeButton = ViewBindings.findChildViewById(rootView, id);
       if (scanQrCodeButton == null) {
@@ -136,7 +146,7 @@ public final class PlayerMenuLayoutBinding implements ViewBinding {
       }
 
       return new PlayerMenuLayoutBinding((ConstraintLayout) rootView, logout, profileButton, qrInfo,
-          rankingButton, scanQrCodeButton, searchButton, textView2, viewMyQrCodesButton);
+          rankingButton, remove, scanQrCodeButton, searchButton, textView2, viewMyQrCodesButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
