@@ -193,11 +193,26 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
                             }
                         });
+                final CollectionReference cr = db.collection("Player");
+                DocumentReference nr= db.collection("Player").document(username).collection("NEW").document(scantext.getText().toString());
+                nr.get()
+                        .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                            @Override
+                            public void onSuccess(DocumentSnapshot ds) {
+                                if (ds.exists()) {    // check if the input username exists or not
+                                    Toast.makeText(ScanQRcodeActivity.this, "qr code already exist!", Toast.LENGTH_SHORT).show();
+                                }
+                                else{
+                                    nr.set(note);
+                                }
+                            }
+                        });
+
                 collectionReference.document(username)
                         .collection("QRCOde").add(note);
                 final CollectionReference cl = db.collection("QRCODES");
-                DocumentReference cr = db.collection("QRCODES").document(scantext.getText().toString());
-                cr.set(note);
+                DocumentReference cb = db.collection("QRCODES").document(scantext.getText().toString());
+                cb.set(note);
 
             }
         });

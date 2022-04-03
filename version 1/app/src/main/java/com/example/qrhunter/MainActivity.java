@@ -51,14 +51,13 @@ public class MainActivity extends AppCompatActivity {
 
         String UserPhoneKey = Paper.book().read(Player.UserPhoneKey);
 
-        if (!UserPhoneKey.equals(""))
-        {
+
             if (!TextUtils.isEmpty(UserPhoneKey) )
             {
                 AllowAccess(UserPhoneKey);
 
             }
-        }
+
 
 
         // set the functionality of switching activity of signup button

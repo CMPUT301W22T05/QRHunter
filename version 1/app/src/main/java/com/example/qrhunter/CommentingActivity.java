@@ -2,6 +2,7 @@ package com.example.qrhunter;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,10 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CommentingActivity extends AppCompatActivity {
     private static final String TAG ="Firelog" ;
@@ -57,9 +62,33 @@ public class CommentingActivity extends AppCompatActivity {
         String friend_name = bundle.getString("FriendName");
         String qr_name = bundle.getString("QRName");
         header.setText(qr_name);
+        final CollectionReference collectionReference = db.collection("Player");
+        collectionReference.document(player_name)
+                .collection("NEW").get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            List<String> list = new ArrayList<>();
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                list.add(document.getId());
+                            }
+                            Log.d(TAG, list.toString());
+                            boolean contains = list.contains(qr_name);
+                            if (contains == true){
+                                yes.setVisibility(View.VISIBLE);
+                            }else{
+                                no.setVisibility(View.VISIBLE);
+                            }
+
+                        } else {
+                            Log.d(TAG, "Error getting documents: ", task.getException());
+                        }
+                    }
+                });
 
 
-        DocumentReference noteRef = db.collection("QRCODES").document(qr_name);
+        DocumentReference noteRef = db.collection("Player").document(friend_name).collection("NEW").document(qr_name);
         noteRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
@@ -68,11 +97,11 @@ public class CommentingActivity extends AppCompatActivity {
                 String Latitude = value.getDouble("lat").toString();
                 String Longitude = value.getDouble("lag").toString();
                 String Score = value.getData().get("worth").toString();
-                description.setText(Description);
-                worth.setText(Score);
+                description.setText("Comments: "+Description);
+                worth.setText("Total Score: "+Score);
 
-                lat.setText(Latitude);
-                log.setText(Longitude);
+                lat.setText("Latitude: "+Latitude);
+                log.setText("Longitude: "+Longitude);
 
                 Glide.with(CommentingActivity.this).load(url).into(qr_image);
 

@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -21,7 +21,7 @@ import java.lang.String;
 
 public final class FriendQrDetailLayoutBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final EditText commentTextbox;
@@ -51,6 +51,9 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
   public final ImageView qrImage;
 
   @NonNull
+  public final ConstraintLayout relativeLayout;
+
+  @NonNull
   public final TextView sim;
 
   @NonNull
@@ -59,12 +62,12 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
   @NonNull
   public final ImageView yes;
 
-  private FriendQrDetailLayoutBinding(@NonNull RelativeLayout rootView,
+  private FriendQrDetailLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText commentTextbox, @NonNull RecyclerView commentsList,
       @NonNull TextView description, @NonNull TextView headerTitle,
       @NonNull ImageButton imageButton, @NonNull TextView lat, @NonNull TextView log,
-      @NonNull ImageView no, @NonNull ImageView qrImage, @NonNull TextView sim,
-      @NonNull TextView worth, @NonNull ImageView yes) {
+      @NonNull ImageView no, @NonNull ImageView qrImage, @NonNull ConstraintLayout relativeLayout,
+      @NonNull TextView sim, @NonNull TextView worth, @NonNull ImageView yes) {
     this.rootView = rootView;
     this.commentTextbox = commentTextbox;
     this.commentsList = commentsList;
@@ -75,6 +78,7 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
     this.log = log;
     this.no = no;
     this.qrImage = qrImage;
+    this.relativeLayout = relativeLayout;
     this.sim = sim;
     this.worth = worth;
     this.yes = yes;
@@ -82,7 +86,7 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -161,6 +165,8 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout relativeLayout = (ConstraintLayout) rootView;
+
       id = R.id.sim;
       TextView sim = ViewBindings.findChildViewById(rootView, id);
       if (sim == null) {
@@ -179,9 +185,9 @@ public final class FriendQrDetailLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FriendQrDetailLayoutBinding((RelativeLayout) rootView, commentTextbox,
-          commentsList, description, headerTitle, imageButton, lat, log, no, qrImage, sim, worth,
-          yes);
+      return new FriendQrDetailLayoutBinding((ConstraintLayout) rootView, commentTextbox,
+          commentsList, description, headerTitle, imageButton, lat, log, no, qrImage,
+          relativeLayout, sim, worth, yes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

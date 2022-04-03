@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000">
@@ -13,146 +14,147 @@
         android:background="@drawable/rect_border_purple"
         android:gravity="center"
         android:text="XXX"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/qr_image"
-        android:layout_width="155dp"
-        android:layout_height="158dp"
-        android:layout_below="@+id/header_title"
-        android:layout_alignStart="@+id/lat"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="126dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/rect_border_grey"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title" />
 
     <TextView
         android:id="@+id/worth"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/qr_image"
-        android:layout_centerHorizontal="true"
+        android:layout_width="275dp"
+        android:layout_height="39dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Score"
         android:textColor="#FFFFFF"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_image" />
 
     <TextView
         android:id="@+id/lat"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/worth"
-        android:layout_centerHorizontal="true"
+        android:layout_width="276dp"
+        android:layout_height="41dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Latitude"
         android:textColor="#FFFFFF"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/worth" />
 
     <TextView
         android:id="@+id/log"
-        android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/lat"
-        android:layout_centerHorizontal="true"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Longitude"
         android:textColor="#FFFFFF"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lat" />
 
     <TextView
         android:id="@+id/description"
         android:layout_width="280dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/log"
-        android:layout_centerHorizontal="true"
+        android:layout_height="47dp"
 
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Description"
         android:textColor="#FFFFFF"
-        android:textSize="25dp" />
+        android:textSize="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/log" />
+
 
     <TextView
         android:id="@+id/sim"
-        android:layout_width="122dp"
-        android:layout_height="55dp"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
 
-        android:layout_alignTop="@+id/qr_image"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
-        android:layout_toEndOf="@+id/qr_image"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Similarity"
         android:textColor="#FFFFFF"
-        android:textSize="25dp" />
-
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/qr_image"
+        app:layout_constraintTop_toTopOf="@+id/qr_image" />
 
     <EditText
         android:id="@+id/comment_textbox"
         android:layout_width="236dp"
         android:layout_height="50dp"
 
-        android:layout_alignBottom="@+id/comments_list"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/rect_border_grey"
         android:gravity="center"
         android:hint="Comment here"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comments_list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/comments_list"
-        android:layout_width="match_parent"
-        android:layout_height="463dp"
-        android:layout_below="@+id/log"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:textColor="@color/white"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_width="383dp"
+        android:layout_height="67dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        tools:layout_editor_absoluteX="16dp"></androidx.recyclerview.widget.RecyclerView>
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignBottom="@+id/comment_textbox"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="0dp"
-        android:layout_toEndOf="@+id/comment_textbox"
         android:background="@drawable/round_border"
+        app:layout_constraintBottom_toBottomOf="@+id/comment_textbox"
+        app:layout_constraintStart_toEndOf="@+id/comment_textbox"
         app:srcCompat="@android:drawable/ic_menu_send" />
 
     <ImageView
         android:id="@+id/yes"
-        android:layout_width="40dp"
-        android:layout_height="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="147dp"
-        android:layout_marginEnd="13dp"
+        android:layout_width="37dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
         android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/sim"
+        app:layout_constraintTop_toTopOf="@+id/sim"
         app:srcCompat="@android:drawable/checkbox_on_background" />
 
     <ImageView
         android:id="@+id/no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="18dp"
+        android:layout_width="37dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
         android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sim"
+        app:layout_constraintStart_toEndOf="@+id/sim"
         app:srcCompat="@android:drawable/ic_delete" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

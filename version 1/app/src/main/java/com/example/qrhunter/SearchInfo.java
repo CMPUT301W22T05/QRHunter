@@ -1,22 +1,26 @@
 package com.example.qrhunter;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.collection.ArraySet;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.telecom.Call;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -77,15 +81,20 @@ public class SearchInfo extends AppCompatActivity {
         final CollectionReference collectionReference = db.collection("Player");
         DocumentReference noteRef = db.collection("Player").document(friend_name);
         noteRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @SuppressLint("SetTextI18n")
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 Email = value.getString("Email");
-                Score = value.getData().get("Total score").toString();
-                contact_info.setText("Contact information: "+Email);
-                total_score.setText("Total score: "+Score);
+                if(value.getData().get("Total score").toString() == null){
+                    Score = "0";
+                }else {
+                    Score = value.getData().get("Total score").toString();
+                }
+                contact_info.setText("Contact Info: "+Email);
+                total_score.setText("Total Score: "+Score);
             }
         });
+
+
         collectionReference.document(friend_name)
                 .collection("QRCOde").get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
