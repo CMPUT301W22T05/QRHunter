@@ -51,9 +51,10 @@ public class ScanQRcodeActivityTest {
      */
     @Test
     public void checkEnableLocationButton(){
-        //solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
-        //solo.clickOnButton("Enable Location");
-        //solo.assertCurrentActivity("Wrong Activity", scannerView.class);
+        solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
+        solo.clickOnButton("Enable Location");
+        solo.clickOnButton("Don't allow");
+        solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
     }
 
     /**
@@ -61,10 +62,10 @@ public class ScanQRcodeActivityTest {
      */
     @Test
     public void checkCommentUpload(){
-        //solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
-        //solo.enterText((EditText) solo.getView(R.id.editText_comments), "good");
-        //solo.clickOnButton("Upload");
-        //solo.assertCurrentActivity("Wrong Activity", scannerView.class);
+        solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
+        solo.enterText((EditText) solo.getView(R.id.editText_comments), "good");
+        solo.clickOnButton("Upload");
+        solo.assertCurrentActivity("Wrong Activity", ScanQRcodeActivity.class);
     }
 
 }

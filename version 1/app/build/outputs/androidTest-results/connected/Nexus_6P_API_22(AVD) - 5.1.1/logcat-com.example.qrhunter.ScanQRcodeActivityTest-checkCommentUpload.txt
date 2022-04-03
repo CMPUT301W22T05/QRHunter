@@ -1,0 +1,134 @@
+04-03 22:23:00.474  9498  9516 I TestRunner: started: checkCommentUpload(com.example.qrhunter.ScanQRcodeActivityTest)
+04-03 22:23:00.476  9498  9516 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+04-03 22:23:00.504  1176  1775 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 14745600
+04-03 22:23:00.512  9498  9498 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@820b6ca in: PRE_ON_CREATE
+04-03 22:23:00.528  9498  9498 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+04-03 22:23:00.586  2362  2529 D EGL_emulation: eglMakeCurrent: 0xb43ff280: ver 2 0 (tinfo 0xb43fe280)
+04-03 22:23:00.631  9498  9498 D MapsInitializer: preferredRenderer: null
+04-03 22:23:00.631  9498  9498 D zzca    : preferredRenderer: null
+04-03 22:23:00.636  9498  9498 I zzca    : Making Creator dynamically
+04-03 22:23:00.646  9498  9498 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:202414000
+04-03 22:23:00.646  9498  9498 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 202414000
+04-03 22:23:00.646  9498  9498 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+04-03 22:23:00.664  9498  9498 I Google Maps Android API: Google Play services client version: 12451000
+04-03 22:23:00.666  9498  9498 D MapsInitializer: loadedRenderer: LEGACY
+04-03 22:23:00.666  9498  9498 D zzca    : preferredRenderer: null
+04-03 22:23:00.666  9498  9498 I Google Maps Android API: Google Play services package version: 202414013
+04-03 22:23:00.729  9498  9498 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@820b6ca in: CREATED
+04-03 22:23:00.827  9498  9498 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@820b6ca in: STARTED
+04-03 22:23:00.828  9498  9498 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.ScanQRcodeActivity@820b6ca in: RESUMED
+04-03 22:23:00.833  9498  9553 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+04-03 22:23:00.835  9498  9498 D         : HostConnection::get() New Host Connection established 0xb432c0b0, tid 9498
+04-03 22:23:00.836  9498  9498 D Atlas   : Validating map...
+04-03 22:23:00.872  9498  9553 D         : HostConnection::get() New Host Connection established 0xae833ab0, tid 9553
+04-03 22:23:00.874  9498  9553 I OpenGLRenderer: Initialized EGL, version 1.4
+04-03 22:23:00.875  9498  9553 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-03 22:23:00.886  9498  9553 D EGL_emulation: eglCreateContext: 0xae9974c0: maj 2 min 0 rcv 2
+04-03 22:23:00.921  9498  9553 D EGL_emulation: eglMakeCurrent: 0xae9974c0: ver 2 0 (tinfo 0xae839960)
+04-03 22:23:00.925  9498  9553 D OpenGLRenderer: Enabling debug mode 0
+04-03 22:23:00.928  9498  9553 D EGL_emulation: eglMakeCurrent: 0xae9974c0: ver 2 0 (tinfo 0xae839960)
+04-03 22:23:00.945  9498  9550 D         : HostConnection::get() New Host Connection established 0xa0a2c240, tid 9550
+04-03 22:23:00.961  9498  9550 D EGL_emulation: eglCreateContext: 0xa0858100: maj 1 min 0 rcv 1
+04-03 22:23:01.000  9498  9550 D EGL_emulation: eglMakeCurrent: 0xa0858100: ver 1 0 (tinfo 0xb4333ad0)
+04-03 22:23:01.270  1536  1567 I ActivityManager: Displayed com.example.qrhunter/.ScanQRcodeActivity: +791ms
+04-03 22:23:01.375  2261  2261 E ConcurrentUtils: Queue length for executor GrecoExecutor with 1 threads is now 65. Perhaps some tasks are too long, or the pool is too small.
+04-03 22:23:02.655  1536  2008 W AudioTrack: AUDIO_OUTPUT_FLAG_FAST denied by client
+04-03 22:23:02.655  1188  1758 E AudioMixer: AudioMixer::getTrackName out of available tracks
+04-03 22:23:02.655  1188  1758 E AudioFlinger: no more track names available
+04-03 22:23:02.655  1188  1758 E AudioFlinger: createTrack_l() initCheck failed -12; no control block?
+04-03 22:23:02.655  1536  2008 E AudioTrack: AudioFlinger could not create track, status: -12
+04-03 22:23:02.656  1536  2008 E SoundPool: Error creating AudioTrack
+04-03 22:23:02.677  9498  9570 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+04-03 22:23:02.680  2480  2891 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+04-03 22:23:02.682  9498  9570 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:0 and remote module com.google.android.gms.providerinstaller.dynamite:0
+04-03 22:23:02.682  9498  9570 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+04-03 22:23:02.707  9498  9498 D AndroidRuntime: Shutting down VM
+04-03 22:23:02.707  9498  9498 E AndroidJUnitRunner: An unhandled exception was thrown by the app.
+04-03 22:23:02.714  9498  9498 I AndroidJUnitRunner: Bringing down the entire Instrumentation process.
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: Exception encountered by: Thread[main,5,main]. Dumping thread state to outputs and pining for the fjords.
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.view.View.performClick(View.java:4780)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.view.View$PerformClick.run(View.java:19866)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.os.Handler.handleCallback(Handler.java:739)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.os.Looper.loop(Looper.java:135)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Native Method)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+04-03 22:23:02.716  9498  9498 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[AsyncTask #3,5,main]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexFile.openDexFileNative(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexFile.openDexFile(DexFile.java:295)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexFile.<init>(DexFile.java:80)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexFile.<init>(DexFile.java:59)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexPathList.loadDexFile(DexPathList.java:262)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexPathList.makeDexElements(DexPathList.java:231)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.DexPathList.<init>(DexPathList.java:109)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:48)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     dalvik.system.PathClassLoader.<init>(PathClassLoader.java:65)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.app.ApplicationLoaders.getClassLoader(ApplicationLoaders.java:57)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.app.LoadedApk.getClassLoader(LoadedApk.java:361)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.app.ContextImpl.getClassLoader(ContextImpl.java:851)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.android.gms.security.ProviderInstaller.zzb(com.google.android.gms:play-services-basement@@18.0.0:1)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.android.gms.security.ProviderInstaller.installIfNeeded(com.google.android.gms:play-services-basement@@18.0.0:9)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.firebase.firestore.remote.GrpcCallProvider.initChannel(GrpcCallProvider.java:99)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.firebase.firestore.remote.GrpcCallProvider.lambda$initChannelTask$6$com-google-firebase-firestore-remote-GrpcCallProvider(GrpcCallProvider.java:256)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.firebase.firestore.remote.GrpcCallProvider$$ExternalSyntheticLambda6.call(D8$$SyntheticClass)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.android.gms.tasks.zzz.run(com.google.android.gms:play-services-tasks@@18.0.1:1)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.firebase.firestore.util.ThrottledForwardingExecutor.lambda$execute$0$com-google-firebase-firestore-util-ThrottledForwardingExecutor(ThrottledForwardingExecutor.java:54)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.firebase.firestore.util.ThrottledForwardingExecutor$$ExternalSyntheticLambda0.run(D8$$SyntheticClass)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[androidmapsapi-appenvironment-1,5,main]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2055)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1060)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:776)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[JDWP,5,system]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[GCDaemon,5,system]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Daemons$GCDaemon.run(Daemons.java:344)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[activityMonitorThread,5,main]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.app.Instrumentation$ActivityMonitor.waitForActivity(Instrumentation.java:532)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.robotium.solo.ActivityUtils$1.run(ActivityUtils.java:152)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[androidmapsapi-its_ter,5,main]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.k.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):13)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:   Thread[Thread-365,5,main]
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
+04-03 22:23:02.722  9498  9498 E THREAD_STATE:     java.util.concur
+04-03 22:23:02.722  9498  9498 E MonitoringInstr: Dying now...
+04-03 22:23:02.723  9498  9498 W MonitoringInstr: Invoking uncaught exception handler java.lang.ThreadGroup[name=main,maxPriority=10] (a class java.lang.ThreadGroup)
+04-03 22:23:02.725  9486  9486 D AndroidRuntime: Shutting down VM
+04-03 22:23:02.813  2362  2529 D EGL_emulation: eglMakeCurrent: 0xb43ff280: ver 2 0 (tinfo 0xb43fe280)
+04-03 22:23:02.853  2503  2725 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=21
+04-03 22:23:02.856  2503  7919 W Icing   : No valid account for uploading user actions
+04-03 22:23:02.858  2503  7919 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0

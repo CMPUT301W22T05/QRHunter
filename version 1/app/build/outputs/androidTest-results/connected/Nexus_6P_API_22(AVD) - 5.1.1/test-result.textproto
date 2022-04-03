@@ -1,30 +1,35 @@
-# 2022-04-03T21:43:41.487Z:
+# 2022-04-03T22:23:03.254Z:
 test_suite_meta_data {
   scheduled_test_case_count: 1
 }
-test_status: PASSED
+test_status: FAILED
 test_result {
   test_case {
-    test_class: "OwnerMenuActivityTest"
+    test_class: "ScanQRcodeActivityTest"
     test_package: "com.example.qrhunter"
-    test_method: "checkLogoutButton"
+    test_method: "checkCommentUpload"
     start_time {
-      seconds: 1649022218
-      nanos: 594000000
+      seconds: 1649024580
+      nanos: 728000000
     }
     end_time {
-      seconds: 1649022220
-      nanos: 697000000
+      seconds: 1649024583
+      nanos: 8000000
     }
   }
-  test_status: PASSED
+  test_status: FAILED
+  error {
+    error_message: "java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3\nat com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)\nat com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)\nat com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)\nat android.view.View.performClick(View.java:4780)\nat com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)\nat android.view.View$PerformClick.run(View.java:19866)\nat android.os.Handler.handleCallback(Handler.java:739)\nat android.os.Handler.dispatchMessage(Handler.java:95)\nat android.os.Looper.loop(Looper.java:135)\nat android.app.ActivityThread.main(ActivityThread.java:5254)\nat java.lang.reflect.Method.invoke(Native Method)\nat java.lang.reflect.Method.invoke(Method.java:372)\nat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)"
+    error_type: "java.lang.IllegalArgumentException"
+    stack_trace: "java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3\nat com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)\nat com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)\nat com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)\nat android.view.View.performClick(View.java:4780)\nat com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)\nat android.view.View$PerformClick.run(View.java:19866)\nat android.os.Handler.handleCallback(Handler.java:739)\nat android.os.Handler.dispatchMessage(Handler.java:95)\nat android.os.Looper.loop(Looper.java:135)\nat android.app.ActivityThread.main(ActivityThread.java:5254)\nat java.lang.reflect.Method.invoke(Native Method)\nat java.lang.reflect.Method.invoke(Method.java:372)\nat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)\nat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)"
+  }
   output_artifact {
     label {
       label: "logcat"
       namespace: "android"
     }
     source_path {
-      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\logcat-com.example.qrhunter.OwnerMenuActivityTest-checkLogoutButton.txt"
+      path: "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\outputs\\androidTest-results\\connected\\Nexus_6P_API_22(AVD) - 5.1.1\\logcat-com.example.qrhunter.ScanQRcodeActivityTest-checkCommentUpload.txt"
     }
   }
   output_artifact {
@@ -65,4 +70,13 @@ output_artifact {
   }
   type: TEST_DATA
   mime_type: "text/plain"
+}
+issue {
+  namespace {
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  severity: SEVERE
+  code: 1
+  name: "INSTRUMENTATION_FAILED"
+  message: "Test run failed to complete. Instrumentation run failed due to java.lang.IllegalArgumentException"
 }

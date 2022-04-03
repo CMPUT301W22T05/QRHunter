@@ -1,9 +1,25 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.qrhunter.OwnerMenuActivityTest" tests="1" failures="0" errors="0" skipped="0" time="2.804" timestamp="2022-04-03T21:43:41" hostname="localhost">
+<testsuite name="com.example.qrhunter.ScanQRcodeActivityTest" tests="1" failures="1" errors="0" skipped="0" time="2.468" timestamp="2022-04-03T22:23:03" hostname="localhost">
   <properties>
     <property name="device" value="Nexus_6P_API_22(AVD) - 5.1.1" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="checkLogoutButton" classname="com.example.qrhunter.OwnerMenuActivityTest" time="2.039" />
+  <testcase name="checkCommentUpload" classname="com.example.qrhunter.ScanQRcodeActivityTest" time="2.222">
+    <failure>java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3
+at com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)
+at com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)
+at com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)
+at android.view.View.performClick(View.java:4780)
+at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)
+at android.view.View$PerformClick.run(View.java:19866)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5254)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)</failure>
+  </testcase>
 </testsuite>

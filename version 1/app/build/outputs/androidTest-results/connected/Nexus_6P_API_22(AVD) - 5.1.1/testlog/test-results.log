@@ -1,24 +1,52 @@
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.qrhunter.OwnerMenuActivityTest:
+com.example.qrhunter.ScanQRcodeActivityTest:
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: test=checkLogoutButton
-INSTRUMENTATION_STATUS: class=com.example.qrhunter.OwnerMenuActivityTest
+INSTRUMENTATION_STATUS: test=checkCommentUpload
+INSTRUMENTATION_STATUS: class=com.example.qrhunter.ScanQRcodeActivityTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS_CODE: 1
 INSTRUMENTATION_STATUS: numtests=1
-INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: stream=
+Process crashed while executing checkCommentUpload(com.example.qrhunter.ScanQRcodeActivityTest):
+java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3
+at com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)
+at com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)
+at com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)
+at android.view.View.performClick(View.java:4780)
+at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)
+at android.view.View$PerformClick.run(View.java:19866)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5254)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: test=checkLogoutButton
-INSTRUMENTATION_STATUS: class=com.example.qrhunter.OwnerMenuActivityTest
+INSTRUMENTATION_STATUS: test=checkCommentUpload
+INSTRUMENTATION_STATUS: class=com.example.qrhunter.ScanQRcodeActivityTest
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3
+at com.google.firebase.firestore.DocumentReference.forPath(DocumentReference.java:81)
+at com.google.firebase.firestore.CollectionReference.document(CollectionReference.java:104)
+at com.example.qrhunter.ScanQRcodeActivity$2.onClick(ScanQRcodeActivity.java:197)
+at android.view.View.performClick(View.java:4780)
+at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)
+at android.view.View$PerformClick.run(View.java:19866)
+at android.os.Handler.handleCallback(Handler.java:739)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:135)
+at android.app.ActivityThread.main(ActivityThread.java:5254)
+at java.lang.reflect.Method.invoke(Native Method)
+at java.lang.reflect.Method.invoke(Method.java:372)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+
 INSTRUMENTATION_STATUS: current=1
-INSTRUMENTATION_STATUS_CODE: 0
-INSTRUMENTATION_RESULT: stream=
-
-Time: 2.319
-
-OK (1 test)
-
-
-INSTRUMENTATION_CODE: -1
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: shortMsg=java.lang.IllegalArgumentException
+INSTRUMENTATION_RESULT: longMsg=java.lang.IllegalArgumentException: Invalid document reference. Document references must have an even number of segments, but Player/test1/NEW has 3
+INSTRUMENTATION_CODE: 0
 
