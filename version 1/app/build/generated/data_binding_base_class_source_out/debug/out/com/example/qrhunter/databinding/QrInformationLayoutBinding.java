@@ -26,6 +26,9 @@ public final class QrInformationLayoutBinding implements ViewBinding {
   public final TextView lowestScoringTextView;
 
   @NonNull
+  public final TextView numScoringTextView;
+
+  @NonNull
   public final TextView sumScoringTextView;
 
   @NonNull
@@ -33,10 +36,12 @@ public final class QrInformationLayoutBinding implements ViewBinding {
 
   private QrInformationLayoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView highestScoringTextView, @NonNull TextView lowestScoringTextView,
-      @NonNull TextView sumScoringTextView, @NonNull TextView textView2) {
+      @NonNull TextView numScoringTextView, @NonNull TextView sumScoringTextView,
+      @NonNull TextView textView2) {
     this.rootView = rootView;
     this.highestScoringTextView = highestScoringTextView;
     this.lowestScoringTextView = lowestScoringTextView;
+    this.numScoringTextView = numScoringTextView;
     this.sumScoringTextView = sumScoringTextView;
     this.textView2 = textView2;
   }
@@ -80,6 +85,12 @@ public final class QrInformationLayoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.num_scoring_textView;
+      TextView numScoringTextView = ViewBindings.findChildViewById(rootView, id);
+      if (numScoringTextView == null) {
+        break missingId;
+      }
+
       id = R.id.sum_scoring_textView;
       TextView sumScoringTextView = ViewBindings.findChildViewById(rootView, id);
       if (sumScoringTextView == null) {
@@ -93,7 +104,7 @@ public final class QrInformationLayoutBinding implements ViewBinding {
       }
 
       return new QrInformationLayoutBinding((ConstraintLayout) rootView, highestScoringTextView,
-          lowestScoringTextView, sumScoringTextView, textView2);
+          lowestScoringTextView, numScoringTextView, sumScoringTextView, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

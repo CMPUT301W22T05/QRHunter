@@ -24,11 +24,13 @@ import java.util.ArrayList;
 
 public class QrInfo extends AppCompatActivity {
     FirebaseFirestore db;
-    TextView highest,lowest,totalscore;
+    TextView highest,lowest,totalscore,number;
     String name;
     String totalsc;
     String high;
     String low;
+    String num;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class QrInfo extends AppCompatActivity {
         totalscore = (TextView) findViewById(R.id.sum_scoring_textView);
         highest = (TextView) findViewById(R.id.highest_scoring_textView);
         lowest = (TextView) findViewById(R.id.lowest_scoring_textView);
+        number = (TextView) findViewById(R.id.num_scoring_textView);
+
         SharedPreferences MyProfileData = getSharedPreferences("data", 0);
         String username = MyProfileData.getString("username", null);
         db = FirebaseFirestore.getInstance();
@@ -92,6 +96,23 @@ public class QrInfo extends AppCompatActivity {
 
             }
         });
+
+            final Query ct = db.collection("Player").document(username).collection("QRCOde");
+
+            ct.addSnapshotListener(new EventListener<QuerySnapshot>() {
+                @Override
+                public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
+                        FirebaseFirestoreException error) {
+                    int count = 0;
+                    for(QueryDocumentSnapshot doc: queryDocumentSnapshots)
+                    {
+                        count++;
+
+                    }
+                    number.setText("Number of QR Codes: "+count);
+
+                }
+            });
 
     }
 }

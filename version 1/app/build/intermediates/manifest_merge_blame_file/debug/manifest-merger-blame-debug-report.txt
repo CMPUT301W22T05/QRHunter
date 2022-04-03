@@ -6,147 +6,147 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml
+8-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml
+9-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:5-65
-11-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:22-62
+11-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:5:22-62
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:5-67
-12-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:22-64
+12-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:6:22-64
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:5-81
-13-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:22-78
+13-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:5-81
+13-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:7:22-78
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-14-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:5-79
-14-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:22-76
+14-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:8:22-76
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:5-80
-15-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:22-77
+15-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:9:22-77
 16
 17    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 18    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:5-79
-19-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:22-76
+19-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:5-79
+19-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:13:22-76
 20
 21    <uses-feature
-21-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+21-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
 22        android:glEsVersion="0x00020000"
-22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+22-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
 23        android:required="true" />
-23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+23-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
 24
 25    <queries>
-25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
+25-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:30:5-34:15
 26
 27        <!-- Needs to be explicitly declared on Android R+ -->
 28        <package android:name="com.google.android.apps.maps" />
-28-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
-28-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+28-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
 29    </queries> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 30    <uses-feature
-30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
+30-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:24:5-26:36
 31        android:name="android.hardware.camera"
-31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
+31-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:25:9-47
 32        android:required="false" />
-32-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
+32-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:26:9-33
 33    <uses-feature
-33-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
+33-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:27:5-29:36
 34        android:name="android.hardware.camera.front"
-34-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
+34-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:28:9-53
 35        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-35-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
+35-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:29:9-33
 36    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 37    <uses-feature
-37-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
+37-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:32:5-34:36
 38        android:name="android.hardware.camera.autofocus"
-38-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
+38-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:33:9-57
 39        android:required="false" />
-39-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
+39-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:34:9-33
 40    <uses-feature
-40-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
+40-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:35:5-37:36
 41        android:name="android.hardware.camera.flash"
-41-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
+41-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:36:9-53
 42        android:required="false" />
-42-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
+42-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:37:9-33
 43    <uses-feature
-43-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
+43-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:38:5-40:36
 44        android:name="android.hardware.screen.landscape"
-44-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
+44-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:39:9-57
 45        android:required="false" />
-45-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
+45-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:40:9-33
 46    <uses-feature
-46-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
+46-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:41:5-43:36
 47        android:name="android.hardware.wifi"
-47-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
+47-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:42:9-45
 48        android:required="false" />
-48-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
+48-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:43:9-33
 49
 50    <application
-50-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:12:5-84:19
+50-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:12:5-84:19
 51        android:allowBackup="true"
-51-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:13:9-35
+51-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:13:9-35
 52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-52-->[androidx.core:core:1.7.0] C:\Users\Mia\.gradle\caches\transforms-3\cc2282fbaa464234616b881367bb4ed3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+52-->[androidx.core:core:1.7.0] C:\Users\jayant\.gradle\caches\transforms-3\cc2282fbaa464234616b881367bb4ed3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 53        android:debuggable="true"
 54        android:icon="@mipmap/ic_launcher"
-54-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:14:9-43
+54-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:14:9-43
 55        android:label="@string/app_name"
-55-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:15:9-41
+55-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:15:9-41
 56        android:roundIcon="@mipmap/ic_launcher_round"
-56-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:16:9-54
+56-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:16:9-54
 57        android:supportsRtl="true"
-57-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:17:9-35
+57-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:17:9-35
 58        android:testOnly="true"
 59        android:theme="@style/Theme.QRHunter" >
-59-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:18:9-46
+59-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:18:9-46
 60        <activity
-60-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:19:9-21:40
+60-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:19:9-21:40
 61            android:name="com.example.qrhunter.scannerView"
-61-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:20:13-40
+61-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:20:13-40
 62            android:exported="false" />
-62-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:21:13-37
+62-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:21:13-37
 63        <activity
-63-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:22:9-24:40
+63-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:22:9-24:40
 64            android:name="com.example.qrhunter.LoginScanner"
-64-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:23:13-41
+64-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:23:13-41
 65            android:exported="false" />
-65-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:24:13-37
+65-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:24:13-37
 66        <activity
-66-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:25:9-27:40
+66-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:25:9-27:40
 67            android:name="com.example.qrhunter.FriendScanner"
-67-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:26:13-42
+67-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:26:13-42
 68            android:exported="false" />
-68-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:27:13-37
+68-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:27:13-37
 69        <activity
-69-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:28:9-30:40
+69-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:28:9-30:40
 70            android:name="com.example.qrhunter.SearchInfo"
-70-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:29:13-39
+70-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:29:13-39
 71            android:exported="false" />
-71-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:30:13-37
+71-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:30:13-37
 72        <activity
-72-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:31:9-33:40
+72-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:31:9-33:40
 73            android:name="com.example.qrhunter.Search"
-73-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:32:13-35
+73-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:32:13-35
 74            android:exported="false" />
-74-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:33:13-37
+74-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:33:13-37
 75        <activity
-75-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:34:9-36:40
+75-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:34:9-36:40
 76            android:name="com.example.qrhunter.ViewQRCode"
-76-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:35:13-39
+76-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:35:13-39
 77            android:exported="false" />
-77-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:36:13-37
+77-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:36:13-37
 78        <activity
-78-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:37:9-40:54
+78-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:37:9-40:54
 79            android:name="com.example.qrhunter.CommentingActivity"
-79-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:38:13-47
+79-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:38:13-47
 80            android:exported="false"
-80-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:13-37
+80-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:39:13-37
 81            android:windowSoftInputMode="adjustPan" />
-81-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:13-52
+81-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:40:13-52
 82        <!--
 83                TODO: Before you run your application, you need a Google Maps API key.
 84
@@ -159,193 +159,193 @@
 91                "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
 92        -->
 93        <meta-data
-93-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:52:9-54:71
+93-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:52:9-54:71
 94            android:name="com.google.android.geo.API_KEY"
-94-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:53:13-58
+94-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:53:13-58
 95            android:value="AIzaSyBqbnuXnzj-mwRRJy6N2nuk5o1sqCUYlmI" />
-95-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:54:13-68
+95-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:54:13-68
 96
 97        <activity
-97-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:56:9-58:40
+97-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:56:9-58:40
 98            android:name="com.example.qrhunter.SignUpActivity"
-98-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:57:13-43
+98-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:57:13-43
 99            android:exported="false" />
-99-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:58:13-37
+99-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:58:13-37
 100
 101        <provider
-101-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:59:9-67:20
+101-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:59:9-67:20
 102            android:name="androidx.core.content.FileProvider"
-102-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:60:13-62
+102-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:60:13-62
 103            android:authorities="com.example.android.fileprovider"
-103-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:61:13-67
+103-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:61:13-67
 104            android:exported="false"
-104-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:62:13-37
+104-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:62:13-37
 105            android:grantUriPermissions="true" >
-105-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:63:13-47
+105-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:63:13-47
 106            <meta-data
-106-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:64:13-66:64
+106-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:64:13-66:64
 107                android:name="android.support.FILE_PROVIDER_PATHS"
-107-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:65:17-67
+107-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:65:17-67
 108                android:resource="@xml/file_paths" />
-108-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:66:17-51
+108-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:66:17-51
 109        </provider>
 110
 111        <activity android:name="com.example.qrhunter.PlayerMenuActivity" />
-111-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:9-56
-111-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:19-53
+111-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:9-56
+111-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:68:19-53
 112        <activity android:name="com.example.qrhunter.PlayerRankingActivity" />
-112-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:9-59
-112-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:19-56
+112-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:9-59
+112-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:69:19-56
 113        <activity android:name="com.example.qrhunter.OwnerMenuActivity" />
-113-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:9-55
-113-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:19-52
+113-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:9-55
+113-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:70:19-52
 114        <activity android:name="com.example.qrhunter.MyProfileActivity" />
-114-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:9-55
-114-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:19-52
+114-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:9-55
+114-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:71:19-52
 115        <activity android:name="com.example.qrhunter.PersonalRank" />
-115-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:9-50
-115-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:19-47
+115-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:9-50
+115-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:72:19-47
 116        <activity android:name="com.example.qrhunter.ScanQRcodeActivity" />
-116-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:9-56
-116-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:19-53
+116-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:9-56
+116-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:73:19-53
 117        <activity android:name="com.example.qrhunter.QrInfo" />
-117-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:9-44
-117-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:19-41
+117-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:9-44
+117-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:74:19-41
 118        <activity
-118-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:75:9-83:20
+118-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:75:9-83:20
 119            android:name="com.example.qrhunter.MainActivity"
-119-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:76:13-41
+119-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:76:13-41
 120            android:exported="true" >
-120-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:77:13-36
+120-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:77:13-36
 121            <intent-filter>
-121-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:78:13-82:29
+121-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:78:13-82:29
 122                <action android:name="android.intent.action.MAIN" />
-122-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:17-69
-122-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:25-66
+122-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:17-69
+122-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:79:25-66
 123
 124                <category android:name="android.intent.category.LAUNCHER" />
-124-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:17-77
-124-->C:\Users\Mia\Desktop\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:27-74
+124-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:17-77
+124-->C:\Users\jayant\Desktop\QRHunter\QRHunter\version 1\app\src\main\AndroidManifest.xml:81:27-74
 125            </intent-filter>
 126        </activity>
 127        <activity
-127-->[com.karumi:dexter:6.2.2] C:\Users\Mia\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:27:9-29:72
+127-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:27:9-29:72
 128            android:name="com.karumi.dexter.DexterActivity"
-128-->[com.karumi:dexter:6.2.2] C:\Users\Mia\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:28:13-60
+128-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:28:13-60
 129            android:theme="@style/Dexter.Internal.Theme.Transparent" />
-129-->[com.karumi:dexter:6.2.2] C:\Users\Mia\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:29:13-69
+129-->[com.karumi:dexter:6.2.2] C:\Users\jayant\.gradle\caches\transforms-3\26a084eec7254a63368dcd959fca1499\transformed\jetified-dexter-6.2.2\AndroidManifest.xml:29:13-69
 130
 131        <service
-131-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:17:9-23:19
+131-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:17:9-23:19
 132            android:name="com.google.firebase.components.ComponentDiscoveryService"
-132-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:18:13-84
+132-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:18:13-84
 133            android:directBootAware="true"
-133-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+133-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
 134            android:exported="false" >
-134-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:19:13-37
+134-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:19:13-37
 135            <meta-data
-135-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:20:13-22:85
+135-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:20:13-22:85
 136                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-136-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:21:17-111
+136-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:21:17-111
 137                android:value="com.google.firebase.components.ComponentRegistrar" />
-137-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\Mia\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:22:17-82
+137-->[com.google.firebase:firebase-firestore:24.0.1] C:\Users\jayant\.gradle\caches\transforms-3\9ed7766666f36ca22eeff01dc71e916d\transformed\jetified-firebase-firestore-24.0.1\AndroidManifest.xml:22:17-82
 138            <meta-data
-138-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Mia\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+138-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
 139                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-139-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Mia\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+139-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:33:17-109
 140                android:value="com.google.firebase.components.ComponentRegistrar" />
-140-->[com.google.firebase:firebase-database:20.0.4] C:\Users\Mia\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+140-->[com.google.firebase:firebase-database:20.0.4] C:\Users\jayant\.gradle\caches\transforms-3\f11f34914c197f44ffa7653f6ac2fd2a\transformed\jetified-firebase-database-20.0.4\AndroidManifest.xml:34:17-82
 141            <meta-data
-141-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\Mia\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+141-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\jayant\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
 142                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-142-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\Mia\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
+142-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\jayant\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
 143                android:value="com.google.firebase.components.ComponentRegistrar" />
-143-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\Mia\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+143-->[com.google.firebase:firebase-storage:20.0.1] C:\Users\jayant\.gradle\caches\transforms-3\a6346feddcee7f62975f9039dc23e372\transformed\jetified-firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
 144        </service> <!-- Needs to be explicitly declared on P+ -->
 145        <uses-library
-145-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+145-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
 146            android:name="org.apache.http.legacy"
-146-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+146-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
 147            android:required="false" />
-147-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Mia\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+147-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\jayant\.gradle\caches\transforms-3\a7ea5014525046037ceb90e763d36152\transformed\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
 148
 149        <activity
-149-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
+149-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:46:9-52:63
 150            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-150-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
+150-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:47:13-74
 151            android:clearTaskOnLaunch="true"
-151-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
+151-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:48:13-45
 152            android:screenOrientation="sensorLandscape"
-152-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
+152-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:49:13-56
 153            android:stateNotNeeded="true"
-153-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
+153-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:50:13-42
 154            android:theme="@style/zxing_CaptureTheme"
-154-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
+154-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:51:13-54
 155            android:windowSoftInputMode="stateAlwaysHidden" />
-155-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\Mia\.gradle\caches\transforms-3\62bf6e6df316ce8c7051e8db550bc0a0\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
+155-->[com.journeyapps:zxing-android-embedded:3.2.0] C:\Users\jayant\.gradle\caches\transforms-3\a6e3393fd0b262675efb9da0006bbd28\transformed\jetified-zxing-android-embedded-3.2.0\AndroidManifest.xml:52:13-60
 156        <activity
-156-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Mia\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+156-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 157            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-157-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Mia\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+157-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 158            android:exported="false"
-158-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Mia\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+158-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 159            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-159-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Mia\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+159-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\jayant\.gradle\caches\transforms-3\8c7278840ecd5e1b3ddc0854b6b35430\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 160
 161        <provider
-161-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+161-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
 162            android:name="com.google.firebase.provider.FirebaseInitProvider"
-162-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+162-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
 163            android:authorities="com.example.qrhunter.firebaseinitprovider"
-163-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+163-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
 164            android:directBootAware="true"
-164-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+164-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
 165            android:exported="false"
-165-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+165-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
 166            android:initOrder="100" />
-166-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Mia\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+166-->[com.google.firebase:firebase-common:20.1.0] C:\Users\jayant\.gradle\caches\transforms-3\104b364b1a926c13081362a6276aea8d\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
 167
 168        <meta-data
-168-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Mia\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+168-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 169            android:name="com.google.android.gms.version"
-169-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Mia\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+169-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 170            android:value="@integer/google_play_services_version" />
-170-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Mia\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+170-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\jayant\.gradle\caches\transforms-3\4b5da3e6ab5251318a6978323f56f689\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 171
 172        <provider
-172-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+172-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 173            android:name="androidx.startup.InitializationProvider"
-173-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+173-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 174            android:authorities="com.example.qrhunter.androidx-startup"
-174-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+174-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 175            android:exported="false" >
-175-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+175-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 176            <meta-data
-176-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+176-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 177                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-177-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+177-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 178                android:value="androidx.startup" />
-178-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+178-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\6072b481be5f6d0935f5842e977aa23c\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 179            <meta-data
-179-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Mia\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+179-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 180                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-180-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Mia\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+180-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 181                android:value="androidx.startup" />
-181-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Mia\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+181-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jayant\.gradle\caches\transforms-3\e0f55ad9bf9c4aa7c2076585144e72a7\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 182        </provider>
 183
 184        <uses-library
-184-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+184-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
 185            android:name="androidx.window.extensions"
-185-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+185-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
 186            android:required="false" />
-186-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+186-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
 187        <uses-library
-187-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+187-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
 188            android:name="androidx.window.sidecar"
-188-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+188-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
 189            android:required="false" />
-189-->[androidx.window:window:1.0.0] C:\Users\Mia\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+189-->[androidx.window:window:1.0.0] C:\Users\jayant\.gradle\caches\transforms-3\9784b8e0ba226822fe8cb43e91511021\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
 190    </application>
 191
 192</manifest>
