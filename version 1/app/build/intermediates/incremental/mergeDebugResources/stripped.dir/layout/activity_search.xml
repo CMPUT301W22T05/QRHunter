@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search">
+    tools:context=".Search"
+    android:background="#E6000000">
 
     <fragment
         android:id="@+id/small_map"
@@ -18,11 +19,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:background="#272727"
         android:id="@+id/Username"
         android:layout_width="175dp"
         android:layout_height="42dp"
         android:ems="10"
         android:hint="Username"
+        android:textColorHint="#696969"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
