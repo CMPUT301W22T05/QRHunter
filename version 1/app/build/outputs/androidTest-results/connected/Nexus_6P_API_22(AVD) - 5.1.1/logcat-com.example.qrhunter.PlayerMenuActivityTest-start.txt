@@ -1,0 +1,208 @@
+04-03 01:14:39.445  5921  5939 I TestRunner: started: start(com.example.qrhunter.PlayerMenuActivityTest)
+04-03 01:14:39.447  5921  5939 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+04-03 01:14:39.480  1176  2034 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 14745600
+04-03 01:14:39.486  5921  5921 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.PlayerMenuActivity@3f1ae9b1 in: PRE_ON_CREATE
+04-03 01:14:39.493  5921  5921 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+04-03 01:14:39.552  5921  5936 I art     : Background sticky concurrent mark sweep GC freed 60(22KB) AllocSpace objects, 0(0B) LOS objects, 2% free, 2MB/2MB, paused 14.183ms total 32.309ms
+04-03 01:14:39.578  2417  2567 D EGL_emulation: eglMakeCurrent: 0xae8f41c0: ver 2 0 (tinfo 0xae8394f0)
+04-03 01:14:39.628  5921  5921 E AndroidJUnitRunner: An unhandled exception was thrown by the app.
+04-03 01:14:39.630  5921  5921 I AndroidJUnitRunner: Bringing down the entire Instrumentation process.
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: Exception encountered by: com.example.qrhunter.PlayerMenuActivity@3f1ae9b1. Dumping thread state to outputs and pining for the fjords.
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.Activity.performCreate(Activity.java:5990)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.os.Looper.loop(Looper.java:135)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Native Method)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+04-03 01:14:39.630  5921  5921 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[HeapTrimmerDaemon,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     dalvik.system.VMRuntime.trimHeap(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Daemons$HeapTrimmerDaemon.run(Daemons.java:313)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[Binder_2,5,main]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[ReferenceQueueDaemon,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:134)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[JDWP,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[GCDaemon,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Daemons$GCDaemon.run(Daemons.java:344)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[Signal Catcher,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[Instr: androidx.test.runner.AndroidJUnitRunner,5,main]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.awaitDone(FutureTask.java:397)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.get(FutureTask.java:174)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:504)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:354)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:525)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.rules.RunRules.evaluate(RunRules.java:20)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.Suite.runChild(Suite.java:128)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.Suite.runChild(Suite.java:27)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1853)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[InstrumentationConnectionThread,5,main]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.os.HandlerThread.run(HandlerThread.java:61)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[MonitoringInstrumentation,5,main]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     android.app.Instrumentation.startActivitySync(Instrumentation.java:408)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation.access$201(MonitoringInstrumentation.java:100)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation$4.call(MonitoringInstrumentation.java:499)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation$4.call(MonitoringInstrumentation.java:496)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.run(FutureTask.java:237)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:   Thread[FinalizerDaemon,5,system]
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Object.java:422)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:101)
+04-03 01:14:39.631  5921  5921 E THREAD_STATE:     java.lang.ref.Reference
+04-03 01:14:39.631  5921  5921 E MonitoringInstr: Dying now...
+04-03 01:14:39.631  5921  5921 D AndroidRuntime: Shutting down VM
+04-03 01:14:39.631  5921  5921 E AndroidJUnitRunner: An unhandled exception was thrown by the app.
+04-03 01:14:39.632  5921  5921 I AndroidJUnitRunner: Bringing down the entire Instrumentation process.
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: Exception encountered by: Thread[main,5,main]. Dumping thread state to outputs and pining for the fjords.
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.PlayerMenuActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.os.Looper.loop(Looper.java:135)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Native Method)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.Activity.performCreate(Activity.java:5990)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+04-03 01:14:39.633  5921  5921 E MonitoringInstr: 	... 10 more
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[HeapTrimmerDaemon,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     dalvik.system.VMRuntime.trimHeap(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Daemons$HeapTrimmerDaemon.run(Daemons.java:313)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[Binder_2,5,main]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[ReferenceQueueDaemon,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Daemons$ReferenceQueueDaemon.run(Daemons.java:134)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[JDWP,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[GCDaemon,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Daemons$GCDaemon.run(Daemons.java:344)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[Signal Catcher,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[Instr: androidx.test.runner.AndroidJUnitRunner,5,main]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.awaitDone(FutureTask.java:397)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.get(FutureTask.java:174)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:504)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.rule.ActivityTestRule.launchActivity(ActivityTestRule.java:354)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:525)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.rules.RunRules.evaluate(RunRules.java:20)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.Suite.runChild(Suite.java:128)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.Suite.runChild(Suite.java:27)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1853)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[InstrumentationConnectionThread,5,main]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.os.HandlerThread.run(HandlerThread.java:61)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[MonitoringInstrumentation,5,main]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     android.app.Instrumentation.startActivitySync(Instrumentation.java:408)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation.access$201(MonitoringInstrumentation.java:100)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation$4.call(MonitoringInstrumentation.java:499)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     androidx.test.runner.MonitoringInstrumentation$4.call(MonitoringInstrumentation.java:496)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.FutureTask.run(FutureTask.java:237)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:   Thread[FinalizerDaemon,5,system]
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.Object.wait(Object.java:422)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:101)
+04-03 01:14:39.634  5921  5921 E THREAD_STATE:     java.lang.ref.Reference
+04-03 01:14:39.634  5921  5921 E MonitoringInstr: Dying now...
+04-03 01:14:39.634  5921  5921 W MonitoringInstr: Invoking uncaught exception handler java.lang.ThreadGroup[name=main,maxPriority=10] (a class java.lang.ThreadGroup)
+04-03 01:14:39.635  5909  5909 D AndroidRuntime: Shutting down VM
+04-03 01:14:39.870  2417  2567 D EGL_emulation: eglMakeCurrent: 0xae8f41c0: ver 2 0 (tinfo 0xae8394f0)

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="304dp"
+        android:padding="15dp"
+        android:background="#E6000000">
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="131dp"
+            android:layout_height="269dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="229dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Scanned Text"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="229dp"
+            android:layout_height="76dp"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Commments"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/worth"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Worth"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/worth"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="latitude"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/lag"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Longitude"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

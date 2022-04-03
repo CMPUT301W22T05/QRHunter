@@ -64,19 +64,8 @@ public class SignUpActivityTest {
     @Test
     public void checkUsername(){
         solo.assertCurrentActivity("Wrong Activity", SignUpActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.sign_up_password), "emptyUsername");
-        solo.clickOnButton("Confirm");
-        solo.assertCurrentActivity("Test failed",SignUpActivity.class);
-
-    }
-
-    /**
-     * Check if an empty password can signup as a new account or not
-     */
-    @Test
-    public void checkPassword(){
-        solo.assertCurrentActivity("Wrong Activity", SignUpActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.sign_up_username), "emptyPassword");
+        solo.clickOnButton("Generate");
+        solo.clickOnCheckBox(0);
         solo.clickOnButton("Confirm");
         solo.assertCurrentActivity("Test failed",SignUpActivity.class);
 
@@ -89,10 +78,9 @@ public class SignUpActivityTest {
     @Test
     public void checkExistence(){
         solo.assertCurrentActivity("Wrong Activity", SignUpActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.sign_up_username), "Player1");
-//        solo.enterText((EditText) solo.getView(R.id.sign_up_password), "123");
-//        solo.enterText((EditText) solo.getView(R.id.sign_up_name), "Player1_full_name");
-//        solo.enterText((EditText) solo.getView(R.id.sign_up_email_address), "Player1_email_address");
+        solo.enterText((EditText) solo.getView(R.id.sign_up_username), "test1");    // an exist username
+        solo.clickOnButton("Generate");
+        solo.clickOnCheckBox(0);
         solo.clickOnButton("Confirm");
         solo.assertCurrentActivity("Test failed",SignUpActivity.class);
 
@@ -105,12 +93,11 @@ public class SignUpActivityTest {
     @Test
     public void checkConfirmButton(){
         solo.assertCurrentActivity("Wrong Activity", SignUpActivity.class);
-        solo.enterText((EditText) solo.getView(R.id.sign_up_username), "Player999");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_password), "321");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_name), "Player999_full_name");
-        solo.enterText((EditText) solo.getView(R.id.sign_up_email_address), "Player999_email_address");
+        solo.enterText((EditText) solo.getView(R.id.sign_up_username), "test999");  // a new username
+        solo.clickOnButton("Generate");
+        solo.clickOnCheckBox(0);
         solo.clickOnButton("Confirm");
-        solo.assertCurrentActivity("Test failed",MainActivity.class);
+        solo.assertCurrentActivity("Test failed",PlayerMenuActivity.class);
 
     }
 }
