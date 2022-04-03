@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -76,12 +77,13 @@ public class SearchInfo extends AppCompatActivity {
         final CollectionReference collectionReference = db.collection("Player");
         DocumentReference noteRef = db.collection("Player").document(friend_name);
         noteRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                 Email = value.getString("Email");
                 Score = value.getData().get("Total score").toString();
-                contact_info.setText(Email);
-                total_score.setText(Score);
+                contact_info.setText("Contact information: "+Email);
+                total_score.setText("Total score: "+Score);
             }
         });
         collectionReference.document(friend_name)

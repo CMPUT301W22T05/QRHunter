@@ -37,8 +37,8 @@ public class QrCodeAdapter extends RecyclerView.Adapter<QrCodeAdapter.ViewHolder
         holder.description.setText("Comments : \n"+qr.get(position).getDescription());
         String Longtitude = Double.toString(qr.get(position).getLag());
         String latitude = Double.toString(qr.get(position).getLat());
-        holder.lag.setText(Longtitude);
-        holder.lat.setText(latitude);
+        holder.lag.setText("Longtitude: "+ Longtitude);
+        holder.lat.setText("Latitude: "+latitude);
         holder.title.setText("Content : \n"+qr.get(position).getTitle());
         String Worth = String.valueOf(qr.get(position).getWorth());
         holder.worth.setText("Worth : "+Worth);
