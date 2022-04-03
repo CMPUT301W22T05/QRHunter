@@ -1,16 +1,16 @@
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-com.example.qrhunter.PlayerMenuActivityTest:
+com.example.qrhunter.SearchTest:
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: test=start
-INSTRUMENTATION_STATUS: class=com.example.qrhunter.PlayerMenuActivityTest
+INSTRUMENTATION_STATUS: test=checkScanButton
+INSTRUMENTATION_STATUS: class=com.example.qrhunter.SearchTest
 INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS_CODE: 1
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-Process crashed while executing start(com.example.qrhunter.PlayerMenuActivityTest):
+Process crashed while executing checkScanButton(com.example.qrhunter.SearchTest):
 java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
-at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+at com.example.qrhunter.Search.onCreate(Search.java:63)
 at android.app.Activity.performCreate(Activity.java:5990)
 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
 at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
@@ -27,10 +27,10 @@ at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:90
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
 
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: test=start
-INSTRUMENTATION_STATUS: class=com.example.qrhunter.PlayerMenuActivityTest
+INSTRUMENTATION_STATUS: test=checkScanButton
+INSTRUMENTATION_STATUS: class=com.example.qrhunter.SearchTest
 INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
-at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+at com.example.qrhunter.Search.onCreate(Search.java:63)
 at android.app.Activity.performCreate(Activity.java:5990)
 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
 at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
@@ -50,8 +50,8 @@ INSTRUMENTATION_STATUS: current=1
 INSTRUMENTATION_STATUS_CODE: -2
 INSTRUMENTATION_STATUS: numtests=1
 INSTRUMENTATION_STATUS: stream=
-Process crashed while executing start(com.example.qrhunter.PlayerMenuActivityTest):
-java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.PlayerMenuActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+Process crashed while executing checkScanButton(com.example.qrhunter.SearchTest):
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.Search}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
 at android.app.ActivityThread.access$800(ActivityThread.java:151)
@@ -64,7 +64,7 @@ at java.lang.reflect.Method.invoke(Method.java:372)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
 Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
-at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+at com.example.qrhunter.Search.onCreate(Search.java:63)
 at android.app.Activity.performCreate(Activity.java:5990)
 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
 at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
@@ -72,9 +72,9 @@ at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
 ... 10 more
 
 INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
-INSTRUMENTATION_STATUS: test=start
-INSTRUMENTATION_STATUS: class=com.example.qrhunter.PlayerMenuActivityTest
-INSTRUMENTATION_STATUS: stack=java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.PlayerMenuActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+INSTRUMENTATION_STATUS: test=checkScanButton
+INSTRUMENTATION_STATUS: class=com.example.qrhunter.SearchTest
+INSTRUMENTATION_STATUS: stack=java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.Search}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
 at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
 at android.app.ActivityThread.access$800(ActivityThread.java:151)
@@ -87,7 +87,7 @@ at java.lang.reflect.Method.invoke(Method.java:372)
 at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
 Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
-at com.example.qrhunter.PlayerMenuActivity.onCreate(PlayerMenuActivity.java:53)
+at com.example.qrhunter.Search.onCreate(Search.java:63)
 at android.app.Activity.performCreate(Activity.java:5990)
 at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
 at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)

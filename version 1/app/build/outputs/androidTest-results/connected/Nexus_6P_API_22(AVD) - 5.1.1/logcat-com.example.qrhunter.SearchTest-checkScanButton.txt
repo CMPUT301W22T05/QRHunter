@@ -1,0 +1,196 @@
+04-03 06:59:47.172 10660 10678 I TestRunner: started: checkScanButton(com.example.qrhunter.SearchTest)
+04-03 06:59:47.174 10660 10678 W ActivityTestRule: getActivityIntent() returned null using default: Intent(Intent.ACTION_MAIN)
+04-03 06:59:47.221  1176  1325 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 14745600
+04-03 06:59:47.230 10660 10660 D LifecycleMonitor: Lifecycle status change: com.example.qrhunter.Search@3f1ae9b1 in: PRE_ON_CREATE
+04-03 06:59:47.247 10660 10660 W art     : Before Android 4.1, method android.graphics.PorterDuffColorFilter androidx.vectordrawable.graphics.drawable.VectorDrawableCompat.updateTintFilter(android.graphics.PorterDuffColorFilter, android.content.res.ColorStateList, android.graphics.PorterDuff$Mode) would have incorrectly overridden the package-private method in android.graphics.drawable.Drawable
+04-03 06:59:47.319  2417  2567 D EGL_emulation: eglMakeCurrent: 0xb42b9a00: ver 2 0 (tinfo 0xae8394f0)
+04-03 06:59:47.340 10660 10660 D MapsInitializer: preferredRenderer: null
+04-03 06:59:47.340 10660 10660 D zzca    : preferredRenderer: null
+04-03 06:59:47.344 10660 10660 I zzca    : Making Creator dynamically
+04-03 06:59:47.353 10660 10660 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:202414000
+04-03 06:59:47.353 10660 10660 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 202414000
+04-03 06:59:47.354 10660 10660 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+04-03 06:59:47.370 10660 10660 I Google Maps Android API: Google Play services client version: 12451000
+04-03 06:59:47.371 10660 10660 D MapsInitializer: loadedRenderer: LEGACY
+04-03 06:59:47.371 10660 10660 D zzca    : preferredRenderer: null
+04-03 06:59:47.372 10660 10660 I Google Maps Android API: Google Play services package version: 202414013
+04-03 06:59:47.541 10660 10660 E AndroidJUnitRunner: An unhandled exception was thrown by the app.
+04-03 06:59:47.542 10660 10660 I AndroidJUnitRunner: Bringing down the entire Instrumentation process.
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: Exception encountered by: com.example.qrhunter.Search@3f1ae9b1. Dumping thread state to outputs and pining for the fjords.
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at com.example.qrhunter.Search.onCreate(Search.java:63)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.Activity.performCreate(Activity.java:5990)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.os.Looper.loop(Looper.java:135)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Native Method)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+04-03 06:59:47.542 10660 10660 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-vts_inaka_com.example.qrhunter_default,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.k.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):13)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.z.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):3)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[Thread-484,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:510)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     bq.a(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):1)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     bq.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):2)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[Thread-486,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:510)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     bq.a(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):1)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     bq.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):2)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-its,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.k.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):13)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[OkHttp ConnectionPool,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2055)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:435)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[InstrumentationConnectionThread,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.HandlerThread.run(HandlerThread.java:61)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-appenvironment-1,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2055)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1060)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:776)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:   Thread[GoogleApiHandler,5,main]
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.547 10660 10660 E THREAD_STATE:     android.os.MessageQu
+04-03 06:59:47.547 10660 10660 E MonitoringInstr: Dying now...
+04-03 06:59:47.547 10660 10660 D AndroidRuntime: Shutting down VM
+04-03 06:59:47.547 10660 10660 E AndroidJUnitRunner: An unhandled exception was thrown by the app.
+04-03 06:59:47.550 10660 10660 I AndroidJUnitRunner: Bringing down the entire Instrumentation process.
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: Exception encountered by: Thread[main,5,main]. Dumping thread state to outputs and pining for the fjords.
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.qrhunter/com.example.qrhunter.Search}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2325)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2387)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.access$800(ActivityThread.java:151)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1303)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.os.Looper.loop(Looper.java:135)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.main(ActivityThread.java:5254)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Native Method)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at java.lang.reflect.Method.invoke(Method.java:372)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at com.example.qrhunter.Search.onCreate(Search.java:63)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.Activity.performCreate(Activity.java:5990)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at androidx.test.runner.MonitoringInstrumentation.callActivityOnCreate(MonitoringInstrumentation.java:730)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2278)
+04-03 06:59:47.551 10660 10660 E MonitoringInstr: 	... 10 more
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-vts_inaka_com.example.qrhunter_default,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.k.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):13)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.z.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):3)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[Thread-484,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:510)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     bq.a(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):1)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     bq.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):2)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[Thread-486,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.park(LockSupport.java:157)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2016)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:510)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     bq.a(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):1)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     bq.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):2)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-its,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     com.google.maps.api.android.lib6.gmm6.store.k.run(:com.google.android.gms.dynamite_mapsdynamite@202414035@20.24.14 (020700-0):13)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[OkHttp ConnectionPool,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2055)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:435)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[InstrumentationConnectionThread,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.next(MessageQueue.java:143)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.Looper.loop(Looper.java:122)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.HandlerThread.run(HandlerThread.java:61)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[androidmapsapi-appenvironment-1,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Object.wait(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.parkFor(Thread.java:1220)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     sun.misc.Unsafe.park(Unsafe.java:299)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:197)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2055)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1060)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:776)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1035)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1097)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     java.lang.Thread.run(Thread.java:818)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:   Thread[GoogleApiHandler,5,main]
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQueue.nativePollOnce(Native Method)
+04-03 06:59:47.553 10660 10660 E THREAD_STATE:     android.os.MessageQu
+04-03 06:59:47.553 10660 10660 E MonitoringInstr: Dying now...
+04-03 06:59:47.553 10660 10660 W MonitoringInstr: Invoking uncaught exception handler java.lang.ThreadGroup[name=main,maxPriority=10] (a class java.lang.ThreadGroup)
+04-03 06:59:47.555 10648 10648 D AndroidRuntime: Shutting down VM

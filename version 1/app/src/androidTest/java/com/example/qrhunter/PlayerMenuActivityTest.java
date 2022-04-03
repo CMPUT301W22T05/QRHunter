@@ -12,6 +12,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 public class PlayerMenuActivityTest {
+    // tests not passed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     private Solo solo;
     @Rule
     public ActivityTestRule<PlayerMenuActivity> rule =

@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\my_profile_content.xml"
     },
     {
-        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\personal_qr_rank_layout.xml",
-        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\single_qr_design.xml",
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\single_qr_design.xml"
+    },
+    {
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\personal_qr_rank_layout.xml",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\personal_qr_rank_layout.xml"
     },
     {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_information_layout.xml",

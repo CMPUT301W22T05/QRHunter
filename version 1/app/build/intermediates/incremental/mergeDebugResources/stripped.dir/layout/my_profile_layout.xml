@@ -34,7 +34,7 @@
         android:background="@drawable/round_border"
         android:ellipsize="middle"
         android:gravity="center"
-        android:hint="Username:null"
+        android:hint="Username"
         android:textColorHint="#272727"
         android:textAlignment="center"
         android:textColor="#FFFFFF"

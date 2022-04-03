@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\add_qr_code_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_logo.png.flat",
-        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_logo.png"
-    },
-    {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_logo_round.png.flat",
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_logo.png"
     },
     {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_qr_details.xml.flat",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_logo.png"
     },
     {
-        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_maps.xml.flat",
-        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
-    },
-    {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_logo.png.flat",
         "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_maps.xml.flat",
+        "source": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\src\\main\\res\\layout\\fragment_maps.xml"
     },
     {
         "merged": "C:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_friend_qr_detail_layout.xml.flat",
