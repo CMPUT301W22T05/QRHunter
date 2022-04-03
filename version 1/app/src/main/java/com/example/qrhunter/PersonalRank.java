@@ -52,43 +52,10 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import static android.content.ContentValues.TAG;
+import io.paperdb.Paper;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-import com.google.firebase.firestore.auth.User;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import java.util.ArrayList;
 
 public class PersonalRank extends AppCompatActivity {
     ListView scoreList;
@@ -108,36 +75,46 @@ public class PersonalRank extends AppCompatActivity {
         Username = message;
         TextView PersonalName = findViewById(R.id.personal_rank_TextView);
         PersonalName.setText(Username + "'s QR Codes");
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
 
         scoreList = findViewById(R.id.personal_ranking_list);
         scoreDataList = new ArrayList<>();
+//        scoreAdapter = new ScoreListOnOwnerPersonalPage(this, scoreDataList);
+//        scoreList.setAdapter(scoreAdapter);
+
+        db.collection("Player").document(Username).collection("QRCOde")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+
+                                scoreDataList.add(new ScoreOnOwnerPersonalPage("QR "+counter.toString(), document.getData().get("worth").toString(),document.getId()));
+                                counter = counter + 1;
+
+                            }
+                            scoreAdapter.notifyDataSetChanged();
+
+                        }
+                    }
+                });
+
         scoreAdapter = new ScoreListOnOwnerPersonalPage(this, scoreDataList);
         scoreList.setAdapter(scoreAdapter);
-
-
-
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
         final CollectionReference collectionReference = db.collection("Player").document(Username).collection("QRCOde");
-        collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
-            @Override
-            public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable
-                    FirebaseFirestoreException error) {
-                // Clear the old list
-                scoreDataList.clear();
-                for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
-                    scoreDataList.add(new ScoreOnOwnerPersonalPage("QR "+counter.toString(), document.getData().get("worth").toString()));
-                    counter = counter + 1;
-                }
-                scoreAdapter.notifyDataSetChanged();
-            }
-        });
+
+
+
         scoreList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
             @Override
             public boolean onItemLongClick(AdapterView<?> adpterView,View view,int i,long l){
-                collectionReference.document(scoreDataList.get(i).getSequenceNumber()).delete();
+                collectionReference.document(scoreDataList.get(i).getId()).delete();
                 scoreDataList.remove(i);
                 scoreList.setAdapter(scoreAdapter);
                 scoreAdapter.notifyDataSetChanged();
+
                 Toast.makeText(PersonalRank.this, "Deleted successfully", Toast.LENGTH_SHORT).show();
 
 
@@ -156,3 +133,5 @@ public class PersonalRank extends AppCompatActivity {
     }
 
 }
+
+
