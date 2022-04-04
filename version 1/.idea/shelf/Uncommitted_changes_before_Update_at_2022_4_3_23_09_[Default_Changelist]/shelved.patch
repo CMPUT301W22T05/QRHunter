@@ -1,0 +1,1032 @@
+Index: app/src/main/java/com/example/qrhunter/Note.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.qrhunter;\r\n\r\nimport com.google.firebase.firestore.Exclude;\r\n\r\npublic class Note {\r\n    private String documentId;\r\n    private String title;\r\n    private String description;\r\n    private int worth;\r\n    private double lat;\r\n    private double lag;\r\n    String url;\r\n\r\n    public String getUrl() {\r\n        return url;\r\n    }\r\n\r\n    public void setUrl(String url) {\r\n        this.url = url;\r\n    }\r\n\r\n    public Note() {\r\n        //public no-arg constructor needed\r\n    }\r\n\r\n    @Exclude\r\n    public String getDocumentId() {\r\n        return documentId;\r\n    }\r\n\r\n    public void setDocumentId(String documentId) {\r\n        this.documentId = documentId;\r\n    }\r\n\r\n    public Note(String title, String description, int worth, double lat, double lag,String url) {\r\n        this.title = title;\r\n        this.description = description;\r\n        this.worth = worth;\r\n        this.lat = lat;\r\n        this.lag = lag;\r\n        this.url = url;\r\n    }\r\n    public  int getWorth(){\r\n        return worth;\r\n    }\r\n    public  double getLat(){\r\n        return lat;\r\n    }\r\n    public  double getLag(){\r\n        return lag;\r\n    }\r\n\r\n    public String getTitle() {\r\n        return title;\r\n    }\r\n\r\n    public String getDescription() {\r\n        return description;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/qrhunter/Note.java b/app/src/main/java/com/example/qrhunter/Note.java
+--- a/app/src/main/java/com/example/qrhunter/Note.java	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ b/app/src/main/java/com/example/qrhunter/Note.java	(date 1649048703688)
+@@ -2,7 +2,7 @@
+ 
+ import com.google.firebase.firestore.Exclude;
+ 
+-public class Note {
++public class Note implements Comparable<Note>{
+     private String documentId;
+     private String title;
+     private String description;
+@@ -11,10 +11,18 @@
+     private double lag;
+     String url;
+ 
++    /**
++     * This returns a Url of note
++     * @return string
++     * Return the url
++     */
+     public String getUrl() {
+         return url;
+     }
+ 
++    /**
++     * This sets a Url of note
++     */
+     public void setUrl(String url) {
+         this.url = url;
+     }
+@@ -23,11 +31,19 @@
+         //public no-arg constructor needed
+     }
+ 
++    /**
++     * This returns a document ID of note
++     * @return string
++     * Return the document ID
++     */
+     @Exclude
+     public String getDocumentId() {
+-        return documentId;
++        return this.documentId;
+     }
+ 
++    /**
++     * This sets a document ID of note
++     */
+     public void setDocumentId(String documentId) {
+         this.documentId = documentId;
+     }
+@@ -40,8 +56,8 @@
+         this.lag = lag;
+         this.url = url;
+     }
+-    public  int getWorth(){
+-        return worth;
++    public int getWorth(){
++        return this.worth;
+     }
+     public  double getLat(){
+         return lat;
+@@ -50,11 +66,32 @@
+         return lag;
+     }
+ 
++    /**
++     * This returns a title of note
++     * @return string
++     * Return the title
++     */
+     public String getTitle() {
+         return title;
+     }
+ 
++    /**
++     * This returns a description of note
++     * @return string
++     * Return the description
++     */
+     public String getDescription() {
+         return description;
+     }
++
++
++    /**
++     * This compares the description of two players
++     * @return integer
++     * Return the integer
++     */
++    @Override
++    public int compareTo(Note note) {
++        return this.description.compareTo(note.getDescription());
++    }
+ }
+Index: app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html
+===================================================================
+diff --git a/app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html b/app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html
+deleted file mode 100644
+--- a/app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ /dev/null	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
+@@ -1,126 +0,0 @@
+-<!DOCTYPE html>
+-<html>
+-<head>
+-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+-<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+-<title>Test results - PlayerListTest</title>
+-<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+-<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+-<script src="../js/report.js" type="text/javascript"></script>
+-</head>
+-<body>
+-<div id="content">
+-<h1>PlayerListTest</h1>
+-<div class="breadcrumbs">
+-<a href="../index.html">all</a> &gt; 
+-<a href="../packages/com.example.qrhunter.html">com.example.qrhunter</a> &gt; PlayerListTest</div>
+-<div id="summary">
+-<table>
+-<tr>
+-<td>
+-<div class="summaryGroup">
+-<table>
+-<tr>
+-<td>
+-<div class="infoBox" id="tests">
+-<div class="counter">7</div>
+-<p>tests</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="failures">
+-<div class="counter">0</div>
+-<p>failures</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="ignored">
+-<div class="counter">0</div>
+-<p>ignored</p>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox" id="duration">
+-<div class="counter">0.016s</div>
+-<p>duration</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-</td>
+-<td>
+-<div class="infoBox success" id="successRate">
+-<div class="percent">100%</div>
+-<p>successful</p>
+-</div>
+-</td>
+-</tr>
+-</table>
+-</div>
+-<div id="tabs">
+-<ul class="tabLinks">
+-<li>
+-<a href="#tab0">Tests</a>
+-</li>
+-</ul>
+-<div id="tab0" class="tab">
+-<h2>Tests</h2>
+-<table>
+-<thead>
+-<tr>
+-<th>Test</th>
+-<th>Duration</th>
+-<th>Result</th>
+-</tr>
+-</thead>
+-<tr>
+-<td class="success">testAdd()</td>
+-<td class="success">0.003s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testAddException()</td>
+-<td class="success">0.009s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testCount()</td>
+-<td class="success">0.001s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testDelete()</td>
+-<td class="success">0s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testDeleteException()</td>
+-<td class="success">0.001s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testExistence()</td>
+-<td class="success">0.002s</td>
+-<td class="success">passed</td>
+-</tr>
+-<tr>
+-<td class="success">testGetPlayers()</td>
+-<td class="success">0s</td>
+-<td class="success">passed</td>
+-</tr>
+-</table>
+-</div>
+-</div>
+-<div id="footer">
+-<p>
+-<div>
+-<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+-<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+-</label>
+-</div>Generated by 
+-<a href="http://www.gradle.org">Gradle 7.2</a> at 2022年4月3日 下午7:23:18</p>
+-</div>
+-</div>
+-</body>
+-</html>
+Index: app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml
+===================================================================
+diff --git a/app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml b/app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml
+deleted file mode 100644
+--- a/app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ /dev/null	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
+@@ -1,13 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<testsuite name="com.example.qrhunter.PlayerListTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-04-04T01:23:18" hostname="LAPTOP-8C56J47P" time="0.022">
+-  <properties/>
+-  <testcase name="testAddException()" classname="com.example.qrhunter.PlayerListTest" time="0.009"/>
+-  <testcase name="testAdd()" classname="com.example.qrhunter.PlayerListTest" time="0.003"/>
+-  <testcase name="testCount()" classname="com.example.qrhunter.PlayerListTest" time="0.001"/>
+-  <testcase name="testExistence()" classname="com.example.qrhunter.PlayerListTest" time="0.002"/>
+-  <testcase name="testGetPlayers()" classname="com.example.qrhunter.PlayerListTest" time="0.0"/>
+-  <testcase name="testDelete()" classname="com.example.qrhunter.PlayerListTest" time="0.0"/>
+-  <testcase name="testDeleteException()" classname="com.example.qrhunter.PlayerListTest" time="0.001"/>
+-  <system-out><![CDATA[]]></system-out>
+-  <system-err><![CDATA[]]></system-err>
+-</testsuite>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AndroidLayouts\">\r\n    <shared>\r\n      <config />\r\n    </shared>\r\n  </component>\r\n  <component name=\"AndroidLogFilters\">\r\n    <option name=\"TOOL_WINDOW_CUSTOM_FILTER\" value=\"F\" />\r\n    <option name=\"TOOL_WINDOW_CONFIGURED_FILTER\" value=\"Show only selected application\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6578b7e0-87b8-4de8-9e6b-960dccf182f5\" name=\"Default Changelist\" comment=\"final code\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_18__2_56___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_18__2_56___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_1.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_1.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_32___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_32___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_48___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_48___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_49___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_49___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__1_33___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__1_33___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__3_53___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__3_53___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__7_59___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__7_59___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_4__10_23___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_4__10_23___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__12_33___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__12_33___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__2_27___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__2_27___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__4_46___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__4_46___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__7_24___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__7_24___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_3__1_22___Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_3__1_22___Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_21_PM__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_21_PM__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_24_PM__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_24_PM__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_1.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_1.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_35_PM__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_35_PM__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_37_PM__Default_Changelist_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_37_PM__Default_Changelist_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/PlayerListTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/PlayerListTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CodeStyleSettingsInfer\">\r\n    <option name=\"done\" value=\"true\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <task path=\"$PROJECT_DIR$\">\r\n          <activation />\r\n        </task>\r\n        <projects_view />\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"layoutResourceFile\" />\r\n        <option value=\"resourceFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"WenhaoYou1 &lt;wyou1@ualberta.ca&gt;\" />\r\n        <option value=\"Sun-ning1 &lt;chinaisrising999@gmail.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedIndex\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"25qltw5eUAMkFYLzu9TYfFcboTI\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.cidr.known.project.marker\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"cidr.known.project.marker\" value=\"true\" />\r\n    <property name=\"last_directory_selection\" value=\"$PROJECT_DIR$/app/src/main/res/drawable-anydpi\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"memory.settings.postsync.last.time.stamp\" value=\"1648763237399\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/app/src/main/res/drawable-anydpi\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/app/build\" />\r\n    </key>\r\n    <key name=\"android.template.1936474498\">\r\n      <recent name=\"com.example.qrhunter\" />\r\n    </key>\r\n    <key name=\"ExtractSuperBase.RECENT_KEYS\">\r\n      <recent name=\"com.example.qrhunter\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"gradle javadoc\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Gradle.PlayerListTest\">\r\n    <configuration name=\"app\" type=\"AndroidRunConfigurationType\" factoryName=\"Android App\" activateToolWindowBeforeRun=\"false\">\r\n      <module name=\"QR_Hunter.app\" />\r\n      <option name=\"DEPLOY\" value=\"true\" />\r\n      <option name=\"DEPLOY_APK_FROM_BUNDLE\" value=\"false\" />\r\n      <option name=\"DEPLOY_AS_INSTANT\" value=\"false\" />\r\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\r\n      <option name=\"PM_INSTALL_OPTIONS\" value=\"\" />\r\n      <option name=\"ALL_USERS\" value=\"false\" />\r\n      <option name=\"ALWAYS_INSTALL_WITH_PM\" value=\"false\" />\r\n      <option name=\"DYNAMIC_FEATURES_DISABLED_LIST\" value=\"\" />\r\n      <option name=\"ACTIVITY_EXTRA_FLAGS\" value=\"\" />\r\n      <option name=\"MODE\" value=\"default_activity\" />\r\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\r\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"false\" />\r\n      <option name=\"SKIP_NOOP_APK_INSTALLATIONS\" value=\"true\" />\r\n      <option name=\"FORCE_STOP_RUNNING_APP\" value=\"true\" />\r\n      <option name=\"INSPECTION_WITHOUT_ACTIVITY_RESTART\" value=\"false\" />\r\n      <option name=\"TARGET_SELECTION_MODE\" value=\"DEVICE_AND_SNAPSHOT_COMBO_BOX\" />\r\n      <option name=\"SELECTED_CLOUD_MATRIX_CONFIGURATION_ID\" value=\"-1\" />\r\n      <option name=\"SELECTED_CLOUD_MATRIX_PROJECT_ID\" value=\"\" />\r\n      <option name=\"DEBUGGER_TYPE\" value=\"Auto\" />\r\n      <Auto>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Auto>\r\n      <Hybrid>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Hybrid>\r\n      <Java />\r\n      <Native>\r\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\r\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\r\n        <option name=\"WORKING_DIR\" value=\"\" />\r\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\r\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\r\n      </Native>\r\n      <Profilers>\r\n        <option name=\"ADVANCED_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_CPU_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"STARTUP_CPU_PROFILING_CONFIGURATION_NAME\" value=\"Sample Java Methods\" />\r\n        <option name=\"STARTUP_NATIVE_MEMORY_PROFILING_ENABLED\" value=\"false\" />\r\n        <option name=\"NATIVE_MEMORY_SAMPLE_RATE_BYTES\" value=\"2048\" />\r\n      </Profilers>\r\n      <option name=\"DEEP_LINK\" value=\"\" />\r\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\r\n      <option name=\"SEARCH_ACTIVITY_IN_GLOBAL_SCOPE\" value=\"false\" />\r\n      <option name=\"SKIP_ACTIVITY_VALIDATION\" value=\"false\" />\r\n      <method v=\"2\">\r\n        <option name=\"Android.Gradle.BeforeRunTask\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"PlayerListTest\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;com.example.qrhunter.PlayerListTest&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":app:testDebugUnitTest\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"PlayerListTest.testAddException\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;com.example.qrhunter.PlayerListTest.testAddException&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":app:testDebugUnitTest\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"PlayerListTest.testCount\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;com.example.qrhunter.PlayerListTest.testCount&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":app:testDebugUnitTest\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"PlayerListTest.testExistence\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;com.example.qrhunter.PlayerListTest.testExistence&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":app:testDebugUnitTest\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"PlayerListTest.testGetPlayers\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\r\n      <ExternalSystemSettings>\r\n        <option name=\"executionName\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\r\n        <option name=\"scriptParameters\" value=\"--tests &quot;com.example.qrhunter.PlayerListTest.testGetPlayers&quot;\" />\r\n        <option name=\"taskDescriptions\">\r\n          <list />\r\n        </option>\r\n        <option name=\"taskNames\">\r\n          <list>\r\n            <option value=\":app:testDebugUnitTest\" />\r\n          </list>\r\n        </option>\r\n        <option name=\"vmOptions\" />\r\n      </ExternalSystemSettings>\r\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\r\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\r\n      <DebugAllEnabled>false</DebugAllEnabled>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Gradle.PlayerListTest\" />\r\n        <item itemvalue=\"Gradle.PlayerListTest.testCount\" />\r\n        <item itemvalue=\"Gradle.PlayerListTest.testExistence\" />\r\n        <item itemvalue=\"Gradle.PlayerListTest.testGetPlayers\" />\r\n        <item itemvalue=\"Gradle.PlayerListTest.testAddException\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6578b7e0-87b8-4de8-9e6b-960dccf182f5\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1646262716062</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1646262716062</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00041\" summary=\"wenhao for update PersonalRank.java\">\r\n      <created>1647282758420</created>\r\n      <option name=\"number\" value=\"00041\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647282758420</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00042\" summary=\"wenhao for update PersonalRank.java\">\r\n      <created>1647282762631</created>\r\n      <option name=\"number\" value=\"00042\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647282762631</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00043\" summary=\"wenhao for update PersonalRank.java\">\r\n      <created>1647282995772</created>\r\n      <option name=\"number\" value=\"00043\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647282995772</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00044\" summary=\"wenhao for update MyProfileActivity.java (contact information will be displayed when sign up successfully\">\r\n      <created>1647288281776</created>\r\n      <option name=\"number\" value=\"00044\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00044\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647288281776</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00045\" summary=\"wenhao for update MyProfileActivity.java (contact information will be displayed when sign up successfully\">\r\n      <created>1647288312256</created>\r\n      <option name=\"number\" value=\"00045\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00045\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647288312256</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00046\" summary=\"wenhao for update MyProfileActivity.java (contact information will be displayed when sign up successfully\">\r\n      <created>1647288317604</created>\r\n      <option name=\"number\" value=\"00046\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00046\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647288317604</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00047\" summary=\"wenhao for update MyProfileActivity.java (contact information will be displayed when sign up successfully\">\r\n      <created>1647637028229</created>\r\n      <option name=\"number\" value=\"00047\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00047\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647637028229</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00048\" summary=\"wenhao for update some comments\">\r\n      <created>1647637655929</created>\r\n      <option name=\"number\" value=\"00048\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00048\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1647637655929</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00049\" summary=\"wenhao for continued owner part\">\r\n      <created>1648686547015</created>\r\n      <option name=\"number\" value=\"00049\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00049\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648686547016</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00050\" summary=\"wenhao for continued owner part\">\r\n      <created>1648686554921</created>\r\n      <option name=\"number\" value=\"00050\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00050\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648686554922</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00051\" summary=\"wenhao for continued owner part\">\r\n      <created>1648694080355</created>\r\n      <option name=\"number\" value=\"00051\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00051\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648694080355</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00052\" summary=\"wenhao for continued owner part\">\r\n      <created>1648694085626</created>\r\n      <option name=\"number\" value=\"00052\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00052\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648694085626</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00053\" summary=\"wenhao for continued owner part\">\r\n      <created>1648694422925</created>\r\n      <option name=\"number\" value=\"00053\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00053\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648694422926</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00054\" summary=\"wenhao for continued owner part\">\r\n      <created>1648695387941</created>\r\n      <option name=\"number\" value=\"00054\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00054\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648695387941</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00055\" summary=\"wenhao for continued owner part\">\r\n      <created>1648695396682</created>\r\n      <option name=\"number\" value=\"00055\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00055\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648695396683</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00056\" summary=\"wenhao for part UI\">\r\n      <created>1648705649778</created>\r\n      <option name=\"number\" value=\"00056\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00056\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648705649778</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00057\" summary=\"wenhao for part UI\">\r\n      <created>1648705653731</created>\r\n      <option name=\"number\" value=\"00057\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00057\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648705653731</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00058\" summary=\"wenhao for part UI\">\r\n      <created>1648706953907</created>\r\n      <option name=\"number\" value=\"00058\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00058\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648706953908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00059\" summary=\"wenhao for part UI\">\r\n      <created>1648706982542</created>\r\n      <option name=\"number\" value=\"00059\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648706982542</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00060\" summary=\"wenhao for part of owner menu\">\r\n      <created>1648716113755</created>\r\n      <option name=\"number\" value=\"00060\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648716113755</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00061\" summary=\"wenhao for part of owner menu\">\r\n      <created>1648720722641</created>\r\n      <option name=\"number\" value=\"00061\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648720722641</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00062\" summary=\"wenhao for part of owner menu\">\r\n      <created>1648720729012</created>\r\n      <option name=\"number\" value=\"00062\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648720729012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00063\" summary=\"wenhao for part of owner menu\">\r\n      <created>1648721471748</created>\r\n      <option name=\"number\" value=\"00063\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648721471748</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00064\" summary=\"w\">\r\n      <created>1648777294547</created>\r\n      <option name=\"number\" value=\"00064\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00064\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648777294547</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00065\" summary=\"upload image to firebase completed\">\r\n      <created>1648782345794</created>\r\n      <option name=\"number\" value=\"00065\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00065\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648782345794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00066\" summary=\"QR code display with image\">\r\n      <created>1648786922940</created>\r\n      <option name=\"number\" value=\"00066\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00066\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648786922940</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00067\" summary=\"QR code display with image\">\r\n      <created>1648787148739</created>\r\n      <option name=\"number\" value=\"00067\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00067\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648787148739</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00068\" summary=\"owner page\">\r\n      <created>1648881802684</created>\r\n      <option name=\"number\" value=\"00068\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00068\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648881802685</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00069\" summary=\"owner page\">\r\n      <created>1648881815999</created>\r\n      <option name=\"number\" value=\"00069\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00069\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648881815999</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00070\" summary=\"wenhao for personal rank in owner page\">\r\n      <created>1648887073916</created>\r\n      <option name=\"number\" value=\"00070\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00070\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648887073917</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00071\" summary=\"wenhao for personal rank in owner page\">\r\n      <created>1648887086061</created>\r\n      <option name=\"number\" value=\"00071\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00071\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648887086061</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00072\" summary=\"wenhao for personal rank in owner page\">\r\n      <created>1648887089669</created>\r\n      <option name=\"number\" value=\"00072\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00072\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648887089669</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00073\" summary=\"wenhao for personal rank in owner page\">\r\n      <created>1648887352257</created>\r\n      <option name=\"number\" value=\"00073\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00073\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648887352257</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00074\" summary=\"wenhao for personal rank in owner page\">\r\n      <created>1648887374526</created>\r\n      <option name=\"number\" value=\"00074\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00074\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648887374526</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00075\" summary=\"wenhao for mia's ranking layout\">\r\n      <created>1648890664547</created>\r\n      <option name=\"number\" value=\"00075\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00075\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648890664547</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00076\" summary=\"wenhao for mia's ranking layout\">\r\n      <created>1648890669612</created>\r\n      <option name=\"number\" value=\"00076\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00076\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648890669612</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00077\" summary=\"wenhao for mia's ranking layout\">\r\n      <created>1648890673392</created>\r\n      <option name=\"number\" value=\"00077\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00077\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648890673393</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00078\" summary=\"wenhao for launcher icon\">\r\n      <created>1648893791233</created>\r\n      <option name=\"number\" value=\"00078\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00078\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648893791233</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00079\" summary=\"wenhao for layouts: scan_qr_code_layout.xml, single_qr_design.xml\">\r\n      <created>1648932251480</created>\r\n      <option name=\"number\" value=\"00079\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00079\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648932251480</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00080\" summary=\"wenhao for OwnerMenuActivity.java\">\r\n      <created>1648932373095</created>\r\n      <option name=\"number\" value=\"00080\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00080\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648932373095</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00081\" summary=\"wenhao for layouts: my_profile_layout.xml, personal_qr_rank_layout.xml, qr_information_layout.xml, rank_in_owner_content.xml\">\r\n      <created>1648933656861</created>\r\n      <option name=\"number\" value=\"00081\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00081\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648933656861</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00082\" summary=\"wenhao for layouts\">\r\n      <created>1648940150707</created>\r\n      <option name=\"number\" value=\"00082\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00082\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648940150707</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00083\" summary=\"wenhao for layouts\">\r\n      <created>1648949100225</created>\r\n      <option name=\"number\" value=\"00083\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00083\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648949100225</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00084\" summary=\"wenhao for layouts\">\r\n      <created>1648951274296</created>\r\n      <option name=\"number\" value=\"00084\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00084\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648951274296</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00085\" summary=\"wenhao for layouts\">\r\n      <created>1648951855395</created>\r\n      <option name=\"number\" value=\"00085\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00085\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648951855395</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00086\" summary=\"wenhao for MainActivity.java -- restrict back action in home page\">\r\n      <created>1648955292723</created>\r\n      <option name=\"number\" value=\"00086\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00086\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648955292723</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00087\" summary=\"wenhao for logout button on Owner page\">\r\n      <created>1648956552702</created>\r\n      <option name=\"number\" value=\"00087\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00087\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648956552703</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00088\" summary=\"wenhao for layout MainActivity and ic_launcher\">\r\n      <created>1648970547606</created>\r\n      <option name=\"number\" value=\"00088\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00088\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648970547606</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00089\" summary=\"final code\">\r\n      <created>1648979412740</created>\r\n      <option name=\"number\" value=\"00089\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00089\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1648979412740</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"90\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"wenhao for PersonalRank.java &amp; OwnerMenuActivity.java (continued\" />\r\n    <MESSAGE value=\"wenhao for PersonalRank.java &amp; OwnerMenuActivity.java\" />\r\n    <MESSAGE value=\"wenhao for update sign_up_layout.xml (add EditText fullname\" />\r\n    <MESSAGE value=\"wenhao for MyProfileActivity.java (without contact information\" />\r\n    <MESSAGE value=\"wenhao for update PersonalRank.java\" />\r\n    <MESSAGE value=\"wenhao for update MyProfileActivity.java (contact information will be displayed when sign up successfully\" />\r\n    <MESSAGE value=\"wenhao for update some comments\" />\r\n    <MESSAGE value=\"wenhao for continued owner part\" />\r\n    <MESSAGE value=\"wenhao for part UI\" />\r\n    <MESSAGE value=\"wenhao for part of owner menu\" />\r\n    <MESSAGE value=\"w\" />\r\n    <MESSAGE value=\"upload image to firebase completed\" />\r\n    <MESSAGE value=\"QR code display with image\" />\r\n    <MESSAGE value=\"owner page\" />\r\n    <MESSAGE value=\"wenhao for personal rank in owner page\" />\r\n    <MESSAGE value=\"wenhao for mia's ranking layout\" />\r\n    <MESSAGE value=\"wenhao for launcher icon\" />\r\n    <MESSAGE value=\"wenhao for layouts: scan_qr_code_layout.xml, single_qr_design.xml\" />\r\n    <MESSAGE value=\"wenhao for OwnerMenuActivity.java\" />\r\n    <MESSAGE value=\"wenhao for layouts: my_profile_layout.xml, personal_qr_rank_layout.xml, qr_information_layout.xml, rank_in_owner_content.xml\" />\r\n    <MESSAGE value=\"wenhao for layouts\" />\r\n    <MESSAGE value=\"wenhao for MainActivity.java -- restrict back action in home page\" />\r\n    <MESSAGE value=\"wenhao for logout button on Owner page\" />\r\n    <MESSAGE value=\"wenhao for layout MainActivity and ic_launcher\" />\r\n    <MESSAGE value=\"final code\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"final code\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ b/.idea/workspace.xml	(date 1649048811964)
+@@ -14,29 +14,323 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="6578b7e0-87b8-4de8-9e6b-960dccf182f5" name="Default Changelist" comment="final code">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_18__2_56___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_18__2_56___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__3_54___Default_Changelist_1.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_32___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_32___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_48___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_48___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_49___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_30__8_49___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__1_33___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__1_33___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__3_53___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__3_53___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__7_59___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_31__7_59___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_4__10_23___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_3_4__10_23___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__12_33___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__12_33___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__2_27___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__2_27___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__4_46___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__4_46___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__7_24___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_2__7_24___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_3__1_22___Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_4_3__1_22___Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_21_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_21_PM__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_24_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_10_24_PM__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_6_14_PM__Default_Changelist_1.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_35_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_35_PM__Default_Changelist_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_37_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_31_2022_8_37_PM__Default_Changelist_.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/NoteList.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/NoteListTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/PlayerListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/PlayerListTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityMainBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityMainBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityRemoveQrBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityRemoveQrBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityScannerViewBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivityScannerViewBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivitySearchBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivitySearchBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivitySearchInfoBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ActivitySearchInfoBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/AddQrCodeLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/AddQrCodeLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentMapsBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentMapsBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentQrCodeListBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentQrCodeListBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentQrDetailsBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FragmentQrDetailsBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FriendQrDetailLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/FriendQrDetailLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyProfileContentBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyProfileContentBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyProfileLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyProfileLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyQrCodesLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/MyQrCodesLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/OwnerMenuLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/OwnerMenuLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PersonalQrRankContentLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PersonalQrRankContentLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PersonalQrRankLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PersonalQrRankLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerMenuLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerMenuLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerRankingContentBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerRankingContentBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerRankingLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/PlayerRankingLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/QrInformationLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/QrInformationLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/QrScoresContentBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/QrScoresContentBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/RankInOwnerContentBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/RankInOwnerContentBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ScanQrCodeLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/ScanQrCodeLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/SignUpLayoutBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/SignUpLayoutBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/SingleQrDesignBinding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/data_binding_base_class_source_out/debug/out/com/example/qrhunter/databinding/SingleQrDesignBinding.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/res/google-services/debug/values/values.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/qrhunter/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/qrhunter/BuildConfig.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/app_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/app_classes/debug/classes.jar" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compatible_screen_manifest/debug/output-metadata.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-he/values-he.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v31/values-v31.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v31/values-v31.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w1240dp-v13/values-w1240dp-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w1240dp-v13/values-w1240dp-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-port-v13/values-w480dp-port-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xxhdpi-v4/values-xxhdpi-v4.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/qrhunter/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/qrhunter/Note.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debugUnitTest/classes/com/example/qrhunter/PlayerListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debugUnitTest/classes/com/example/qrhunter/PlayerListTest.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output-metadata.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-af.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-am.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ar.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-as.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-az.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+es+419.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+es+419.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-b+sr+Latn.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-be.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bg.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bn.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-bs.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ca.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-cs.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-da.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-de.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-el.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rAU.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rCA.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rGB.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rIN.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-en-rXC.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es-rUS.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-es.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-et.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-eu.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fa.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fi.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr-rCA.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-fr.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gl.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-gu.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h320dp-port-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h320dp-port-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h360dp-land-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h360dp-land-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h480dp-land-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h480dp-land-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h550dp-port-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h550dp-port-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h720dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-h720dp-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hdpi-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hdpi-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-he.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-he.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hi.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hr.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hu.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-hy.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-id.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-id.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-in.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-is.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-it.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-iw.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ja.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ka.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kk.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-km.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-kn.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ko.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ky.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-land.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-land.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-large-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-large-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldltr-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldltr-v21.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldrtl-v17.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ldrtl-v17.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lo.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lt.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-lv.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mk.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ml.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mn.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-mr.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ms.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-my.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nb.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ne.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-night-v8.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-nl.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-or.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pa.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pl.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-port.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-port.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rBR.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt-rPT.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-pt.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ro.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ru.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-si.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sk.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sl.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-small-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-small-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sq.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sr.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sv.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw600dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-sw600dp-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ta.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-te.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-th.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tl.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-tr.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uk.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-ur.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-uz.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v11.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v11.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v16.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v17.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v17.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v18.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v18.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v21.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v22.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v22.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v23.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v23.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v24.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v24.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v25.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v25.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v26.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v26.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v28.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v28.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v31.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-v31.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-vi.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w1240dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w1240dp-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w320dp-land-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w320dp-land-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w360dp-port-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w360dp-port-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w480dp-port-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w480dp-port-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-land-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-land-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-w600dp-v13.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v20.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v20.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-watch-v21.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xhdpi-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xhdpi-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xlarge-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xlarge-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xxhdpi-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-xxhdpi-v4.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rCN.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rHK.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zh-rTW.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values-zu.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/layout.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/layout.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/navigation_json/debug/navigation.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/navigation_json/debug/navigation.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/output-metadata.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/output-metadata.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_app_classes_jar/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_app_classes_jar/debug/classes.jar" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/binary/results.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugUnitTestJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugUnitTestJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/Note.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -131,7 +425,7 @@
+       <command value="gradle javadoc" />
+     </option>
+   </component>
+-  <component name="RunManager" selected="Gradle.PlayerListTest">
++  <component name="RunManager" selected="Gradle.NoteListTest">
+     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+       <module name="QR_Hunter.app" />
+       <option name="DEPLOY" value="true" />
+@@ -191,12 +485,12 @@
+         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="PlayerListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="NoteListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest&quot;" />
++        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest&quot;" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+@@ -212,12 +506,12 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="PlayerListTest.testAddException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="NoteListTest.testAdd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testAddException&quot;" />
++        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest.testAdd&quot;" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+@@ -233,12 +527,12 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="PlayerListTest.testCount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="NoteListTest.testAddException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testCount&quot;" />
++        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest.testAddException&quot;" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+@@ -254,12 +548,12 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="PlayerListTest.testExistence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="NoteListTest.testDelete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testExistence&quot;" />
++        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest.testDelete&quot;" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+@@ -275,12 +569,12 @@
+       <DebugAllEnabled>false</DebugAllEnabled>
+       <method v="2" />
+     </configuration>
+-    <configuration name="PlayerListTest.testGetPlayers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
++    <configuration name="NoteListTest.testGetNotes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="externalSystemIdString" value="GRADLE" />
+-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testGetPlayers&quot;" />
++        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest.testGetNotes&quot;" />
+         <option name="taskDescriptions">
+           <list />
+         </option>
+@@ -298,11 +592,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Gradle.PlayerListTest" />
+-        <item itemvalue="Gradle.PlayerListTest.testCount" />
+-        <item itemvalue="Gradle.PlayerListTest.testExistence" />
+-        <item itemvalue="Gradle.PlayerListTest.testGetPlayers" />
+-        <item itemvalue="Gradle.PlayerListTest.testAddException" />
++        <item itemvalue="Gradle.NoteListTest" />
++        <item itemvalue="Gradle.NoteListTest.testGetNotes" />
++        <item itemvalue="Gradle.NoteListTest.testAdd" />
++        <item itemvalue="Gradle.NoteListTest.testDelete" />
++        <item itemvalue="Gradle.NoteListTest.testAddException" />
+       </list>
+     </recent_temporary>
+   </component>
+Index: app/build/reports/tests/testDebugUnitTest/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<meta http-equiv=\"x-ua-compatible\" content=\"IE=edge\"/>\r\n<title>Test results - Test Summary</title>\r\n<link href=\"css/base-style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<script src=\"js/report.js\" type=\"text/javascript\"></script>\r\n</head>\r\n<body>\r\n<div id=\"content\">\r\n<h1>Test Summary</h1>\r\n<div id=\"summary\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"summaryGroup\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"infoBox\" id=\"tests\">\r\n<div class=\"counter\">7</div>\r\n<p>tests</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"failures\">\r\n<div class=\"counter\">0</div>\r\n<p>failures</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"ignored\">\r\n<div class=\"counter\">0</div>\r\n<p>ignored</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"duration\">\r\n<div class=\"counter\">0.016s</div>\r\n<p>duration</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox success\" id=\"successRate\">\r\n<div class=\"percent\">100%</div>\r\n<p>successful</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n<div id=\"tabs\">\r\n<ul class=\"tabLinks\">\r\n<li>\r\n<a href=\"#tab0\">Packages</a>\r\n</li>\r\n<li>\r\n<a href=\"#tab1\">Classes</a>\r\n</li>\r\n</ul>\r\n<div id=\"tab0\" class=\"tab\">\r\n<h2>Packages</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Package</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"packages/com.example.qrhunter.html\">com.example.qrhunter</a>\r\n</td>\r\n<td>7</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.016s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n<div id=\"tab1\" class=\"tab\">\r\n<h2>Classes</h2>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>Class</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"classes/com.example.qrhunter.PlayerListTest.html\">com.example.qrhunter.PlayerListTest</a>\r\n</td>\r\n<td>7</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.016s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</div>\r\n<div id=\"footer\">\r\n<p>\r\n<div>\r\n<label class=\"hidden\" id=\"label-for-line-wrapping-toggle\" for=\"line-wrapping-toggle\">Wrap lines\r\n<input id=\"line-wrapping-toggle\" type=\"checkbox\" autocomplete=\"off\"/>\r\n</label>\r\n</div>Generated by \r\n<a href=\"http://www.gradle.org\">Gradle 7.2</a> at 2022年4月3日 下午7:23:18</p>\r\n</div>\r\n</div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/reports/tests/testDebugUnitTest/index.html b/app/build/reports/tests/testDebugUnitTest/index.html
+--- a/app/build/reports/tests/testDebugUnitTest/index.html	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ b/app/build/reports/tests/testDebugUnitTest/index.html	(date 1649048797610)
+@@ -38,7 +38,7 @@
+ </td>
+ <td>
+ <div class="infoBox" id="duration">
+-<div class="counter">0.016s</div>
++<div class="counter">0.015s</div>
+ <p>duration</p>
+ </div>
+ </td>
+@@ -85,7 +85,7 @@
+ <td>7</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0.016s</td>
++<td>0.015s</td>
+ <td class="success">100%</td>
+ </tr>
+ </tbody>
+@@ -107,12 +107,12 @@
+ <tbody>
+ <tr>
+ <td class="success">
+-<a href="classes/com.example.qrhunter.PlayerListTest.html">com.example.qrhunter.PlayerListTest</a>
++<a href="classes/com.example.qrhunter.NoteListTest.html">com.example.qrhunter.NoteListTest</a>
+ </td>
+ <td>7</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0.016s</td>
++<td>0.015s</td>
+ <td class="success">100%</td>
+ </tr>
+ </tbody>
+@@ -126,7 +126,7 @@
+ <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+ </label>
+ </div>Generated by 
+-<a href="http://www.gradle.org">Gradle 7.2</a> at 2022年4月3日 下午7:23:18</p>
++<a href="http://www.gradle.org">Gradle 7.2</a> at 2022年4月3日 下午11:06:37</p>
+ </div>
+ </div>
+ </body>
+Index: app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\r\n<meta http-equiv=\"x-ua-compatible\" content=\"IE=edge\"/>\r\n<title>Test results - Package com.example.qrhunter</title>\r\n<link href=\"../css/base-style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<link href=\"../css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n<script src=\"../js/report.js\" type=\"text/javascript\"></script>\r\n</head>\r\n<body>\r\n<div id=\"content\">\r\n<h1>Package com.example.qrhunter</h1>\r\n<div class=\"breadcrumbs\">\r\n<a href=\"../index.html\">all</a> &gt; com.example.qrhunter</div>\r\n<div id=\"summary\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"summaryGroup\">\r\n<table>\r\n<tr>\r\n<td>\r\n<div class=\"infoBox\" id=\"tests\">\r\n<div class=\"counter\">7</div>\r\n<p>tests</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"failures\">\r\n<div class=\"counter\">0</div>\r\n<p>failures</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"ignored\">\r\n<div class=\"counter\">0</div>\r\n<p>ignored</p>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox\" id=\"duration\">\r\n<div class=\"counter\">0.016s</div>\r\n<p>duration</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</td>\r\n<td>\r\n<div class=\"infoBox success\" id=\"successRate\">\r\n<div class=\"percent\">100%</div>\r\n<p>successful</p>\r\n</div>\r\n</td>\r\n</tr>\r\n</table>\r\n</div>\r\n<div id=\"tabs\">\r\n<ul class=\"tabLinks\">\r\n<li>\r\n<a href=\"#tab0\">Classes</a>\r\n</li>\r\n</ul>\r\n<div id=\"tab0\" class=\"tab\">\r\n<h2>Classes</h2>\r\n<table>\r\n<thread>\r\n<tr>\r\n<th>Class</th>\r\n<th>Tests</th>\r\n<th>Failures</th>\r\n<th>Ignored</th>\r\n<th>Duration</th>\r\n<th>Success rate</th>\r\n</tr>\r\n</thread>\r\n<tr>\r\n<td class=\"success\">\r\n<a href=\"../classes/com.example.qrhunter.PlayerListTest.html\">PlayerListTest</a>\r\n</td>\r\n<td>7</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0.016s</td>\r\n<td class=\"success\">100%</td>\r\n</tr>\r\n</table>\r\n</div>\r\n</div>\r\n<div id=\"footer\">\r\n<p>\r\n<div>\r\n<label class=\"hidden\" id=\"label-for-line-wrapping-toggle\" for=\"line-wrapping-toggle\">Wrap lines\r\n<input id=\"line-wrapping-toggle\" type=\"checkbox\" autocomplete=\"off\"/>\r\n</label>\r\n</div>Generated by \r\n<a href=\"http://www.gradle.org\">Gradle 7.2</a> at 2022年4月3日 下午7:23:18</p>\r\n</div>\r\n</div>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html b/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html
+--- a/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ b/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html	(date 1649048797610)
+@@ -40,7 +40,7 @@
+ </td>
+ <td>
+ <div class="infoBox" id="duration">
+-<div class="counter">0.016s</div>
++<div class="counter">0.015s</div>
+ <p>duration</p>
+ </div>
+ </td>
+@@ -78,12 +78,12 @@
+ </thread>
+ <tr>
+ <td class="success">
+-<a href="../classes/com.example.qrhunter.PlayerListTest.html">PlayerListTest</a>
++<a href="../classes/com.example.qrhunter.NoteListTest.html">NoteListTest</a>
+ </td>
+ <td>7</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0.016s</td>
++<td>0.015s</td>
+ <td class="success">100%</td>
+ </tr>
+ </table>
+@@ -96,7 +96,7 @@
+ <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+ </label>
+ </div>Generated by 
+-<a href="http://www.gradle.org">Gradle 7.2</a> at 2022年4月3日 下午7:23:18</p>
++<a href="http://www.gradle.org">Gradle 7.2</a> at 2022年4月3日 下午11:06:37</p>
+ </div>
+ </div>
+ </body>
+Index: app/src/main/java/com/example/qrhunter/NoteList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/qrhunter/NoteList.java b/app/src/main/java/com/example/qrhunter/NoteList.java
+new file mode 100644
+--- /dev/null	(date 1649047274443)
++++ b/app/src/main/java/com/example/qrhunter/NoteList.java	(date 1649047274443)
+@@ -0,0 +1,79 @@
++package com.example.qrhunter;
++
++import java.util.ArrayList;
++import java.util.Collections;
++import java.util.List;
++
++public class NoteList {
++
++    private List<Note> notes = new ArrayList<>();
++
++    /**
++     * This adds a note to the list if the note does not exist
++     *
++     * @throws IllegalArgumentException
++     *      If the note already exist in the list this is thrown
++     * @param note
++     * This is a candidate note to add
++     */
++
++    public void add(Note note) {
++        if (notes.contains(note)) {
++            throw new IllegalArgumentException();
++        }
++        notes.add(note);
++    }
++
++
++    /**
++     * This returns a sorted list of notes
++     * @return list
++     * Return the sorted list
++     */
++    public List<Note> getNotes() {
++        List<Note> list = notes;
++        Collections.sort(list);
++        return list;
++    }
++
++    /**
++     * This shows if the note exists in the list or not
++     * @return bool
++     * @param note
++     * Return boolean
++     */
++
++    public boolean noteExist(Note note){
++        if(notes.contains(note)){
++            return true;
++        }
++        return false;
++    }
++
++    /**
++     * This delete a note in the list if the note exists
++     *
++     * @throws IllegalArgumentException
++     *      If the note does not exist in the list
++     * @param note
++     * This is a note to delete
++     */
++
++    public void deleteNote(Note note) {
++        if (notes.contains(note)) {
++            notes.remove(note);
++        }
++        else{
++            throw new IllegalArgumentException();
++        }
++    }
++
++    /**
++     * This returns the number of notes in the list
++     * @return notes.size
++     * This is an integer represents the size
++     */
++    public int countNote(){
++        return notes.size();
++    }
++}
+Index: app/src/test/java/com/example/qrhunter/NoteListTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/com/example/qrhunter/NoteListTest.java b/app/src/test/java/com/example/qrhunter/NoteListTest.java
+new file mode 100644
+--- /dev/null	(date 1649048787193)
++++ b/app/src/test/java/com/example/qrhunter/NoteListTest.java	(date 1649048787193)
+@@ -0,0 +1,109 @@
++package com.example.qrhunter;
++
++import static org.junit.jupiter.api.Assertions.assertEquals;
++import static org.junit.jupiter.api.Assertions.assertFalse;
++import static org.junit.jupiter.api.Assertions.assertThrows;
++import static org.junit.jupiter.api.Assertions.assertTrue;
++
++import org.junit.jupiter.api.Test;
++
++public class NoteListTest {
++
++
++    private NoteList mockNoteList() {
++        NoteList noteList = new NoteList();
++        noteList.add(mockNote());
++        return noteList;
++    }
++    private Note mockNote() {
++        return new Note("note1", "good",37,53.526,-113.527,"http://www.google.com");
++    }
++
++    /**
++     * This tests the functionality of adding notes
++     */
++    @Test
++    void testAdd() {
++        NoteList noteList = mockNoteList();
++        assertEquals(1, noteList.getNotes().size());
++
++        Note note = new Note("note2", "not good",52,23.526,113.527,"http://www.ualberta.com");
++        noteList.add(note);
++
++        assertEquals(2, noteList.getNotes().size());
++        assertTrue(noteList.getNotes().contains(note));
++    }
++
++    /**
++     * This tests the exception of adding
++     */
++    @Test
++    void testAddException() {
++        NoteList noteList = mockNoteList();
++        Note note = new Note("note3", "bad",10,76.516,113.527,"http://www.baidu.com");
++        noteList.add(note);
++        assertThrows(IllegalArgumentException.class, () -> {
++            noteList.add(note);
++        });
++    }
++
++    /**
++     * This tests the functionality of getting notes from the list
++     */
++
++    @Test
++    void testGetNotes() {
++        NoteList noteList = mockNoteList();
++        assertEquals(0, mockNote().compareTo(noteList.getNotes().get(0)));
++        Note note = new Note("note4", "perfect",100,80.533,120.527,"http://www.beartrack.com");
++        noteList.add(note);
++        assertEquals(9, note.compareTo(noteList.getNotes().get(0)));
++    }
++
++    /**
++     * This tests if the note exist in the list or not
++     */
++
++    @Test
++    void testExistence(){
++        NoteList noteList = mockNoteList();
++        Note note = new Note("note5", "bad",2,20.516,114.527,"http://www.gmail.com");
++        assertFalse(noteList.noteExist(note));
++    }
++
++    /**
++     * This tests the functionality of counting notes from the list
++     */
++    @Test
++    void testCount(){
++        NoteList noteList = mockNoteList();
++        assertEquals(noteList.getNotes().size(),noteList.countNote());
++    }
++
++    /**
++     * This tests the functionality of deleting notes from the list
++     */
++
++    @Test
++    void testDelete(){
++        NoteList noteList = mockNoteList();
++        Note note = new Note("note6", "so so",41,41.216,45.527,"http://www.android.com");
++        noteList.add(note);
++        assertEquals(2,noteList.countNote());
++        noteList.deleteNote(note);
++        assertEquals(1,noteList.countNote());
++        assertFalse(noteList.getNotes().contains(note));
++    }
++
++    /**
++     * This tests the exception of deleting notes from the list
++     */
++    @Test
++    void testDeleteException() {
++        NoteList noteList = mockNoteList();
++        Note note = new Note("note7", "boring",30,76.016,2.527,"http://www.lenovo.com");
++        assertThrows(IllegalArgumentException.class, () -> {
++            noteList.deleteNote(note);
++        });
++    }
++}
+Index: app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Sun Apr 03 18:52:20 MDT 2022\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\qr_scores_content.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_qr_scores_content.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-anydpi\\\\main_background.gif=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-anydpi_main_background.gif.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_logo_background.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_logo_background.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-anydpi-v26\\\\ic_logo_round.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-anydpi-v26_ic_logo_round.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\activity_remove_qr.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_activity_remove_qr.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xxhdpi\\\\ic_search.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xxhdpi_ic_search.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_launcher.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_launcher.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_logo_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_logo_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_launcher.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_launcher.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\navigation\\\\nav_graph.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\navigation_nav_graph.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\xml\\\\file_paths.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\xml_file_paths.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_launcher_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_launcher_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\scan_qr_code_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_scan_qr_code_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-mdpi\\\\ic_others.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-mdpi_ic_others.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\player_menu_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_player_menu_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xhdpi\\\\ic_search.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xhdpi_ic_search.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_logo_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_logo_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_logo_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_logo_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_launcher_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable\\\\round_border.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable_round_border.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\owner_menu_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_owner_menu_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\player_ranking_content.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_player_ranking_content.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_logo_background.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_logo_background.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_launcher_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_launcher_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_logo_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_logo_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xxhdpi\\\\ic_others.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xxhdpi_ic_others.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_logo.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_logo.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\activity_main.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_activity_main.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_logo.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_logo.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-mdpi\\\\ic_profile.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-mdpi_ic_profile.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_launcher.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_launcher.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\activity_scanner_view.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_activity_scanner_view.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_launcher_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_launcher_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_launcher.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_launcher.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_logo_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_logo_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable\\\\rect_border_grey.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable_rect_border_grey.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-anydpi\\\\ic_others.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-anydpi_ic_others.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_logo_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_logo_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xxhdpi\\\\ic_profile.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xxhdpi_ic_profile.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_logo.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_logo.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_launcher_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_launcher_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\my_profile_content.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_my_profile_content.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\generated\\\\res\\\\pngs\\\\debug\\\\drawable-anydpi-v24\\\\ic_launcher_foreground.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\fragment_maps.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_fragment_maps.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\my_profile_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_my_profile_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\personal_qr_rank_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_personal_qr_rank_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-anydpi\\\\ic_profile.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-anydpi_ic_profile.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xhdpi\\\\ic_others.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xhdpi_ic_others.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\rank_in_owner_content.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_rank_in_owner_content.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xhdpi\\\\ic_launcher_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xhdpi_ic_launcher_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable\\\\rect_border_purple.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable_rect_border_purple.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-hdpi\\\\ic_others.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-hdpi_ic_others.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_logo.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_logo.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_launcher_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_launcher_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\add_qr_code_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_add_qr_code_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-hdpi\\\\ic_profile.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-hdpi_ic_profile.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-anydpi-v26\\\\ic_launcher.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-anydpi-v26_ic_launcher.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-anydpi-v26\\\\ic_logo.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-anydpi-v26_ic_logo.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-mdpi\\\\ic_search.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-mdpi_ic_search.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_launcher.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_launcher.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_logo_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_logo_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_logo_background.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_logo_background.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_logo_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_logo_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\activity_search.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_activity_search.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-anydpi\\\\ic_search.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-anydpi_ic_search.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\personal_qr_rank_content_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_personal_qr_rank_content_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\fragment_qr_code_list.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_fragment_qr_code_list.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-hdpi\\\\ic_launcher_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-hdpi_ic_launcher_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_logo_background.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_logo_background.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_logo_foreground.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_logo_foreground.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\friend_qr_detail_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_friend_qr_detail_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\qr_information_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_qr_information_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-hdpi\\\\ic_search.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-hdpi_ic_search.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_logo_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_logo_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable\\\\loupe.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable_loupe.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\player_ranking_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_player_ranking_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_launcher_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_launcher_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\my_qr_codes_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_my_qr_codes_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\single_qr_design.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_single_qr_design.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxhdpi\\\\ic_launcher_round.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxhdpi_ic_launcher_round.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\sign_up_layout.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_sign_up_layout.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-xxxhdpi\\\\ic_logo_background.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-xxxhdpi_ic_logo_background.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable\\\\customer.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable_customer.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\activity_search_info.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_activity_search_info.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-mdpi\\\\ic_logo.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-mdpi_ic_logo.png.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\build\\\\intermediates\\\\incremental\\\\mergeDebugResources\\\\stripped.dir\\\\layout\\\\fragment_qr_details.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\layout_fragment_qr_details.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\mipmap-anydpi-v26\\\\ic_launcher_round.xml=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\mipmap-anydpi-v26_ic_launcher_round.xml.flat\r\nC\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version\\ 1\\\\app\\\\src\\\\main\\\\res\\\\drawable-xhdpi\\\\ic_profile.png=C\\:\\\\Users\\\\Mia\\\\Desktop\\\\QRHunter\\\\version 1\\\\app\\\\build\\\\intermediates\\\\merged_res\\\\debug\\\\drawable-xhdpi_ic_profile.png.flat\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties b/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+--- a/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties	(revision 3f8cfe5d2464fffb468c880f288fd26634de045d)
++++ b/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties	(date 1649047626390)
+@@ -1,4 +1,4 @@
+-#Sun Apr 03 18:52:20 MDT 2022
++#Sun Apr 03 22:47:06 MDT 2022
+ C\:\\Users\\Mia\\Desktop\\QRHunter\\version\ 1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\qr_scores_content.xml=C\:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\layout_qr_scores_content.xml.flat
+ C\:\\Users\\Mia\\Desktop\\QRHunter\\version\ 1\\app\\src\\main\\res\\drawable-anydpi\\main_background.gif=C\:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi_main_background.gif.flat
+ C\:\\Users\\Mia\\Desktop\\QRHunter\\version\ 1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_logo_background.png=C\:\\Users\\Mia\\Desktop\\QRHunter\\version 1\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_logo_background.png.flat

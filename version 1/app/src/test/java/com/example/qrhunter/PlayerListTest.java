@@ -49,7 +49,6 @@ public class PlayerListTest {
     /**
      * This tests the functionality of getting players from the list
      */
-
     @Test
     void testGetPlayers() {
         PlayerList playerList = mockPlayerList();
@@ -62,7 +61,6 @@ public class PlayerListTest {
     /**
      * This tests if the player exist in the list or not
      */
-
     @Test
     void testExistence(){
         PlayerList playerList = mockPlayerList();
@@ -82,7 +80,6 @@ public class PlayerListTest {
     /**
      * This tests the functionality of deleting players from the list
      */
-
     @Test
     void testDelete(){
         PlayerList playerList = mockPlayerList();

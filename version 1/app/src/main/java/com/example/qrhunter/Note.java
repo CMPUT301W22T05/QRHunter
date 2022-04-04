@@ -2,7 +2,7 @@ package com.example.qrhunter;
 
 import com.google.firebase.firestore.Exclude;
 
-public class Note {
+public class Note implements Comparable<Note>{
     private String documentId;
     private String title;
     private String description;
@@ -11,10 +11,18 @@ public class Note {
     private double lag;
     String url;
 
+    /**
+     * This returns a Url of note
+     * @return string
+     * Return the url
+     */
     public String getUrl() {
         return url;
     }
 
+    /**
+     * This sets a Url of note
+     */
     public void setUrl(String url) {
         this.url = url;
     }
@@ -23,11 +31,19 @@ public class Note {
         //public no-arg constructor needed
     }
 
+    /**
+     * This returns a document ID of note
+     * @return string
+     * Return the document ID
+     */
     @Exclude
     public String getDocumentId() {
-        return documentId;
+        return this.documentId;
     }
 
+    /**
+     * This sets a document ID of note
+     */
     public void setDocumentId(String documentId) {
         this.documentId = documentId;
     }
@@ -40,8 +56,8 @@ public class Note {
         this.lag = lag;
         this.url = url;
     }
-    public  int getWorth(){
-        return worth;
+    public int getWorth(){
+        return this.worth;
     }
     public  double getLat(){
         return lat;
@@ -50,11 +66,32 @@ public class Note {
         return lag;
     }
 
+    /**
+     * This returns a title of note
+     * @return string
+     * Return the title
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * This returns a description of note
+     * @return string
+     * Return the description
+     */
     public String getDescription() {
         return description;
+    }
+
+
+    /**
+     * This compares the description of two players
+     * @return integer
+     * Return the integer
+     */
+    @Override
+    public int compareTo(Note note) {
+        return this.description.compareTo(note.getDescription());
     }
 }

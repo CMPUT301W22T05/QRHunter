@@ -18,18 +18,24 @@ public class TotalScoreOnOwnerPageListTest {
         return new TotalScoreOnOwnerPage("player1", "30");
     }
 
+    /**
+     * This tests the functionality of adding players
+     */
     @Test
     void testAdd() {
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();
         assertEquals(1, totalScoreOnOwnerPageList.getPlayers().size());
 
         TotalScoreOnOwnerPage totalScoreOnOwnerPage = new TotalScoreOnOwnerPage("player2", "58");
-//        TotalScoreOnOwnerPageList.add(totalScoreOnOwnerPage);
+        totalScoreOnOwnerPageList.add(totalScoreOnOwnerPage);
 
         assertEquals(2, totalScoreOnOwnerPageList.getPlayers().size());
-        assertTrue(totalScoreOnOwnerPageList.getPlayers().contains(totalScoreOnOwnerPageList));
+        assertTrue(totalScoreOnOwnerPageList.getPlayers().contains(totalScoreOnOwnerPage));
     }
 
+    /**
+     * This tests the exception of adding
+     */
     @Test
     void testAddException() {
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();
@@ -40,7 +46,9 @@ public class TotalScoreOnOwnerPageListTest {
         });
     }
 
-
+    /**
+     * This tests if the player exist in the list or not
+     */
     @Test
     void testExistence(){
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();
@@ -48,13 +56,18 @@ public class TotalScoreOnOwnerPageListTest {
         assertFalse(totalScoreOnOwnerPageList.playerExist(totalScoreOnOwnerPage));
     }
 
+    /**
+     * This tests the functionality of counting players from the list
+     */
     @Test
     void testCount(){
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();
         assertEquals(totalScoreOnOwnerPageList.getPlayers().size(),totalScoreOnOwnerPageList.countPlayer());
     }
 
-
+    /**
+     * This tests the functionality of deleting players from the list
+     */
     @Test
     void testDelete(){
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();
@@ -66,6 +79,9 @@ public class TotalScoreOnOwnerPageListTest {
         assertFalse(totalScoreOnOwnerPageList.getPlayers().contains(totalScoreOnOwnerPageList));
     }
 
+    /**
+     * This tests the exception of deleting players from the list
+     */
     @Test
     void testDeleteException() {
         TotalScoreOnOwnerPageList totalScoreOnOwnerPageList = mockTotalScoreOnOwnerPageList();

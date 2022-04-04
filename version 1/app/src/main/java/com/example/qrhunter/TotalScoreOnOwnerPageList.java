@@ -31,6 +31,7 @@ public class TotalScoreOnOwnerPageList {
      */
     public List<TotalScoreOnOwnerPage> getPlayers() {
         List<TotalScoreOnOwnerPage> list = players;
+        Collections.sort(list);
         return list;
     }
 
