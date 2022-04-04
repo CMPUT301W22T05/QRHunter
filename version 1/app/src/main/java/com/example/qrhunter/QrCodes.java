@@ -1,11 +1,16 @@
 package com.example.qrhunter;
 
-public class QrCodes {
+public class QrCodes implements Comparable<QrCodes>{
     String description,title;
     int worth;
     double lag,lat;
     String url;
 
+    /**
+     * This returns a Url of note
+     * @return string
+     * Return the url
+     */
     public String getUrl() {
         return url;
     }
@@ -26,6 +31,11 @@ public class QrCodes {
         this.url = url;
     }
 
+    /**
+     * This returns a description of note
+     * @return string
+     * Return the description
+     */
     public String getDescription() {
         return description;
     }
@@ -34,6 +44,11 @@ public class QrCodes {
         this.description = description;
     }
 
+    /**
+     * This returns a title of note
+     * @return string
+     * Return the title
+     */
     public String getTitle() {
         return title;
     }
@@ -42,6 +57,11 @@ public class QrCodes {
         this.title = title;
     }
 
+    /**
+     * This returns a worth of qr code
+     * @return integer
+     * Return the worth
+     */
     public int getWorth() {
         return worth;
     }
@@ -50,6 +70,11 @@ public class QrCodes {
         this.worth = worth;
     }
 
+    /**
+     * This returns a longitude of qr code
+     * @return string
+     * Return the longitude
+     */
     public Double getLag() {
         return lag;
     }
@@ -58,11 +83,26 @@ public class QrCodes {
         this.lag = lag;
     }
 
+    /**
+     * This returns a latitude of qr code
+     * @return string
+     * Return the latitude
+     */
     public Double getLat() {
         return lat;
     }
 
     public void setLat(Double lat) {
         this.lat = lat;
+    }
+
+    /**
+     * This compares the description of two players
+     * @return integer
+     * Return the integer
+     */
+    @Override
+    public int compareTo(QrCodes qrcode) {
+        return this.description.compareTo(qrcode.getDescription());
     }
 }

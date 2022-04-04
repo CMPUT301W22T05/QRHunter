@@ -14,11 +14,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6578b7e0-87b8-4de8-9e6b-960dccf182f5" name="Default Changelist" comment="final code">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/QrCodesList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/qrhunter/QrCodesListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/app_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/app_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/qrhunter/QrCodes.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/qrhunter/QrCodes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_app_classes_jar/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_app_classes_jar/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/classes/com.example.qrhunter.PlayerListTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/testDebugUnitTest/packages/com.example.qrhunter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/TEST-com.example.qrhunter.PlayerListTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/testDebugUnitTest/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugUnitTestJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugUnitTestJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/QrCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/qrhunter/QrCodes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +127,7 @@
       <command value="gradle javadoc" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.PlayerListTest">
+  <component name="RunManager" selected="Gradle.QrCodesListTest">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="QR_Hunter.app" />
       <option name="DEPLOY" value="true" />
@@ -173,6 +187,27 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NoteListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.NoteListTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PlayerListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,12 +229,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerListTest.testAddException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="QrCodesListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testAddException&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.QrCodesListTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -215,12 +250,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerListTest.testCount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TotalScoreOnOwnerPageListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testCount&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.TotalScoreOnOwnerPageListTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -236,33 +271,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerListTest.testExistence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TotalScoreOnOwnerPageListTest.testAdd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testExistence&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PlayerListTest.testGetPlayers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.PlayerListTest.testGetPlayers&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.example.qrhunter.TotalScoreOnOwnerPageListTest.testAdd&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -280,11 +294,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QrCodesListTest" />
         <item itemvalue="Gradle.PlayerListTest" />
-        <item itemvalue="Gradle.PlayerListTest.testCount" />
-        <item itemvalue="Gradle.PlayerListTest.testExistence" />
-        <item itemvalue="Gradle.PlayerListTest.testGetPlayers" />
-        <item itemvalue="Gradle.PlayerListTest.testAddException" />
+        <item itemvalue="Gradle.TotalScoreOnOwnerPageListTest" />
+        <item itemvalue="Gradle.NoteListTest" />
+        <item itemvalue="Gradle.TotalScoreOnOwnerPageListTest.testAdd" />
       </list>
     </recent_temporary>
   </component>
