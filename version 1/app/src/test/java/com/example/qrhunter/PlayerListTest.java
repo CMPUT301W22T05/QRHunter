@@ -18,6 +18,9 @@ public class PlayerListTest {
         return new Player("player1", "30");
     }
 
+    /**
+     * This tests the functionality of adding players
+     */
     @Test
     void testAdd() {
         PlayerList playerList = mockPlayerList();
@@ -30,6 +33,9 @@ public class PlayerListTest {
         assertTrue(playerList.getPlayers().contains(player));
     }
 
+    /**
+     * This tests the exception of adding
+     */
     @Test
     void testAddException() {
         PlayerList playerList = mockPlayerList();
@@ -40,6 +46,10 @@ public class PlayerListTest {
         });
     }
 
+    /**
+     * This tests the functionality of getting players from the list
+     */
+
     @Test
     void testGetPlayers() {
         PlayerList playerList = mockPlayerList();
@@ -49,6 +59,10 @@ public class PlayerListTest {
         assertEquals(3, player.compareTo(playerList.getPlayers().get(0)));
     }
 
+    /**
+     * This tests if the player exist in the list or not
+     */
+
     @Test
     void testExistence(){
         PlayerList playerList = mockPlayerList();
@@ -56,12 +70,18 @@ public class PlayerListTest {
         assertFalse(playerList.playerExist(player));
     }
 
+    /**
+     * This tests the functionality of counting players from the list
+     */
     @Test
     void testCount(){
         PlayerList playerList = mockPlayerList();
         assertEquals(playerList.getPlayers().size(),playerList.countPlayer());
     }
 
+    /**
+     * This tests the functionality of deleting players from the list
+     */
 
     @Test
     void testDelete(){
@@ -74,6 +94,9 @@ public class PlayerListTest {
         assertFalse(playerList.getPlayers().contains(player));
     }
 
+    /**
+     * This tests the exception of deleting players from the list
+     */
     @Test
     void testDeleteException() {
         PlayerList playerList = mockPlayerList();
